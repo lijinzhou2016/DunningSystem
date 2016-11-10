@@ -31,12 +31,16 @@ from mylogger import MyLogger
 
 def www_path():
     return get_path('www',parent=True)
-
 def data_path():
     return get_path('data',parent=True)
-
 def scripts_path():
     return get_path('scripts',parent=True)
+def js_path():
+    return www_path()+os.sep+'js'
+def css_path():
+    return www_path()+os.sep+'css'
+def images_path():
+    return www_path()+os.sep+'images'
 
 # os.sep 自适配系统路径分隔符
 execfile(common_path() + os.sep + 'db.py')
@@ -48,10 +52,20 @@ execfile(common_path() + os.sep + 'config.py')
 def error404():
     pass
 
-# http://127.0.0.1:8080/index
-@bottle.route('/index')
-def index():
-    return bottle.static_file('index.html',root=www_path()) 
+# 静态信息文件 127.0.0.1:8080/index.html
+@bottle.route('/:filepath')
+def server_www(filepath):
+    print filepath
+    file_type=os.path.splitext(filepath)[1]
+    print file_type
+    if file_type == '.html':
+        return bottle.static_file(filepath, root=www_path())
+    elif file_type == '.css':
+        return bottle.static_file(filepath, root=css_path())
+    elif file_type == '.js':
+        return bottle.static_file(filepath, root=js_path())
+    elif file_type in ['.png','.PNG','.jpg','.JPG','.gif']:
+        return bottle.static_file(filepath, root=images_path())
 
 @bottle.route('/login')
 def login():
