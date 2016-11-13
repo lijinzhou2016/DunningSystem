@@ -31,8 +31,6 @@ def common_path():
 def lib_path():
     return get_path('lib')
 
-sys.path.append(common_path())
-from mylogger import MyLogger 
 sys.path.append(lib_path())
 from userinfo import Userinfo 
 
@@ -52,8 +50,10 @@ def images_path():
 # os.sep 自适配系统路径分隔符
 execfile(common_path() + os.sep + 'db.py')
 execfile(common_path() + os.sep + 'config.py')
+execfile(common_path() + os.sep + 'mylogger.py')
 
-
+logger = log('main')
+logger.debug('start server')
 
 @bottle.route('/index')
 def index():
@@ -66,6 +66,7 @@ def error404():
 # 静态信息文件 127.0.0.1:8080/index.html
 @bottle.route('/:filepath')
 def server_www(filepath):
+    logger.debug("server_www api")
     print filepath
     file_type=os.path.splitext(filepath)[1]
     print file_type
@@ -82,6 +83,7 @@ def server_www(filepath):
 def login():
     name = bottle.request.forms.get('username')
     passwd = bottle.request.forms.get('password')
+    logger.debug(name)
     userinfo = Userinfo.check_login(name, passwd)
     if not userinfo:
         return bottle.static_file('index.html',root=www_path()) 
