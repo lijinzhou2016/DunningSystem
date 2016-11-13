@@ -1,0 +1,6 @@
+2016-11-13 22:44:49,211 - test_log - <module> - 31 - DEBUG - this is debug info
+2016-11-13 22:44:49,213 - test_log - <module> - 32 - INFO - this is info message
+2016-11-13 22:45:44,697 - test_log - test - 32 - DEBUG - this is debug info
+2016-11-13 22:45:44,698 - test_log - test - 33 - INFO - this is info message
+2016-11-13 22:47:20,526 test_log test 32 DEBUG - this is debug info
+2016-11-13 22:47:20,528 test_log test 33 INFO - this is info message
