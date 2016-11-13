@@ -12,13 +12,34 @@
 
 import time
 import uuid
+import os
+from peewee import *
 
 # 过期时间为300秒
 session_expires = 300
+#存放所有用户的信息
+user_list = {}
+
+def get_path(name, parent=False):
+    path = os.path.dirname(os.path.abspath(__file__))
+    path_comp = path.split(os.sep)
+    if parent:
+        path_comp.pop()
+    path_comp[-1] = name
+    return os.sep.join(path_comp)
+
+def common_path():
+    return get_path('common')
+
+
+execfile(common_path() + os.sep + 'db.py')
 
 
 #用户登录信息
-class session(object):
+class Session(object):
+    def __init__(self):
+        pass
+
     def __init__(self, name):
         self.name = name
         #过期时间
@@ -45,4 +66,40 @@ class session(object):
             return False
 
 
+#用户信息
+class Userinfo:
 
+    def __init__(self, user = '', name = '', passwd = '', is_admin = 0):
+        self.user = user
+        self.name = name
+        self.passwd = passwd
+        self.is_admin = is_admin
+        self.session = Session(self.name)
+
+    #根据session字段获取用户信息， 如果校验失败，则返回None   
+    def get_by_session(self, session_str):
+        self.name = session_str.split('_')[0]
+        #如果存在，则判断正确性
+        if user_list.has_key(self.name):
+            if user_list[self.name].session.validate(session_str):
+                return user_list[self.name]
+            else:
+                return None
+        else:
+            return None
+    
+    #校验用户名和密码，生成用户信息，插入到user_list中
+    @classmethod
+    def check_login(self, user, passwd):
+        query = (Admin.select().where((Admin.user == user) 
+                & (Admin.enable == 1)))
+        if(len(query) == 1):
+            userinfo = Userinfo(user)
+            userinfo.name = query[0].name
+            userinfo.passwd = query[0].passwd
+            userinfo.is_admin = query[0].is_admin
+            userinfo.session = Session(userinfo.user)
+            user_list[userinfo.user] = userinfo
+            return userinfo
+        else:
+            return None
