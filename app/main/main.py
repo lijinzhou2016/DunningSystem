@@ -13,6 +13,8 @@
 import bottle
 import os
 import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 # 当前绝对路径
 def get_path(name, parent=False):
@@ -26,8 +28,13 @@ def get_path(name, parent=False):
 def common_path():
     return get_path('common')
 
+def lib_path():
+    return get_path('lib')
+
 sys.path.append(common_path())
 from mylogger import MyLogger 
+sys.path.append(lib_path())
+from userinfo import Userinfo 
 
 def www_path():
     return get_path('www',parent=True)
@@ -48,6 +55,10 @@ execfile(common_path() + os.sep + 'config.py')
 
 
 
+@bottle.route('/index')
+def index():
+    return bottle.static_file('index.html',root=www_path()) 
+
 @bottle.error(404)
 def error404():
     pass
@@ -67,9 +78,17 @@ def server_www(filepath):
     elif file_type in ['.png','.PNG','.jpg','.JPG','.gif']:
         return bottle.static_file(filepath, root=images_path())
 
-@bottle.route('/login')
+@bottle.route('/login', method='POST')
 def login():
-    pass
+    name = bottle.request.forms.get('username')
+    passwd = bottle.request.forms.get('password')
+    userinfo = Userinfo.check_login(name, passwd)
+    if not userinfo:
+        return bottle.static_file('index.html',root=www_path()) 
+    else:
+        #return "<p>用户名：%s</p><p>姓名：%s</p><p>密码：%s</p><p>session：%s</p>" \
+        #        %(userinfo.user, userinfo.name, userinfo.passwd, userinfo.session.session)
+        return bottle.static_file('orderlist.html',root=www_path()) 
 
 @bottle.route('/order/list.action')
 def orderlist():
