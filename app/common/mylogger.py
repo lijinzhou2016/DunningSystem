@@ -14,6 +14,10 @@ import logging
 import os
 import sys
 
+# 在此修改日志级别
+# NOTSET=0、 DEBUG=10、 INFO=20、  WARNING=30、  ERROR=40
+level = 10
+
 # 当前绝对路径
 def get_path(name, parent=False):
     path = os.path.dirname(os.path.abspath(__file__))
@@ -32,8 +36,8 @@ def log(model):
     # 创建一个logger
     logger = logging.getLogger(model)
 
-    # 日志级别 ：NOTSET DEBUG  INFO  WARNING  ERROR
-    logger.setLevel(logging.DEBUG)
+    # 日志级别 ：
+    logger.setLevel(level)
 
     # 创建一个handler，用于写入日志文件
     fh = logging.FileHandler(log_path()+os.sep+'test.log')
