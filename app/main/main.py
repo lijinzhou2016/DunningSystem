@@ -52,7 +52,7 @@ execfile(common_path() + os.sep + 'config.py')
 def error404():
     pass
 
-# 静态信息文件 127.0.0.1:8080/index.html
+# 静态信息文件 127.0.0.1:8080/
 @bottle.route('/:filepath')
 def server_www(filepath):
     print filepath
