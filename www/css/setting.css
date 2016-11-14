@@ -79,7 +79,6 @@
     right:0;
     top:0;
     background: url(../images/Design.png)no-repeat center;
-    display: none;
 }
 .wangpan-btn{
     width:90%;
@@ -110,7 +109,7 @@
 }
 
 .guanliyuan-title{
-     width:90%;
+    width:90%;
     margin-left:5%;
     color:#ff6600;
     font-size:15px;
@@ -119,22 +118,45 @@
     height:40px;
     line-height: 40px;
 }
-.guanliyuan-table{
+.table-list{
     width:90%;
     position:relative;
-    float: left;
     margin-left: 5%;
-    border:1px solid #f1f1f1;
+    border-collapse: collapse;
 }
-.guanliyuan-table-head{
-    width:100%;
-    position:relative;
-    height:40px;
-}
-.guanliyuan-table-head>div{
-    width:25%;
-    height:40px;
-    float: left;
+.table-list td{
+    padding:10px;border:1px solid #f1f1f1;
     text-align: center;
-    line-height:40px;
+}
+
+.guanliyuan-btn{
+    width:90%;
+    margin-left:5%;
+    font-size:14px;
+    position:relative;
+    height:30px;
+    margin-top:10px;
+    text-align: center;
+     
+}
+.guanliyuanbtn-save{
+    width:80px;
+    height:30px;
+    border:1px solid #ff6600;;
+    border-radius: 3px;
+    line-height:30px;
+    background:#ff6600;
+    color:#fff;
+}
+.guanliyuanbtn-cancel{
+    width:80px;
+    height:30px;
+    border:1px solid #aaa;
+    border-radius: 3px;
+    line-height:30px;
+    background:#f5f5f5;
+}
+.add{
+    position:relative;
+    float: right;
 }
