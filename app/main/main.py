@@ -27,9 +27,7 @@ def error404():
 # 静态信息文件 127.0.0.1:8080/
 @bottle.route('/:filepath')
 def server_www(filepath):
-    file_name=os.path.splitext(filepath)[0]
-    file_type=os.path.splitext(filepath)[-1]
-
+    file_name, file_type = os.path.splitext(filepath)
     if file_name == 'index':
         return bottle.static_file('index.html', root=www_path())
     elif file_type == '.html':
@@ -48,7 +46,7 @@ def login():
     logger.debug(name)
     userinfo = Userinfo.check_login(name, passwd)
     if not userinfo:
-        
+
         return bottle.static_file('index.html',root=www_path()) 
     else:
         #return "<p>用户名：%s</p><p>姓名：%s</p><p>密码：%s</p><p>session：%s</p>" \
