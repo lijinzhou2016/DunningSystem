@@ -3,18 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>列表页</title>
-	<script src="http://127.0.0.1:8080/jquery-1.11.1.min.js"></script>
-	<script src="http://127.0.0.1:8080/fenye.js"></script>
-	<script src="http://127.0.0.1:8080/orderlist.js"></script>
-	<link rel="stylesheet" href="http://127.0.0.1:8080/fenye.css">
-	<link rel="stylesheet" href="http://127.0.0.1:8080/orderlist.css">
+	<script src="http:127.0.0.1:8080/jquery-1.11.1.min.js"></script>
+	<script src="http:127.0.0.1:8080/fenye.js"></script>
+	<script src="http:127.0.0.1:8080/orderlist.js"></script>
+	<link rel="stylesheet" href="http:127.0.0.1:8080/fenye.css">
+	<link rel="stylesheet" href="http:127.0.0.1:8080/orderlist.css">
 </head>
 
 <body>
 	<div class="head">
 		<ul class="head-user">
-			<li><img src="http://127.0.0.1:8080/icon_wp.png" style="height:16px;" alt="">用户名</li>
-			<li><img src="http://127.0.0.1:8080/icon_tuichu.png" style="height:16px;" alt="">退出</li>
+			<li><img src="http:127.0.0.1:8080/icon_wp.png" style="height:16px;" alt="">用户名</li>
+			<li><img src="http:127.0.0.1:8080/icon_tuichu.png" style="height:16px;" alt="">退出</li>
 		</ul>
 	</div>
 	<div class="order-list">
@@ -87,7 +87,7 @@
 
 				<tbody>
 					<tr>
-						<td class="ordernumber"> <a href="http://127.0.0.1:8080/orderDetail.html" target="_blank">
+						<td class="ordernumber"> <a href="http:127.0.0.1:8080/orderDetail.html" target="_blank">
                             20161104</a></td>
 						<td ><div class="name" title="刘德华刘德华">刘德华刘德华</div></td>
 						<td>137712345678</td>
@@ -219,8 +219,8 @@
 			<input type="text" placeholder="请输入订单来源">
 			<input type="file" value="选择文件">
 			<input type="button" value="上传">
-			<a href="orderDetail.html" target="_blank"><input type="button" value="手动创建" style="border:1px solid #ccc;outline:none;background:url(http://127.0.0.1:8080/icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;"></a>
-			<input type="button" value="设置" style="margin-top:30px;border:1px solid #ccc;outline:none;background:url(http://127.0.0.1:8080/icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;">
+			<a href="orderDetail.html" target="_blank"><input type="button" value="手动创建" style="border:1px solid #ccc;outline:none;background:url(http:127.0.0.1:8080/icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;"></a>
+			<input type="button" value="设置" style="margin-top:30px;border:1px solid #ccc;outline:none;background:url(http:127.0.0.1:8080/icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;">
 		</div>
 
 	</div>

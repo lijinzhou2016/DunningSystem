@@ -1,9 +1,9 @@
 #!/usr/bin/env python 
 # -*- coding: UTF-8 -*-
 #*****************************************************************************
-# Title         : main.py
+# Title         : mylogger.py
 # Author        : Ljz
-# Created       : 4th December 2016
+# Created       : 16th December 2016
 # Last Modified : 
 # Version       : 1.0
 # 
