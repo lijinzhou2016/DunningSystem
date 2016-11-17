@@ -24,9 +24,10 @@ logger = log('main.py')
 def error404():
     pass
 
-# 静态信息文件 127.0.0.1:8080/
+# 静态信息文件 127.0.0.1:8080/filepath
 @bottle.route('/:filepath')
 def server_www(filepath):
+    logger.debug(filepath)
     file_name, file_type = os.path.splitext(filepath)
     if file_name == 'index':
         return bottle.static_file('index.html', root=www_path())
