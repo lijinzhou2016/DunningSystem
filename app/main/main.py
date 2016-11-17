@@ -49,15 +49,20 @@ def login():
     logger.debug(name)
     userinfo = Userinfo.check_login(name, passwd)
     if not userinfo:
-        return "{'result':'error'}"
+        return {'result':'error'}
     else:
         return get_userinfo_dic(userinfo)
 
-@bottle.route('/order/list.action')
+@bottle.route('/order/list')
+@bottle.view('orderlist')
 def orderlist():
-    pass 
+    page_index = bottle.request.query.pageIndex
+    logger.debug(page_index)
+    # 查询数据库，封装模板
+    # return oderlist.tpl
+    return "this is page ",page_index
 
-@bottle.route('/order/detail.cation')
+@bottle.route('/order/detail')
 def orderdetail():
     pass 
 

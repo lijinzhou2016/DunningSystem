@@ -9,3 +9,30 @@
 2016-11-18 00:10:08,859 main.py login 49 DEBUG - test
 2016-11-18 00:12:14,796 main.py login 46 DEBUG - i am login
 2016-11-18 00:12:14,796 main.py login 49 DEBUG - ljz
+2016-11-18 00:27:43,539 main.py login 46 DEBUG - i am login
+2016-11-18 00:27:43,539 main.py login 49 DEBUG - test
+2016-11-18 00:35:29,392 main.py login 46 DEBUG - i am login
+2016-11-18 00:35:29,394 main.py login 49 DEBUG - ljz
+2016-11-18 00:43:37,253 main.py login 46 DEBUG - i am login
+2016-11-18 00:43:37,269 main.py login 49 DEBUG - test
+2016-11-18 00:43:37,447 main.py orderlist 59 DEBUG - None
+2016-11-18 00:47:59,742 main.py login 46 DEBUG - i am login
+2016-11-18 00:47:59,743 main.py login 49 DEBUG - ljz
+2016-11-18 00:47:59,796 main.py orderlist 59 DEBUG - 1
+2016-11-18 01:01:02,690 main.py login 46 DEBUG - i am login
+2016-11-18 01:01:02,690 main.py login 49 DEBUG - ljz
+2016-11-18 01:01:02,786 main.py orderlist 60 DEBUG - 1
+2016-11-18 01:01:26,088 main.py login 46 DEBUG - i am login
+2016-11-18 01:01:26,088 main.py login 49 DEBUG - ljz1231
+2016-11-18 01:01:33,394 main.py login 46 DEBUG - i am login
+2016-11-18 01:01:33,395 main.py login 49 DEBUG - ljz1231
+2016-11-18 01:01:34,273 main.py login 46 DEBUG - i am login
+2016-11-18 01:01:34,275 main.py login 49 DEBUG - ljz1231
+2016-11-18 01:01:36,085 main.py login 46 DEBUG - i am login
+2016-11-18 01:01:36,085 main.py login 49 DEBUG - ljz1231
+2016-11-18 01:01:45,233 main.py login 46 DEBUG - i am login
+2016-11-18 01:01:45,236 main.py login 49 DEBUG - ljz1231
+2016-11-18 01:01:48,842 main.py login 46 DEBUG - i am login
+2016-11-18 01:01:48,842 main.py login 49 DEBUG - ljz1231
+2016-11-18 01:03:20,151 main.py login 46 DEBUG - i am login
+2016-11-18 01:03:20,151 main.py login 49 DEBUG - ljz1231
