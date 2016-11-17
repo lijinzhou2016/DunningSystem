@@ -1,35 +1,11 @@
-2016-11-14 22:02:21,532 main <module> 56 DEBUG - start server
-2016-11-16 20:07:56,727 util <module> 57 DEBUG - C:\Users\lijinzhou\Desktop\DunningSystem\
-2016-11-16 20:07:56,729 main <module> 22 DEBUG - start server
-2016-11-16 20:09:44,266 main server_www 35 DEBUG - server_www api
-2016-11-16 20:10:44,144 main server_www 35 DEBUG - server_www api
-2016-11-16 20:10:45,046 main server_www 35 DEBUG - server_www api
-2016-11-16 20:10:46,441 main server_www 35 DEBUG - server_www api
-2016-11-16 20:11:07,637 main server_www 35 DEBUG - server_www api
-2016-11-16 20:11:07,638 main login 52 DEBUG - 
-2016-11-16 20:11:08,046 main server_www 35 DEBUG - server_www api
-2016-11-16 21:00:38,907 main.py login 48 DEBUG - 
-2016-11-16 21:00:39,214 main.py server_www 30 DEBUG - server_www api
-2016-11-16 21:00:39,413 main.py server_www 30 DEBUG - server_www api
-2016-11-16 21:03:35,351 main.py login 48 DEBUG - ljz
-2016-11-16 21:12:04,555 main.py login 48 DEBUG - 
-2016-11-16 21:12:19,976 main.py login 48 DEBUG - ljz
-2016-11-16 21:12:21,621 main.py login 48 DEBUG - 
-2016-11-16 21:13:50,507 main.py login 48 DEBUG - ljz
-2016-11-16 21:14:57,063 main.py login 48 DEBUG - ljz
-2016-11-16 21:21:56,605 main.py login 48 DEBUG - test
-2016-11-16 21:23:36,628 main.py login 48 DEBUG - test
-2016-11-16 21:26:14,936 main.py login 48 DEBUG - ljz
-2016-11-16 21:27:57,493 main.py login 48 DEBUG - ljz
-2016-11-16 21:28:26,467 main.py login 48 DEBUG - ljz
-2016-11-16 21:30:42,743 main.py login 48 DEBUG - ljz
-2016-11-16 21:31:08,367 main.py login 48 DEBUG - ljzqwe
-2016-11-16 21:31:18,180 main.py login 48 DEBUG - adsfsdf
-2016-11-16 21:31:31,611 main.py login 48 DEBUG - 
-2016-11-16 21:33:06,130 main.py login 48 DEBUG - ljz
-2016-11-16 21:33:15,408 main.py login 48 DEBUG - ljz
-2016-11-16 21:34:57,630 main.py login 48 DEBUG - ljz
-2016-11-16 21:35:40,933 main.py login 48 DEBUG - qwerwqerw
-2016-11-16 21:47:06,032 main.py login 48 DEBUG - test
-2016-11-16 23:49:34,888 main.py login 46 DEBUG - ll
-2016-11-16 23:49:43,528 main.py login 46 DEBUG - ljz
+
+2016-11-18 00:01:25,437 main.py login 46 DEBUG - i am login
+2016-11-18 00:01:25,463 main.py login 49 DEBUG - 
+2016-11-18 00:01:58,121 main.py login 46 DEBUG - i am login
+2016-11-18 00:01:58,125 main.py login 49 DEBUG - ljz
+2016-11-18 00:04:35,877 main.py login 46 DEBUG - i am login
+2016-11-18 00:04:35,878 main.py login 49 DEBUG - ljz
+2016-11-18 00:10:08,858 main.py login 46 DEBUG - i am login
+2016-11-18 00:10:08,859 main.py login 49 DEBUG - test
+2016-11-18 00:12:14,796 main.py login 46 DEBUG - i am login
+2016-11-18 00:12:14,796 main.py login 49 DEBUG - ljz

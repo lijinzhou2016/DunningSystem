@@ -100,21 +100,53 @@
 
 <body>
 	<div class="sign">
-		<form method="POST" action="/login">
+		<form id="submitForm">
 			<div class="welcome">欢迎登陆</div>
 			<div class="userName">
-				<input name="username" type="text" placeholder="请输入用户名">
+				<input class="name_input" name="username" type="text" placeholder="请输入用户名">
 			</div>
 			<div class="password">
-				<input name="password" type="password" placeholder="请输入密码">
+				<input class="passwd_input" name="password" type="password" placeholder="请输入密码">
 			</div>
 			<div class="denglu">
-				<button type="submit" class="submit">登录</button></a>
+				<button  class="submit" onclick="loginClick()">登录</button></a>
 		</form>
 		</div>
 	</div>
 
-
+	<script>
+		function judge_input(){
+			return $(".name_input").val()!="" && $(".passwd_input").val()!=""
+		}
+		function loginClick(){
+			alert('haha')
+			var flag=judge_input()
+			if(flag==true){
+				$.ajax({
+					type:'post',
+					url:"http://127.0.0.1:8080/login",
+					data:$('#submitForm').serialize(),
+					async: true,
+					success: function(result) {
+						if(result['result']=="error"){
+							alert('用户名或者密码错误！');
+						}
+						else if(result['result']=='success'){
+							location.href='http://127.0.0.1:8080/orderlist.html'
+						}
+						
+						//var signInLoadingIframeUrl="/userLogin/sign-in-loading?tokenId="+tokenId+"&telephone="+telephone+"&userName="+userName+"&userType="+userType+"&userId="+userId+"&signInTime="+ signInTime;
+						//$("#signIn_loading_iframe")[0].src = signInLoadingIframeUrl;
+						//location.href="/userLogin//sign-in-loading?tokenId="+tokenId+"&telephone="+telephone+"&userName="+userName+"&userType="+userType;
+						
+					}
+			});
+		}
+		else{
+			alert("用户或名密码为空");
+		}
+	}
+</script>
 </body>
 
 </html>

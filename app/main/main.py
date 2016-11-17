@@ -19,6 +19,8 @@ sys.setdefaultencoding('utf8')
 execfile(os.path.dirname(os.path.abspath(__file__))+os.sep+'util.py')
 logger = log('main.py')
 
+login_result={}
+
 
 @bottle.error(404)
 def error404():
@@ -41,17 +43,15 @@ def server_www(filepath):
 
 @bottle.route('/login', method='POST')
 def login():
+    logger.debug('i am login')
     name = bottle.request.forms.get('username')
     passwd = bottle.request.forms.get('password')
     logger.debug(name)
     userinfo = Userinfo.check_login(name, passwd)
     if not userinfo:
-
-        return bottle.static_file('index.html',root=www_path()) 
+        return "{'result':'error'}"
     else:
-        #return "<p>用户名：%s</p><p>姓名：%s</p><p>密码：%s</p><p>session：%s</p>" \
-        #        %(userinfo.user, userinfo.name, userinfo.passwd, userinfo.session.session)
-        return bottle.static_file('orderlist.html',root=www_path()) 
+        return get_userinfo_dic(userinfo)
 
 @bottle.route('/order/list.action')
 def orderlist():
@@ -61,9 +61,13 @@ def orderlist():
 def orderdetail():
     pass 
 
+
 @bottle.route('/setting')
 def setting():
     pass
+
+def get_userinfo_dic(userinfo):
+    return dict(zip(['result','name','passwd','is_admin'],['success',userinfo.name, userinfo.passwd, userinfo.is_admin]))
 
 bottle.run(host='127.0.0.1', port='8080', debug=False)
 
