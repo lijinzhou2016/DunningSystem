@@ -12,6 +12,7 @@
 
 import os
 import sys
+import time
 
 
 #当前绝对路径
@@ -36,5 +37,17 @@ def insert_user():
     database.execute_sql(sql_common)
 
 def insert_order():
-    value = 
+    sql_list=[]
+    for id in xrange(7,100):
+        value = (id,'1234567','zhangsan','137777777','中国传媒大学南广学院',
+        '南京','徐州','/home/test','父亲','185111111','室友','1350000000','同学','152999999',0,id)
+        sql_order='insert lender values {0}'.format(value)
+        sql_list.append(sql_order)
+    map(do_insert, sql_list)
+
+
+def do_insert(sql_cmd):
+    time.sleep(0.5)
+    database.execute_sql(sql_cmd)
+insert_order()
 
