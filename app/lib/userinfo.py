@@ -91,7 +91,7 @@ class Userinfo:
     @classmethod
     def check_login(self, user, passwd):
         query = (Admin.select().where((Admin.user == user) 
-                & (Admin.enable == 1)))
+                & (Admin.passwd == passwd) & (Admin.enable == 1)))
         if(len(query) == 1):
             userinfo = Userinfo(user)
             userinfo.name = query[0].name
