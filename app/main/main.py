@@ -71,6 +71,7 @@ def orderdetail():
 def setting():
     pass
 
+#用户信息封装成json返回
 def get_userinfo_dic(userinfo):
     return dict(zip(['result','name','passwd','is_admin'],['success',userinfo.name, userinfo.passwd, userinfo.is_admin]))
 

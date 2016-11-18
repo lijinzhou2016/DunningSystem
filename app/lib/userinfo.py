@@ -65,7 +65,6 @@ class Session(object):
         else:
             return False
 
-
 #用户信息
 class Userinfo:
 
