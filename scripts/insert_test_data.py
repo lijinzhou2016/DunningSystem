@@ -47,7 +47,9 @@ def insert_order():
 
 
 def do_insert(sql_cmd):
-    time.sleep(0.5)
+    time.sleep(0.1)
     database.execute_sql(sql_cmd)
+
+insert_user()
 insert_order()
 
