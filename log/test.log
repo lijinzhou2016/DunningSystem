@@ -67,3 +67,41 @@
 2016-11-18 20:48:55,204 main.py login 46 DEBUG - i am login
 2016-11-18 20:48:55,204 main.py login 49 DEBUG - ljz
 2016-11-18 20:48:55,239 main.py orderlist 60 DEBUG - 1
+2016-11-21 14:07:20,805 main.py login 46 DEBUG - i am login
+2016-11-21 14:07:20,806 main.py login 49 DEBUG - test
+2016-11-21 14:07:20,977 main.py orderlist 60 DEBUG - 1
+2016-11-21 14:07:39,732 main.py login 46 DEBUG - i am login
+2016-11-21 14:07:39,735 main.py login 49 DEBUG - test
+2016-11-21 14:07:48,860 main.py login 46 DEBUG - i am login
+2016-11-21 14:07:48,861 main.py login 49 DEBUG - test
+2016-11-21 14:07:48,898 main.py orderlist 60 DEBUG - 1
+2016-11-21 14:23:08,232 main.py login 47 DEBUG - i am login
+2016-11-21 14:23:08,233 main.py login 50 DEBUG - test
+2016-11-21 14:23:08,279 main.py orderlist 61 DEBUG - 1
+2016-11-21 14:24:55,832 main.py login 47 DEBUG - i am login
+2016-11-21 14:24:55,832 main.py login 50 DEBUG - test
+2016-11-21 14:24:56,002 main.py orderlist 61 DEBUG - 1
+2016-11-21 14:26:09,028 main.py login 47 DEBUG - i am login
+2016-11-21 14:26:09,028 main.py login 50 DEBUG - test
+2016-11-21 14:26:09,168 main.py orderlist 61 DEBUG - 1
+2016-11-21 15:24:50,980 main.py login 47 DEBUG - i am login
+2016-11-21 15:24:50,980 main.py login 50 DEBUG - admin
+2016-11-21 15:24:50,992 main.py orderlist 61 DEBUG - 
+2016-11-21 15:29:37,025 main.py login 47 DEBUG - i am login
+2016-11-21 15:29:37,025 main.py login 50 DEBUG - test
+2016-11-21 15:31:57,373 main.py login 47 DEBUG - i am login
+2016-11-21 15:31:57,373 main.py login 50 DEBUG - test
+2016-11-21 15:32:27,276 main.py login 47 DEBUG - i am login
+2016-11-21 15:32:27,276 main.py login 50 DEBUG - admin
+2016-11-21 15:33:23,036 main.py login 47 DEBUG - i am login
+2016-11-21 15:33:23,036 main.py login 50 DEBUG - admin
+2016-11-21 17:44:36,122 main.py login 47 DEBUG - i am login
+2016-11-21 17:44:36,123 main.py login 50 DEBUG - test
+2016-11-21 17:48:04,907 main.py login 47 DEBUG - i am login
+2016-11-21 17:48:04,908 main.py login 50 DEBUG - test
+2016-11-21 17:49:52,727 main.py login 47 DEBUG - i am login
+2016-11-21 17:49:52,727 main.py login 50 DEBUG - test
+2016-11-21 21:32:45,362 main.py <module> 26 DEBUG - dunning server start
+2016-11-21 21:33:05,426 main.py login 49 DEBUG - i am login
+2016-11-21 21:33:05,426 main.py login 52 DEBUG - test
+2016-11-21 21:33:05,457 main.py orderlist 63 DEBUG - 1

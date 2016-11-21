@@ -17,10 +17,13 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 execfile(os.path.dirname(os.path.abspath(__file__))+os.sep+'util.py')
+
+# load .tpl dir
+bottle.TEMPLATE_PATH.append(www_path())
+# create log obj
 logger = log('main.py')
 
-login_result={}
-
+logger.debug('dunning server start')
 
 @bottle.error(404)
 def error404():
@@ -53,14 +56,14 @@ def login():
     else:
         return get_userinfo_dic(userinfo)
 
-@bottle.route('/order/list')
+@bottle.route('/orderlist')
 @bottle.view('orderlist')
 def orderlist():
     page_index = bottle.request.query.pageIndex
     logger.debug(page_index)
-    # 查询数据库，封装模板
-    # return oderlist.tpl
-    return "this is page ",page_index
+
+    # util.py 中定义
+    return order_list_info
 
 @bottle.route('/order/detail')
 def orderdetail():
