@@ -93,6 +93,7 @@ $(document).ready(function () {
         btn_save_cancel(".lianxirenbtn-cancel", ".sheyouphone");
         btn_save_cancel(".lianxirenbtn-cancel", ".tongxuename");
         btn_save_cancel(".lianxirenbtn-cancel", ".tongxuephone");
+        $(".caozuo-title-edit").css("display","block");
     })
 
     //dingdanxinxi
@@ -100,6 +101,7 @@ $(document).ready(function () {
     //     display_save_cancel_button(".jichuxinxi-btn")
     // })
     $(".caozuo-title-edit").click(function () {
+        $(".caozuo-title-edit").css("display","none");
         var li = "<li><div class='width:80%;float:left;position:relative;margin-left:10%;'>" +
             "<div class='caozuo-time'><span class='caozuo-time-time'>2016-11-06</span> <span class='caozuo-time-name'>张三</span></div>" +
             "<div class='caozuo-content on' readonly='true' contentEditable='true'>添加修改描述</div>" +
@@ -107,11 +109,13 @@ $(document).ready(function () {
         $(".caozuo-line").prepend(li);
         $(".caozuo-cancelbtn").click(function () {
             $(".caozuo-line li:eq(0)").remove();
+             $(".caozuo-title-edit").css("display","block");
         });
         $(".caozuo-savebtn").click(function(){
             $(this).parent().css("display","none");
             $(this).parent().parent().find(".caozuo-content").removeClass("on");
             $(this).parent().parent().find(".caozuo-content").removeAttr("contentEditable");
+             $(".caozuo-title-edit").css("display","block");
         })
     });
 

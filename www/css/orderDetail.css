@@ -29,6 +29,19 @@
     display: inline-block;
     height:100%;
     line-height:50px;
+    margin-right:20px;
+    cursor:pointer;
+    position:relative;
+}
+.head-user li img{
+    margin-right:5px;
+    position:relative;
+    height:16px;
+    float: left;
+    margin-top:17px;
+}
+.head-user li{
+    float:left;
 }
 .orderDetail-content{
     position:relative;
