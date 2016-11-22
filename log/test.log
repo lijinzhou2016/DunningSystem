@@ -105,3 +105,152 @@
 2016-11-21 21:33:05,426 main.py login 49 DEBUG - i am login
 2016-11-21 21:33:05,426 main.py login 52 DEBUG - test
 2016-11-21 21:33:05,457 main.py orderlist 63 DEBUG - 1
+2016-11-22 10:47:05,322 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 10:47:26,431 main.py login 49 DEBUG - i am login
+2016-11-22 10:47:26,432 main.py login 52 DEBUG - test
+2016-11-22 10:47:26,464 main.py orderlist 63 DEBUG - 1
+2016-11-22 10:47:47,261 main.py orderlist 63 DEBUG - 2
+2016-11-22 10:47:48,661 main.py orderlist 63 DEBUG - 3
+2016-11-22 10:47:50,716 main.py orderlist 63 DEBUG - 4
+2016-11-22 10:47:52,078 main.py orderlist 63 DEBUG - 5
+2016-11-22 10:47:53,111 main.py orderlist 63 DEBUG - 6
+2016-11-22 10:47:54,674 main.py orderlist 63 DEBUG - 7
+2016-11-22 10:47:56,009 main.py orderlist 63 DEBUG - 9
+2016-11-22 10:47:57,318 main.py orderlist 63 DEBUG - 10
+2016-11-22 10:48:00,620 main.py orderlist 63 DEBUG - 9
+2016-11-22 10:48:01,675 main.py orderlist 63 DEBUG - 8
+2016-11-22 11:04:40,852 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 11:08:59,167 main.py login 49 DEBUG - i am login
+2016-11-22 11:08:59,167 main.py login 52 DEBUG - test
+2016-11-22 11:08:59,180 main.py orderlist 63 DEBUG - 1
+2016-11-22 11:11:44,071 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 11:12:06,030 main.py login 49 DEBUG - i am login
+2016-11-22 11:12:06,030 main.py login 52 DEBUG - test
+2016-11-22 11:12:06,043 main.py orderlist 63 DEBUG - 1
+2016-11-22 13:35:04,173 main.py orderlist 63 DEBUG - 1
+2016-11-22 13:39:14,254 main.py login 49 DEBUG - i am login
+2016-11-22 13:39:14,254 main.py login 52 DEBUG - test
+2016-11-22 13:39:14,264 main.py orderlist 63 DEBUG - 1
+2016-11-22 13:46:25,134 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 13:46:55,872 main.py login 49 DEBUG - i am login
+2016-11-22 13:46:55,873 main.py login 52 DEBUG - admin
+2016-11-22 13:46:55,890 main.py orderlist 63 DEBUG - 1
+2016-11-22 14:15:39,558 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 14:15:58,870 main.py login 49 DEBUG - i am login
+2016-11-22 14:15:58,870 main.py login 52 DEBUG - test
+2016-11-22 14:15:58,882 main.py orderlist 63 DEBUG - 1
+2016-11-22 14:16:34,382 main.py orderlist 63 DEBUG - 1
+2016-11-22 14:16:37,649 main.py orderlist 63 DEBUG - 1
+2016-11-22 14:17:06,409 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 14:17:29,325 main.py login 49 DEBUG - i am login
+2016-11-22 14:17:29,325 main.py login 52 DEBUG - test
+2016-11-22 14:17:29,338 main.py orderlist 63 DEBUG - 1
+2016-11-22 14:33:18,357 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 14:33:42,186 main.py login 49 DEBUG - i am login
+2016-11-22 14:33:42,187 main.py login 52 DEBUG - test
+2016-11-22 14:33:42,201 main.py orderlist 63 DEBUG - 1
+2016-11-22 14:33:44,529 main.py setting 75 DEBUG - i am setting
+2016-11-22 14:33:44,529 main.py setting 77 DEBUG - None
+2016-11-22 14:33:44,529 main.py setting 91 DEBUG - unknown
+2016-11-22 14:38:12,205 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 14:38:32,578 main.py login 49 DEBUG - i am login
+2016-11-22 14:38:32,579 main.py login 52 DEBUG - test
+2016-11-22 14:38:32,603 main.py orderlist 63 DEBUG - 1
+2016-11-22 14:38:36,260 main.py setting 75 DEBUG - i am setting
+2016-11-22 14:38:36,260 main.py setting 79 DEBUG - jump
+2016-11-22 15:18:06,864 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 15:20:16,240 main.py login 49 DEBUG - i am login
+2016-11-22 15:20:16,241 main.py login 52 DEBUG - test
+2016-11-22 15:20:16,255 main.py orderlist 63 DEBUG - 1
+2016-11-22 15:20:18,282 main.py setting 75 DEBUG - i am setting
+2016-11-22 15:20:18,282 main.py setting 79 DEBUG - jump
+2016-11-22 16:21:01,617 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 16:22:59,503 main.py login 49 DEBUG - i am login
+2016-11-22 16:22:59,504 main.py login 52 DEBUG - test
+2016-11-22 16:22:59,516 main.py orderlist 63 DEBUG - 1
+2016-11-22 16:23:15,181 main.py setting 75 DEBUG - i am setting
+2016-11-22 16:23:15,181 main.py setting 79 DEBUG - jump
+2016-11-22 18:09:59,178 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 18:11:08,394 main.py login 49 DEBUG - i am login
+2016-11-22 18:11:08,394 main.py login 52 DEBUG - test
+2016-11-22 18:11:08,428 main.py orderlist 63 DEBUG - 1
+2016-11-22 18:11:19,185 main.py setting 76 DEBUG - i am setting
+2016-11-22 18:11:19,185 main.py setting 80 DEBUG - jump
+2016-11-22 18:18:02,700 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 18:18:30,403 main.py setting 76 DEBUG - i am setting
+2016-11-22 18:18:30,403 main.py setting 80 DEBUG - jump
+2016-11-22 18:19:25,063 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 18:19:40,203 main.py setting 76 DEBUG - i am setting
+2016-11-22 18:19:40,203 main.py setting 80 DEBUG - jump
+2016-11-22 18:20:48,715 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 18:21:25,425 main.py setting 76 DEBUG - i am setting
+2016-11-22 18:21:25,425 main.py setting 80 DEBUG - jump
+2016-11-22 18:23:25,333 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 18:23:31,002 main.py setting 76 DEBUG - i am setting
+2016-11-22 18:23:31,003 main.py setting 80 DEBUG - jump
+2016-11-22 18:24:33,122 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 18:24:40,217 main.py setting 76 DEBUG - i am setting
+2016-11-22 18:24:40,217 main.py setting 80 DEBUG - jump
+2016-11-22 18:27:00,064 main.py setting 76 DEBUG - i am setting
+2016-11-22 18:27:00,064 main.py setting 80 DEBUG - jump
+2016-11-22 18:27:19,668 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 18:27:25,276 main.py setting 76 DEBUG - i am setting
+2016-11-22 18:27:25,277 main.py setting 80 DEBUG - jump
+2016-11-22 18:27:31,980 main.py setting 76 DEBUG - i am setting
+2016-11-22 18:27:31,981 main.py setting 80 DEBUG - jump
+2016-11-22 18:28:47,555 main.py setting 76 DEBUG - i am setting
+2016-11-22 18:28:47,555 main.py setting 80 DEBUG - jump
+2016-11-22 18:29:27,900 main.py setting 76 DEBUG - i am setting
+2016-11-22 18:29:27,901 main.py setting 80 DEBUG - jump
+2016-11-22 18:29:39,315 main.py orderlist 63 DEBUG - 1
+2016-11-22 18:29:39,447 main.py orderlist 63 DEBUG - 1
+2016-11-22 18:29:39,474 main.py login 49 DEBUG - i am login
+2016-11-22 18:29:39,474 main.py login 52 DEBUG - test
+2016-11-22 18:29:39,487 main.py orderlist 63 DEBUG - 1
+2016-11-22 18:29:41,939 main.py setting 76 DEBUG - i am setting
+2016-11-22 18:29:41,939 main.py setting 80 DEBUG - jump
+2016-11-22 18:31:04,469 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 18:31:13,545 main.py setting 76 DEBUG - i am setting
+2016-11-22 18:31:13,546 main.py setting 80 DEBUG - jump
+2016-11-22 21:20:21,691 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 21:20:48,083 main.py login 49 DEBUG - i am login
+2016-11-22 21:20:48,083 main.py login 52 DEBUG - test
+2016-11-22 21:20:48,114 main.py orderlist 63 DEBUG - 1
+2016-11-22 21:21:00,167 main.py setting 76 DEBUG - i am setting
+2016-11-22 21:21:00,167 main.py setting 80 DEBUG - jump
+2016-11-22 21:24:16,693 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 21:24:25,553 main.py setting 76 DEBUG - i am setting
+2016-11-22 21:24:25,553 main.py setting 80 DEBUG - jump
+2016-11-22 21:24:25,554 main.py setting 108 DEBUG - {'username': 'Test', 'account': '13770976640', 'users': [{'passwd': '123456', 'enable': '1', 'is_admin': '0', 'user': 'test', 'name': 'tester'}], 'intval': '1', 'backuptime': '22:00', 'password': 'ljz89381010'}
+2016-11-22 21:32:54,246 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 21:33:10,202 main.py setting 76 DEBUG - i am setting
+2016-11-22 21:33:10,203 main.py setting 80 DEBUG - jump
+2016-11-22 21:33:10,203 main.py setting 109 DEBUG - {'username': 'Test', 'account': '13770976640', 'users': ["{'passwd': '123456', 'enable': '1', 'is_admin': '0', 'user': 'test', 'name': 'tester'}"], 'intval': '1', 'backuptime': '22:00', 'password': 'ljz89381010'}
+2016-11-22 21:42:32,918 main.py login 49 DEBUG - i am login
+2016-11-22 21:42:32,918 main.py login 52 DEBUG - test
+2016-11-22 21:42:32,933 main.py orderlist 63 DEBUG - 1
+2016-11-22 21:45:08,003 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 21:45:20,213 main.py setting 76 DEBUG - i am setting
+2016-11-22 21:45:20,213 main.py setting 80 DEBUG - jump
+2016-11-22 21:45:20,213 main.py setting 109 DEBUG - {'username': 'Test', 'account': '13770976640', 'users': 'test test test', 'intval': '1', 'backuptime': '22:00', 'password': 'ljz89381010'}
+2016-11-22 21:49:31,619 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 21:49:37,540 main.py setting 76 DEBUG - i am setting
+2016-11-22 21:49:37,540 main.py setting 80 DEBUG - jump
+2016-11-22 21:49:37,540 main.py setting 110 DEBUG - {'username': 'Test', 'account': '13770976640', 'users': 'test test test', 'intval': '1', 'backuptime': '22:00', 'password': 'ljz89381010'}
+2016-11-22 21:51:40,216 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 21:51:47,733 main.py setting 76 DEBUG - i am setting
+2016-11-22 21:51:47,734 main.py setting 80 DEBUG - jump
+2016-11-22 21:51:47,734 main.py setting 111 DEBUG - {'username': 'Test', 'account': '13770976640', 'users': 'zhangsan#123#\xe5\xbc\xa0\xe4\xb8\x89', 'intval': '1', 'backuptime': '22:00', 'password': 'ljz89381010'}
+2016-11-22 22:24:02,119 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 22:24:11,111 main.py setting 76 DEBUG - i am setting
+2016-11-22 22:24:11,111 main.py setting 80 DEBUG - jump
+2016-11-22 23:26:49,297 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 23:27:15,289 main.py login 49 DEBUG - i am login
+2016-11-22 23:27:15,290 main.py login 52 DEBUG - admin
+2016-11-22 23:27:15,308 main.py orderlist 63 DEBUG - 1
+2016-11-22 23:27:18,821 main.py setting 76 DEBUG - i am setting
+2016-11-22 23:27:18,821 main.py setting 80 DEBUG - jump
+2016-11-22 23:28:15,247 main.py <module> 26 DEBUG - dunning server start
+2016-11-22 23:28:22,297 main.py setting 76 DEBUG - i am setting
+2016-11-22 23:28:22,298 main.py setting 80 DEBUG - jump
+2016-11-22 23:28:22,304 main.py setting 112 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'tom#123456#\u5f20\u4e09,jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'ljz89381010'}

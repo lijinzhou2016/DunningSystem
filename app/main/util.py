@@ -89,4 +89,14 @@ order_list_info ={
     'orderdata_9':'', 'acquiringdata_9':'', 'school_9':'', 'state_9':''
 }
 
+# setting.tpl
+# users: 'account1#passwd1#name1,account2#passwd#name2'
+setting_info = {
+    'username':'Test',
+    
+    'account':'', 'password':'', 'backuptime':'', 'intval':'',
+
+    'users':''
+}
+
 

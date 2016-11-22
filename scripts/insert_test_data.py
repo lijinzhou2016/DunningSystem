@@ -39,7 +39,7 @@ def insert_user():
 def insert_order():
     sql_list=[]
     for id in xrange(7,100):
-        value = (id,'1234567','zhangsan','137777777','中国传媒大学南广学院',
+        value = (id,'借贷宝','320321111','20161111','中国传媒大学南广学院',
         '南京','徐州','/home/test','父亲','185111111','室友','1350000000','同学','152999999',0,id)
         sql_order='insert lender values {0}'.format(value)
         sql_list.append(sql_order)
@@ -51,5 +51,5 @@ def do_insert(sql_cmd):
     database.execute_sql(sql_cmd)
 
 insert_user()
-insert_order()
+#insert_order()
 

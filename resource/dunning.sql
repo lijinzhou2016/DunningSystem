@@ -105,8 +105,10 @@ CREATE TABLE `orders` (
 -- ----------------------------
 DROP TABLE IF EXISTS `system`;
 CREATE TABLE `system` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) DEFAULT NULL COMMENT '网盘用户名',
   `passwd` varchar(255) DEFAULT NULL COMMENT '网盘密码',
   `backuptime` time DEFAULT NULL COMMENT '备份时间',
-  `intval` int(11) DEFAULT NULL COMMENT '间隔天数'
+  `intval` int(11) DEFAULT NULL COMMENT '间隔天数',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
