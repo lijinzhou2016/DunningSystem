@@ -27,7 +27,7 @@ logger.debug('dunning server start')
 
 @bottle.error(404)
 def error404():
-    return '404 error'
+    return bottle.static_file('404.html', root=www_path())
 
 # 静态信息文件 127.0.0.1:8080/
 @bottle.route('/:filepath')
@@ -79,27 +79,54 @@ def setting():
         action = bottle.request.query.action #get
     logger.debug(action)
     if action == 'yunpan':
-        yaccount  = bottle.request.forms.get('account')
-        ypassword = bottle.request.forms.get('password')
-        ytime     = bottle.request.forms.get('time')
+        """ 网盘账号设置 """
+        yaccount  = bottle.request.query.get('username')
+        ypassword = bottle.request.query.get('passwd')
+        ytime     = bottle.request.query.get('backuptime')+':00'
+        if (len(System.select()) == 1):
+            # 更新网盘
+            sql_update = 'update system set username="{0}", passwd="{1}", backuptime="{2}" where id=1;'.format(yaccount, ypassword, ytime)
+            op_sql(sql_update)
+        else: #插入
+            sql_insert = 'insert system values (1, "{0}", "{1}", "{2}", 1)'.format(yaccount, ypassword, ytime)
+            op_sql(sql_insert)
 
-        
     elif action == 'adduser':
-        pass 
+        """ 添加管理员 """
+        logger.debug('start add user.......')
+
+        user_id=bottle.request.query.get('id')
+        user = bottle.request.query.get('user')
+        passwd = bottle.request.query.get('passwd')
+        name = bottle.request.query.get('name').decode('utf-8')
+
+        sql_adduser = 'insert admin values ({0}, "{1}", "{2}", "{3}", 0, 1)'.format(user_id, user, name, passwd)
+        return op_sql(sql_adduser)
+
     elif action == 'deluser':
-        pass
+        """ 删除管理员 """
+        user_id=bottle.request.query.get('id')
+        sql_deluser = 'delete from admin where id="{0}"'.format(user_id)
+        return op_sql(sql_deluser)
+
     elif action == 'jump':
-        system_query = System.select()
-        admin_query = Admin.select()
+        """ 加载设置页面 """
+        try:
+            system_query = System.select()
+            admin_query = Admin.select()
+        except BaseException,e:
+            logger.error(e)
         user_str=''
         if (len(system_query) == 1):
             setting_info['account'] = system_query[0].username
             setting_info['password'] = system_query[0].passwd
-            setting_info['backuptime'] = str(system_query[0].backuptime)
+            setting_info['backuptime'] = str(system_query[0].backuptime)[0:-3]
             setting_info['intval'] = str(system_query[0].intval)
         if (len(admin_query) >= 1):
             for item in admin_query:
                 if not item.is_admin:
+                    user_str += str(item.id)
+                    user_str += '#'
                     user_str += item.user 
                     user_str += '#'
                     user_str += item.passwd
@@ -107,8 +134,7 @@ def setting():
                     user_str += item.name
                     user_str += ','
             user_str = user_str[0:-1]
-        
-        setting_info['users'] = user_str 
+            setting_info['users'] = user_str 
         logger.debug(setting_info)
         return setting_info
 
@@ -119,6 +145,18 @@ def setting():
 #用户信息封装成json返回
 def get_userinfo_dic(userinfo):
     return dict(zip(['result','name','passwd','is_admin'],['success',userinfo.name, userinfo.passwd, userinfo.is_admin]))
+
+def op_sql(sql_cmd):
+    try:
+        logger.debug(sql_cmd)
+        database.execute_sql(sql_cmd)
+        result={'state':'success'}
+        logger.debug(result['state'])
+    except BaseException,e:
+        logger.error(e)
+        result = {'state':e}
+    finally:
+        return result
 
 bottle.run(host='127.0.0.1', port='8080', debug=False)
 

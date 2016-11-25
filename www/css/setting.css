@@ -91,7 +91,7 @@
     position: absolute;
     right:0;
     top:0;
-    background: url(../images/Design.png)no-repeat center;
+    background: url(Design.png)no-repeat center;
 }
 .wangpan-btn{
     width:90%;
@@ -101,6 +101,7 @@
     height:30px;
     margin-top:10px;
     text-align: center;
+    display:none;
      
 }
 .wangpanbtn-save{
@@ -150,6 +151,7 @@
     height:30px;
     margin-top:10px;
     text-align: center;
+    display: none;
      
 }
 .guanliyuanbtn-save{

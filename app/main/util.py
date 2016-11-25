@@ -94,7 +94,7 @@ order_list_info ={
 setting_info = {
     'username':'Test',
     
-    'account':'', 'password':'', 'backuptime':'', 'intval':'',
+    'account':'请输入账号', 'password':'请输入密码', 'backuptime':'00:00','intval':'',
 
     'users':''
 }

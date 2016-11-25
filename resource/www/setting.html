@@ -26,15 +26,15 @@
 			</div>
 
 			<div class="wangpan-content">
-				<div>网盘账号：<input type="text" class="wangpanzhanghao"></div>
-				<div>网盘密码：<input type="text" class="wangpanmima"></div>
-				<div>备份时刻：<select name="" id="">
-                    <option value="">01:00</option>
-                    <option value="">02:00</option>
-                    <option value="">03:00</option>
-                    <option value="">04:00</option>
-                    <option value="">05:00</option>
-                    <option value="">$(time)</option>
+				<div>网盘账号：<input type="text" class="wangpanzhanghao" readonly></div>
+				<div>网盘密码：<input type="text" class="wangpanmima" readonly></div>
+				<div>备份时刻：<select name="" id="timeselect" disabled >
+                    <option value="1">01:00</option>
+                    <option value="2">02:00</option>
+                    <option value="3">03:00</option>
+                    <option value="4">04:00</option>
+                    <option value="5">05:00</option>
+                    <option value="6">$(time)</option>
                     </select></div>
 			</div>
 			<div class="wangpan-btn">
@@ -55,9 +55,9 @@
 					<td>操作</td>
 				</tr>
 				<tr>
-					<td><input type="text" placeholder="请输入账号"></td>
-					<td><input type="text" placeholder="请输入密码"></td>
-					<td><input type="text" placeholder="请输入姓名"></td>
+					<td><input type="text" placeholder="请输入账号" readonly type="border:none;"></td>
+					<td><input type="text" placeholder="请输入密码" readonly></td>
+					<td><input type="text" placeholder="请输入姓名" readonly></td>
 					<td><button class="delete">删除</button></td>
 				</tr>
 

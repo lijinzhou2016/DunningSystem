@@ -101,6 +101,7 @@
     height:30px;
     margin-top:10px;
     text-align: center;
+    display:none;
      
 }
 .wangpanbtn-save{
@@ -150,6 +151,7 @@
     height:30px;
     margin-top:10px;
     text-align: center;
+    display: none;
      
 }
 .guanliyuanbtn-save{

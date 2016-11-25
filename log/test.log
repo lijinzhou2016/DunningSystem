@@ -254,3 +254,1102 @@
 2016-11-22 23:28:22,297 main.py setting 76 DEBUG - i am setting
 2016-11-22 23:28:22,298 main.py setting 80 DEBUG - jump
 2016-11-22 23:28:22,304 main.py setting 112 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'tom#123456#\u5f20\u4e09,jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'ljz89381010'}
+2016-11-23 20:33:22,718 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 20:34:05,712 main.py login 49 DEBUG - i am login
+2016-11-23 20:34:05,713 main.py login 52 DEBUG - admin
+2016-11-23 20:34:05,730 main.py orderlist 63 DEBUG - 1
+2016-11-23 20:34:08,877 main.py setting 76 DEBUG - i am setting
+2016-11-23 20:34:08,878 main.py setting 80 DEBUG - jump
+2016-11-23 20:34:08,882 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 20:35:01,501 main.py setting 76 DEBUG - i am setting
+2016-11-23 20:35:01,501 main.py setting 80 DEBUG - jump
+2016-11-23 20:35:01,503 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 20:35:03,803 main.py setting 76 DEBUG - i am setting
+2016-11-23 20:35:03,803 main.py setting 80 DEBUG - jump
+2016-11-23 20:35:03,805 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 20:35:51,738 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 20:35:57,757 main.py setting 76 DEBUG - i am setting
+2016-11-23 20:35:57,757 main.py setting 80 DEBUG - jump
+2016-11-23 20:35:57,765 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 20:39:54,186 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 20:40:03,906 main.py setting 76 DEBUG - i am setting
+2016-11-23 20:40:03,906 main.py setting 80 DEBUG - jump
+2016-11-23 20:40:03,912 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 20:40:07,621 main.py setting 76 DEBUG - i am setting
+2016-11-23 20:40:07,621 main.py setting 80 DEBUG - jump
+2016-11-23 20:40:07,623 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 20:40:10,361 main.py setting 76 DEBUG - i am setting
+2016-11-23 20:40:10,361 main.py setting 80 DEBUG - jump
+2016-11-23 20:40:10,363 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 20:43:03,297 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 20:43:12,704 main.py setting 76 DEBUG - i am setting
+2016-11-23 20:43:12,704 main.py setting 80 DEBUG - jump
+2016-11-23 20:43:12,710 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 20:43:15,652 main.py setting 76 DEBUG - i am setting
+2016-11-23 20:43:15,652 main.py setting 80 DEBUG - jump
+2016-11-23 20:43:15,654 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 20:43:33,034 main.py login 49 DEBUG - i am login
+2016-11-23 20:43:33,034 main.py login 52 DEBUG - admin
+2016-11-23 20:43:33,046 main.py orderlist 63 DEBUG - 1
+2016-11-23 20:43:39,099 main.py setting 76 DEBUG - i am setting
+2016-11-23 20:43:39,099 main.py setting 80 DEBUG - jump
+2016-11-23 20:43:39,101 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:05:46,330 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 21:06:02,926 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:06:02,926 main.py setting 80 DEBUG - jump
+2016-11-23 21:06:02,933 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:06:05,374 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:06:05,375 main.py setting 80 DEBUG - jump
+2016-11-23 21:06:05,380 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:07:47,712 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 21:07:53,844 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:07:53,844 main.py setting 80 DEBUG - jump
+2016-11-23 21:07:53,850 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:11:23,246 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:11:23,247 main.py setting 80 DEBUG - jump
+2016-11-23 21:11:23,249 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:11:30,183 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:11:30,183 main.py setting 80 DEBUG - jump
+2016-11-23 21:11:30,186 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:11:59,966 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 21:12:05,025 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:12:05,025 main.py setting 80 DEBUG - jump
+2016-11-23 21:12:05,036 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:13:55,555 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 21:14:04,685 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:14:04,685 main.py setting 80 DEBUG - jump
+2016-11-23 21:14:04,697 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:14:10,118 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:14:10,118 main.py setting 80 DEBUG - jump
+2016-11-23 21:14:10,120 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:14:27,603 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:14:27,603 main.py setting 80 DEBUG - jump
+2016-11-23 21:14:27,606 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:16:42,632 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:16:42,632 main.py setting 80 DEBUG - jump
+2016-11-23 21:16:42,635 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:16:45,026 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:16:45,027 main.py setting 80 DEBUG - jump
+2016-11-23 21:16:45,031 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:17:05,259 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 21:17:11,824 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:17:11,825 main.py setting 80 DEBUG - jump
+2016-11-23 21:17:11,834 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:18:31,713 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:18:31,713 main.py setting 80 DEBUG - jump
+2016-11-23 21:18:31,718 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 21:34:03,976 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 21:34:13,797 main.py setting 76 DEBUG - i am setting
+2016-11-23 21:34:13,797 main.py setting 80 DEBUG - jump
+2016-11-23 21:34:13,803 main.py setting 130 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 22:01:55,295 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 22:02:16,617 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:02:16,617 main.py setting 80 DEBUG - jump
+2016-11-23 22:03:13,042 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 22:03:19,777 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:03:19,778 main.py setting 80 DEBUG - jump
+2016-11-23 22:03:55,300 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 22:04:01,926 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:04:01,927 main.py setting 80 DEBUG - jump
+2016-11-23 22:04:45,110 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 22:04:54,452 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:04:54,452 main.py setting 80 DEBUG - jump
+2016-11-23 22:04:54,458 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 22:06:01,986 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:06:01,986 main.py setting 80 DEBUG - jump
+2016-11-23 22:06:01,988 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 22:06:24,373 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:06:24,373 main.py setting 80 DEBUG - jump
+2016-11-23 22:06:24,376 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00:00', 'password': u'123'}
+2016-11-23 22:41:03,577 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 22:41:17,771 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:41:17,771 main.py setting 80 DEBUG - jump
+2016-11-23 22:41:17,777 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-23 22:42:02,988 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:42:02,988 main.py setting 80 DEBUG - jump
+2016-11-23 22:42:02,990 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-23 22:47:19,337 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 22:47:32,131 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:47:32,132 main.py setting 80 DEBUG - jump
+2016-11-23 22:47:32,140 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-23 22:50:52,071 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 22:50:59,911 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:50:59,912 main.py setting 80 DEBUG - jump
+2016-11-23 22:50:59,918 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-23 22:54:59,207 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 22:55:10,713 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:55:10,714 main.py setting 80 DEBUG - jump
+2016-11-23 22:55:10,720 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-23 22:55:39,253 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:55:39,253 main.py setting 80 DEBUG - jump
+2016-11-23 22:55:39,255 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-23 22:57:35,027 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 22:57:42,352 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:57:42,353 main.py setting 80 DEBUG - jump
+2016-11-23 22:57:42,361 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-23 22:57:45,548 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:57:45,549 main.py setting 80 DEBUG - jump
+2016-11-23 22:57:45,555 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-23 22:57:48,304 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:57:48,307 main.py setting 80 DEBUG - jump
+2016-11-23 22:57:48,312 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-23 22:58:47,960 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 22:59:00,502 main.py setting 76 DEBUG - i am setting
+2016-11-23 22:59:00,502 main.py setting 80 DEBUG - jump
+2016-11-23 22:59:00,509 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-23 23:01:21,660 main.py <module> 26 DEBUG - dunning server start
+2016-11-23 23:01:53,005 main.py setting 76 DEBUG - i am setting
+2016-11-23 23:01:53,005 main.py setting 80 DEBUG - jump
+2016-11-23 23:01:53,012 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-23 23:02:38,476 main.py setting 76 DEBUG - i am setting
+2016-11-23 23:02:38,476 main.py setting 80 DEBUG - jump
+2016-11-23 23:02:38,480 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-23 23:03:03,779 main.py setting 76 DEBUG - i am setting
+2016-11-23 23:03:03,779 main.py setting 80 DEBUG - jump
+2016-11-23 23:03:03,784 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-23 23:03:23,937 main.py setting 76 DEBUG - i am setting
+2016-11-23 23:03:23,937 main.py setting 80 DEBUG - jump
+2016-11-23 23:03:23,940 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 09:39:04,951 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 09:52:06,518 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 09:52:15,595 main.py setting 76 DEBUG - i am setting
+2016-11-24 09:52:15,595 main.py setting 80 DEBUG - jump
+2016-11-24 09:52:15,620 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 09:56:02,442 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 09:56:08,101 main.py setting 76 DEBUG - i am setting
+2016-11-24 09:56:08,101 main.py setting 80 DEBUG - jump
+2016-11-24 09:56:08,109 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 10:00:20,755 main.py setting 76 DEBUG - i am setting
+2016-11-24 10:00:20,755 main.py setting 80 DEBUG - jump
+2016-11-24 10:00:20,759 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 10:08:36,162 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 10:08:40,543 main.py setting 76 DEBUG - i am setting
+2016-11-24 10:08:40,543 main.py setting 80 DEBUG - jump
+2016-11-24 10:08:40,704 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 10:14:29,703 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 10:14:37,647 main.py setting 76 DEBUG - i am setting
+2016-11-24 10:14:37,648 main.py setting 80 DEBUG - jump
+2016-11-24 10:14:37,656 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 10:22:28,320 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 10:22:34,760 main.py setting 76 DEBUG - i am setting
+2016-11-24 10:22:34,760 main.py setting 80 DEBUG - jump
+2016-11-24 10:22:34,767 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 11:25:07,604 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 11:25:14,517 main.py setting 76 DEBUG - i am setting
+2016-11-24 11:25:14,517 main.py setting 80 DEBUG - jump
+2016-11-24 11:25:14,523 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 11:27:00,627 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 11:27:06,761 main.py setting 76 DEBUG - i am setting
+2016-11-24 11:27:06,762 main.py setting 80 DEBUG - jump
+2016-11-24 11:27:06,768 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 12:41:02,144 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 12:41:15,858 main.py setting 76 DEBUG - i am setting
+2016-11-24 12:41:15,858 main.py setting 80 DEBUG - jump
+2016-11-24 12:41:15,884 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 12:41:33,625 main.py login 49 DEBUG - i am login
+2016-11-24 12:41:33,625 main.py login 52 DEBUG - admin
+2016-11-24 12:41:33,642 main.py orderlist 63 DEBUG - 1
+2016-11-24 12:41:36,746 main.py setting 76 DEBUG - i am setting
+2016-11-24 12:41:36,747 main.py setting 80 DEBUG - jump
+2016-11-24 12:41:36,750 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 13:37:41,307 main.py orderlist 63 DEBUG - 1
+2016-11-24 14:43:00,699 main.py orderlist 63 DEBUG - 2
+2016-11-24 14:43:02,044 main.py orderlist 63 DEBUG - 3
+2016-11-24 14:43:28,092 main.py orderlist 63 DEBUG - 7
+2016-11-24 14:43:30,221 main.py orderlist 63 DEBUG - 9
+2016-11-24 14:43:31,874 main.py orderlist 63 DEBUG - 10
+2016-11-24 14:44:08,486 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 14:44:17,149 main.py orderlist 63 DEBUG - 10
+2016-11-24 14:44:40,031 main.py setting 76 DEBUG - i am setting
+2016-11-24 14:44:40,031 main.py setting 80 DEBUG - jump
+2016-11-24 14:44:40,037 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 14:52:23,018 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 14:52:47,435 main.py setting 76 DEBUG - i am setting
+2016-11-24 14:52:47,435 main.py setting 80 DEBUG - jump
+2016-11-24 14:52:47,441 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 16:37:27,095 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 16:37:45,650 main.py setting 76 DEBUG - i am setting
+2016-11-24 16:37:45,650 main.py setting 80 DEBUG - jump
+2016-11-24 16:37:45,661 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 16:39:34,246 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 16:39:44,155 main.py setting 76 DEBUG - i am setting
+2016-11-24 16:39:44,155 main.py setting 80 DEBUG - jump
+2016-11-24 16:39:44,161 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 16:40:15,588 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 16:40:23,991 main.py setting 76 DEBUG - i am setting
+2016-11-24 16:40:23,992 main.py setting 80 DEBUG - jump
+2016-11-24 16:40:24,004 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 16:42:45,165 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 16:42:50,333 main.py setting 76 DEBUG - i am setting
+2016-11-24 16:42:50,334 main.py setting 80 DEBUG - jump
+2016-11-24 16:42:50,340 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 16:45:27,800 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 16:45:37,138 main.py setting 76 DEBUG - i am setting
+2016-11-24 16:45:37,139 main.py setting 80 DEBUG - jump
+2016-11-24 16:45:37,148 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 16:47:27,508 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 16:47:31,776 main.py setting 76 DEBUG - i am setting
+2016-11-24 16:47:31,777 main.py setting 80 DEBUG - jump
+2016-11-24 16:47:31,784 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 16:50:07,147 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 16:50:12,346 main.py setting 76 DEBUG - i am setting
+2016-11-24 16:50:12,347 main.py setting 80 DEBUG - jump
+2016-11-24 16:50:12,359 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 16:54:54,054 main.py setting 76 DEBUG - i am setting
+2016-11-24 16:54:54,054 main.py setting 80 DEBUG - jump
+2016-11-24 16:54:54,060 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 16:56:28,391 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 16:56:37,907 main.py setting 76 DEBUG - i am setting
+2016-11-24 16:56:37,907 main.py setting 80 DEBUG - jump
+2016-11-24 16:56:37,914 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 17:03:13,781 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 17:03:18,606 main.py setting 76 DEBUG - i am setting
+2016-11-24 17:03:18,607 main.py setting 80 DEBUG - jump
+2016-11-24 17:03:18,612 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 17:06:49,022 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 17:06:54,027 main.py setting 76 DEBUG - i am setting
+2016-11-24 17:06:54,028 main.py setting 80 DEBUG - jump
+2016-11-24 17:06:54,035 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 17:09:11,954 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 17:09:18,683 main.py setting 76 DEBUG - i am setting
+2016-11-24 17:09:18,683 main.py setting 80 DEBUG - jump
+2016-11-24 17:09:18,689 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 18:22:53,065 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 18:23:00,218 main.py setting 76 DEBUG - i am setting
+2016-11-24 18:23:00,219 main.py setting 80 DEBUG - jump
+2016-11-24 18:23:00,229 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 18:29:00,079 main.py setting 76 DEBUG - i am setting
+2016-11-24 18:29:00,079 main.py setting 80 DEBUG - 
+2016-11-24 18:29:00,082 main.py setting 139 DEBUG - unknown
+2016-11-24 18:30:03,357 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 18:30:12,782 main.py setting 76 DEBUG - i am setting
+2016-11-24 18:30:12,783 main.py setting 80 DEBUG - jump
+2016-11-24 18:30:12,791 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 23:05:19,885 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 23:05:27,475 main.py setting 76 DEBUG - i am setting
+2016-11-24 23:05:27,476 main.py setting 80 DEBUG - jump
+2016-11-24 23:05:27,505 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 23:08:03,156 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 23:08:13,506 main.py setting 76 DEBUG - i am setting
+2016-11-24 23:08:13,507 main.py setting 80 DEBUG - jump
+2016-11-24 23:08:13,514 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-24 23:13:34,021 main.py <module> 26 DEBUG - dunning server start
+2016-11-24 23:13:42,184 main.py setting 76 DEBUG - i am setting
+2016-11-24 23:13:42,184 main.py setting 80 DEBUG - jump
+2016-11-24 23:13:42,191 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 09:42:18,886 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 09:42:50,915 main.py setting 76 DEBUG - i am setting
+2016-11-25 09:42:50,915 main.py setting 80 DEBUG - jump
+2016-11-25 09:42:50,949 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 09:42:50,960 main.py setting 76 DEBUG - i am setting
+2016-11-25 09:42:50,960 main.py setting 80 DEBUG - jump
+2016-11-25 09:42:50,963 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 09:43:22,882 main.py setting 76 DEBUG - i am setting
+2016-11-25 09:43:22,883 main.py setting 80 DEBUG - jump
+2016-11-25 09:43:22,886 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 09:43:22,888 main.py setting 76 DEBUG - i am setting
+2016-11-25 09:43:22,888 main.py setting 80 DEBUG - jump
+2016-11-25 09:43:22,893 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 09:43:34,213 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 09:43:38,077 main.py setting 76 DEBUG - i am setting
+2016-11-25 09:43:38,077 main.py setting 80 DEBUG - jump
+2016-11-25 09:43:38,082 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 09:48:17,634 main.py setting 76 DEBUG - i am setting
+2016-11-25 09:48:17,635 main.py setting 80 DEBUG - jump
+2016-11-25 09:48:17,636 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 10:07:16,508 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 10:07:22,539 main.py setting 76 DEBUG - i am setting
+2016-11-25 10:07:22,539 main.py setting 80 DEBUG - jump
+2016-11-25 10:07:22,546 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 10:14:07,304 main.py setting 76 DEBUG - i am setting
+2016-11-25 10:14:07,305 main.py setting 80 DEBUG - jump
+2016-11-25 10:14:07,306 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 10:17:51,072 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 10:17:55,466 main.py setting 76 DEBUG - i am setting
+2016-11-25 10:17:55,466 main.py setting 80 DEBUG - jump
+2016-11-25 10:17:55,471 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 10:22:24,030 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 10:22:32,269 main.py setting 76 DEBUG - i am setting
+2016-11-25 10:22:32,269 main.py setting 80 DEBUG - jump
+2016-11-25 10:22:32,274 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 10:25:08,458 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 10:25:12,253 main.py setting 76 DEBUG - i am setting
+2016-11-25 10:25:12,253 main.py setting 80 DEBUG - jump
+2016-11-25 10:25:12,260 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 10:26:31,834 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 10:26:36,559 main.py setting 76 DEBUG - i am setting
+2016-11-25 10:26:36,559 main.py setting 80 DEBUG - jump
+2016-11-25 10:26:36,568 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 10:26:50,038 main.py setting 76 DEBUG - i am setting
+2016-11-25 10:26:50,039 main.py setting 80 DEBUG - adduser
+2016-11-25 10:26:50,039 main.py setting 97 DEBUG - start add user.......
+2016-11-25 10:29:06,578 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 10:29:51,765 main.py setting 76 DEBUG - i am setting
+2016-11-25 10:29:51,766 main.py setting 80 DEBUG - jump
+2016-11-25 10:29:51,775 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 10:30:09,606 main.py setting 76 DEBUG - i am setting
+2016-11-25 10:30:09,607 main.py setting 80 DEBUG - adduser
+2016-11-25 10:30:09,607 main.py setting 97 DEBUG - start add user.......
+2016-11-25 10:32:02,443 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 10:32:16,019 main.py setting 76 DEBUG - i am setting
+2016-11-25 10:32:16,019 main.py setting 80 DEBUG - jump
+2016-11-25 10:32:16,028 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 11:04:38,321 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 11:04:49,583 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:04:49,583 main.py setting 80 DEBUG - jump
+2016-11-25 11:04:49,589 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 11:05:11,873 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 11:05:14,869 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:05:14,870 main.py setting 80 DEBUG - jump
+2016-11-25 11:05:14,875 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 11:05:42,595 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:05:42,595 main.py setting 80 DEBUG - yunpan
+2016-11-25 11:07:03,473 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 11:07:29,890 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:07:29,890 main.py setting 80 DEBUG - jump
+2016-11-25 11:07:29,901 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 11:07:57,398 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:07:57,398 main.py setting 80 DEBUG - yunpan
+2016-11-25 11:07:57,400 main.py op_sql 150 ERROR - (1064, u"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':00                 where id=1' at line 1")
+2016-11-25 11:08:11,782 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:08:11,782 main.py setting 80 DEBUG - jump
+2016-11-25 11:08:11,936 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 11:16:57,206 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 11:17:02,923 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:17:02,923 main.py setting 80 DEBUG - jump
+2016-11-25 11:17:02,928 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 11:17:21,713 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:17:21,713 main.py setting 80 DEBUG - yunpan
+2016-11-25 11:17:21,715 main.py op_sql 147 DEBUG - update system set username=137777, passwd=123456, backuptiem=21:00                 where id=1;
+2016-11-25 11:17:21,715 main.py op_sql 151 ERROR - (1064, u"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':00                 where id=1' at line 1")
+2016-11-25 11:25:58,394 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 11:26:05,398 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:26:05,398 main.py setting 80 DEBUG - jump
+2016-11-25 11:26:05,404 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 11:26:18,260 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:26:18,261 main.py setting 80 DEBUG - yunpan
+2016-11-25 11:26:18,263 main.py op_sql 147 DEBUG - update system set username=11111, passwd=123, backuptiem=21:00:00             where id=1;
+2016-11-25 11:26:18,264 main.py op_sql 151 ERROR - (1064, u"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':00:00             where id=1' at line 1")
+2016-11-25 11:27:03,143 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 11:27:06,744 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:27:06,744 main.py setting 80 DEBUG - jump
+2016-11-25 11:27:06,750 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'huanle', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 11:27:21,092 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:27:21,092 main.py setting 80 DEBUG - yunpan
+2016-11-25 11:27:21,094 main.py op_sql 147 DEBUG - update system set username=11111, passwd=123111, backuptime=20:00:00             where id=1;
+2016-11-25 11:27:21,095 main.py op_sql 151 ERROR - (1064, u"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':00:00             where id=1' at line 1")
+2016-11-25 11:29:18,624 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 11:29:23,567 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:29:23,567 main.py setting 80 DEBUG - jump
+2016-11-25 11:29:23,572 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'123'}
+2016-11-25 11:29:37,929 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:29:37,930 main.py setting 80 DEBUG - yunpan
+2016-11-25 11:29:37,931 main.py op_sql 146 DEBUG - update system set username=13770976640, passwd=123, backuptime=00:00:00 where id=1;
+2016-11-25 11:29:37,931 main.py op_sql 150 ERROR - (1064, u"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':00:00 where id=1' at line 1")
+2016-11-25 11:31:55,027 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 11:31:59,562 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:31:59,562 main.py setting 80 DEBUG - jump
+2016-11-25 11:31:59,569 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'1111111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'1111'}
+2016-11-25 11:32:23,003 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:32:23,003 main.py setting 80 DEBUG - yunpan
+2016-11-25 11:32:23,005 main.py op_sql 146 DEBUG - update system set username=13770976640, passwd=ljz89381010, backuptime=22 where id=1;
+2016-11-25 11:32:23,006 main.py op_sql 150 ERROR - (1054, u"Unknown column 'ljz89381010' in 'field list'")
+2016-11-25 11:32:29,969 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:32:29,969 main.py setting 80 DEBUG - jump
+2016-11-25 11:32:29,971 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'1111111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'1111'}
+2016-11-25 11:32:33,214 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:32:33,214 main.py setting 80 DEBUG - jump
+2016-11-25 11:32:33,216 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'1111111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'1111'}
+2016-11-25 11:48:51,153 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 11:48:56,169 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:48:56,169 main.py setting 80 DEBUG - jump
+2016-11-25 11:48:56,174 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'1111111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'1111'}
+2016-11-25 11:49:12,110 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:49:12,111 main.py setting 80 DEBUG - yunpan
+2016-11-25 11:49:12,113 main.py op_sql 146 DEBUG - update system set username=22222, passwd=22222, backuptime="20:00:00" where id=1;
+2016-11-25 11:49:21,184 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:49:21,185 main.py setting 80 DEBUG - jump
+2016-11-25 11:49:21,187 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'22222', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '20:00', 'password': u'22222'}
+2016-11-25 11:49:37,523 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:49:37,524 main.py setting 80 DEBUG - yunpan
+2016-11-25 11:49:37,525 main.py op_sql 146 DEBUG - update system set username=22222, passwd=22222, backuptime="20:00:00" where id=1;
+2016-11-25 11:49:40,923 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:49:40,923 main.py setting 80 DEBUG - jump
+2016-11-25 11:49:40,925 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'22222', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '20:00', 'password': u'22222'}
+2016-11-25 11:49:48,971 main.py setting 76 DEBUG - i am setting
+2016-11-25 11:49:48,971 main.py setting 80 DEBUG - yunpan
+2016-11-25 11:49:48,973 main.py op_sql 146 DEBUG - update system set username=22222, passwd=22222, backuptime="01:00:00" where id=1;
+2016-11-25 12:34:35,427 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 12:34:44,539 main.py setting 76 DEBUG - i am setting
+2016-11-25 12:34:44,540 main.py setting 80 DEBUG - yunpan
+2016-11-25 12:34:44,545 main.py op_sql 146 DEBUG - update system set username=22222, passwd=22222111, backuptime="01:00:00" where id=1;
+2016-11-25 12:34:48,915 main.py setting 76 DEBUG - i am setting
+2016-11-25 12:34:48,916 main.py setting 80 DEBUG - jump
+2016-11-25 12:34:48,918 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'22222', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '01:00', 'password': u'22222111'}
+2016-11-25 12:37:33,302 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 12:37:37,382 main.py setting 76 DEBUG - i am setting
+2016-11-25 12:37:37,382 main.py setting 80 DEBUG - jump
+2016-11-25 12:37:37,386 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'22222', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '01:00', 'password': u'22222111'}
+2016-11-25 12:37:42,409 main.py setting 76 DEBUG - i am setting
+2016-11-25 12:37:42,409 main.py setting 80 DEBUG - yunpan
+2016-11-25 12:37:42,411 main.py op_sql 146 DEBUG - update system set username=22222, passwd=22222111, backuptime="01:00:00" where id=1;
+2016-11-25 12:37:55,835 main.py setting 76 DEBUG - i am setting
+2016-11-25 12:37:55,835 main.py setting 80 DEBUG - jump
+2016-11-25 12:37:55,837 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'22222', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '01:00', 'password': u'22222111'}
+2016-11-25 12:39:18,619 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 12:39:36,578 main.py setting 76 DEBUG - i am setting
+2016-11-25 12:39:36,579 main.py setting 80 DEBUG - jump
+2016-11-25 12:39:36,585 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'22222', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '01:00', 'password': u'22222111'}
+2016-11-25 12:39:47,086 main.py setting 76 DEBUG - i am setting
+2016-11-25 12:39:47,086 main.py setting 80 DEBUG - yunpan
+2016-11-25 12:39:47,087 main.py op_sql 146 DEBUG - update system set username=22222, passwd=22222111, backuptime="20:00:00" where id=1;
+2016-11-25 12:39:47,088 main.py op_sql 149 DEBUG - success
+2016-11-25 12:41:36,941 main.py setting 76 DEBUG - i am setting
+2016-11-25 12:41:36,941 main.py setting 80 DEBUG - jump
+2016-11-25 12:41:36,943 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'22222', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '20:00', 'password': u'22222111'}
+2016-11-25 12:44:02,753 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 12:44:05,241 main.py setting 76 DEBUG - i am setting
+2016-11-25 12:44:05,242 main.py setting 80 DEBUG - jump
+2016-11-25 12:44:05,248 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'22222', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '20:00', 'password': u'22222111'}
+2016-11-25 12:44:19,902 main.py setting 76 DEBUG - i am setting
+2016-11-25 12:44:19,902 main.py setting 80 DEBUG - yunpan
+2016-11-25 12:44:19,903 main.py op_sql 146 DEBUG - update system set username=22222, passwd=22222111, backuptime="23:00:00" where id=1;
+2016-11-25 12:44:19,906 main.py op_sql 149 DEBUG - success
+2016-11-25 12:44:24,516 main.py setting 76 DEBUG - i am setting
+2016-11-25 12:44:24,517 main.py setting 80 DEBUG - jump
+2016-11-25 12:44:24,518 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'22222', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '23:00', 'password': u'22222111'}
+2016-11-25 12:44:40,150 main.py setting 76 DEBUG - i am setting
+2016-11-25 12:44:40,150 main.py setting 80 DEBUG - jump
+2016-11-25 12:44:40,153 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'22222', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '23:00', 'password': u'22222111'}
+2016-11-25 12:44:50,672 main.py setting 76 DEBUG - i am setting
+2016-11-25 12:44:50,672 main.py setting 80 DEBUG - jump
+2016-11-25 12:44:50,674 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'22222', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '23:00', 'password': u'22222111'}
+2016-11-25 13:29:55,869 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:29:55,869 main.py setting 80 DEBUG - yunpan
+2016-11-25 13:29:55,871 main.py op_sql 146 DEBUG - update system set username=13770976640, passwd=ljz89381010, backuptime="23:00:00" where id=1;
+2016-11-25 13:29:55,871 main.py op_sql 151 ERROR - (1054, u"Unknown column 'ljz89381010' in 'field list'")
+2016-11-25 13:30:11,419 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:30:11,420 main.py setting 80 DEBUG - jump
+2016-11-25 13:30:11,422 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'22222', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '23:00', 'password': u'22222111'}
+2016-11-25 13:32:43,063 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:32:43,063 main.py setting 80 DEBUG - yunpan
+2016-11-25 13:32:43,064 main.py op_sql 146 DEBUG - update system set username=22222, passwd=22222111, backuptime="20:00:00" where id=1;
+2016-11-25 13:32:43,066 main.py op_sql 149 DEBUG - success
+2016-11-25 13:32:53,275 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:32:53,276 main.py setting 80 DEBUG - jump
+2016-11-25 13:32:53,277 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'22222', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '20:00', 'password': u'22222111'}
+2016-11-25 13:33:18,057 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:33:18,057 main.py setting 80 DEBUG - yunpan
+2016-11-25 13:33:18,058 main.py op_sql 146 DEBUG - update system set username=22, passwd=22222111, backuptime="20:00:00" where id=1;
+2016-11-25 13:33:18,061 main.py op_sql 149 DEBUG - success
+2016-11-25 13:33:34,096 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:33:34,096 main.py setting 80 DEBUG - yunpan
+2016-11-25 13:33:34,097 main.py op_sql 146 DEBUG - update system set username=22, passwd=2, backuptime="20:00:00" where id=1;
+2016-11-25 13:33:34,100 main.py op_sql 149 DEBUG - success
+2016-11-25 13:34:01,836 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:34:01,836 main.py setting 80 DEBUG - yunpan
+2016-11-25 13:34:01,838 main.py op_sql 146 DEBUG - update system set username=11, passwd=2777, backuptime="00:00:00" where id=1;
+2016-11-25 13:34:01,840 main.py op_sql 149 DEBUG - success
+2016-11-25 13:36:32,197 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:36:32,197 main.py setting 80 DEBUG - jump
+2016-11-25 13:36:32,199 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'11', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'2777'}
+2016-11-25 13:36:33,930 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:36:33,930 main.py setting 80 DEBUG - jump
+2016-11-25 13:36:33,932 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'11', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'2777'}
+2016-11-25 13:36:35,938 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:36:35,938 main.py setting 80 DEBUG - jump
+2016-11-25 13:36:35,941 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'11', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '00:00', 'password': u'2777'}
+2016-11-25 13:37:13,461 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:37:13,461 main.py setting 80 DEBUG - yunpan
+2016-11-25 13:37:13,462 main.py op_sql 146 DEBUG - update system set username=13770976640, passwd=ljz89381010, backuptime="22:00:00" where id=1;
+2016-11-25 13:37:13,463 main.py op_sql 151 ERROR - (1054, u"Unknown column 'ljz89381010' in 'field list'")
+2016-11-25 13:39:24,572 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 13:39:34,766 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:39:34,767 main.py setting 80 DEBUG - yunpan
+2016-11-25 13:39:34,771 main.py op_sql 146 DEBUG - update system set username="13770976640", passwd="ljz89381010", backuptime="22:00:00" where id=1;
+2016-11-25 13:39:34,773 main.py op_sql 149 DEBUG - success
+2016-11-25 13:40:14,087 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:40:14,087 main.py setting 80 DEBUG - jump
+2016-11-25 13:40:14,092 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '22:00', 'password': u'ljz89381010'}
+2016-11-25 13:40:30,248 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:40:30,248 main.py setting 80 DEBUG - yunpan
+2016-11-25 13:40:30,249 main.py op_sql 146 DEBUG - update system set username="13770976640", passwd="ljz89381010", backuptime="20:00:00" where id=1;
+2016-11-25 13:40:30,251 main.py op_sql 149 DEBUG - success
+2016-11-25 13:41:33,433 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:41:33,433 main.py setting 80 DEBUG - jump
+2016-11-25 13:41:33,435 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '20:00', 'password': u'ljz89381010'}
+2016-11-25 13:46:00,720 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 13:46:07,881 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:46:07,882 main.py setting 80 DEBUG - jump
+2016-11-25 13:46:07,887 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '20:00', 'password': u'ljz89381010'}
+2016-11-25 13:46:36,236 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:46:36,236 main.py setting 80 DEBUG - jump
+2016-11-25 13:46:36,238 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '20:00', 'password': u'ljz89381010'}
+2016-11-25 13:48:35,421 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 13:48:41,293 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:48:41,294 main.py setting 80 DEBUG - jump
+2016-11-25 13:48:41,302 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '20:00', 'password': u'ljz89381010'}
+2016-11-25 13:49:36,524 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 13:49:41,664 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:49:41,664 main.py setting 80 DEBUG - jump
+2016-11-25 13:49:41,675 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '20:00', 'password': u'ljz89381010'}
+2016-11-25 13:49:51,076 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:49:51,076 main.py setting 80 DEBUG - yunpan
+2016-11-25 13:49:51,077 main.py op_sql 146 DEBUG - update system set username="13770976640111", passwd="ljz89381010", backuptime="20:00:00" where id=1;
+2016-11-25 13:49:51,079 main.py op_sql 149 DEBUG - success
+2016-11-25 13:50:05,726 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:50:05,726 main.py setting 80 DEBUG - jump
+2016-11-25 13:50:05,728 main.py setting 133 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '20:00', 'password': u'ljz89381010'}
+2016-11-25 13:54:05,178 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 13:54:11,836 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:54:11,837 main.py setting 80 DEBUG - jump
+2016-11-25 13:54:11,844 main.py setting 133 DEBUG - {'username': 'Test', 'account': '', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '', 'backuptime': '', 'password': ''}
+2016-11-25 13:54:26,791 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:54:26,792 main.py setting 80 DEBUG - jump
+2016-11-25 13:54:26,795 main.py setting 133 DEBUG - {'username': 'Test', 'account': '', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '', 'backuptime': '', 'password': ''}
+2016-11-25 13:59:37,560 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 13:59:42,107 main.py setting 76 DEBUG - i am setting
+2016-11-25 13:59:42,107 main.py setting 80 DEBUG - jump
+2016-11-25 13:59:42,114 main.py setting 132 DEBUG - {'username': 'Test', 'account': '', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '', 'backuptime': '00:00', 'password': ''}
+2016-11-25 14:02:42,922 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 14:02:49,075 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:02:49,075 main.py setting 80 DEBUG - jump
+2016-11-25 14:02:49,084 main.py setting 132 DEBUG - {'username': 'Test', 'account': ' ', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '', 'backuptime': '00:00', 'password': ' '}
+2016-11-25 14:02:51,657 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:02:51,658 main.py setting 80 DEBUG - jump
+2016-11-25 14:02:51,660 main.py setting 132 DEBUG - {'username': 'Test', 'account': ' ', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '', 'backuptime': '00:00', 'password': ' '}
+2016-11-25 14:03:57,203 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 14:04:02,370 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:04:02,371 main.py setting 80 DEBUG - jump
+2016-11-25 14:04:02,379 main.py setting 132 DEBUG - {'username': 'Test', 'account': '\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe8\xb4\xa6\xe5\x8f\xb7', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '', 'backuptime': '00:00', 'password': '\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe5\xaf\x86\xe7\xa0\x81'}
+2016-11-25 14:04:28,450 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:04:28,450 main.py setting 80 DEBUG - yunpan
+2016-11-25 14:04:28,451 main.py op_sql 145 DEBUG - insert system values (1, "13770976640", "11111", "21:00:00", 1)
+2016-11-25 14:04:28,454 main.py op_sql 148 DEBUG - success
+2016-11-25 14:04:31,557 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:04:31,557 main.py setting 80 DEBUG - jump
+2016-11-25 14:04:31,560 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'11111'}
+2016-11-25 14:05:18,411 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:05:18,412 main.py setting 80 DEBUG - yunpan
+2016-11-25 14:05:18,413 main.py op_sql 145 DEBUG - update system set username="13770976640", passwd="ljz89381010", backuptime="21:00:00" where id=1;
+2016-11-25 14:05:18,415 main.py op_sql 148 DEBUG - success
+2016-11-25 14:05:32,153 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:05:32,154 main.py setting 80 DEBUG - jump
+2016-11-25 14:05:32,157 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 14:05:35,262 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:05:35,262 main.py setting 80 DEBUG - jump
+2016-11-25 14:05:35,265 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 14:09:42,729 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 14:09:48,587 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:09:48,588 main.py setting 80 DEBUG - jump
+2016-11-25 14:09:48,594 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 14:16:43,391 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 14:16:55,260 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:16:55,260 main.py setting 80 DEBUG - jump
+2016-11-25 14:16:55,266 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 14:16:55,884 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:16:55,884 main.py setting 80 DEBUG - jump
+2016-11-25 14:16:55,888 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 14:17:45,276 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:17:45,277 main.py setting 80 DEBUG - yunpan
+2016-11-25 14:17:45,278 main.py op_sql 145 DEBUG - update system set username="13770976640111", passwd="ljz89381010", backuptime="21:00:00" where id=1;
+2016-11-25 14:17:45,281 main.py op_sql 148 DEBUG - success
+2016-11-25 14:17:49,826 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:17:49,826 main.py setting 80 DEBUG - jump
+2016-11-25 14:17:49,828 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 14:20:55,545 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 14:21:02,506 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:21:02,506 main.py setting 80 DEBUG - jump
+2016-11-25 14:21:02,512 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 14:30:06,593 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 14:30:11,367 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:30:11,368 main.py setting 80 DEBUG - jump
+2016-11-25 14:30:11,374 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 14:30:58,229 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 14:31:02,781 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:31:02,782 main.py setting 80 DEBUG - jump
+2016-11-25 14:31:02,791 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 14:33:41,761 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 14:33:47,325 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:33:47,326 main.py setting 80 DEBUG - jump
+2016-11-25 14:33:47,337 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 14:41:37,923 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 14:42:42,256 main.py setting 76 DEBUG - i am setting
+2016-11-25 14:42:42,256 main.py setting 80 DEBUG - jump
+2016-11-25 14:42:42,263 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 15:15:55,930 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 15:16:04,454 main.py setting 76 DEBUG - i am setting
+2016-11-25 15:16:04,454 main.py setting 80 DEBUG - jump
+2016-11-25 15:16:04,464 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 16:28:48,391 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 16:28:53,477 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:28:53,478 main.py setting 80 DEBUG - jump
+2016-11-25 16:28:53,485 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 16:30:31,282 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 16:30:39,311 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:30:39,311 main.py setting 80 DEBUG - jump
+2016-11-25 16:30:39,318 main.py setting 132 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 16:30:58,696 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:30:58,697 main.py setting 80 DEBUG - adduser
+2016-11-25 16:30:58,697 main.py setting 96 DEBUG - start add user.......
+2016-11-25 16:36:18,088 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 16:36:23,171 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:36:23,171 main.py setting 80 DEBUG - jump
+2016-11-25 16:36:23,179 main.py setting 134 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 16:36:55,091 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:36:55,092 main.py setting 80 DEBUG - adduser
+2016-11-25 16:36:55,092 main.py setting 96 DEBUG - start add user.......
+2016-11-25 16:38:34,407 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 16:38:38,230 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:38:38,231 main.py setting 80 DEBUG - jump
+2016-11-25 16:38:38,236 main.py setting 135 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 16:38:54,497 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:38:54,497 main.py setting 80 DEBUG - adduser
+2016-11-25 16:38:54,498 main.py setting 96 DEBUG - start add user.......
+2016-11-25 16:38:54,498 main.py setting 98 DEBUG - None
+2016-11-25 16:54:00,867 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 16:54:05,599 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:54:05,600 main.py setting 80 DEBUG - jump
+2016-11-25 16:54:05,607 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 16:54:25,568 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:54:25,569 main.py setting 80 DEBUG - adduser
+2016-11-25 16:54:25,569 main.py setting 96 DEBUG - start add user.......
+2016-11-25 16:54:26,959 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:54:26,959 main.py setting 80 DEBUG - adduser
+2016-11-25 16:54:26,959 main.py setting 96 DEBUG - start add user.......
+2016-11-25 16:54:39,783 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:54:39,784 main.py setting 80 DEBUG - jump
+2016-11-25 16:54:39,786 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 16:55:18,420 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 16:55:25,256 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:55:25,256 main.py setting 80 DEBUG - jump
+2016-11-25 16:55:25,262 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 16:55:43,527 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:55:43,527 main.py setting 80 DEBUG - adduser
+2016-11-25 16:55:43,527 main.py setting 96 DEBUG - start add user.......
+2016-11-25 16:55:43,527 main.py op_sql 150 DEBUG - insert admin values (4, 1, 111, 11, 0, 1)
+2016-11-25 16:55:43,530 main.py op_sql 153 DEBUG - success
+2016-11-25 16:55:44,974 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:55:44,974 main.py setting 80 DEBUG - adduser
+2016-11-25 16:55:44,974 main.py setting 96 DEBUG - start add user.......
+2016-11-25 16:55:44,974 main.py op_sql 150 DEBUG - insert admin values (5, 22, 2222, 222, 0, 1)
+2016-11-25 16:55:44,976 main.py op_sql 153 DEBUG - success
+2016-11-25 16:56:09,832 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:56:09,832 main.py setting 80 DEBUG - jump
+2016-11-25 16:56:09,837 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#1#11#111,5#22#222#2222', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 16:56:16,529 main.py setting 76 DEBUG - i am setting
+2016-11-25 16:56:16,529 main.py setting 80 DEBUG - jump
+2016-11-25 16:56:16,531 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#1#11#111,5#22#222#2222', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 17:02:12,259 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:02:12,260 main.py setting 80 DEBUG - jump
+2016-11-25 17:02:12,262 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#1#11#111,5#22#222#2222', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 17:02:38,429 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:02:38,429 main.py setting 80 DEBUG - adduser
+2016-11-25 17:02:38,429 main.py setting 96 DEBUG - start add user.......
+2016-11-25 17:02:38,429 main.py op_sql 150 DEBUG - insert admin values (6, 13770976640, 李金洲, ljz888, 0, 1)
+2016-11-25 17:02:38,430 main.py op_sql 155 ERROR - (1054, u"Unknown column '\u674e\u91d1\u6d32' in 'field list'")
+2016-11-25 17:02:42,441 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:02:42,441 main.py setting 80 DEBUG - jump
+2016-11-25 17:02:42,443 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#1#11#111,5#22#222#2222', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 17:08:39,637 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 17:08:45,094 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:08:45,094 main.py setting 80 DEBUG - jump
+2016-11-25 17:08:45,100 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#1#11#111,5#22#222#2222', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 17:09:03,953 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:09:03,954 main.py setting 80 DEBUG - adduser
+2016-11-25 17:09:03,954 main.py setting 96 DEBUG - start add user.......
+2016-11-25 17:09:27,034 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:09:27,034 main.py setting 80 DEBUG - jump
+2016-11-25 17:09:27,037 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#1#11#111,5#22#222#2222', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 17:13:12,905 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 17:13:18,793 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:13:18,793 main.py setting 80 DEBUG - jump
+2016-11-25 17:13:18,805 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#1#11#111,5#22#222#2222', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 17:13:38,933 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:13:38,934 main.py setting 80 DEBUG - adduser
+2016-11-25 17:13:38,934 main.py setting 96 DEBUG - start add user.......
+2016-11-25 17:13:38,934 main.py op_sql 150 DEBUG - insert admin values (6, "1a", "李健后", "qq1", 0, 1)
+2016-11-25 17:13:38,936 main.py op_sql 153 DEBUG - success
+2016-11-25 17:13:50,619 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:13:50,619 main.py setting 80 DEBUG - jump
+2016-11-25 17:13:50,622 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#1#11#111,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 17:14:24,474 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:14:24,475 main.py setting 80 DEBUG - adduser
+2016-11-25 17:14:24,475 main.py setting 96 DEBUG - start add user.......
+2016-11-25 17:14:24,475 main.py op_sql 150 DEBUG - insert admin values (7, "11", "11111", "1111", 0, 1)
+2016-11-25 17:14:24,478 main.py op_sql 153 DEBUG - success
+2016-11-25 17:14:27,562 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:14:27,563 main.py setting 80 DEBUG - jump
+2016-11-25 17:14:27,565 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#1#11#111,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 17:14:46,479 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:14:46,479 main.py setting 80 DEBUG - adduser
+2016-11-25 17:14:46,480 main.py setting 96 DEBUG - start add user.......
+2016-11-25 17:14:46,480 main.py op_sql 150 DEBUG - insert admin values (8, "qw", "qwq11", "qwqw", 0, 1)
+2016-11-25 17:14:46,483 main.py op_sql 153 DEBUG - success
+2016-11-25 17:14:48,938 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:14:48,938 main.py setting 80 DEBUG - jump
+2016-11-25 17:14:48,941 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#1#11#111,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 17:16:01,037 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:16:01,037 main.py setting 80 DEBUG - jump
+2016-11-25 17:16:01,041 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 17:16:12,261 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:16:12,261 main.py setting 80 DEBUG - adduser
+2016-11-25 17:16:12,262 main.py setting 96 DEBUG - start add user.......
+2016-11-25 17:16:12,262 main.py op_sql 150 DEBUG - insert admin values (4, "123", "31131", "12313", 0, 1)
+2016-11-25 17:16:12,266 main.py op_sql 153 DEBUG - success
+2016-11-25 17:38:00,154 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 17:38:05,821 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:38:05,822 main.py setting 80 DEBUG - jump
+2016-11-25 17:38:05,828 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11', 'intval': '1', 'backuptime': '21:00', 'password': u'ljz89381010'}
+2016-11-25 17:38:27,604 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:38:27,605 main.py setting 80 DEBUG - yunpan
+2016-11-25 17:38:27,606 main.py op_sql 150 DEBUG - update system set username="13770976640111", passwd="yuyu", backuptime="21:00:00" where id=1;
+2016-11-25 17:38:27,609 main.py op_sql 153 DEBUG - success
+2016-11-25 17:38:30,315 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:38:30,315 main.py setting 80 DEBUG - jump
+2016-11-25 17:38:30,317 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11', 'intval': '1', 'backuptime': '21:00', 'password': u'yuyu'}
+2016-11-25 17:48:43,538 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 17:48:48,574 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:48:48,575 main.py setting 80 DEBUG - jump
+2016-11-25 17:48:48,581 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11', 'intval': '1', 'backuptime': '21:00', 'password': u'yuyu'}
+2016-11-25 17:51:04,358 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 17:51:09,262 main.py setting 76 DEBUG - i am setting
+2016-11-25 17:51:09,263 main.py setting 80 DEBUG - jump
+2016-11-25 17:51:09,270 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11', 'intval': '1', 'backuptime': '21:00', 'password': u'yuyu'}
+2016-11-25 18:26:25,838 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 18:26:34,394 main.py setting 76 DEBUG - i am setting
+2016-11-25 18:26:34,394 main.py setting 80 DEBUG - jump
+2016-11-25 18:26:34,400 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11', 'intval': '1', 'backuptime': '21:00', 'password': u'yuyu'}
+2016-11-25 18:26:56,506 main.py setting 76 DEBUG - i am setting
+2016-11-25 18:26:56,506 main.py setting 80 DEBUG - yunpan
+2016-11-25 18:26:56,508 main.py op_sql 150 DEBUG - update system set username="13770976640111", passwd="yuyu111111", backuptime="21:00:00" where id=1;
+2016-11-25 18:26:56,511 main.py op_sql 153 DEBUG - success
+2016-11-25 18:26:59,714 main.py setting 76 DEBUG - i am setting
+2016-11-25 18:26:59,715 main.py setting 80 DEBUG - jump
+2016-11-25 18:26:59,718 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11', 'intval': '1', 'backuptime': '21:00', 'password': u'yuyu111111'}
+2016-11-25 18:28:06,532 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 18:28:10,670 main.py setting 76 DEBUG - i am setting
+2016-11-25 18:28:10,671 main.py setting 80 DEBUG - jump
+2016-11-25 18:28:10,677 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11', 'intval': '1', 'backuptime': '21:00', 'password': u'yuyu111111'}
+2016-11-25 18:28:47,104 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 18:28:51,207 main.py setting 76 DEBUG - i am setting
+2016-11-25 18:28:51,207 main.py setting 80 DEBUG - jump
+2016-11-25 18:28:51,214 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640111', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11', 'intval': '1', 'backuptime': '21:00', 'password': u'yuyu111111'}
+2016-11-25 18:29:22,404 main.py setting 76 DEBUG - i am setting
+2016-11-25 18:29:22,404 main.py setting 80 DEBUG - yunpan
+2016-11-25 18:29:22,405 main.py op_sql 150 DEBUG - update system set username="13770976640111", passwd="yuyu111111", backuptime="21:00:00" where id=1;
+2016-11-25 18:29:22,408 main.py op_sql 153 DEBUG - success
+2016-11-25 18:29:59,771 main.py setting 76 DEBUG - i am setting
+2016-11-25 18:29:59,771 main.py setting 80 DEBUG - yunpan
+2016-11-25 18:29:59,773 main.py op_sql 150 DEBUG - update system set username="13770976640", passwd="ljz89381010", backuptime="06:00:00" where id=1;
+2016-11-25 18:29:59,777 main.py op_sql 153 DEBUG - success
+2016-11-25 18:30:07,484 main.py setting 76 DEBUG - i am setting
+2016-11-25 18:30:07,485 main.py setting 80 DEBUG - jump
+2016-11-25 18:30:07,487 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11', 'intval': '1', 'backuptime': '06:00', 'password': u'ljz89381010'}
+2016-11-25 18:30:45,902 main.py setting 76 DEBUG - i am setting
+2016-11-25 18:30:45,902 main.py setting 80 DEBUG - adduser
+2016-11-25 18:30:45,903 main.py setting 96 DEBUG - start add user.......
+2016-11-25 18:30:45,903 main.py op_sql 150 DEBUG - insert admin values (9, "110", "李金洲", "123456", 0, 1)
+2016-11-25 18:30:45,907 main.py op_sql 153 DEBUG - success
+2016-11-25 18:30:53,831 main.py setting 76 DEBUG - i am setting
+2016-11-25 18:30:53,831 main.py setting 80 DEBUG - jump
+2016-11-25 18:30:53,835 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '06:00', 'password': u'ljz89381010'}
+2016-11-25 20:20:31,110 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 20:20:41,606 main.py setting 76 DEBUG - i am setting
+2016-11-25 20:20:41,606 main.py setting 80 DEBUG - jump
+2016-11-25 20:20:41,632 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '06:00', 'password': u'ljz89381010'}
+2016-11-25 20:22:29,889 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 20:22:36,358 main.py setting 76 DEBUG - i am setting
+2016-11-25 20:22:36,359 main.py setting 80 DEBUG - jump
+2016-11-25 20:22:36,365 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '06:00', 'password': u'ljz89381010'}
+2016-11-25 20:22:52,165 main.py setting 76 DEBUG - i am setting
+2016-11-25 20:22:52,165 main.py setting 80 DEBUG - jump
+2016-11-25 20:22:52,167 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '06:00', 'password': u'ljz89381010'}
+2016-11-25 20:23:46,941 main.py setting 76 DEBUG - i am setting
+2016-11-25 20:23:46,942 main.py setting 80 DEBUG - yunpan
+2016-11-25 20:23:46,944 main.py op_sql 150 DEBUG - update system set username="15996863128", passwd="123456", backuptime="20:00:00" where id=1;
+2016-11-25 20:23:46,951 main.py op_sql 153 DEBUG - success
+2016-11-25 20:25:21,773 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 20:25:28,740 main.py setting 76 DEBUG - i am setting
+2016-11-25 20:25:28,740 main.py setting 80 DEBUG - jump
+2016-11-25 20:25:28,747 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 20:30:23,889 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 20:30:28,726 main.py setting 76 DEBUG - i am setting
+2016-11-25 20:30:28,727 main.py setting 80 DEBUG - jump
+2016-11-25 20:30:28,737 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 20:33:09,886 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 20:33:14,304 main.py setting 76 DEBUG - i am setting
+2016-11-25 20:33:14,305 main.py setting 80 DEBUG - jump
+2016-11-25 20:33:14,312 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 20:34:47,504 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 20:34:54,330 main.py setting 76 DEBUG - i am setting
+2016-11-25 20:34:54,330 main.py setting 80 DEBUG - jump
+2016-11-25 20:34:54,336 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 20:39:21,953 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 20:39:28,846 main.py setting 76 DEBUG - i am setting
+2016-11-25 20:39:28,847 main.py setting 80 DEBUG - jump
+2016-11-25 20:39:28,856 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 20:40:21,383 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 20:40:25,707 main.py setting 76 DEBUG - i am setting
+2016-11-25 20:40:25,708 main.py setting 80 DEBUG - jump
+2016-11-25 20:40:25,717 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 20:42:13,336 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 20:42:18,075 main.py setting 76 DEBUG - i am setting
+2016-11-25 20:42:18,075 main.py setting 80 DEBUG - jump
+2016-11-25 20:42:18,084 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 20:50:24,180 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 20:50:32,270 main.py setting 76 DEBUG - i am setting
+2016-11-25 20:50:32,270 main.py setting 80 DEBUG - jump
+2016-11-25 20:50:32,279 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 20:53:49,611 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 20:53:53,970 main.py setting 76 DEBUG - i am setting
+2016-11-25 20:53:53,971 main.py setting 80 DEBUG - jump
+2016-11-25 20:53:53,978 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:11:53,693 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:11:53,694 main.py setting 80 DEBUG - jump
+2016-11-25 21:11:53,697 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:24:49,547 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 21:24:53,893 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:24:53,894 main.py setting 80 DEBUG - jump
+2016-11-25 21:24:53,905 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:25:33,662 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 21:25:39,315 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:25:39,315 main.py setting 80 DEBUG - jump
+2016-11-25 21:25:39,321 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:30:20,697 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 21:30:24,636 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:30:24,637 main.py setting 80 DEBUG - jump
+2016-11-25 21:30:24,646 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:33:59,433 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 21:34:04,304 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:34:04,305 main.py setting 80 DEBUG - jump
+2016-11-25 21:34:04,313 main.py setting 137 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:41:47,971 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 21:41:53,229 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:41:53,229 main.py setting 80 DEBUG - jump
+2016-11-25 21:41:53,235 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'2#wll#123456#\u738b\u8389\u8389,3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:42:01,861 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:42:01,861 main.py setting 80 DEBUG - deluser
+2016-11-25 21:42:01,861 main.py op_sql 151 DEBUG - delete from admin where id="2"
+2016-11-25 21:42:01,865 main.py op_sql 154 DEBUG - success
+2016-11-25 21:42:16,124 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:42:16,125 main.py setting 80 DEBUG - jump
+2016-11-25 21:42:16,127 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'3#jay#123456#\u674e\u56db,4#123#12313#31131,5#22#222#2222,6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:42:20,498 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:42:20,499 main.py setting 80 DEBUG - deluser
+2016-11-25 21:42:20,500 main.py op_sql 151 DEBUG - delete from admin where id="3"
+2016-11-25 21:42:20,502 main.py op_sql 154 DEBUG - success
+2016-11-25 21:42:23,820 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:42:23,821 main.py setting 80 DEBUG - deluser
+2016-11-25 21:42:23,821 main.py op_sql 151 DEBUG - delete from admin where id="4"
+2016-11-25 21:42:23,824 main.py op_sql 154 DEBUG - success
+2016-11-25 21:42:28,604 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:42:28,604 main.py setting 80 DEBUG - deluser
+2016-11-25 21:42:28,604 main.py op_sql 151 DEBUG - delete from admin where id="5"
+2016-11-25 21:42:28,607 main.py op_sql 154 DEBUG - success
+2016-11-25 21:42:30,867 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:42:30,867 main.py setting 80 DEBUG - jump
+2016-11-25 21:42:30,869 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': u'6#1a#qq1#\u674e\u5065\u540e,7#11#1111#11111,8#qw#qwqw#qwq11,9#110#123456#\u674e\u91d1\u6d32', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:42:39,836 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:42:39,836 main.py setting 80 DEBUG - deluser
+2016-11-25 21:42:39,836 main.py op_sql 151 DEBUG - delete from admin where id="6"
+2016-11-25 21:42:39,839 main.py op_sql 154 DEBUG - success
+2016-11-25 21:42:43,059 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:42:43,059 main.py setting 80 DEBUG - deluser
+2016-11-25 21:42:43,060 main.py op_sql 151 DEBUG - delete from admin where id="7"
+2016-11-25 21:42:43,063 main.py op_sql 154 DEBUG - success
+2016-11-25 21:42:46,119 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:42:46,119 main.py setting 80 DEBUG - deluser
+2016-11-25 21:42:46,120 main.py op_sql 151 DEBUG - delete from admin where id="9"
+2016-11-25 21:42:46,122 main.py op_sql 154 DEBUG - success
+2016-11-25 21:42:49,589 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:42:49,589 main.py setting 80 DEBUG - deluser
+2016-11-25 21:42:49,589 main.py op_sql 151 DEBUG - delete from admin where id="8"
+2016-11-25 21:42:49,592 main.py op_sql 154 DEBUG - success
+2016-11-25 21:42:59,440 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:42:59,440 main.py setting 80 DEBUG - jump
+2016-11-25 21:42:59,442 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': '', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:43:11,449 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:43:11,449 main.py setting 80 DEBUG - jump
+2016-11-25 21:43:11,451 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': '', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:46:31,830 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 21:46:40,009 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:46:40,009 main.py setting 80 DEBUG - jump
+2016-11-25 21:46:40,015 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': '', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:49:54,318 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 21:49:59,041 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:49:59,042 main.py setting 80 DEBUG - jump
+2016-11-25 21:49:59,046 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': '', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:50:21,683 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:50:21,683 main.py setting 80 DEBUG - jump
+2016-11-25 21:50:21,685 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': '', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:53:41,586 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 21:53:50,882 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:53:50,883 main.py setting 80 DEBUG - jump
+2016-11-25 21:53:50,894 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863128', 'users': '', 'intval': '1', 'backuptime': '20:00', 'password': u'123456'}
+2016-11-25 21:54:17,316 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:54:17,316 main.py setting 80 DEBUG - yunpan
+2016-11-25 21:54:17,318 main.py op_sql 151 DEBUG - update system set username="15996863", passwd="1234", backuptime="22:00:00" where id=1;
+2016-11-25 21:54:17,321 main.py op_sql 154 DEBUG - success
+2016-11-25 21:54:20,171 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:54:20,171 main.py setting 80 DEBUG - jump
+2016-11-25 21:54:20,173 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': '', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 21:56:25,524 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 21:56:30,417 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:56:30,417 main.py setting 80 DEBUG - jump
+2016-11-25 21:56:30,422 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': '', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 21:56:42,470 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:56:42,470 main.py setting 80 DEBUG - adduser
+2016-11-25 21:56:42,470 main.py setting 96 DEBUG - start add user.......
+2016-11-25 21:56:42,470 main.py op_sql 151 DEBUG - insert admin values (2, "dd", "wwww", "eee", 0, 1)
+2016-11-25 21:56:42,472 main.py op_sql 154 DEBUG - success
+2016-11-25 21:56:46,155 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:56:46,155 main.py setting 80 DEBUG - jump
+2016-11-25 21:56:46,157 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': u'2#dd#eee#wwww', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 21:57:59,995 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:57:59,995 main.py setting 80 DEBUG - deluser
+2016-11-25 21:57:59,996 main.py op_sql 151 DEBUG - delete from admin where id="2"
+2016-11-25 21:57:59,999 main.py op_sql 154 DEBUG - success
+2016-11-25 21:58:04,739 main.py setting 76 DEBUG - i am setting
+2016-11-25 21:58:04,739 main.py setting 80 DEBUG - jump
+2016-11-25 21:58:04,741 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': '', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 22:00:01,191 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 22:00:05,265 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:00:05,266 main.py setting 80 DEBUG - jump
+2016-11-25 22:00:05,272 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': '', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 22:00:11,867 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:00:11,867 main.py setting 80 DEBUG - deluser
+2016-11-25 22:00:11,867 main.py op_sql 151 DEBUG - delete from admin where id="2"
+2016-11-25 22:00:11,868 main.py op_sql 154 DEBUG - success
+2016-11-25 22:00:50,472 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:00:50,473 main.py setting 80 DEBUG - adduser
+2016-11-25 22:00:50,473 main.py setting 96 DEBUG - start add user.......
+2016-11-25 22:00:50,474 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:00:50,474 main.py setting 80 DEBUG - adduser
+2016-11-25 22:00:50,475 main.py setting 96 DEBUG - start add user.......
+2016-11-25 22:00:50,475 main.py op_sql 151 DEBUG - insert admin values (3, "qqq", "sddd", "ssss", 0, 1)
+2016-11-25 22:00:50,478 main.py op_sql 154 DEBUG - success
+2016-11-25 22:00:50,480 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:00:50,480 main.py setting 80 DEBUG - adduser
+2016-11-25 22:00:50,480 main.py setting 96 DEBUG - start add user.......
+2016-11-25 22:00:50,481 main.py op_sql 151 DEBUG - insert admin values (4, "ffff", "dddd", "ssdss", 0, 1)
+2016-11-25 22:00:50,483 main.py op_sql 154 DEBUG - success
+2016-11-25 22:00:52,933 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:00:52,934 main.py setting 80 DEBUG - jump
+2016-11-25 22:00:52,936 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': u'3#qqq#ssss#sddd,4#ffff#ssdss#dddd', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 22:00:55,415 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:00:55,415 main.py setting 80 DEBUG - jump
+2016-11-25 22:00:55,417 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': u'3#qqq#ssss#sddd,4#ffff#ssdss#dddd', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 22:01:22,071 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:01:22,071 main.py setting 80 DEBUG - adduser
+2016-11-25 22:01:22,071 main.py setting 96 DEBUG - start add user.......
+2016-11-25 22:01:22,071 main.py op_sql 151 DEBUG - insert admin values (2, "qq", "eee", "ww", 0, 1)
+2016-11-25 22:01:22,074 main.py op_sql 154 DEBUG - success
+2016-11-25 22:01:22,076 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:01:22,076 main.py setting 80 DEBUG - adduser
+2016-11-25 22:01:22,076 main.py setting 96 DEBUG - start add user.......
+2016-11-25 22:01:22,077 main.py op_sql 151 DEBUG - insert admin values (4, "wwwww", "dddddddd", "wwwww", 0, 1)
+2016-11-25 22:01:22,078 main.py op_sql 156 ERROR - (1062, u"Duplicate entry '4' for key 'PRIMARY'")
+2016-11-25 22:01:49,911 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:01:49,911 main.py setting 80 DEBUG - jump
+2016-11-25 22:01:49,913 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': u'2#qq#ww#eee,3#qqq#ssss#sddd,4#ffff#ssdss#dddd', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 22:14:39,154 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 22:14:45,239 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:14:45,239 main.py setting 80 DEBUG - jump
+2016-11-25 22:14:45,244 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': u'2#qq#ww#eee,3#qqq#ssss#sddd,4#ffff#ssdss#dddd', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 22:14:57,552 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:14:57,552 main.py setting 80 DEBUG - adduser
+2016-11-25 22:14:57,552 main.py setting 96 DEBUG - start add user.......
+2016-11-25 22:14:57,553 main.py op_sql 151 DEBUG - insert admin values (3, "qq", "wwww", "qq", 0, 1)
+2016-11-25 22:14:57,553 main.py op_sql 156 ERROR - (1062, u"Duplicate entry '3' for key 'PRIMARY'")
+2016-11-25 22:15:00,170 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:15:00,170 main.py setting 80 DEBUG - jump
+2016-11-25 22:15:00,172 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': u'2#qq#ww#eee,3#qqq#ssss#sddd,4#ffff#ssdss#dddd', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 22:15:40,480 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:15:40,480 main.py setting 80 DEBUG - jump
+2016-11-25 22:15:40,483 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': u'2#qq#ww#eee,3#qqq#ssss#sddd,4#ffff#ssdss#dddd', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 22:18:11,760 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 22:18:26,536 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:18:26,537 main.py setting 80 DEBUG - jump
+2016-11-25 22:18:26,544 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': u'2#qq#ww#eee,3#qqq#ssss#sddd,4#ffff#ssdss#dddd', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 22:18:54,157 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:18:54,157 main.py setting 80 DEBUG - deluser
+2016-11-25 22:18:54,157 main.py op_sql 151 DEBUG - delete from admin where id="4"
+2016-11-25 22:18:54,161 main.py op_sql 154 DEBUG - success
+2016-11-25 22:19:09,945 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:19:09,945 main.py setting 80 DEBUG - deluser
+2016-11-25 22:19:09,945 main.py op_sql 151 DEBUG - delete from admin where id="2"
+2016-11-25 22:19:09,948 main.py op_sql 154 DEBUG - success
+2016-11-25 22:19:32,421 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:19:32,421 main.py setting 80 DEBUG - adduser
+2016-11-25 22:19:32,422 main.py setting 96 DEBUG - start add user.......
+2016-11-25 22:19:32,422 main.py op_sql 151 DEBUG - insert admin values (2, "qqqqqqq", "sb", "qqqqqqqq", 0, 1)
+2016-11-25 22:19:32,424 main.py op_sql 154 DEBUG - success
+2016-11-25 22:19:56,510 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:19:56,511 main.py setting 80 DEBUG - deluser
+2016-11-25 22:19:56,511 main.py op_sql 151 DEBUG - delete from admin where id="4"
+2016-11-25 22:19:56,512 main.py op_sql 154 DEBUG - success
+2016-11-25 22:20:01,609 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:20:01,609 main.py setting 80 DEBUG - adduser
+2016-11-25 22:20:01,609 main.py setting 96 DEBUG - start add user.......
+2016-11-25 22:20:26,724 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:20:26,725 main.py setting 80 DEBUG - jump
+2016-11-25 22:20:26,728 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': u'2#qqqqqqq#qqqqqqqq#sb,3#qqq#ssss#sddd', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 22:21:09,181 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:21:09,181 main.py setting 80 DEBUG - jump
+2016-11-25 22:21:09,184 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': u'2#qqqqqqq#qqqqqqqq#sb,3#qqq#ssss#sddd', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 22:21:10,991 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:21:10,991 main.py setting 80 DEBUG - jump
+2016-11-25 22:21:10,994 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': u'2#qqqqqqq#qqqqqqqq#sb,3#qqq#ssss#sddd', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 22:21:20,952 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:21:20,952 main.py setting 80 DEBUG - deluser
+2016-11-25 22:21:20,952 main.py op_sql 151 DEBUG - delete from admin where id="3"
+2016-11-25 22:21:20,955 main.py op_sql 154 DEBUG - success
+2016-11-25 22:21:24,316 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:21:24,317 main.py setting 80 DEBUG - deluser
+2016-11-25 22:21:24,317 main.py op_sql 151 DEBUG - delete from admin where id="2"
+2016-11-25 22:21:24,319 main.py op_sql 154 DEBUG - success
+2016-11-25 22:21:27,827 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:21:27,828 main.py setting 80 DEBUG - jump
+2016-11-25 22:21:27,831 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'15996863', 'users': '', 'intval': '1', 'backuptime': '22:00', 'password': u'1234'}
+2016-11-25 22:21:49,804 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:21:49,805 main.py setting 80 DEBUG - yunpan
+2016-11-25 22:21:49,807 main.py op_sql 151 DEBUG - update system set username="159", passwd="1234qqqqq", backuptime="22:00:00" where id=1;
+2016-11-25 22:21:49,810 main.py op_sql 154 DEBUG - success
+2016-11-25 22:21:53,780 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:21:53,780 main.py setting 80 DEBUG - jump
+2016-11-25 22:21:53,784 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'159', 'users': '', 'intval': '1', 'backuptime': '22:00', 'password': u'1234qqqqq'}
+2016-11-25 22:22:38,873 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:22:38,873 main.py setting 80 DEBUG - jump
+2016-11-25 22:22:38,877 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'159', 'users': '', 'intval': '1', 'backuptime': '22:00', 'password': u'1234qqqqq'}
+2016-11-25 22:23:11,885 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:23:11,886 main.py setting 80 DEBUG - adduser
+2016-11-25 22:23:11,886 main.py setting 96 DEBUG - start add user.......
+2016-11-25 22:23:11,886 main.py op_sql 151 DEBUG - insert admin values (2, "qq", "aa", "aa", 0, 1)
+2016-11-25 22:23:11,888 main.py op_sql 154 DEBUG - success
+2016-11-25 22:23:11,889 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:23:11,890 main.py setting 80 DEBUG - adduser
+2016-11-25 22:23:11,890 main.py setting 96 DEBUG - start add user.......
+2016-11-25 22:23:11,890 main.py op_sql 151 DEBUG - insert admin values (3, "aaaa", "zds", "zz", 0, 1)
+2016-11-25 22:23:11,892 main.py op_sql 154 DEBUG - success
+2016-11-25 22:23:11,893 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:23:11,894 main.py setting 80 DEBUG - adduser
+2016-11-25 22:23:11,894 main.py setting 96 DEBUG - start add user.......
+2016-11-25 22:23:11,894 main.py op_sql 151 DEBUG - insert admin values (4, "as", "fdf", "sad", 0, 1)
+2016-11-25 22:23:11,896 main.py op_sql 154 DEBUG - success
+2016-11-25 22:23:11,898 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:23:11,898 main.py setting 80 DEBUG - adduser
+2016-11-25 22:23:11,899 main.py setting 96 DEBUG - start add user.......
+2016-11-25 22:23:11,899 main.py op_sql 151 DEBUG - insert admin values (5, "sefdsf", "efefe", "sfsf", 0, 1)
+2016-11-25 22:23:11,900 main.py op_sql 154 DEBUG - success
+2016-11-25 22:23:16,705 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:23:16,706 main.py setting 80 DEBUG - jump
+2016-11-25 22:23:16,708 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'159', 'users': u'2#qq#aa#aa,3#aaaa#zz#zds,4#as#sad#fdf,5#sefdsf#sfsf#efefe', 'intval': '1', 'backuptime': '22:00', 'password': u'1234qqqqq'}
+2016-11-25 22:25:08,575 main.py <module> 26 DEBUG - dunning server start
+2016-11-25 22:25:13,598 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:25:13,598 main.py setting 80 DEBUG - jump
+2016-11-25 22:25:13,605 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'159', 'users': u'2#qq#aa#aa,3#aaaa#zz#zds,4#as#sad#fdf,5#sefdsf#sfsf#efefe', 'intval': '1', 'backuptime': '22:00', 'password': u'1234qqqqq'}
+2016-11-25 22:25:24,066 main.py setting 76 DEBUG - i am setting
+2016-11-25 22:25:24,066 main.py setting 80 DEBUG - yunpan
+2016-11-25 22:25:24,068 main.py op_sql 151 DEBUG - update system set username="159", passwd="1234qqqqq", backuptime="22:00:00" where id=1;
+2016-11-25 22:25:24,070 main.py op_sql 154 DEBUG - success

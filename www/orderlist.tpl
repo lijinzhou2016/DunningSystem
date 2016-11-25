@@ -215,9 +215,9 @@
 			<input type="text" placeholder="请输入订单来源">
 			<input type="file" value="选择文件">
 			<input type="button" value="上传">
-			<a href="orderDetail.html" target="_blank"><input type="button" value="手动创建" style="border:1px solid #ccc;outline:none;background:url(http:127.0.0.1:8080/icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;"></a>
+			<a href="orderDetail.html" target="_blank"><input type="button" value="手动创建" style="border:1px solid #ccc;outline:none;background:url(icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;"></a>
 			<a href='http://127.0.0.1:8080/setting?action=jump' target="_blank">
-			<input type="button" value="设置" style="margin-top:30px;border:1px solid #ccc;outline:none;background:url(http:127.0.0.1:8080/icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;">
+			<input type="button" value="设置" style="margin-top:30px;border:1px solid #ccc;outline:none;background:url(icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;">
 			</a>
 		</div>
 
