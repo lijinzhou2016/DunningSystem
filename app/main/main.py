@@ -25,24 +25,18 @@ logger = log('main.py')
 
 logger.debug('dunning server start')
 
+def static_file_server(filepath):
+    return bottle.static_file(filepath, root=www_path())
+
 @bottle.error(404)
 def error404():
     return bottle.static_file('404.html', root=www_path())
 
 # 静态信息文件 127.0.0.1:8080/
-@bottle.route('/:filepath')
-def server_www(filepath):
-    file_name, file_type = os.path.splitext(filepath)
-    if file_name == 'index':
-        return bottle.static_file('index.html', root=www_path())
-    elif file_type == '.html':
-        return bottle.static_file(filename, root=www_path())
-    elif file_type == '.css':
-        return bottle.static_file(filepath, root=css_path())
-    elif file_type == '.js':
-        return bottle.static_file(filepath, root=js_path())
-    elif file_type in ['.png','.PNG','.jpg','.JPG','.gif']:
-        return bottle.static_file(filepath, root=images_path())
+@bottle.route('/dunning/<filepath:path>')
+def index(filepath):
+    logger.debug(filepath)
+    return static_file_server(filepath)
 
 @bottle.route('/login', method='POST')
 def login():
@@ -56,11 +50,14 @@ def login():
     else:
         return get_userinfo_dic(userinfo)
 
-@bottle.route('/orderlist')
+@bottle.route('/orderlist/<filepath:path>')
 @bottle.view('orderlist')
-def orderlist():
-    page_index = bottle.request.query.pageIndex
-    logger.debug(page_index)
+def orderlist(filepath):
+    # page_index = bottle.request.query.pageIndex
+    # logger.debug(page_index)
+    logger.debug('i am orderlist')
+    if '.' in filepath:
+        return static_file_server(filepath)
 
     # util.py 中定义
     return order_list_info
@@ -69,35 +66,36 @@ def orderlist():
 def orderdetail():
     pass 
 
-
-@bottle.route('/setting')
+@bottle.route('/setting/<action:path>')
 @bottle.view('setting')
-def setting():
+def setting(action):
     logger.debug('i am setting')
-    action = bottle.request.forms.get('action') #post
-    if not action:
-        action = bottle.request.query.action #get
     logger.debug(action)
+    name = bottle.request.forms.get('username')
+    logger.debug(name)
+    if '.' in action:
+        return static_file_server(action)
+
     if action == 'yunpan':
         """ 网盘账号设置 """
-        yaccount  = bottle.request.query.get('username')
-        ypassword = bottle.request.query.get('passwd')
+        yaccount  = bottle.request.query.get('username').decode('utf-8')
+        ypassword = bottle.request.query.get('passwd').decode('utf-8')
         ytime     = bottle.request.query.get('backuptime')+':00'
         if (len(System.select()) == 1):
             # 更新网盘
             sql_update = 'update system set username="{0}", passwd="{1}", backuptime="{2}" where id=1;'.format(yaccount, ypassword, ytime)
-            op_sql(sql_update)
+            return op_sql(sql_update)
         else: #插入
             sql_insert = 'insert system values (1, "{0}", "{1}", "{2}", 1)'.format(yaccount, ypassword, ytime)
-            op_sql(sql_insert)
+            return op_sql(sql_insert)
 
     elif action == 'adduser':
         """ 添加管理员 """
         logger.debug('start add user.......')
 
-        user_id=bottle.request.query.get('id')
-        user = bottle.request.query.get('user')
-        passwd = bottle.request.query.get('passwd')
+        user_id=bottle.request.query.get('id').decode('utf-8')
+        user = bottle.request.query.get('user').decode('utf-8')
+        passwd = bottle.request.query.get('passwd').decode('utf-8')
         name = bottle.request.query.get('name').decode('utf-8')
 
         sql_adduser = 'insert admin values ({0}, "{1}", "{2}", "{3}", 0, 1)'.format(user_id, user, name, passwd)
@@ -138,9 +136,8 @@ def setting():
         logger.debug(setting_info)
         return setting_info
 
-
     else:
-        logger.debug('unknown')
+        logger.debug('-------unknown-------')
 
 #用户信息封装成json返回
 def get_userinfo_dic(userinfo):

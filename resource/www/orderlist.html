@@ -6,6 +6,8 @@
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/fenye.js"></script>
 	<script src="js/orderlist.js"></script>
+	<script src="js/WdatePicker.js"></script>
+	
 	<link rel="stylesheet" href="css/fenye.css">
 	<link rel="stylesheet" href="css/orderlist.css">
 </head>
@@ -25,7 +27,7 @@
 				<div class="order-list-content-search">
 					<div class="order-list-content-search-left">姓名:</div><input class="order-list-content-search-right" type="text"></div>
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">账期:</div><input class="order-list-content-search-right" type="text"></div>
+					<div class="order-list-content-search-left">账期:</div><input class="order-list-content-search-right" onclick="WdatePicker()" type="text"></div>
 				<div class="order-list-content-search">
 					<div class="order-list-content-search-left">学校:</div><input class="order-list-content-search-right" type="text">
 					</div>
@@ -34,7 +36,7 @@
 				<div class="order-list-content-search">
 					<div class="order-list-content-search-left">家庭区域:</div><input class="order-list-content-search-right" type="text"></div>
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">接单日期:</div><input class="order-list-content-search-right" type="text"></div>
+					<div class="order-list-content-search-left">接单日期:</div><input class="order-list-content-search-right" type="text" onclick="WdatePicker()"></div>
 				<div class="order-list-content-search">
 					<div class="order-list-content-search-left">订单状态:</div>
 					<select class="order-list-content-search-right" type="text">

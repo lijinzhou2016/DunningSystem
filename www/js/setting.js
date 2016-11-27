@@ -23,6 +23,7 @@ $(document).ready(function () {
         $(".wangpan-btn").css("display", "block");
         $(this).css("display", "none");
         $(".wangpan-content").find("input").removeAttr("readonly");
+        $(".wangpan-content").find("input").css("border","1px solid #f1f1f1")
         $("#timeselect").removeAttr("disabled");
 
     })
@@ -37,6 +38,7 @@ $(document).ready(function () {
         if (is_sure("确定放弃修改？")) {
             //alert('fangqixiugai')
             $(".wangpan-content").find("input").attr("readonly", true);
+            $(".wangpan-content").find("input").css("border","none");
             $(".wangpan-btn").css("display", "none");
             $(".edit").css("display", "block");
             $(".wangpanzhanghao").val(oldwangpanzhanghao);
@@ -93,7 +95,7 @@ $(document).ready(function () {
                 $(this).parent().parent().remove();
                 user_ids[user_ids.indexOf(delete_user_id)] = 0;
                 new_user_ids[new_user_ids.indexOf(delete_user_id)] = 0;
-                ajax_get("http://127.0.0.1:8080/setting", { 'action': 'deluser', 'id': delete_user_id }, true)
+                ajax_get("http://127.0.0.1:8080/setting/deluset", { 'action': 'deluser', 'id': delete_user_id }, true)
             }
         })
     })
@@ -129,7 +131,7 @@ $(document).ready(function () {
             oldtimetext = $("#timeselect").find("option:selected").text();
             selectchecked = $("#timeselect").val();
 
-            var send_url = "http://127.0.0.1:8080/setting?action=yunpan"
+            var send_url = "http://127.0.0.1:8080/setting/yunpan"
             var send_data = { "username": oldwangpanzhanghao, "passwd": oldwangpanmima, "backuptime": oldtimetext };
             ajax_get(send_url, send_data, true); //提交后台
         }
@@ -177,7 +179,7 @@ $(document).ready(function () {
                 $(this).parent().parent().remove();
                 user_ids[user_ids.indexOf(delete_user_id)] = 0;
                 new_user_ids[new_user_ids.indexOf(delete_user_id)] = 0;
-                ajax_get("http://127.0.0.1:8080/setting", { 'action': 'deluser', 'id': delete_user_id }, true)
+                ajax_get("http://127.0.0.1:8080/setting/deluser", { 'action': 'deluser', 'id': delete_user_id }, true)
             }
         })
     }
@@ -247,7 +249,7 @@ $(document).ready(function () {
         var cls_passwd;
         var cls_name;
         var send_data = { "action": "adduser", "id": "", "user": "", "passwd": "", "name": "" }
-        var send_url = "http://127.0.0.1:8080/setting"
+        var send_url = "http://127.0.0.1:8080/setting/adduser"
         for (i = 0; i < new_user_ids.length; i++) {
             if (new_user_ids[i] != 0) {
                 user_id = new_user_ids[i];

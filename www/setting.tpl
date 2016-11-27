@@ -3,17 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>设置页面</title>
-	<link rel="stylesheet" href="setting.css">
-	<script src="jquery-1.11.1.min.js"></script>
-	<script src="setting.js"></script>
+	<link rel="stylesheet" href="css/setting.css">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/setting.js"></script>
 </head>
 
 <body>
 	<div class="head">
 		<div class="container">
 			<ul class="head-user">
-			<li><img src="icon_wp.png" style="height:16px;" alt=""><span>{{username}}</span></li>
-			<li><img src="icon_tuichu.png" style="height:16px;" alt=""><span>退出</span></li>
+			<li><img src="images/icon_wp.png" style="height:16px;" alt=""><span>{{username}}</span></li>
+			<li><img src="images/icon_tuichu.png" style="height:16px;" alt=""><span>退出</span></li>
 		</ul>
 		</div>
 	</div>

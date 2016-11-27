@@ -84,6 +84,7 @@
 .wangpan-content>div input{
     width:120px;
     height:20px;
+    border:none;
 }
 .edit{
     width:14px;
@@ -91,7 +92,7 @@
     position: absolute;
     right:0;
     top:0;
-    background: url(Design.png)no-repeat center;
+    background: url(../images/Design.png)no-repeat center;
 }
 .wangpan-btn{
     width:90%;
@@ -142,7 +143,9 @@
     padding:10px;border:1px solid #f1f1f1;
     text-align: center;
 }
-
+.table-list td input{
+    border:none;
+}
 .guanliyuan-btn{
     width:90%;
     margin-left:5%;

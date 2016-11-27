@@ -3,39 +3,43 @@
 <head>
 	<meta charset="UTF-8">
 	<title>列表页</title>
-	<script src="jquery-1.11.1.min.js"></script>
-	<script src="fenye.js"></script>
-	<script src="orderlist.js"></script>
-	<link rel="stylesheet" href="fenye.css">
-	<link rel="stylesheet" href="orderlist.css">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/fenye.js"></script>
+	<script src="js/orderlist.js"></script>
+	<script src="js/WdatePicker.js"></script>
+	
+	<link rel="stylesheet" href="css/fenye.css">
+	<link rel="stylesheet" href="css/orderlist.css">
+	
+	
 </head>
 
 <body>
 	<div class="head">
 		<ul class="head-user">
-			<li><img src="icon_wp.png" style="height:16px;" alt="">{{username}}</li>
-			<li><img src="icon_tuichu.png" style="height:16px;" alt="">退出</li>
+			<li><img src="images/icon_wp.png" style="height:16px;" alt="">{{username}}</li>
+			<li><img src="images/icon_tuichu.png" style="height:16px;" alt="">退出</li>
 		</ul>
 	</div>
 	<div class="order-list">
 		<div class="order-list-left">
 			<div class="order-list-content">
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">姓名:</div><input class="order-list-content-search-right" type="text"></div>
+					<div class="order-list-content-search-left">姓名:</div><input class="order-list-content-search-right orderlist-username" type="text"></div>
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">账期:</div><input class="order-list-content-search-right" type="text"></div>
+					<div class="order-list-content-search-left">账期:</div><input class="order-list-content-search-right order-zhangqi" type="text"></div>
 				<div class="order-list-content-search">
-				<div class="order-list-content-search-left">学校:</div><input class="order-list-content-search-right" type="text">
+				<div class="order-list-content-search-left">学校:</div><input class="order-list-content-search-right order-school" type="text">
 					</div>
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">家庭住址:</div><input class="order-list-content-search-right" type="text"></div>
+					<div class="order-list-content-search-left">家庭住址:</div><input class="order-list-content-search-right order-jtzz" type="text"></div>
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">家庭区域:</div><input class="order-list-content-search-right" type="text"></div>
+					<div class="order-list-content-search-left">家庭区域:</div><input class="order-list-content-search-right order-jtqy" type="text"></div>
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">接单日期:</div><input class="order-list-content-search-right" type="text"></div>
+					<div class="order-list-content-search-left">接单日期:</div><input class="order-list-content-search-right order-jdrq Wdate" type="text" onClick="WdatePicker()"></div>
 				<div class="order-list-content-search">
 					<div class="order-list-content-search-left">订单状态:</div>
-					<select class="order-list-content-search-right" type="text">
+					<select class="order-list-content-search-right order-ddzt" id="order-ddzt" type="text">
                 <option value="">全部</option>
                 <option value="">联系本人</option>
                 <option value="">联系亲属</option>
@@ -49,25 +53,25 @@
             </select>
 				</div>
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">商户状态:</div><input class="order-list-content-search-right" type="text">
+					<div class="order-list-content-search-left">商户状态:</div><input class="order-list-content-search-right order-shxx" type="text">
 				</div>
 				<div class="clear"></div>
 				<div class="order-search-btn">
-					<input type="button" class="search-btn" value="搜索">
-					<input type="button" class="reset-btn" value="重置">
+					<input type="button" class="search-btn" onclick="searchBtn()" value="搜索">
+					<input type="button" class="reset-btn" onclick="resetBtn()" value="重置">
 				</div>
 
 
 			</div>
-			<table class="order-list-table">
+			<table class="order-list-table" >
 				<thead>
 					<tr>
-						<th class="select-result-content" colspan="8">
-							已选条件：
+						<th class="select-result-content" style="display:none" colspan="8">
+							已选条件：<span class="chooseinputval"></span>
 						</th>
 					</tr>
 					<tr>
-						<td colspan="8" style="border:none;"></td>
+						<td colspan="8" style="border:none;height:10px;"></td>
 					</tr>
 					<tr>
 						<th>订单编号</th>
@@ -215,9 +219,9 @@
 			<input type="text" placeholder="请输入订单来源">
 			<input type="file" value="选择文件">
 			<input type="button" value="上传">
-			<a href="orderDetail.html" target="_blank"><input type="button" value="手动创建" style="border:1px solid #ccc;outline:none;background:url(icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;"></a>
-			<a href='http://127.0.0.1:8080/setting?action=jump' target="_blank">
-			<input type="button" value="设置" style="margin-top:30px;border:1px solid #ccc;outline:none;background:url(icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;">
+			<a href="orderDetail.html" target="_blank"><input type="button" value="手动创建" style="border:1px solid #ccc;outline:none;background:url(images/icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;"></a>
+			<a href='http://127.0.0.1:8080/setting/jump' target="_blank">
+			<input type="button" value="设置" style="margin-top:30px;border:1px solid #ccc;outline:none;background:url(images/icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;">
 			</a>
 		</div>
 
