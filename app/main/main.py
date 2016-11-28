@@ -25,6 +25,7 @@ logger = log('main.py')
 
 logger.debug('dunning server start')
 
+
 def static_file_server(filepath):
     return bottle.static_file(filepath, root=www_path())
 
@@ -69,10 +70,6 @@ def orderdetail():
 @bottle.route('/setting/<action:path>')
 @bottle.view('setting')
 def setting(action):
-    logger.debug('i am setting')
-    logger.debug(action)
-    name = bottle.request.forms.get('username')
-    logger.debug(name)
     if '.' in action:
         return static_file_server(action)
 
@@ -83,11 +80,9 @@ def setting(action):
         ytime     = bottle.request.query.get('backuptime')+':00'
         if (len(System.select()) == 1):
             # 更新网盘
-            sql_update = 'update system set username="{0}", passwd="{1}", backuptime="{2}" where id=1;'.format(yaccount, ypassword, ytime)
-            return op_sql(sql_update)
+            System.update(username=yaccount, passwd=ypassword, backuptime=ytime).where(System.id==1).execute()
         else: #插入
-            sql_insert = 'insert system values (1, "{0}", "{1}", "{2}", 1)'.format(yaccount, ypassword, ytime)
-            return op_sql(sql_insert)
+            System.insert(id=1, username=yaccount, passwd=ypassword, backuptime=ytime).execute()
 
     elif action == 'adduser':
         """ 添加管理员 """
@@ -98,14 +93,12 @@ def setting(action):
         passwd = bottle.request.query.get('passwd').decode('utf-8')
         name = bottle.request.query.get('name').decode('utf-8')
 
-        sql_adduser = 'insert admin values ({0}, "{1}", "{2}", "{3}", 0, 1)'.format(user_id, user, name, passwd)
-        return op_sql(sql_adduser)
+        Admin.insert(id=user_id, user=user, name=name,passwd=passwd,is_admin=0,enable=1).execute()
 
     elif action == 'deluser':
         """ 删除管理员 """
         user_id=bottle.request.query.get('id')
-        sql_deluser = 'delete from admin where id="{0}"'.format(user_id)
-        return op_sql(sql_deluser)
+        Admin.delete().where(Admin.id==user_id).execute()
 
     elif action == 'jump':
         """ 加载设置页面 """

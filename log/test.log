@@ -2188,3 +2188,454 @@
 2016-11-27 22:44:44,573 main.py setting 72 DEBUG - i am setting
 2016-11-27 22:44:44,574 main.py setting 73 DEBUG - images/icon_tuichu.png
 2016-11-27 22:44:44,574 main.py setting 75 DEBUG - None
+2016-11-27 23:06:45,384 main.py <module> 26 DEBUG - dunning server start
+2016-11-27 23:06:55,655 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:06:55,655 main.py setting 73 DEBUG - jump
+2016-11-27 23:06:55,656 main.py setting 75 DEBUG - None
+2016-11-27 23:06:55,662 main.py setting 136 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'3#asd#sdasd#asdada', 'intval': '1', 'backuptime': '23:00', 'password': u'ljz89381010'}
+2016-11-27 23:06:55,672 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:06:55,672 main.py setting 73 DEBUG - css/setting.css
+2016-11-27 23:06:55,673 main.py setting 75 DEBUG - None
+2016-11-27 23:06:55,679 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:06:55,679 main.py setting 73 DEBUG - js/setting.js
+2016-11-27 23:06:55,679 main.py setting 75 DEBUG - None
+2016-11-27 23:07:16,280 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:07:16,280 main.py setting 73 DEBUG - adduser
+2016-11-27 23:07:16,280 main.py setting 75 DEBUG - None
+2016-11-27 23:07:16,281 main.py setting 94 DEBUG - start add user.......
+2016-11-27 23:07:16,281 main.py op_sql 148 DEBUG - insert admin values (2, "test", "123456", "123456", 0, 1)
+2016-11-27 23:07:16,283 main.py op_sql 151 DEBUG - success
+2016-11-27 23:07:54,634 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:07:54,634 main.py setting 73 DEBUG - jump
+2016-11-27 23:07:54,635 main.py setting 75 DEBUG - None
+2016-11-27 23:07:54,637 main.py setting 136 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#test#123456#123456,3#asd#sdasd#asdada', 'intval': '1', 'backuptime': '23:00', 'password': u'ljz89381010'}
+2016-11-27 23:07:54,650 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:07:54,650 main.py setting 73 DEBUG - css/setting.css
+2016-11-27 23:07:54,650 main.py setting 75 DEBUG - None
+2016-11-27 23:07:54,651 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:07:54,651 main.py setting 73 DEBUG - js/jquery-1.11.1.min.js
+2016-11-27 23:07:54,651 main.py setting 75 DEBUG - None
+2016-11-27 23:07:54,653 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:07:54,653 main.py setting 73 DEBUG - js/setting.js
+2016-11-27 23:07:54,653 main.py setting 75 DEBUG - None
+2016-11-27 23:07:54,656 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:07:54,656 main.py setting 73 DEBUG - images/icon_wp.png
+2016-11-27 23:07:54,656 main.py setting 75 DEBUG - None
+2016-11-27 23:07:54,658 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:07:54,658 main.py setting 73 DEBUG - images/icon_tuichu.png
+2016-11-27 23:07:54,658 main.py setting 75 DEBUG - None
+2016-11-27 23:08:04,518 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:04,518 main.py setting 73 DEBUG - deluser
+2016-11-27 23:08:04,519 main.py setting 75 DEBUG - None
+2016-11-27 23:08:04,519 main.py op_sql 148 DEBUG - delete from admin where id="2"
+2016-11-27 23:08:04,521 main.py op_sql 151 DEBUG - success
+2016-11-27 23:08:06,828 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:06,828 main.py setting 73 DEBUG - jump
+2016-11-27 23:08:06,829 main.py setting 75 DEBUG - None
+2016-11-27 23:08:06,830 main.py setting 136 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'3#asd#sdasd#asdada', 'intval': '1', 'backuptime': '23:00', 'password': u'ljz89381010'}
+2016-11-27 23:08:06,839 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:06,839 main.py setting 73 DEBUG - css/setting.css
+2016-11-27 23:08:06,839 main.py setting 75 DEBUG - None
+2016-11-27 23:08:06,840 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:06,841 main.py setting 73 DEBUG - js/setting.js
+2016-11-27 23:08:06,841 main.py setting 75 DEBUG - None
+2016-11-27 23:08:06,843 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:06,843 main.py setting 73 DEBUG - images/icon_wp.png
+2016-11-27 23:08:06,843 main.py setting 75 DEBUG - None
+2016-11-27 23:08:06,845 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:06,846 main.py setting 73 DEBUG - js/jquery-1.11.1.min.js
+2016-11-27 23:08:06,846 main.py setting 75 DEBUG - None
+2016-11-27 23:08:06,848 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:06,848 main.py setting 73 DEBUG - images/icon_tuichu.png
+2016-11-27 23:08:06,848 main.py setting 75 DEBUG - None
+2016-11-27 23:08:16,780 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:16,780 main.py setting 73 DEBUG - yunpan
+2016-11-27 23:08:16,780 main.py setting 75 DEBUG - None
+2016-11-27 23:08:16,783 main.py op_sql 148 DEBUG - update system set username="13770976640", passwd="ljz8938", backuptime="23:00:00" where id=1;
+2016-11-27 23:08:16,785 main.py op_sql 151 DEBUG - success
+2016-11-27 23:08:19,535 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:19,536 main.py setting 73 DEBUG - jump
+2016-11-27 23:08:19,536 main.py setting 75 DEBUG - None
+2016-11-27 23:08:19,537 main.py setting 136 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'3#asd#sdasd#asdada', 'intval': '1', 'backuptime': '23:00', 'password': u'ljz8938'}
+2016-11-27 23:08:19,548 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:19,548 main.py setting 73 DEBUG - css/setting.css
+2016-11-27 23:08:19,548 main.py setting 75 DEBUG - None
+2016-11-27 23:08:19,549 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:19,549 main.py setting 73 DEBUG - js/jquery-1.11.1.min.js
+2016-11-27 23:08:19,550 main.py setting 75 DEBUG - None
+2016-11-27 23:08:19,551 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:19,551 main.py setting 73 DEBUG - js/setting.js
+2016-11-27 23:08:19,552 main.py setting 75 DEBUG - None
+2016-11-27 23:08:19,553 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:19,553 main.py setting 73 DEBUG - images/icon_wp.png
+2016-11-27 23:08:19,553 main.py setting 75 DEBUG - None
+2016-11-27 23:08:19,555 main.py setting 72 DEBUG - i am setting
+2016-11-27 23:08:19,555 main.py setting 73 DEBUG - images/icon_tuichu.png
+2016-11-27 23:08:19,555 main.py setting 75 DEBUG - None
+2016-11-28 11:39:59,587 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 11:40:27,220 main.py index 38 DEBUG - index.html
+2016-11-28 11:40:39,940 main.py login 43 DEBUG - i am login
+2016-11-28 11:40:39,940 main.py login 46 DEBUG - admin
+2016-11-28 11:40:39,972 main.py orderlist 58 DEBUG - i am orderlist
+2016-11-28 11:40:39,989 main.py orderlist 58 DEBUG - i am orderlist
+2016-11-28 11:40:39,991 main.py orderlist 58 DEBUG - i am orderlist
+2016-11-28 11:40:39,992 main.py orderlist 58 DEBUG - i am orderlist
+2016-11-28 11:40:39,993 main.py orderlist 58 DEBUG - i am orderlist
+2016-11-28 11:40:53,269 main.py orderlist 58 DEBUG - i am orderlist
+2016-11-28 11:41:31,502 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:41:31,502 main.py setting 73 DEBUG - jump
+2016-11-28 11:41:31,503 main.py setting 75 DEBUG - None
+2016-11-28 11:41:31,508 main.py setting 136 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'3#asd#sdasd#asdada', 'intval': '1', 'backuptime': '23:00', 'password': u'ljz8938'}
+2016-11-28 11:41:31,520 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:41:31,522 main.py setting 73 DEBUG - css/setting.css
+2016-11-28 11:41:31,522 main.py setting 75 DEBUG - None
+2016-11-28 11:41:31,523 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:41:31,524 main.py setting 73 DEBUG - js/setting.js
+2016-11-28 11:41:31,524 main.py setting 75 DEBUG - None
+2016-11-28 11:41:39,386 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:41:39,387 main.py setting 73 DEBUG - deluser
+2016-11-28 11:41:39,387 main.py setting 75 DEBUG - None
+2016-11-28 11:41:39,387 main.py op_sql 148 DEBUG - delete from admin where id="3"
+2016-11-28 11:41:39,391 main.py op_sql 151 DEBUG - success
+2016-11-28 11:41:44,776 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:41:44,776 main.py setting 73 DEBUG - jump
+2016-11-28 11:41:44,777 main.py setting 75 DEBUG - None
+2016-11-28 11:41:44,780 main.py setting 136 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': '', 'intval': '1', 'backuptime': '23:00', 'password': u'ljz8938'}
+2016-11-28 11:41:44,792 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:41:44,792 main.py setting 73 DEBUG - css/setting.css
+2016-11-28 11:41:44,793 main.py setting 75 DEBUG - None
+2016-11-28 11:41:44,793 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:41:44,794 main.py setting 73 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 11:41:44,794 main.py setting 75 DEBUG - None
+2016-11-28 11:41:44,795 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:41:44,795 main.py setting 73 DEBUG - js/setting.js
+2016-11-28 11:41:44,795 main.py setting 75 DEBUG - None
+2016-11-28 11:41:44,796 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:41:44,796 main.py setting 73 DEBUG - images/icon_wp.png
+2016-11-28 11:41:44,796 main.py setting 75 DEBUG - None
+2016-11-28 11:41:44,798 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:41:44,798 main.py setting 73 DEBUG - images/icon_tuichu.png
+2016-11-28 11:41:44,798 main.py setting 75 DEBUG - None
+2016-11-28 11:42:14,912 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:42:14,912 main.py setting 73 DEBUG - adduser
+2016-11-28 11:42:14,913 main.py setting 75 DEBUG - None
+2016-11-28 11:42:14,913 main.py setting 94 DEBUG - start add user.......
+2016-11-28 11:42:14,913 main.py op_sql 148 DEBUG - insert admin values (2, "test", "ljz", "123456", 0, 1)
+2016-11-28 11:42:14,915 main.py op_sql 151 DEBUG - success
+2016-11-28 11:42:37,425 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:42:37,426 main.py setting 73 DEBUG - yunpan
+2016-11-28 11:42:37,426 main.py setting 75 DEBUG - None
+2016-11-28 11:42:37,428 main.py op_sql 148 DEBUG - update system set username="13770976640", passwd="ljz89381010", backuptime="23:00:00" where id=1;
+2016-11-28 11:42:37,430 main.py op_sql 151 DEBUG - success
+2016-11-28 11:42:40,445 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:42:40,445 main.py setting 73 DEBUG - jump
+2016-11-28 11:42:40,445 main.py setting 75 DEBUG - None
+2016-11-28 11:42:40,447 main.py setting 136 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#test#123456#ljz', 'intval': '1', 'backuptime': '23:00', 'password': u'ljz89381010'}
+2016-11-28 11:42:40,456 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:42:40,457 main.py setting 73 DEBUG - css/setting.css
+2016-11-28 11:42:40,457 main.py setting 75 DEBUG - None
+2016-11-28 11:42:40,458 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:42:40,458 main.py setting 73 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 11:42:40,458 main.py setting 75 DEBUG - None
+2016-11-28 11:42:40,459 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:42:40,460 main.py setting 73 DEBUG - js/setting.js
+2016-11-28 11:42:40,460 main.py setting 75 DEBUG - None
+2016-11-28 11:42:40,461 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:42:40,461 main.py setting 73 DEBUG - images/icon_wp.png
+2016-11-28 11:42:40,461 main.py setting 75 DEBUG - None
+2016-11-28 11:42:40,463 main.py setting 72 DEBUG - i am setting
+2016-11-28 11:42:40,463 main.py setting 73 DEBUG - images/icon_tuichu.png
+2016-11-28 11:42:40,463 main.py setting 75 DEBUG - None
+2016-11-28 13:26:32,258 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 15:31:52,459 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 15:31:58,565 main.py orderlist 59 DEBUG - i am orderlist
+2016-11-28 15:31:58,581 main.py orderlist 59 DEBUG - i am orderlist
+2016-11-28 15:31:58,588 main.py orderlist 59 DEBUG - i am orderlist
+2016-11-28 15:31:58,590 main.py orderlist 59 DEBUG - i am orderlist
+2016-11-28 15:31:58,592 main.py orderlist 59 DEBUG - i am orderlist
+2016-11-28 15:31:58,594 main.py orderlist 59 DEBUG - i am orderlist
+2016-11-28 15:31:58,596 main.py orderlist 59 DEBUG - i am orderlist
+2016-11-28 15:31:58,599 main.py orderlist 59 DEBUG - i am orderlist
+2016-11-28 15:31:58,600 main.py orderlist 59 DEBUG - i am orderlist
+2016-11-28 15:31:58,633 main.py orderlist 59 DEBUG - i am orderlist
+2016-11-28 15:31:58,641 main.py orderlist 59 DEBUG - i am orderlist
+2016-11-28 16:06:44,609 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 16:06:50,952 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:06:50,952 main.py setting 74 DEBUG - jump
+2016-11-28 16:06:50,953 main.py setting 76 DEBUG - None
+2016-11-28 16:06:50,959 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#test#123456#ljz', 'intval': '1', 'backuptime': '23:00', 'password': u'ljz89381010'}
+2016-11-28 16:06:50,976 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:06:50,977 main.py setting 74 DEBUG - css/setting.css
+2016-11-28 16:06:50,977 main.py setting 76 DEBUG - None
+2016-11-28 16:06:50,984 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:06:50,985 main.py setting 74 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 16:06:50,985 main.py setting 76 DEBUG - None
+2016-11-28 16:06:50,987 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:06:50,987 main.py setting 74 DEBUG - js/setting.js
+2016-11-28 16:06:50,988 main.py setting 76 DEBUG - None
+2016-11-28 16:06:50,989 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:06:50,990 main.py setting 74 DEBUG - images/icon_wp.png
+2016-11-28 16:06:50,990 main.py setting 76 DEBUG - None
+2016-11-28 16:06:50,996 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:06:50,996 main.py setting 74 DEBUG - images/icon_tuichu.png
+2016-11-28 16:06:50,996 main.py setting 76 DEBUG - None
+2016-11-28 16:07:11,458 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:07:11,458 main.py setting 74 DEBUG - adduser
+2016-11-28 16:07:11,459 main.py setting 76 DEBUG - None
+2016-11-28 16:07:11,459 main.py setting 95 DEBUG - start add user.......
+2016-11-28 16:07:14,132 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:07:14,132 main.py setting 74 DEBUG - jump
+2016-11-28 16:07:14,132 main.py setting 76 DEBUG - None
+2016-11-28 16:07:14,137 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#test#123456#ljz', 'intval': '1', 'backuptime': '23:00', 'password': u'ljz89381010'}
+2016-11-28 16:07:14,153 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:07:14,153 main.py setting 74 DEBUG - css/setting.css
+2016-11-28 16:07:14,153 main.py setting 76 DEBUG - None
+2016-11-28 16:07:14,154 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:07:14,154 main.py setting 74 DEBUG - js/setting.js
+2016-11-28 16:07:14,155 main.py setting 76 DEBUG - None
+2016-11-28 16:07:14,156 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:07:14,156 main.py setting 74 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 16:07:14,156 main.py setting 76 DEBUG - None
+2016-11-28 16:07:14,158 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:07:14,158 main.py setting 74 DEBUG - images/icon_wp.png
+2016-11-28 16:07:14,158 main.py setting 76 DEBUG - None
+2016-11-28 16:07:14,160 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:07:14,160 main.py setting 74 DEBUG - images/icon_tuichu.png
+2016-11-28 16:07:14,161 main.py setting 76 DEBUG - None
+2016-11-28 16:08:24,583 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 16:08:28,432 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:08:28,432 main.py setting 74 DEBUG - jump
+2016-11-28 16:08:28,433 main.py setting 76 DEBUG - None
+2016-11-28 16:08:28,443 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#test#123456#ljz', 'intval': '1', 'backuptime': '23:00', 'password': u'ljz89381010'}
+2016-11-28 16:08:28,463 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:08:28,464 main.py setting 74 DEBUG - css/setting.css
+2016-11-28 16:08:28,464 main.py setting 76 DEBUG - None
+2016-11-28 16:08:28,474 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:08:28,475 main.py setting 74 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 16:08:28,475 main.py setting 76 DEBUG - None
+2016-11-28 16:08:28,476 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:08:28,478 main.py setting 74 DEBUG - js/setting.js
+2016-11-28 16:08:28,479 main.py setting 76 DEBUG - None
+2016-11-28 16:08:28,480 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:08:28,480 main.py setting 74 DEBUG - images/icon_wp.png
+2016-11-28 16:08:28,480 main.py setting 76 DEBUG - None
+2016-11-28 16:08:28,490 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:08:28,490 main.py setting 74 DEBUG - images/icon_tuichu.png
+2016-11-28 16:08:28,490 main.py setting 76 DEBUG - None
+2016-11-28 16:08:46,741 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:08:46,742 main.py setting 74 DEBUG - adduser
+2016-11-28 16:08:46,742 main.py setting 76 DEBUG - None
+2016-11-28 16:08:46,742 main.py setting 95 DEBUG - start add user.......
+2016-11-28 16:08:48,996 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:08:48,996 main.py setting 74 DEBUG - jump
+2016-11-28 16:08:48,996 main.py setting 76 DEBUG - None
+2016-11-28 16:08:48,998 main.py setting 138 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#test#123456#ljz,3#lijinzhou#123#qwe', 'intval': '1', 'backuptime': '23:00', 'password': u'ljz89381010'}
+2016-11-28 16:08:49,008 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:08:49,008 main.py setting 74 DEBUG - css/setting.css
+2016-11-28 16:08:49,008 main.py setting 76 DEBUG - None
+2016-11-28 16:08:49,009 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:08:49,009 main.py setting 74 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 16:08:49,010 main.py setting 76 DEBUG - None
+2016-11-28 16:08:49,011 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:08:49,011 main.py setting 74 DEBUG - js/setting.js
+2016-11-28 16:08:49,011 main.py setting 76 DEBUG - None
+2016-11-28 16:08:49,014 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:08:49,015 main.py setting 74 DEBUG - images/icon_wp.png
+2016-11-28 16:08:49,015 main.py setting 76 DEBUG - None
+2016-11-28 16:08:49,016 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:08:49,016 main.py setting 74 DEBUG - images/icon_tuichu.png
+2016-11-28 16:08:49,017 main.py setting 76 DEBUG - None
+2016-11-28 16:09:38,006 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 16:09:41,530 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:09:41,530 main.py setting 74 DEBUG - jump
+2016-11-28 16:09:41,530 main.py setting 76 DEBUG - None
+2016-11-28 16:09:41,536 main.py setting 140 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#test#123456#ljz,3#lijinzhou#123#qwe', 'intval': '1', 'backuptime': '23:00', 'password': u'ljz89381010'}
+2016-11-28 16:09:41,549 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:09:41,550 main.py setting 74 DEBUG - css/setting.css
+2016-11-28 16:09:41,550 main.py setting 76 DEBUG - None
+2016-11-28 16:09:41,557 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:09:41,557 main.py setting 74 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 16:09:41,557 main.py setting 76 DEBUG - None
+2016-11-28 16:09:41,558 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:09:41,559 main.py setting 74 DEBUG - js/setting.js
+2016-11-28 16:09:41,559 main.py setting 76 DEBUG - None
+2016-11-28 16:09:41,561 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:09:41,561 main.py setting 74 DEBUG - images/icon_wp.png
+2016-11-28 16:09:41,561 main.py setting 76 DEBUG - None
+2016-11-28 16:09:41,564 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:09:41,565 main.py setting 74 DEBUG - images/icon_tuichu.png
+2016-11-28 16:09:41,565 main.py setting 76 DEBUG - None
+2016-11-28 16:09:53,331 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:09:53,331 main.py setting 74 DEBUG - adduser
+2016-11-28 16:09:53,332 main.py setting 76 DEBUG - None
+2016-11-28 16:09:53,332 main.py setting 95 DEBUG - start add user.......
+2016-11-28 16:09:53,335 main.py setting 105 DEBUG - -----------------
+2016-11-28 16:09:53,335 main.py setting 106 DEBUG - 4
+2016-11-28 16:18:11,103 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 16:18:15,907 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:18:15,907 main.py setting 74 DEBUG - jump
+2016-11-28 16:18:15,907 main.py setting 76 DEBUG - None
+2016-11-28 16:18:15,913 main.py setting 139 DEBUG - {'username': 'Test', 'account': '\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe8\xb4\xa6\xe5\x8f\xb7', 'users': u'2#test#123456#ljz,3#lijinzhou#123#qwe,4#123#123#123', 'intval': '', 'backuptime': '00:00', 'password': '\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe5\xaf\x86\xe7\xa0\x81'}
+2016-11-28 16:18:15,927 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:18:15,927 main.py setting 74 DEBUG - css/setting.css
+2016-11-28 16:18:15,927 main.py setting 76 DEBUG - None
+2016-11-28 16:18:15,933 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:18:15,934 main.py setting 74 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 16:18:15,934 main.py setting 76 DEBUG - None
+2016-11-28 16:18:15,935 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:18:15,935 main.py setting 74 DEBUG - js/setting.js
+2016-11-28 16:18:15,936 main.py setting 76 DEBUG - None
+2016-11-28 16:18:15,937 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:18:15,937 main.py setting 74 DEBUG - images/icon_wp.png
+2016-11-28 16:18:15,938 main.py setting 76 DEBUG - None
+2016-11-28 16:18:15,941 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:18:15,941 main.py setting 74 DEBUG - images/icon_tuichu.png
+2016-11-28 16:18:15,941 main.py setting 76 DEBUG - None
+2016-11-28 16:18:42,831 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:18:42,831 main.py setting 74 DEBUG - yunpan
+2016-11-28 16:18:42,832 main.py setting 76 DEBUG - None
+2016-11-28 16:19:19,360 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 16:19:23,513 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:19:23,513 main.py setting 74 DEBUG - jump
+2016-11-28 16:19:23,514 main.py setting 76 DEBUG - None
+2016-11-28 16:19:23,524 main.py setting 139 DEBUG - {'username': 'Test', 'account': '\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe8\xb4\xa6\xe5\x8f\xb7', 'users': u'2#test#123456#ljz,3#lijinzhou#123#qwe,4#123#123#123', 'intval': '', 'backuptime': '00:00', 'password': '\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe5\xaf\x86\xe7\xa0\x81'}
+2016-11-28 16:19:23,546 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:19:23,546 main.py setting 74 DEBUG - css/setting.css
+2016-11-28 16:19:23,546 main.py setting 76 DEBUG - None
+2016-11-28 16:19:23,557 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:19:23,558 main.py setting 74 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 16:19:23,558 main.py setting 76 DEBUG - None
+2016-11-28 16:19:23,559 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:19:23,559 main.py setting 74 DEBUG - js/setting.js
+2016-11-28 16:19:23,560 main.py setting 76 DEBUG - None
+2016-11-28 16:19:23,561 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:19:23,561 main.py setting 74 DEBUG - images/icon_wp.png
+2016-11-28 16:19:23,561 main.py setting 76 DEBUG - None
+2016-11-28 16:19:23,570 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:19:23,571 main.py setting 74 DEBUG - images/icon_tuichu.png
+2016-11-28 16:19:23,571 main.py setting 76 DEBUG - None
+2016-11-28 16:19:39,847 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:19:39,847 main.py setting 74 DEBUG - yunpan
+2016-11-28 16:19:39,847 main.py setting 76 DEBUG - None
+2016-11-28 16:20:03,995 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:20:03,995 main.py setting 74 DEBUG - jump
+2016-11-28 16:20:03,995 main.py setting 76 DEBUG - None
+2016-11-28 16:20:04,000 main.py setting 139 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#test#123456#ljz,3#lijinzhou#123#qwe,4#123#123#123', 'intval': 'None', 'backuptime': '00:00', 'password': u'ljz89381010'}
+2016-11-28 16:20:04,015 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:20:04,016 main.py setting 74 DEBUG - css/setting.css
+2016-11-28 16:20:04,016 main.py setting 76 DEBUG - None
+2016-11-28 16:20:04,017 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:20:04,017 main.py setting 74 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 16:20:04,018 main.py setting 76 DEBUG - None
+2016-11-28 16:20:04,019 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:20:04,019 main.py setting 74 DEBUG - js/setting.js
+2016-11-28 16:20:04,019 main.py setting 76 DEBUG - None
+2016-11-28 16:20:04,020 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:20:04,021 main.py setting 74 DEBUG - images/icon_wp.png
+2016-11-28 16:20:04,021 main.py setting 76 DEBUG - None
+2016-11-28 16:20:04,024 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:20:04,024 main.py setting 74 DEBUG - images/icon_tuichu.png
+2016-11-28 16:20:04,025 main.py setting 76 DEBUG - None
+2016-11-28 16:25:40,252 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 16:25:46,121 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:25:46,121 main.py setting 74 DEBUG - jump
+2016-11-28 16:25:46,122 main.py setting 76 DEBUG - None
+2016-11-28 16:25:46,133 main.py setting 139 DEBUG - {'username': 'Test', 'account': '\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe8\xb4\xa6\xe5\x8f\xb7', 'users': u'2#test#123456#ljz,3#lijinzhou#123#qwe,4#123#123#123', 'intval': '', 'backuptime': '00:00', 'password': '\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe5\xaf\x86\xe7\xa0\x81'}
+2016-11-28 16:25:46,150 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:25:46,150 main.py setting 74 DEBUG - css/setting.css
+2016-11-28 16:25:46,150 main.py setting 76 DEBUG - None
+2016-11-28 16:25:46,158 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:25:46,158 main.py setting 74 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 16:25:46,159 main.py setting 76 DEBUG - None
+2016-11-28 16:25:46,161 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:25:46,161 main.py setting 74 DEBUG - js/setting.js
+2016-11-28 16:25:46,161 main.py setting 76 DEBUG - None
+2016-11-28 16:25:46,163 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:25:46,163 main.py setting 74 DEBUG - images/icon_wp.png
+2016-11-28 16:25:46,164 main.py setting 76 DEBUG - None
+2016-11-28 16:25:46,180 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:25:46,180 main.py setting 74 DEBUG - images/icon_tuichu.png
+2016-11-28 16:25:46,180 main.py setting 76 DEBUG - None
+2016-11-28 16:26:00,130 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:26:00,130 main.py setting 74 DEBUG - yunpan
+2016-11-28 16:26:00,130 main.py setting 76 DEBUG - None
+2016-11-28 16:27:11,018 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 16:27:15,487 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:27:15,487 main.py setting 74 DEBUG - jump
+2016-11-28 16:27:15,488 main.py setting 76 DEBUG - None
+2016-11-28 16:27:15,499 main.py setting 139 DEBUG - {'username': 'Test', 'account': '\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe8\xb4\xa6\xe5\x8f\xb7', 'users': u'2#test#123456#ljz,3#lijinzhou#123#qwe,4#123#123#123', 'intval': '', 'backuptime': '00:00', 'password': '\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe5\xaf\x86\xe7\xa0\x81'}
+2016-11-28 16:27:15,514 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:27:15,514 main.py setting 74 DEBUG - css/setting.css
+2016-11-28 16:27:15,514 main.py setting 76 DEBUG - None
+2016-11-28 16:27:15,521 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:27:15,521 main.py setting 74 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 16:27:15,521 main.py setting 76 DEBUG - None
+2016-11-28 16:27:15,523 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:27:15,523 main.py setting 74 DEBUG - js/setting.js
+2016-11-28 16:27:15,524 main.py setting 76 DEBUG - None
+2016-11-28 16:27:15,527 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:27:15,527 main.py setting 74 DEBUG - images/icon_wp.png
+2016-11-28 16:27:15,527 main.py setting 76 DEBUG - None
+2016-11-28 16:27:15,539 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:27:15,539 main.py setting 74 DEBUG - images/icon_tuichu.png
+2016-11-28 16:27:15,539 main.py setting 76 DEBUG - None
+2016-11-28 16:27:28,449 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:27:28,449 main.py setting 74 DEBUG - yunpan
+2016-11-28 16:27:28,449 main.py setting 76 DEBUG - None
+2016-11-28 16:29:10,005 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 16:29:13,407 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:29:13,407 main.py setting 74 DEBUG - jump
+2016-11-28 16:29:13,408 main.py setting 76 DEBUG - None
+2016-11-28 16:29:13,420 main.py setting 140 DEBUG - {'username': 'Test', 'account': u'123', 'users': u'2#test#123456#ljz,3#lijinzhou#123#qwe,4#123#123#123', 'intval': 'None', 'backuptime': '00:00', 'password': u'123'}
+2016-11-28 16:29:13,437 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:29:13,437 main.py setting 74 DEBUG - css/setting.css
+2016-11-28 16:29:13,437 main.py setting 76 DEBUG - None
+2016-11-28 16:29:13,446 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:29:13,447 main.py setting 74 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 16:29:13,447 main.py setting 76 DEBUG - None
+2016-11-28 16:29:13,450 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:29:13,450 main.py setting 74 DEBUG - js/setting.js
+2016-11-28 16:29:13,450 main.py setting 76 DEBUG - None
+2016-11-28 16:29:13,451 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:29:13,452 main.py setting 74 DEBUG - images/icon_wp.png
+2016-11-28 16:29:13,456 main.py setting 76 DEBUG - None
+2016-11-28 16:29:13,457 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:29:13,457 main.py setting 74 DEBUG - images/icon_tuichu.png
+2016-11-28 16:29:13,457 main.py setting 76 DEBUG - None
+2016-11-28 16:29:23,019 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:29:23,020 main.py setting 74 DEBUG - yunpan
+2016-11-28 16:29:23,020 main.py setting 76 DEBUG - None
+2016-11-28 16:32:42,231 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 16:32:49,124 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:32:49,124 main.py setting 74 DEBUG - jump
+2016-11-28 16:32:49,124 main.py setting 76 DEBUG - None
+2016-11-28 16:32:49,130 main.py setting 140 DEBUG - {'username': 'Test', 'account': u'123', 'users': u'2#test#123456#ljz,3#lijinzhou#123#qwe,4#123#123#123', 'intval': 'None', 'backuptime': '00:00', 'password': u'123'}
+2016-11-28 16:32:49,143 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:32:49,143 main.py setting 74 DEBUG - css/setting.css
+2016-11-28 16:32:49,143 main.py setting 76 DEBUG - None
+2016-11-28 16:32:49,149 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:32:49,150 main.py setting 74 DEBUG - js/jquery-1.11.1.min.js
+2016-11-28 16:32:49,150 main.py setting 76 DEBUG - None
+2016-11-28 16:32:49,151 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:32:49,152 main.py setting 74 DEBUG - images/icon_wp.png
+2016-11-28 16:32:49,152 main.py setting 76 DEBUG - None
+2016-11-28 16:32:49,153 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:32:49,153 main.py setting 74 DEBUG - js/setting.js
+2016-11-28 16:32:49,154 main.py setting 76 DEBUG - None
+2016-11-28 16:32:49,156 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:32:49,156 main.py setting 74 DEBUG - images/icon_tuichu.png
+2016-11-28 16:32:49,157 main.py setting 76 DEBUG - None
+2016-11-28 16:33:02,649 main.py setting 73 DEBUG - i am setting
+2016-11-28 16:33:02,650 main.py setting 74 DEBUG - yunpan
+2016-11-28 16:33:02,650 main.py setting 76 DEBUG - None
+2016-11-28 16:36:22,155 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 16:36:25,999 main.py setting 131 DEBUG - {'username': 'Test', 'account': u'123123', 'users': u'2#test#123456#ljz,3#lijinzhou#123#qwe,4#123#123#123', 'intval': 'None', 'backuptime': '00:00', 'password': u'123'}
+2016-11-28 16:37:11,386 main.py setting 131 DEBUG - {'username': 'Test', 'account': u'123123', 'users': u'2#test#123456#ljz,3#lijinzhou#123#qwe,4#123#123#123', 'intval': 'None', 'backuptime': '00:00', 'password': u'123'}
+2016-11-28 16:38:09,419 main.py <module> 26 DEBUG - dunning server start
+2016-11-28 16:38:17,570 main.py setting 131 DEBUG - {'username': 'Test', 'account': u'123123', 'users': u'2#test#123456#ljz,3#lijinzhou#123#qwe,4#123#123#123', 'intval': 'None', 'backuptime': '00:00', 'password': u'123'}
+2016-11-28 16:38:46,963 main.py setting 89 DEBUG - start add user.......
+2016-11-28 16:39:28,003 main.py setting 131 DEBUG - {'username': 'Test', 'account': u'123123', 'users': u'3#llll#123#ddd', 'intval': 'None', 'backuptime': '00:00', 'password': u'123'}
+2016-11-28 16:39:40,074 main.py setting 89 DEBUG - start add user.......
+2016-11-28 16:42:03,515 main.py setting 131 DEBUG - {'username': 'Test', 'account': u'123123', 'users': u'2#qw#qw#qw,3#llll#123#ddd', 'intval': 'None', 'backuptime': '00:00', 'password': u'123'}
+2016-11-28 16:59:50,398 main.py setting 131 DEBUG - {'username': 'Test', 'account': u'123123', 'users': u'2#qw#qw#qw,3#llll#123#ddd', 'intval': 'None', 'backuptime': '00:00', 'password': u'123'}
+2016-11-28 17:00:15,185 main.py setting 131 DEBUG - {'username': 'Test', 'account': u'13770976640', 'users': u'2#qw#qw#qw,3#llll#123#ddd', 'intval': 'None', 'backuptime': '00:00', 'password': u'123'}
