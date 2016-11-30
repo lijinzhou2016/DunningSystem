@@ -68,34 +68,64 @@ $(document).ready(function () {
     //     $(this).css("color", "#666");
     // })
 
-   
+
 })
- //searchbtn
-    function searchBtn(){
-        var order_username= $(".orderlist-username").val();
-        var order_zhangqi=$(".order-zhangqi").val();
-        var order_school=$(".order-school").val();
-        var order_jtzz=$(".order-jtzz").val();
-        var order_jtqy=$(".order-jtqy").val();
-        var order_jdrq=$(".order-jdrq").val();
-        var order_ddzt=$(".order-ddzt").find("option:selected").text();
-        if(order_ddzt=="全部"){
-            order_ddzt="";
-        }
-        var order_shxx=$(".order-shxx").val();
-        var inputval=order_username+" "+order_zhangqi+" "+order_school+" "+order_jtzz+" "+order_jtqy+" "+order_jdrq+" "+order_ddzt+" "+order_shxx;
-        
-        if(inputval.length>7){
-            $(".select-result-content").show();
-        }
-        $(".chooseinputval").text(inputval);
-        
+//searchbtn
+function searchBtn() {
+    var order_username = $(".orderlist-username").val();
+    var order_zhangqi = $(".order-zhangqi").val();
+    var order_school = $(".order-school").val();
+    var order_jtzz = $(".order-jtzz").val();
+    var order_jtqy = $(".order-jtqy").val();
+    var order_jdrq = $(".order-jdrq").val();
+    var order_ddzt = $(".order-ddzt").find("option:selected").text();
+    if (order_ddzt == "全部") {
+        order_ddzt = "";
+    }
+    var order_shxx = $(".order-shxx").val();
+    var inputval = order_username + " " + order_zhangqi + " " + order_school + " " + order_jtzz + " " + order_jtqy + " " + order_jdrq + " " + order_ddzt + " " + order_shxx;
+
+    if (inputval.length > 7) {
+        $(".select-result-content").show();
+    }
+    $(".chooseinputval").text(inputval);
+
+}
+
+//resetBtn
+function resetBtn() {
+    $(".order-list-content-search").find("input").val("");
+    $("#order-ddzt option:first").prop("selected", 'selected');
+    $(".chooseinputval").text("");
+    $(".select-result-content").hide();
+}
+
+function ajaxupLoad() {
+
+    var file = $("#myfile").val();
+    var ext = file.slice(file.lastIndexOf(".") + 1).toLowerCase();
+    alert(ext);
+    if ('xls' == ext || 'xlsx' == ext) {
+        var formData = new FormData($("#uploadForm")[0]);
+        $.ajax({
+            url: '/upload',
+            type: 'POST',
+            data: formData,
+            async: false,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (returndata) {
+                alert(returndata);
+            },
+            error: function (returndata) {
+                alert('error')
+                alert(returndata)
+            }
+        });
+    }
+    else {
+        alert('请上传excel文件')
     }
 
-    //resetBtn
-    function resetBtn(){
-        $(".order-list-content-search").find("input").val("");
-        $("#order-ddzt option:first").prop("selected",'selected');
-        $(".chooseinputval").text("");
-        $(".select-result-content").hide();
-    }
+}

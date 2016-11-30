@@ -11,6 +11,7 @@
 #*****************************************************************************
 
 import bottle
+from bottle import *
 import os
 import sys
 reload(sys)
@@ -63,6 +64,12 @@ def orderlist(filepath):
     # util.py 中定义
     return order_list_info
 
+@bottle.route('/upload', method='POST')
+def upload_server():
+    logger.debug('i am upload server.............')
+    return save_ordersource()
+
+
 @bottle.route('/order/detail')
 def orderdetail():
     pass 
@@ -83,6 +90,7 @@ def setting(action):
             System.update(username=yaccount, passwd=ypassword, backuptime=ytime).where(System.id==1).execute()
         else: #插入
             System.insert(id=1, username=yaccount, passwd=ypassword, backuptime=ytime).execute()
+        return {'state':'success'}
 
     elif action == 'adduser':
         """ 添加管理员 """

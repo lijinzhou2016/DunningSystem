@@ -53,6 +53,7 @@ def images_path():
 execfile(common_path() + os.sep + 'db.py')
 execfile(common_path() + os.sep + 'config.py')
 execfile(common_path() + os.sep + 'mylogger.py')
+execfile(common_path() + os.sep + 'ljz_common.py')
 
 # orderlist.tpl
 order_list_info ={
