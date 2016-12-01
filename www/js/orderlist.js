@@ -1,5 +1,6 @@
 $(document).ready(function () {
     var pageUrl = "";
+    $('.loadding').hide()
 
     /* window.onload=function(){
         pageUrl=window.location.href;
@@ -101,24 +102,29 @@ function resetBtn() {
 }
 
 function ajaxupLoad() {
-
+    $('.upload').hide()
+    $('.loadding').show()
     var file = $("#myfile").val();
     var ext = file.slice(file.lastIndexOf(".") + 1).toLowerCase();
-    alert(ext);
+
     if ('xls' == ext || 'xlsx' == ext) {
         var formData = new FormData($("#uploadForm")[0]);
         $.ajax({
             url: '/upload',
             type: 'POST',
             data: formData,
-            async: false,
+            async: true,
             cache: false,
             contentType: false,
             processData: false,
             success: function (returndata) {
+                $('.loadding').hide()
+                $('.upload').show()
                 alert(returndata);
             },
             error: function (returndata) {
+                $('.loadding').hide()
+                $('.upload').show()
                 alert('error')
                 alert(returndata)
             }

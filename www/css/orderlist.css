@@ -153,6 +153,12 @@
     margin-left:10%;
     margin-top:20px;
 }
+.order-list-right img{
+    width:80%;
+    position:relative;
+    margin-left:10%;
+    margin-top:20px;
+}
 /*搜索结果显示栏*/
 .select-result-content{
     position:relative;

@@ -261,8 +261,9 @@
 				<input name='testmd5' id='jisuan_md5' hidden />
 				<input name='name' id='wherefrom' type="text" placeholder="请输入订单来源" />
 				<input type="file" id='myfile' name='data' value="选择文件" />
-				<input type="button" value="上传" onclick='ajaxupLoad()' />
+				<input type="button" value="上传" class='upload' onclick='ajaxupLoad()'/>
 			</form>
+			<img class='loadding' src='images/loading.gif'/>
 			<a href="orderDetail.html" target="_blank"><input type="button" value="手动创建" style="border:1px solid #ccc;outline:none;background:url(images/icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;"></a>
 			<a href='http://127.0.0.1:8080/setting/jump' target="_blank">
 				<input type="button" value="设置" style="margin-top:30px;border:1px solid #ccc;outline:none;background:url(images/icon-zhanghushezhi.png) no-repeat 10px;width:80%;height:30px;background-size:20px;"

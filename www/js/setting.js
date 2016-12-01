@@ -95,7 +95,9 @@ $(document).ready(function () {
                 $(this).parent().parent().remove();
                 user_ids[user_ids.indexOf(delete_user_id)] = 0;
                 new_user_ids[new_user_ids.indexOf(delete_user_id)] = 0;
-                ajax_get("http://127.0.0.1:8080/setting/deluset", { 'id': delete_user_id }, true)
+
+                ajax_post("/set", {'action':'deluser', 'id': delete_user_id }, false);
+    
             }
         })
     })
@@ -131,31 +133,31 @@ $(document).ready(function () {
             oldtimetext = $("#timeselect").find("option:selected").text();
             selectchecked = $("#timeselect").val();
 
-            var send_url = "http://127.0.0.1:8080/setting/yunpan"
-            var send_data = { "username": oldwangpanzhanghao, "passwd": oldwangpanmima, "backuptime": oldtimetext };
-            ajax_get(send_url, send_data, true); //提交后台
+            var send_url = "/set"
+            var send_data = {"action":"yunpan", "username": oldwangpanzhanghao, "passwd": oldwangpanmima, "backuptime": oldtimetext };
+            
+            ajax_post(send_url, send_data, false);
+           
         }
         else {
             alert("账号密码不能为空")
         }
     })
 
-    function ajax_get(send_url, send_data, is_async) {
+    function ajax_post(send_url, send_data, is_async) {
         $.ajax({
-            type: 'get',
+            type: 'post',
             url: send_url,
             data: send_data,
             async: is_async,
-            timeout: 30000,
+            timeout: 60000,
             success: function (result) {
-                if (result['state'] == "success") {
-                    alert('hahahhahahahahah')
-                    return true;
+                if(result=='error'){
+                    alert('操作失败')
                 }
-                else {
-                    alert("【操作失败】 " + result)
-                    return false;
-                }
+            },
+            error: function(result){
+                alert(result)
             }
         });
     }
@@ -179,7 +181,9 @@ $(document).ready(function () {
                 $(this).parent().parent().remove();
                 user_ids[user_ids.indexOf(delete_user_id)] = 0;
                 new_user_ids[new_user_ids.indexOf(delete_user_id)] = 0;
-                ajax_get("http://127.0.0.1:8080/setting/deluser", { 'id': delete_user_id }, true)
+                
+                ajax_post("/set", {'action':'deluser', 'id': delete_user_id }, false)
+               
             }
         })
     }
@@ -248,8 +252,8 @@ $(document).ready(function () {
         var cls_account;
         var cls_passwd;
         var cls_name;
-        var send_data = { "id": "", "user": "", "passwd": "", "name": "" }
-        var send_url = "http://127.0.0.1:8080/setting/adduser"
+        var send_data = {'action':'adduser', "id": "", "user": "", "passwd": "", "name": "" }
+        var send_url = "/set"
         for (i = 0; i < new_user_ids.length; i++) {
             if (new_user_ids[i] != 0) {
                 user_id = new_user_ids[i];
@@ -263,17 +267,13 @@ $(document).ready(function () {
                 send_data.passwd = $(cls_passwd).val();
                 send_data.name = $(cls_name).val();
 
-                ajax_get(send_url, send_data, true);
-
+                ajax_post(send_url, send_data, false)
+               
             }
 
         }
         //初始化新增户id数组
         new_user_ids = new Array();
-    }
-
-    function dele_user() {
-
     }
 
     //确认对话框
