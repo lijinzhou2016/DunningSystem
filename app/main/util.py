@@ -34,6 +34,7 @@ def lib_path():
 
 sys.path.append(lib_path())
 from userinfo import Userinfo 
+from Orderinfo import Orderinfo
 
 def www_path():
     return get_path('www',parent=True)

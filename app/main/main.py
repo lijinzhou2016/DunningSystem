@@ -38,6 +38,20 @@ def index(filepath):
         return bottle.static_file('index.html', www_path())
     return bottle.static_file(filepath, www_path())
 
+# 静态信息文件 127.0.0.1:8080/
+@bottle.route('/:filepath')
+def server_www(filepath):
+    file_name, file_type = os.path.splitext(filepath)
+    if file_name == 'index':
+        return bottle.static_file('index.html', root=www_path())
+    elif file_type == '.html':
+        return bottle.static_file(filename, root=www_path())
+    elif file_type == '.css':
+        return bottle.static_file(filepath, root=css_path())
+    elif file_type == '.js':
+        return bottle.static_file(filepath, root=js_path())
+    elif file_type in ['.png','.PNG','.jpg','.JPG','.gif']:
+        return bottle.static_file(filepath, root=images_path())
 
 # 登陆用户验证接口
 @bottle.route('/checkuser', method='POST')
@@ -72,9 +86,24 @@ def upload_server():
     return save_ordersource()
 
 
-@bottle.route('/order/detail')
-def orderdetail():
-    pass 
+@bottle.route('/orderdetail/<id:int>')
+@bottle.view('orderDetail')
+def orderdetail(id):
+    #获取URL中的session，校验并获取URL信息
+    session = bottle.request.query.session
+    logger.debug('Got session ' + session)
+    userinfo = Userinfo.get_by_session(session)
+    if not userinfo:
+        logger.info('session check invalid, redirect to login')
+        bottle.redirect("/index")
+    #获取订单信息
+    order_info = Orderinfo(id)
+    if order_info.get_order_detail_all():
+        order_detail = order_info.get_format_dict()
+        #封装管理员信息到订单信息中
+        order_detail['user'] = userinfo.dict_format()
+        return order_detail
+
 
 
 # 返回设置页面
@@ -103,7 +132,7 @@ def set_data():
 
 #用户信息封装成json返回
 def get_userinfo_dic(userinfo):
-    return dict(zip(['result','name','passwd','is_admin'],['success',userinfo.name, userinfo.passwd, userinfo.is_admin]))
+    return dict(zip(['result','name','passwd','is_admin', 'session'],['success',userinfo.name, userinfo.passwd, userinfo.is_admin, userinfo.session.session]))
 
 
 

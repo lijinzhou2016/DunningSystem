@@ -76,12 +76,13 @@ class Userinfo:
         self.session = Session(self.name)
 
     #根据session字段获取用户信息， 如果校验失败，则返回None   
-    def get_by_session(self, session_str):
-        self.name = session_str.split('_')[0]
+    @classmethod
+    def get_by_session(self,session_str):
+        name = session_str.split('_')[0]
         #如果存在，则判断正确性
-        if user_list.has_key(self.name):
-            if user_list[self.name].session.validate(session_str):
-                return user_list[self.name]
+        if user_list.has_key(name):
+            if user_list[name].session.validate(session_str):
+                return user_list[name]
             else:
                 return None
         else:
@@ -102,3 +103,10 @@ class Userinfo:
             return userinfo
         else:
             return None
+
+    #格式化用户信息，返回字典
+    def dict_format(self):
+        user_dict = { 'name': self.name, 'passwd': self.passwd,
+                    'is_admin': self.is_admin, 'session': self.session.session,
+                    'user': self.user}
+        return user_dict

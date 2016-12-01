@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2016-11-08 18:08:17
+Date: 2016-12-01 21:31:22
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,7 +27,7 @@ CREATE TABLE `admin` (
   `is_admin` tinyint(4) NOT NULL DEFAULT '0' COMMENT '是否管理员',
   `enable` tinyint(4) DEFAULT NULL COMMENT '是否禁用',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for lender
@@ -42,16 +42,10 @@ CREATE TABLE `lender` (
   `univers_area` varchar(255) DEFAULT NULL COMMENT '学校区域',
   `family_addr` varchar(255) DEFAULT NULL COMMENT '家庭住址',
   `family_area` varchar(255) DEFAULT NULL COMMENT '家庭住址区域',
-  `lender_pic` varchar(255) DEFAULT NULL COMMENT '借款人信息图片路径，多个文件以分号相隔',
-  `parent` varchar(255) DEFAULT NULL COMMENT '父母联系人',
-  `parent_call` varchar(255) DEFAULT NULL,
-  `roommate` varchar(255) DEFAULT NULL COMMENT '室友',
-  `roommate_call` varchar(255) DEFAULT NULL COMMENT '室友联系方式',
-  `classmate` varchar(255) DEFAULT NULL COMMENT '同学',
-  `classmate_call` varchar(255) DEFAULT NULL COMMENT '同学联系方式',
   `is_del` tinyint(4) NOT NULL COMMENT '删除标志位',
-  PRIMARY KEY (`id`,`idcard_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`,`idcard_id`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for operation
@@ -59,8 +53,9 @@ CREATE TABLE `lender` (
 DROP TABLE IF EXISTS `operation`;
 CREATE TABLE `operation` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `order_id` int(11) DEFAULT NULL,
+  `lender_id` int(11) DEFAULT NULL,
   `admin_id` int(11) DEFAULT NULL COMMENT '操作的管理员ID',
+  `op_desc` varchar(255) DEFAULT NULL,
   `is_change_status` tinyint(4) DEFAULT NULL COMMENT '是否修改订单状态',
   `before_status` int(11) DEFAULT NULL COMMENT '修改前的状态',
   `after_status` int(11) DEFAULT NULL COMMENT '修改后的状态',
@@ -68,11 +63,11 @@ CREATE TABLE `operation` (
   `files` varchar(255) DEFAULT NULL COMMENT '上传文件名称',
   `time` timestamp NULL DEFAULT NULL COMMENT '操作的时间戳',
   PRIMARY KEY (`id`),
-  KEY `operation_order_id_fkey` (`order_id`),
   KEY `operation_user_id_fkey` (`admin_id`),
-  CONSTRAINT `operation_order_id_fkey` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`),
+  KEY `operation_lender_id_fkey` (`lender_id`),
+  CONSTRAINT `operation_lender_id_fkey` FOREIGN KEY (`lender_id`) REFERENCES `lender` (`id`),
   CONSTRAINT `operation_user_id_fkey` FOREIGN KEY (`admin_id`) REFERENCES `admin` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for orders
@@ -80,9 +75,10 @@ CREATE TABLE `operation` (
 DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '订单id',
+  `disp_id` varchar(255) DEFAULT NULL COMMENT '显示id',
   `source` varchar(255) DEFAULT NULL COMMENT '订单来源',
   `lender_id` int(11) NOT NULL COMMENT '贷款人id',
-  `account_day` date DEFAULT NULL COMMENT '账期？？ 啥意思',
+  `account_day` varchar(255) DEFAULT NULL COMMENT '账期？？ 啥意思',
   `product` varchar(255) DEFAULT NULL COMMENT '产品名称',
   `amount` int(11) DEFAULT '0' COMMENT '分期金额（总额）',
   `month_pay` varchar(255) DEFAULT NULL COMMENT '每期金额，月供',
@@ -93,22 +89,27 @@ CREATE TABLE `orders` (
   `takeorder_data` date DEFAULT NULL COMMENT '接单日期',
   `call_details` varchar(255) DEFAULT NULL COMMENT '通话详单文件存放路径',
   `contract` varchar(255) DEFAULT NULL COMMENT '合同文件路径',
+  `lender_pic` varchar(255) DEFAULT NULL COMMENT '借款人信息图片路径，多个文件以分号相隔',
+  `parent` varchar(255) DEFAULT NULL COMMENT '父母联系人',
+  `parent_call` varchar(255) DEFAULT NULL,
+  `roommate` varchar(255) DEFAULT NULL COMMENT '室友',
+  `roommate_call` varchar(255) DEFAULT NULL,
+  `classmate` varchar(255) DEFAULT NULL COMMENT '同学',
+  `classmate_call` varchar(255) DEFAULT NULL,
   `status` int(11) DEFAULT NULL COMMENT '订单状态（联系本人、联系亲属、联系同学、失联、待外访、外访中、承诺还款、部分还款、已结清）',
   `is_del` tinyint(4) DEFAULT '0' COMMENT '删除标志位',
   PRIMARY KEY (`id`),
   KEY `orders_lender_id_fkey` (`lender_id`),
   CONSTRAINT `orders_lender_id_fkey` FOREIGN KEY (`lender_id`) REFERENCES `lender` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for system
 -- ----------------------------
 DROP TABLE IF EXISTS `system`;
 CREATE TABLE `system` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) DEFAULT NULL COMMENT '网盘用户名',
   `passwd` varchar(255) DEFAULT NULL COMMENT '网盘密码',
   `backuptime` time DEFAULT NULL COMMENT '备份时间',
-  `intval` int(11) DEFAULT NULL COMMENT '间隔天数',
-  PRIMARY KEY (`id`)
+  `intval` int(11) DEFAULT NULL COMMENT '间隔天数'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

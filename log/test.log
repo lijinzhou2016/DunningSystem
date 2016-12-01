@@ -286,3 +286,29 @@
 2016-12-01 18:02:39,840 main.py save_ordersource 75 DEBUG - i am save_ordersource......
 2016-12-01 18:02:39,841 main.py save_ordersource 88 DEBUG - 582c29d2085a5ef64b75e8abdbea3eb4.xlsx
 2016-12-01 18:02:39,844 main.py cal_md5 64 DEBUG - 582c29d2085a5ef64b75e8abdbea3eb4
+2016-12-01 22:08:13,846 main.py <module> 26 DEBUG - dunning server start
+2016-12-01 22:08:48,566 main.py <module> 26 DEBUG - dunning server start
+2016-12-01 22:10:04,003 main.py <module> 26 DEBUG - dunning server start
+2016-12-01 22:11:28,318 main.py <module> 26 DEBUG - dunning server start
+2016-12-01 22:11:40,131 main.py checkuser 45 DEBUG - check the user
+2016-12-01 22:11:40,168 main.py orderdetail 80 DEBUG - Got session chenxiaosuo_1437070f-b7d0-11e6-b68c-000000000031
+2016-12-01 22:12:22,845 main.py <module> 26 DEBUG - dunning server start
+2016-12-01 22:12:33,400 main.py checkuser 45 DEBUG - check the user
+2016-12-01 22:12:33,428 main.py orderdetail 80 DEBUG - Got session chenxiaosuo_33f629f1-b7d0-11e6-bf93-000000000031
+2016-12-01 22:18:05,582 main.py <module> 26 DEBUG - dunning server start
+2016-12-01 22:18:14,684 main.py checkuser 45 DEBUG - check the user
+2016-12-01 22:18:14,729 main.py orderdetail 80 DEBUG - Got session chenxiaosuo_ff63099f-b7d0-11e6-9014-000000000031
+2016-12-01 22:19:05,148 main.py <module> 26 DEBUG - dunning server start
+2016-12-01 22:19:13,614 main.py checkuser 45 DEBUG - check the user
+2016-12-01 22:19:13,650 main.py orderdetail 80 DEBUG - Got session chenxiaosuo_2282e3af-b7d1-11e6-a3cf-000000000031
+2016-12-01 22:27:10,089 main.py <module> 26 DEBUG - dunning server start
+2016-12-01 22:27:38,285 main.py checkuser 45 DEBUG - check the user
+2016-12-01 22:31:22,364 main.py <module> 26 DEBUG - dunning server start
+2016-12-01 22:33:45,411 main.py <module> 26 DEBUG - dunning server start
+2016-12-01 22:33:54,946 main.py checkuser 59 DEBUG - check the user
+2016-12-01 22:34:17,023 main.py <module> 26 DEBUG - dunning server start
+2016-12-01 22:34:26,855 main.py checkuser 59 DEBUG - check the user
+2016-12-01 22:34:26,891 main.py orderdetail 94 DEBUG - Got session chenxiaosuo_42d8412f-b7d3-11e6-811f-000000000031
+2016-12-01 22:36:02,986 main.py <module> 26 DEBUG - dunning server start
+2016-12-01 22:36:10,308 main.py checkuser 59 DEBUG - check the user
+2016-12-01 22:36:10,345 main.py orderdetail 94 DEBUG - Got session chenxiaosuo_80821510-b7d3-11e6-ad04-000000000031

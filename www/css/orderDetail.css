@@ -128,7 +128,7 @@
     height:14px;position: absolute;
     right:20px;
     top:10px;
-    background: url(../images/Design.png)no-repeat center;
+    background: url(../Design.png)no-repeat center;
     display: none;
 }
 .orderDetail-content-orderStatus{
@@ -151,7 +151,7 @@
     height:14px;position: absolute;
     right:10px;
     top:10px;
-    background: url(../images/Design.png)no-repeat center;
+    background: url(../Design.png)no-repeat center;
     display: none;
 }
 .orderStatus-info{
@@ -235,7 +235,7 @@
     height:14px;position: absolute;
     right:10px;
     top:10px;
-    background: url(../images/Design.png)no-repeat center;
+    background: url(../Design.png)no-repeat center;
     display: none;
 }
 .daochu{
@@ -244,7 +244,7 @@
     position:absolute;
     right:20px;
     top:20px;
-    background:url(../images/icon_fenxiang.png)no-repeat center;
+    background:url(../icon_fenxiang.png)no-repeat center;
     background-size:16px ;
     border:none;
     outline: none;
@@ -367,7 +367,7 @@
 .caozuo-line li{
     width:100%;
     position:relative;
-    background:url(../images/icon_listStyle.png) no-repeat top left;
+    background:url(../icon_listStyle.png) no-repeat top left;
     margin-top:10px;
 }
 .caozuo-time{
@@ -388,7 +388,7 @@
     height:14px;position: absolute;
     right:20px;
     top:0px;
-    background: url(../images/Design.png)no-repeat center;
+    background: url(../Design.png)no-repeat center;
 }
 .caouo-btn{
     width:80%;
