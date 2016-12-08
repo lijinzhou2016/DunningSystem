@@ -19,10 +19,10 @@ $(document).ready(function () {
 
 
     var totalPage = $(".totalPage").val();
-
     var totalRecords = $(".totalRecords").val();
-
+    var mysession = '&;session=' + $('.session_info').val();
     var pageNo = getParameter('pageIndex');
+
 
     if (!pageNo) {
 
@@ -45,10 +45,9 @@ $(document).ready(function () {
         //链接尾部
 
         hrefLatter: '',
-
         getLink: function (n) {
 
-            return this.hrefFormer + this.hrefLatter + "?pageIndex=" + n;
+            return this.hrefFormer + "?pageIndex=" + n + mysession;
 
         }
 
@@ -72,25 +71,48 @@ $(document).ready(function () {
 
 })
 //searchbtn
+var search_item = {
+    'order_username': '',
+    'order_zhangqi': '',
+    'order_school': '',
+    'order_jtzz': '',
+    'order_jtqy': '',
+    'order_jdrq': '',
+    'order_ddzt': '',
+    'order_shxx': ''
+}
 function searchBtn() {
-    var order_username = $(".orderlist-username").val();
-    var order_zhangqi = $(".order-zhangqi").val();
-    var order_school = $(".order-school").val();
-    var order_jtzz = $(".order-jtzz").val();
-    var order_jtqy = $(".order-jtqy").val();
-    var order_jdrq = $(".order-jdrq").val();
-    var order_ddzt = $(".order-ddzt").find("option:selected").text();
-    if (order_ddzt == "全部") {
-        order_ddzt = "";
+    search_item.order_username = $(".orderlist-username").val();
+    search_item.order_zhangqi = $(".order-zhangqi").val();
+    search_item.order_school = $(".order-school").val();
+    search_item.order_jtzz = $(".order-jtzz").val();
+    search_item.order_jtqy = $(".order-jtqy").val();
+    search_item.order_jdrq = $(".order-jdrq").val();
+    search_item.order_ddzt = $(".order-ddzt").find("option:selected").text();
+    if (search_item.order_ddzt == "全部") {
+        search_item.order_ddzt = "";
     }
-    var order_shxx = $(".order-shxx").val();
-    var inputval = order_username + " " + order_zhangqi + " " + order_school + " " + order_jtzz + " " + order_jtqy + " " + order_jdrq + " " + order_ddzt + " " + order_shxx;
-
-    if (inputval.length > 7) {
-        $(".select-result-content").show();
+    search_item.order_shxx = $(".order-shxx").val();
+    // var inputval = order_username + " " + order_zhangqi + " " + order_school + " " + order_jtzz + " " + order_jtqy + " " + order_jdrq + " " + order_ddzt + " " + order_shxx;
+    var inputval = '';
+    var search_condition = '';
+    for( var key in search_item ){
+        inputval += (search_item[key]+' ');
     }
-    $(".chooseinputval").text(inputval);
 
+    if (inputval.length > 8) {
+        for( var key in search_item ){
+            if (search_item[key] !=''){
+                search_condition += ('&'+key+'='+search_item[key])
+            } 
+        }
+        alert(search_condition)
+        // $(".select-result-content").show();
+        // $(".chooseinputval").text(inputval);
+    }
+    else {
+        alert('请选择搜索条件')
+    }
 }
 
 //resetBtn

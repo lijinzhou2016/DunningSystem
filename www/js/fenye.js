@@ -75,7 +75,7 @@ var kkpager = {
 		},
 		//分页按钮控件初始化
 		init : function(config){
-			//赋值
+
 			this.pageIndex = isNaN(config.pageIndex) ? 1 : parseInt(config.pageIndex);
 			this.total = isNaN(config.total) ? 1 : parseInt(config.total);
 			this.totalRecords = isNaN(config.totalRecords) ? 0 : parseInt(config.totalRecords);
@@ -111,7 +111,7 @@ var kkpager = {
 			}
 			
 			if(this.hasNext){
-				str_next = '<a href="'+this.getLink(this.next)+'" title="下一页">下一页</a>';
+				str_next = '<a target="i" href="'+this.getLink(this.next)+'" title="下一页">下一页</a>';
 			}else{
 				str_next = '<span class="disabled">下一页</span>';
 			}

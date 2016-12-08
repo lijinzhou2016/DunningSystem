@@ -139,7 +139,8 @@
 						}
 						else if(result['result']=='success'){
 							//alert('跳转地址为： http://127.0.0.1:8080/orderdetail/1;session=' + result['session'])
-							location.href='http://127.0.0.1:8080/orderdetail/1?;session=' + result['session']
+							//location.href='http://127.0.0.1:8080/orderdetail/1?;session=' + result['session']
+							location.href='http://127.0.0.1:8080/orderlist?pageIndex=1&;session=' + result['session']
 						}
 					}
 			});
