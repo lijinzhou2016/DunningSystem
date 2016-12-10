@@ -16,7 +16,7 @@ import os
 from peewee import *
 
 # 过期时间为300秒
-session_expires = 3000
+session_expires = 300
 #存放所有用户的信息
 user_list = {}
 
@@ -69,6 +69,7 @@ class Session(object):
 class Userinfo:
 
     def __init__(self, user = '', name = '', passwd = '', is_admin = 0):
+        self.id = 0
         self.user = user
         self.name = name
         self.passwd = passwd
@@ -95,6 +96,7 @@ class Userinfo:
                 & (Admin.passwd == passwd) & (Admin.enable == 1)))
         if(len(query) == 1):
             userinfo = Userinfo(user)
+            userinfo.id = query[0].id
             userinfo.name = query[0].name
             userinfo.passwd = query[0].passwd
             userinfo.is_admin = query[0].is_admin
@@ -106,7 +108,7 @@ class Userinfo:
 
     #格式化用户信息，返回字典
     def dict_format(self):
-        user_dict = { 'name': self.name, 'passwd': self.passwd,
+        user_dict = { 'id': self.id, 'name': self.name, 'passwd': self.passwd,
                     'is_admin': self.is_admin, 'session': self.session.session,
                     'user': self.user}
         return user_dict

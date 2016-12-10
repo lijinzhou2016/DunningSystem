@@ -1858,3 +1858,39 @@
 2016-12-08 17:17:53,622 main.py orderlist 102 DEBUG - ***********
 2016-12-08 17:17:53,622 main.py orderlist 110 DEBUG - 1
 2016-12-08 17:17:53,700 main.py server_www 45 DEBUG - favicon.ico
+2016-12-10 10:50:49,453 main.py <module> 26 DEBUG - dunning server start
+2016-12-10 10:50:55,437 main.py server_www 45 DEBUG - index
+2016-12-10 10:50:55,878 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-10 10:50:55,884 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-10 10:50:56,092 main.py server_www 45 DEBUG - favicon.ico
+2016-12-10 10:51:00,265 main.py checkuser 84 DEBUG - check the user
+2016-12-10 10:51:00,295 main.py orderlist 100 DEBUG - Got session chenxiaosuo_7b78b401-be83-11e6-9e50-000000000031
+2016-12-10 10:51:00,296 main.py orderlist 102 DEBUG - ***********
+2016-12-10 10:51:00,296 main.py orderlist 110 DEBUG - 1
+2016-12-10 10:51:00,328 main.py server_www 45 DEBUG - fenye.js
+2016-12-10 10:51:00,329 main.py server_www 45 DEBUG - orderlist.js
+2016-12-10 10:51:00,331 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-10 10:51:00,332 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-10 10:51:00,348 main.py server_www 45 DEBUG - fenye.css
+2016-12-10 10:51:00,349 main.py server_www 45 DEBUG - orderlist.css
+2016-12-10 10:51:00,351 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-10 10:51:00,352 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-10 10:51:00,355 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-10 10:51:00,357 main.py server_www 45 DEBUG - loading.gif
+2016-12-10 10:51:00,411 main.py skin 73 DEBUG - datePicker.gif
+2016-12-10 10:51:00,413 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-10 10:51:00,473 main.py server_www 45 DEBUG - favicon.ico
+2016-12-10 10:51:02,874 main.py orderdetail 131 DEBUG - Got session chenxiaosuo_7b78b401-be83-11e6-9e50-000000000031
+2016-12-10 10:51:02,930 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-10 10:51:02,934 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-10 10:51:02,967 main.py server_www 45 DEBUG - Design.png
+2016-12-10 10:51:02,970 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-10 10:51:02,973 main.py server_www 45 DEBUG - icon_listStyle.png
+2016-12-10 10:51:03,076 main.py server_www 45 DEBUG - word_icon.jpg
+2016-12-10 10:51:03,082 main.py server_www 45 DEBUG - pdf_icon.png
+2016-12-10 10:51:03,089 main.py server_www 45 DEBUG - excel_icon.png
+2016-12-10 10:51:03,111 main.py server_www 45 DEBUG - favicon.ico
+2016-12-10 10:51:12,611 main.py checkuser 147 DEBUG - post to orderdetail
+2016-12-10 10:53:09,522 main.py checkuser 147 DEBUG - post to orderdetail
+2016-12-10 10:53:37,884 main.py checkuser 147 DEBUG - post to orderdetail
+2016-12-10 10:54:29,167 main.py checkuser 147 DEBUG - post to orderdetail

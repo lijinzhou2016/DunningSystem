@@ -430,12 +430,71 @@
     line-height:40px;
     text-align:left;
 }
-.orderStatus-upload-list{
+.orderStatus-upload-image-list{
     width:100%;
-    height:50px;
+    height:120px;
     line-height:50px;
     position:relative;
 }
+
+.orderStatus-upload-image{
+    width:90%;
+    position:relative;
+    margin-left:2.5%;
+    padding:0 20px 10px;
+    margin-top:30px;
+    border:1px solid #f0f0f0;
+}
+
+.orderStatus-image-thumb{
+    width:100px;
+    height: 100px;
+}
+
+.orderStatus-upload-contract-list{
+    width:100%;
+    height:60px;
+    line-height:50px;
+    position:relative;
+}
+.orderStatus-upload-contract{
+    width:90%;
+    position:relative;
+    margin-left:2.5%;
+    padding:0 20px 10px;
+    margin-top:30px;
+    border:1px solid #f0f0f0;
+}
+
+.orderStatus-contract-thumb{
+    width:50px;
+    height: 50px;
+}
+
+.orderStatus-upload-phonelist-list{
+    width:100%;
+    height:60px;
+    line-height:50px;
+    position:relative;
+}
+
+.orderStatus-upload-phonelist{
+    width:90%;
+    position:relative;
+    margin-left:2.5%;
+    padding:0 20px 10px;
+    margin-top:30px;
+    border:1px solid #f0f0f0;
+}
+
+
+
+.orderStatus-phonelist-thumb{
+    width:50px;
+    height: 50px;
+}
+
+
 .orderStatus-upload-list button{
     width:100px;
     height:30px;

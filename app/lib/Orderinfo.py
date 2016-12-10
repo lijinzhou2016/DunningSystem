@@ -13,7 +13,9 @@
 import time
 import uuid
 import os
+import datetime
 from peewee import *
+
 
 def get_path(name, parent=False):
     path = os.path.dirname(os.path.abspath(__file__))
@@ -28,7 +30,9 @@ def common_path():
 
 
 execfile(common_path() + os.sep + 'db.py')
+execfile(common_path()+os.sep+'mylogger.py')
 
+logger = log('Orderinfo.py')
 #用户信息
 class Orderinfo:
 
@@ -115,3 +119,131 @@ class Orderinfo:
             order_ops.append({'id': op.id, 'admin': op.admin.name, 
             'op_desc':  op.op_desc, 'time': op.time})
         return {'orders':orders_list, 'lender': lender, 'operations': order_ops}
+
+
+
+#欠款人信息
+class LenderTable:
+
+    def __init__(self, id = 0):
+        self.id = id
+    
+    #传入字典更新数据库
+    @classmethod
+    def update(self, id, dict):
+        try:
+            query = Lender.update(name=dict['name'], tel=dict['tel'],
+                        idcard = dict['idcard'], family_addr = dict['family_addr'],
+                        family_area = dict['family_area'], university = dict['university'],
+                        univers_area = dict['univers_area']).where(Lender.id == id).execute()
+            return 'success'
+        except BaseException,e:
+            logger.error(e)
+            return 'error'
+    
+    #传入字典插入数据
+    @classmethod
+    def insert(self, dict):
+        try:
+            Lender.insert(name=dict['name'], tel=dict['tel'],
+                        idcard = dict['idcard'], family_addr = dict['family_addr'],
+                        family_area = dict['family_area'], university = dict['university'],
+                        univers_area = dict['univers_area'], is_del = 0).execute()
+            query = Lender.select().where((idcard == dict['idcard']) & (is_del == 0))
+            id = query[0].id
+            return ('success', id)
+        except BaseException,e:
+            logger.error(e)
+            return ('error', 0)
+
+#订单信息
+class OrderTable:
+
+    def __init__(self, id = 0):
+        self.id = id
+    
+    #传入字典更新数据库
+    @classmethod
+    def updatebasic(self, id, dict):
+        try:
+            query = Orders.update(disp=dict['dispid'], source=dict['source'],
+                        account_day = dict['accountday'], product = dict['product'],
+                        amount = dict['amount'], month_pay = dict['monthpay'],
+                        periods = dict['periods'], paid_periods = dict['paidperiods'],
+                        received_amount = dict['recvamount'], order_date = dict['orderdate'],
+                        takeorder_data = dict['takeorderdate'], status = dict['status']).where(Orders.id == id).execute()
+            return 'success'
+        except BaseException,e:
+            logger.error(e)
+            return 'error'
+    
+    #传入字典插入数据
+    @classmethod
+    def insertbasic(self, dict):
+        try:
+            Orders.insert(disp=dict['dispid'], source=dict['source'],
+                        account_day = dict['accountday'], product = dict['product'],
+                        amount = dict['amount'], month_pay = dict['monthpay'],
+                        periods = dict['periods'], paid_periods = dict['paidperiods'],
+                        received_amount = dict['recvamount'], order_date = dict['orderdate'],
+                        takeorder_data = dict['takeorderdate'], status = dict['status'], is_del = 0).execute()
+            query = Orders.select().where((disp == dict['dispid']) & (is_del == 0))
+            id = query[0].id
+            return ('success', id)
+        except BaseException,e:
+            logger.error(e)
+            return ('error', 0)
+
+    #传入字典更新数据库
+    @classmethod
+    def updaterelatives(self, id, dict):
+        try:
+            query = Orders.update(parent=dict['parent'], parent_call=dict['parentcall'],
+                        roommate = dict['roommate'], roommate_call = dict['roommatecall'],
+                        classmate = dict['classmate'], classmate_call = dict['classmatecall']).where(Orders.id == id).execute()
+            return 'success'
+        except BaseException,e:
+            logger.error(e)
+            return 'error'
+    
+    #传入字典插入数据
+    @classmethod
+    def insertrelatives(self, dict):
+        try:
+            Orders.insert(parent=dict['parent'], parent_call=dict['parentcall'],
+                        roommate = dict['roommate'], roommate_call = dict['roommatecall'],
+                        classmate = dict['classmate'], classmate_call = dict['classmatecall'], is_del = 0).execute()
+            query = Orders.select().where((parent == dict['parent'])& (is_del == 0))
+            id = query[0].id
+            return ('success', id)
+        except BaseException,e:
+            logger.error(e)
+            return ('error', 0)
+
+#订单信息
+class OperationTable:
+
+    def __init__(self, id = 0):
+        self.id = id
+    
+    #传入字典更新数据库
+    @classmethod
+    def update(self, id, dict):
+        try:
+            query = Operation.update(admin =dict['adminid'], lender=dict['lenderid'],
+                        op_desc = dict['opdesc']).where(Operation.id == id).execute()
+            return 'success'
+        except BaseException,e:
+            logger.error(e)
+            return 'error'
+    
+    #传入字典插入数据
+    @classmethod
+    def insert(self, dict):
+        try:
+            id = Operation.insert(admin =dict['adminid'], lender=dict['lenderid'],
+                        op_desc = dict['opdesc'], time=datetime.datetime.now()).execute()
+            return 'success', id
+        except BaseException,e:
+            logger.error(e)
+            return 'error',0

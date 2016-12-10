@@ -34,7 +34,7 @@ def lib_path():
 
 sys.path.append(lib_path())
 from userinfo import Userinfo 
-from Orderinfo import Orderinfo
+from Orderinfo import Orderinfo, LenderTable, OrderTable, OperationTable
 
 def www_path():
     return get_path('www',parent=True)
@@ -56,6 +56,7 @@ execfile(common_path() + os.sep + 'config.py')
 execfile(common_path() + os.sep + 'mylogger.py')
 execfile(common_path() + os.sep + 'setting.py')
 execfile(common_path() + os.sep + 'orderlistinfo.py')
+execfile(common_path() + os.sep + 'cxs_common.py')
 
 # orderlist.tpl
 # order_list_info ={

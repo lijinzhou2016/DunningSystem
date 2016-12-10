@@ -123,7 +123,7 @@ def upload_server():
     return OrderList.save_orders()
 
 
-@bottle.route('/orderdetail/<id:int>')
+@bottle.route('/orderdetail/<id:int>', method = 'GET')
 @bottle.view('orderDetail')
 def orderdetail(id):
     #获取URL中的session，校验并获取URL信息
@@ -141,7 +141,23 @@ def orderdetail(id):
         order_detail['user'] = userinfo.dict_format()
         return order_detail
 
-
+# 提交用户信息表单处理
+@bottle.route('/orderdetail', method='POST')
+def checkuser():
+    logger.debug('post to orderdetail')
+    action = bottle.request.forms.get('action')
+    section = bottle.request.forms.get('section')
+    if action == 'update':
+        if section == 'lender':
+            return update_lender_info()
+        elif section == 'orderbasic':
+            return update_order_basic_info()
+        elif section == 'relatives':
+            return update_lender_relatives_info()
+        elif section == 'operations':
+            return update_operations_info()
+        else:
+            return {'result': 'error'}
 
 # 返回设置页面
 @bottle.route('/setting')

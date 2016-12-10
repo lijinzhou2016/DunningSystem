@@ -11,7 +11,11 @@
 <body>
 	<div class="head">
 		<ul class="head-user">
-			<li><img src="../icon_wp.png" style="height:16px;" alt="">{{user.get('name')}}</li>
+			<li id = "admin_name">
+				<img src="../icon_wp.png" style="height:16px;" alt="">
+				<input type="text" name="admin_id" style="display:none" value={{user.get('id')}}>
+				{{user.get('name')}}
+			</li>
 			<li><img src="../icon_tuichu.png" style="height:16px;" alt="">退出</li>
 		</ul>
 	</div>
@@ -24,7 +28,7 @@
 			<div class="orderDetail-content-jichuxinxi", id = {{lender.get('id')}}>
 				<div class="jichuxinxi-title">基本信息
 					<div class="edit"></div>
-					<input type="text" class="lender-id" style="display:none" value={{lender.get('id')}}>
+					<input type="text" name="lender-id" style="display:none" value={{lender.get('id')}}>
 				</div>
 				<div class="clear"></div>
 				<div class="jichuxinxi-info" style="width:90%;position:relative;height:130px;margin-left:8%;">
@@ -79,7 +83,7 @@
 				<div class="orderStatus-title">
 					订单{{orderNo.get(orderIndex)}}：<span>{{orderStatus.get(order.get('status'))}}</span>
 					<input type="button" class="daochu">
-					<input type="text" class="order-id" style="display:none" value={{order.get('id')}}>
+					<input type="text" name="order-id" style="display:none" value={{order.get('id')}}>
 				</div>
 				<div class="orderStatus-info">
 					<div class="status-edit"></div>
@@ -90,7 +94,18 @@
 						</div>
 						<div>
 							<div class="orderStatus-content-left">订单状态:</div>
-							<input name = "status" class="orderStatus-content-right" type="text" readonly="true" value={{orderStatus.get(order.get('status'))}}>
+							<select name = "status_select" class="orderStatus-content-right"  disabled="disabled" type="text">
+								<option value="0">已结清</option>
+								<option value="1">联系本人</option>
+								<option value="2">联系亲属</option>
+								<option value="3">联系同学</option>
+								<option value="4">失联</option>
+								<option value="5">待外访</option>
+								<option value="6">外访中</option>
+								<option value="7">承诺还款</option>
+								<option value="8">部分还款</option>
+							</select>
+							<input name = "status_value" style="display:none" type="text" readonly="true" value={{order.get('status')}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">订单来源:</div>
@@ -172,13 +187,27 @@
 						<button class="lianxirenbtn-cancel">取消</button>
 					</div>
 				</div>
-				<div class="orderStatus-upload">
-					<div class="orderStatus-upload-list">
+				<div class="orderStatus-upload-image">
+					<div class="orderStatus-upload-image-list">
+						<image class="orderStatus-image-thumb" src="../1.jpg">
+						<image class="orderStatus-image-thumb" src="../2.png">
+						<image class="orderStatus-image-thumb" src="../3.jpg">
+						<image class="orderStatus-image-thumb" src="../4.jpg">
 						<button>上传图片</button>
-						<button>上传文件</button>
-						
 					</div>
-
+				</div>
+				<div class="orderStatus-upload-contract">
+					<div class="orderStatus-upload-contract-list">
+						<image class="orderStatus-contract-thumb" src="../word_icon.jpg">
+						<image class="orderStatus-contract-thumb" src="../pdf_icon.png">
+						<button>上传合同</button>
+					</div>
+				</div>
+				<div class="orderStatus-upload-phonelist">
+					<div class="orderStatus-upload-phonelist-list">
+						<image class="orderStatus-phonelist-thumb" src="../excel_icon.png">
+						<button>上传通话详单</button>
+					</div>
 				</div>
 				<div class=""></div>
 			</div>
