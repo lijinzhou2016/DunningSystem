@@ -1,6 +1,6 @@
 from peewee import *
 
-database = MySQLDatabase('dunning', **{'host': 'localhost', 'port': 3306, 'user': 'root', 'password':'123456'})
+database = MySQLDatabase('dunning', **{'host': 'localhost', 'port': 3306, 'user': 'root'})
 
 class UnknownField(object):
     def __init__(self, *_, **__): pass
@@ -37,20 +37,6 @@ class Lender(BaseModel):
         )
         primary_key = CompositeKey('id', 'idcard')
 
-class Operation(BaseModel):
-    admin = ForeignKeyField(db_column='admin_id', null=True, rel_model=Admin, to_field='id')
-    after_status = IntegerField(null=True)
-    before_status = IntegerField(null=True)
-    files = CharField(null=True)
-    is_change_status = IntegerField(null=True)
-    is_upload = IntegerField(null=True)
-    lender = ForeignKeyField(db_column='lender_id', null=True, rel_model=Lender, to_field='id')
-    op_desc = CharField(null=True)
-    time = DateTimeField(null=True)
-
-    class Meta:
-        db_table = 'operation'
-
 class Orders(BaseModel):
     account_day = CharField(null=True)
     amount = IntegerField(null=True)
@@ -67,6 +53,7 @@ class Orders(BaseModel):
     paid_periods = IntegerField(null=True)
     parent = CharField(null=True)
     parent_call = CharField(null=True)
+    payment_day = CharField(null=True)
     periods = IntegerField(null=True)
     product = CharField(null=True)
     received_amount = CharField(null=True)
@@ -78,6 +65,42 @@ class Orders(BaseModel):
 
     class Meta:
         db_table = 'orders'
+
+class Calldetails(BaseModel):
+    order = ForeignKeyField(db_column='order_id', null=True, rel_model=Orders, to_field='id')
+    path = CharField(null=True)
+
+    class Meta:
+        db_table = 'calldetails'
+
+class Contract(BaseModel):
+    id = ForeignKeyField(db_column='id', primary_key=True, rel_model=Orders, to_field='id')
+    order = IntegerField(db_column='order_id', null=True)
+    path = CharField(null=True)
+
+    class Meta:
+        db_table = 'contract'
+
+class Image(BaseModel):
+    order = ForeignKeyField(db_column='order_id', null=True, rel_model=Orders, to_field='id')
+    path = CharField(null=True)
+
+    class Meta:
+        db_table = 'image'
+
+class Operation(BaseModel):
+    admin = ForeignKeyField(db_column='admin_id', null=True, rel_model=Admin, to_field='id')
+    after_status = IntegerField(null=True)
+    before_status = IntegerField(null=True)
+    files = CharField(null=True)
+    is_change_status = IntegerField(null=True)
+    is_upload = IntegerField(null=True)
+    lender = ForeignKeyField(db_column='lender_id', null=True, rel_model=Lender, to_field='id')
+    op_desc = CharField(null=True)
+    time = DateTimeField(null=True)
+
+    class Meta:
+        db_table = 'operation'
 
 class System(BaseModel):
     backuptime = TimeField(null=True)
