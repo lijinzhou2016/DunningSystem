@@ -130,8 +130,25 @@ def test():
     d={'user':'qq','name':'haha','passwd':'123','is_admin':0,'enable':1}
     Admin.insert(d).execute()
 
-select_forgin_test()
+
+# 多字段模糊匹配
+def like_search():
+    return Admin.select().where(Admin.user.contains('a'), Admin.name.contains(''))[1]
+
+#print like_search().name
+
+
+#select_forgin_test()
 
 # insert_lender()
 # insert_order()
+
+test={Orders.takeorder_data:'2016-12-11'}
+
+orders_query = Orders.select().where(
+                test
+            )
+print 'hahahahahhahahah'
+for t in orders_query:
+    print t.parent
 

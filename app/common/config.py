@@ -69,13 +69,12 @@ class Resource:
 
 
     def set_data_path(self, id):
-        order_parent_dir_count = len(os.listdir(self.lenderdata))
-        max_num_dir = max(os.listdir(self.lenderdata))
+        max_num_dir = max([int(filename) for filename in os.listdir(self.lenderdata)])
 
-        if len(os.listdir(os.path.join(self.lenderdata, max_num_dir))) < 100 :
-            self.data_path = os.path.join(self.lenderdata, max_num_dir, str(id))
+        if len(os.listdir(os.path.join(self.lenderdata, str(max_num_dir)))) < 100 :
+            self.data_path = os.path.join(self.lenderdata, str(max_num_dir), str(id))
         else:
-            self.data_path = os.path.join(self.lenderdata, str(int(max_num_dir)+1), str(id))
+            self.data_path = os.path.join(self.lenderdata, str(max_num_dir+1), str(id))
         try:
             if not os.path.exists(self.data_path):
                 os.makedirs(self.data_path) # 创建

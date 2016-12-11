@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="./fenye.css">
 	<link rel="stylesheet" href="./orderlist.css">
 
-
 </head>
 
 <body>
@@ -26,25 +25,50 @@
 		<div class="order-list-left">
 			<div class="order-list-content">
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">姓名:</div><input class="order-list-content-search-right orderlist-username" type="text"></div>
+					<div class="order-list-content-search-left">姓名:</div><input class="order-list-content-search-right orderlist-username" type="text" value={{condition.get('order_username')}}></div>
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">账期:</div><input class="order-list-content-search-right order-zhangqi" type="text"></div>
-				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">学校:</div><input class="order-list-content-search-right order-school" type="text">
+					<div class="order-list-content-search-left">账期:</div>
+					<select class="order-list-content-search-right order-zhangqi" id="order-zhangqi" type="text">
+					%if condition['order_zhangqi']:
+						<option value="">{{condition.get('order_zhangqi')}}</option>
+					%else:
+						<option value="">全部</option>
+					%end
+					<option value="">M0</option>
+					<option value="">M1</option>
+					<option value="">M2</option>
+					<option value="">M3</option>
+					<option value="">M4</option>
+					<option value="">M5</option>
+					<option value="">M6</option>
+					<option value="">M7</option>
+					<option value="">M8</option>
+					<option value="">M9</option>
+					<option value="">M10</option>
+					<option value="">M11</option>
+					<option value="">M12</option>
+					</select>
 				</div>
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">家庭住址:</div><input class="order-list-content-search-right order-jtzz" type="text"></div>
+					<div class="order-list-content-search-left">学校:</div><input class="order-list-content-search-right order-school" type="text" value={{condition.get('order_school')}}>
+				</div>
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">家庭区域:</div><input class="order-list-content-search-right order-jtqy" type="text"></div>
+					<div class="order-list-content-search-left">家庭住址:</div><input class="order-list-content-search-right order-jtzz" type="text" value={{condition.get('order_jtzz')}}></div>
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">订单日期:</div><input class="order-list-content-search-right order-jdrq Wdate" type="text" onClick="WdatePicker()"></div>
+					<div class="order-list-content-search-left">家庭区域:</div><input class="order-list-content-search-right order-jtqy" type="text" value={{condition.get('order_jtqy')}}></div>
 				<div class="order-list-content-search">
-					<div class="order-list-content-search-left">接单日期:</div><input class="order-list-content-search-right order-shxx Wdate" type="text" onClick="WdatePicker()">
+					<div class="order-list-content-search-left">订单日期:</div><input class="order-list-content-search-right order-jdrq Wdate" type="text" onClick="WdatePicker()" value={{condition.get('order_jdrq')}}></div>
+				<div class="order-list-content-search">
+					<div class="order-list-content-search-left">接单日期:</div><input class="order-list-content-search-right order-shxx Wdate" type="text" onClick="WdatePicker()" value={{condition.get('order_shxx')}}>
 				</div>
 				<div class="order-list-content-search">
 					<div class="order-list-content-search-left">订单状态:</div>
 					<select class="order-list-content-search-right order-ddzt" id="order-ddzt" type="text">
-                <option value="">全部</option>
+				%if condition['order_ddzt']:
+					<option value="">{{condition.get('order_ddzt')}}</option>
+				%else:
+                	<option value="">全部</option>
+				%end
                 <option value="">联系本人</option>
                 <option value="">联系亲属</option>
                 <option value="">联系同学</option>
@@ -54,7 +78,7 @@
                 <option value="">承诺还款</option>
                 <option value="">部分还款</option>
                 <option value="">已结清</option>
-            </select>
+            	</select>
 				</div>
 				
 				<div class="clear"></div>
@@ -69,8 +93,13 @@
 				<thead>
 					<tr>
 						<th class="select-result-content" style="display:none" colspan="8">
-							已选条件：<span class="chooseinputval"></span>
+							已选条件：<span class="chooseinputval">
+								{{condition.get('order_username')}} {{condition.get('order_zhangqi')}} {{condition.get('order_school')}}
+								{{condition.get('order_jtzz')}} {{condition.get('order_jtqy')}} {{condition.get('order_jdrq')}}
+								{{condition.get('order_shxx')}} {{condition.get('order_ddzt')}}
+							</span>
 						</th>
+						
 					</tr>
 					<tr>
 						<td colspan="8" style="border:none;height:10px;"></td>

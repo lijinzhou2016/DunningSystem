@@ -98,29 +98,26 @@ def orderlist():
     #获取URL中的session，校验并获取URL信息
     session = bottle.request.query.session
     logger.debug('Got session ' + session)
-    test=bottle.request.query.test
-    logger.debug(test+'***********')
+
     userinfo = Userinfo.get_by_session(session)
     if not userinfo:
         logger.info('session check invalid, redirect to login')
         bottle.redirect("/login")
 
+    condition = bottle.request.query.condition
     page_index = bottle.request.query.pageIndex
-    is_search = bottle.request.query.search
-    logger.debug(page_index)
+    logger.debug('Got conditon : '+condition)
+    orderlist_cls = OrderList(page_index, userinfo.dict_format(), condition)
+    orderlist_cls.set_orders_data()
 
-    orderlist_cls = OrderList(page_index,userinfo.dict_format())
-    orderlist_cls.set_order_data()
-    return_data = orderlist_cls.get_order_data()
-
-    return return_data
+    return orderlist_cls.get_orders_data
 
 
 # 上传订单文件接口
 @bottle.route('/upload', method='POST')
 def upload_server():
     logger.debug('i am upload server.............')
-    return OrderList.save_orders()
+    return OrderList.save_orders_file()
 
 
 @bottle.route('/orderdetail/<id:int>')
