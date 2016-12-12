@@ -100,7 +100,7 @@ $(document).ready(function () {
         hrefLatter: '',
         getLink: function (n) {
 
-            return this.hrefFormer + "?pageIndex=" + n + '&condition=' + condition + mysession ;
+            return this.hrefFormer + "?pageIndex=" + n + '&condition=' + condition + mysession + search_condition;
 
         }
 

@@ -1,22 +1,24 @@
 /*
-Navicat MySQL Data Transfer
+ Navicat MySQL Data Transfer
 
-Source Server         : dunning
-Source Server Version : 50624
-Source Host           : localhost:3306
-Source Database       : dunning
+ Source Server         : test
+ Source Server Type    : MySQL
+ Source Server Version : 50716
+ Source Host           : localhost
+ Source Database       : dunning
 
-Target Server Type    : MYSQL
-Target Server Version : 50624
-File Encoding         : 65001
+ Target Server Type    : MySQL
+ Target Server Version : 50716
+ File Encoding         : utf-8
 
-Date: 2016-12-01 21:31:22
+ Date: 12/12/2016 21:24:02 PM
 */
 
-SET FOREIGN_KEY_CHECKS=0;
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
--- Table structure for admin
+--  Table structure for `admin`
 -- ----------------------------
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin` (
@@ -30,7 +32,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Table structure for lender
+--  Table structure for `lender`
 -- ----------------------------
 DROP TABLE IF EXISTS `lender`;
 CREATE TABLE `lender` (
@@ -45,10 +47,10 @@ CREATE TABLE `lender` (
   `is_del` tinyint(4) NOT NULL COMMENT '删除标志位',
   PRIMARY KEY (`id`,`idcard_id`),
   KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=362 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Table structure for operation
+--  Table structure for `operation`
 -- ----------------------------
 DROP TABLE IF EXISTS `operation`;
 CREATE TABLE `operation` (
@@ -67,10 +69,10 @@ CREATE TABLE `operation` (
   KEY `operation_lender_id_fkey` (`lender_id`),
   CONSTRAINT `operation_lender_id_fkey` FOREIGN KEY (`lender_id`) REFERENCES `lender` (`id`),
   CONSTRAINT `operation_user_id_fkey` FOREIGN KEY (`admin_id`) REFERENCES `admin` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Table structure for orders
+--  Table structure for `orders`
 -- ----------------------------
 DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
@@ -98,13 +100,14 @@ CREATE TABLE `orders` (
   `classmate_call` varchar(255) DEFAULT NULL,
   `status` int(11) DEFAULT NULL COMMENT '订单状态（联系本人、联系亲属、联系同学、失联、待外访、外访中、承诺还款、部分还款、已结清）',
   `is_del` tinyint(4) DEFAULT '0' COMMENT '删除标志位',
+  `payment_day` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `orders_lender_id_fkey` (`lender_id`),
   CONSTRAINT `orders_lender_id_fkey` FOREIGN KEY (`lender_id`) REFERENCES `lender` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=412 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Table structure for system
+--  Table structure for `system`
 -- ----------------------------
 DROP TABLE IF EXISTS `system`;
 CREATE TABLE `system` (
@@ -114,4 +117,6 @@ CREATE TABLE `system` (
   `backuptime` time DEFAULT NULL COMMENT '备份时间',
   `intval` int(11) DEFAULT NULL COMMENT '间隔天数',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+SET FOREIGN_KEY_CHECKS = 1;

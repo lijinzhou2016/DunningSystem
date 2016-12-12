@@ -41,6 +41,9 @@ orderStatus = {0:'已结清', 1:'联系本人', 2:'联系亲属',3:'联系同学
 orderStatusKey = {u'已结清':0, u'联系本人':1, u'联系亲属':2,u'联系同学':3,
                 u'失联':4,u'待外访':5,u'外访中':6,u'承诺还款':7,u'部分还款':8}
 
+order_file_title=[u'订单编号',u'姓名',u'电话',u'身份证',u'学校区域',u'学校',u'家庭区域',u'家庭住址',u'订单状态',
+                    u'账期',u'产品名称',u'分期金额',u'首次还款日',u'月供',u'期数',u'已还期数',
+                    u'订单日期',u'接单日期',u'已还金额',u'父母',u'父母电话',u'同寝',u'同寝电话',u'同学',u'同学电话']
 # 搜索条件字典
 search_item = {
         'order_username': '',
@@ -63,21 +66,25 @@ class OrderList:
         self.orders_return_info['userinfo']=self.userinfo
         if self.condition == 0:
             self.orders_count = Orders.select().count()   # 订单总条数
-            self.total_pages = int(math.ceil(self.orders_count/10.0))   # 分页数
+            self.total_pages = 1 if self.orders_count==0 else int(math.ceil(self.orders_count/10.0))   # 分页数
             self.orders_return_info['condition'] = search_item
             self.orders_return_info['fenyeinfo']={
                 'pageIndex'   : self.pageindex, 
                 'total_pages' : self.total_pages, 
                 'total_orders': self.orders_count, 
                 'setting_url' : r'/setting?session='+self.userinfo['session'],
-                'detail_url'  : r'/orderdetail／0?session='+self.userinfo['session'] # 空的详单页面链接
+                'detail_url'  : r'/orderdetail/0?session='+self.userinfo['session'] # 空的详单页面链接
             }
         
             # 按请求索引查找相应数据
-            if self.orders_count > int(pageindex)*10:
-                self.orders_list_info = Orders.select().where( (Orders.id>(int(pageindex)-1)*10) & (Orders.id<=int(pageindex)*10) )
-            else:
-                self.orders_list_info = Orders.select().where( (Orders.id>(int(pageindex)-1)*10) & (Orders.id<=self.orders_count) )
+            if self.orders_count == 0:
+                self.orders_list_info =[]
+            else :
+                query = Orders.select().where(Orders.is_del == 0)
+                if self.orders_count > int(pageindex)*10:
+                    self.orders_list_info = query[(int(pageindex)-1)*10:int(pageindex)*10]
+                else:
+                    self.orders_list_info = query[(int(pageindex)-1)*10:]
         else:
             self.orders_count = 0
             self.total_pages = 0
@@ -140,21 +147,20 @@ class OrderList:
 
         if condition_item['order_zhangqi']: # 账期
             account_day_query = Orders.select().where(Orders.account_day == condition_item['order_zhangqi'])
-            if len(account_day_query)>0:
-                temp_query.append(account_day_query) 
+            temp_query.append(account_day_query) 
         if condition_item['order_shxx']: # 接单日期
+            logger.debug('查询接单日期字段：'+condition_item['order_shxx'])
             takeorder_data_query = Orders.select().where(Orders.takeorder_data == condition_item['order_shxx'])
-            if len(takeorder_data_query)>0:
-                temp_query.append(takeorder_data_query)
+            logger.debug(len(takeorder_data_query))
+            temp_query.append(takeorder_data_query)
         if condition_item['order_ddzt']: # 订单状态
             status_query = Orders.select().where(Orders.status == orderStatusKey[condition_item['order_ddzt']])
-            if len(status_query)>0:
-                temp_query.append(status_query)
+            temp_query.append(status_query)
         if condition_item['order_jdrq']: # 订单日期
             order_date_query = Orders.select().where(Orders.order_date == condition_item['order_jdrq'])
-            if len(order_date_query)>0:
-                temp_query.append(order_date_query)
-
+            temp_query.append(order_date_query)
+        
+        logger.debug(len(temp_query))
         if len(temp_query)>0: # 在orders表中查询到数据
             # 取交集
             orders_query = list(set(temp_query[0]).intersection(*temp_query[1:]))
@@ -184,11 +190,15 @@ class OrderList:
             'total_pages' : self.total_pages, 
             'total_orders': self.orders_count, 
             'setting_url' : r'/setting?session='+self.userinfo['session'],
-            'detail_url'  : r'/orderdetail／0?session='+self.userinfo['session'] #
+            'detail_url'  : r'/orderdetail/0?session='+self.userinfo['session'] #
         }
 
         self.orders_return_info['condition'] = condition_item
         if len(self.orders_list_info):
+            if self.orders_count > int(self.pageindex)*10:
+                self.orders_list_info = self.orders_list_info[(int(self.pageindex)-1)*10:int(self.pageindex)*10]
+            else:
+                self.orders_list_info = self.orders_list_info[(int(self.pageindex)-1)*10:]
             self.no_condition_data()
         
 
@@ -216,10 +226,114 @@ class OrderList:
             self.orders_return_info['orders_list'].append(self.orders_one_info)
 
 
-
+    # 解析上传的订单文件
     @staticmethod
-    def saver_orders_to_database(filepath):
-        data = xlrd.open_workbook(filepath)
+    def save_orders_to_database(filepath, wherefrom):
+        total_datas=[] # 总条数
+        exception_disp='' # 异常订单
+        order_insert_dict = {'is_del':0, 'source':wherefrom} # 插入order表的一条记录字典
+        lender_insert_dict = {'is_del':0} # 插入lender表中的一条记录字典
+        success_insert_count = 0
+
+        try:
+            data = xlrd.open_workbook(filepath)
+            table = data.sheets()[0]
+            nrows = table.nrows # 行数
+        except BaseException,e:
+            logger.error('打开文件出错: '+e)
+            os.remove(filepath)
+            return '打开文件出错，请重新上传'
+
+        for i in range(nrows): #着行读取文件数据
+            total_datas.append(table.row_values(i))
+        title = total_datas.pop(0) # 去掉标题栏
+        if not title == order_file_title:
+            os.remove(filepath)
+            return '文件模版错误，请核对后重新上传'
+
+        for one_data in total_datas:
+            if one_data[0]: # 订单编号 (必要唯一字段)
+                if Orders.select().where(Orders.disp == one_data[0]): #重复订单
+                    exception_disp += ('重复订单: '+str(one_data[0])+' '+one_data[1]+'\n')
+                    continue
+                order_insert_dict['disp'] = one_data[0]
+            else:
+                exception_disp += ('订单号为空的订单: '+one_data[1]+'\n')
+                continue
+            try:
+                if one_data[8]: # 订单状态
+                    order_insert_dict['status'] = orderStatusKey[one_data[8]]
+                if one_data[9]: # 账期
+                    order_insert_dict['account_day'] = one_data[9]
+                if one_data[10]: # 产品名称
+                    order_insert_dict['product'] = one_data[10]
+                if one_data[11]: # 分期金额
+                    order_insert_dict['amount'] = one_data[11]
+                if one_data[12]: # 首次还款日
+                    order_insert_dict['payment_day'] = one_data[12]
+                if one_data[13]: # 月供
+                    order_insert_dict['month_pay'] = one_data[13]
+                if one_data[14]: # 期数
+                    order_insert_dict['periods'] = int(one_data[14])
+                if one_data[15]: # 已付期数
+                    order_insert_dict['paid_periods'] = int(one_data[15])
+                if one_data[16]: # 订单日期
+                    order_insert_dict['order_date'] = one_data[16]
+                if one_data[17]: # 接单日期
+                    order_insert_dict['takeorder_data'] = one_data[17]
+                if one_data[18]: # 已还金额
+                    order_insert_dict['received_amount'] = str(one_data[18])
+                if one_data[19]: # 父母
+                    order_insert_dict['parent'] = one_data[19]
+                if one_data[20]: # 父母电话
+                    order_insert_dict['parent_call'] = str(int(one_data[20]))
+                if one_data[21]: # 同寝
+                    order_insert_dict['roommate'] = one_data[21]
+                if one_data[22]: # 同寝电话
+                    order_insert_dict['roommate_call'] = str(int(one_data[22]))
+                if one_data[23]: # 同学
+                    order_insert_dict['classmate'] = one_data[23]
+                if one_data[24]: # 同学电话
+                    order_insert_dict['classmate_call'] = str(int(one_data[24]))
+
+                #################################################################
+
+                if one_data[1]: # 姓名
+                    lender_insert_dict['name'] = one_data[1]
+                if one_data[2]: # 电话
+                    lender_insert_dict['tel'] = str(int(one_data[2]))
+                if one_data[3]: # 身份证
+                    lender_insert_dict['idcard'] = (str(one_data[3])).split('.')[0]
+                if one_data[4]: # 学院区域
+                    lender_insert_dict['univers_area'] = one_data[4]
+                if one_data[5]: # 学校
+                    lender_insert_dict['university'] = one_data[5]
+                if one_data[6]: # 家庭区域
+                    lender_insert_dict['family_area'] = one_data[6]
+                if one_data[7]: # 家庭住址
+                    lender_insert_dict['family_addr'] = one_data[7]
+            except BaseException,e:
+                logger.error('解析失败订单: '+ str(one_data[0])+' '+one_data[1]+e)
+                exception_disp += ('解析失败订单: '+ str(one_data[0])+' '+one_data[1]+'\n')
+                continue
+
+            # 插入数据库
+            try:
+                Lender.insert(lender_insert_dict).execute()
+                order_insert_dict['lender'] = (Lender.select().where(Lender.idcard == lender_insert_dict['idcard']).get()).id
+                Orders.insert(order_insert_dict).execute()
+                success_insert_count += 1
+            except BaseException,e:
+                logger.error('插入数据库失败订单号: '+ str(one_data[0])+e)
+                exception_disp += ('插入数据库失败订单号: '+ str(one_data[0])+'\n')
+
+        if len(exception_disp)>0:
+            exception_disp += '共插入{0} 条数据'.format(success_insert_count)
+            return exception_disp
+        else:
+            return '成功插入 {0} 条数据'.format(success_insert_count)
+
+        
 
 
     @staticmethod
@@ -237,7 +351,7 @@ class OrderList:
                 data.filename=save_name
                 data.save(resource.get_orders_path, overwrite=True)
                 if resource.get_md5(new_file)==file_md5:
-                    return saver_orders_to_database(new_file) # 解析表格
+                    return OrderList.save_orders_to_database(new_file,name) # 解析表格
                 else:
                     os.remove(new_file)
                     return '上传失败,请重新上传'

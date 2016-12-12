@@ -16,7 +16,7 @@ import os
 from peewee import *
 
 # 过期时间为300秒
-session_expires = 300
+session_expires = 3000
 #存放所有用户的信息
 user_list = {}
 

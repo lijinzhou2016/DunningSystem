@@ -31,9 +31,8 @@
 					<select class="order-list-content-search-right order-zhangqi" id="order-zhangqi" type="text">
 					%if condition['order_zhangqi']:
 						<option value="">{{condition.get('order_zhangqi')}}</option>
-					%else:
-						<option value="">全部</option>
 					%end
+					<option value="">全部</option>
 					<option value="">M0</option>
 					<option value="">M1</option>
 					<option value="">M2</option>
@@ -66,9 +65,8 @@
 					<select class="order-list-content-search-right order-ddzt" id="order-ddzt" type="text">
 				%if condition['order_ddzt']:
 					<option value="">{{condition.get('order_ddzt')}}</option>
-				%else:
-                	<option value="">全部</option>
 				%end
+                <option value="">全部</option>
                 <option value="">联系本人</option>
                 <option value="">联系亲属</option>
                 <option value="">联系同学</option>
