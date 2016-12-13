@@ -6252,3 +6252,9 @@
 2016-12-13 12:23:48,607 main.py orderlist 109 DEBUG - Got conditon : 0
 2016-12-13 12:23:48,655 main.py server_www 45 DEBUG - orderlist.js
 2016-12-13 12:23:48,703 main.py server_www 45 DEBUG - favicon.ico
+2016-12-13 17:06:11,921 main.py server_www 45 DEBUG - favicon.ico
+2016-12-13 17:06:21,249 main.py checkuser 84 DEBUG - check the user
+2016-12-13 17:06:21,259 main.py orderlist 100 DEBUG - Got session admin_6a403a7d-c113-11e6-acce-000000000030
+2016-12-13 17:06:21,259 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-13 17:06:21,319 main.py server_www 45 DEBUG - orderlist.js
+2016-12-13 17:06:21,482 main.py server_www 45 DEBUG - favicon.ico
