@@ -10,7 +10,20 @@
 # Description   : 
 #*****************************************************************************
 import sys,os  
+import json
 
+def get_path(name, parent=False):
+    path = os.path.dirname(os.path.abspath(__file__))
+    path_comp = path.split(os.sep)
+    if parent:
+        path_comp.pop()
+    path_comp[-1]=name
+    return os.sep.join(path_comp)
+
+def common_path():
+    return get_path('common')
+
+execfile(common_path() + os.sep + 'config.py')
 
 #获取lender信息生成字典
 def get_lender_forms():
@@ -35,7 +48,7 @@ def update_lender_info():
         id = lender['id']
     else:
         result, id = LenderTable.insert(lender)
-    return {'result': result, 'id': id}
+    return json.dumps({'result': result, 'id': id})
 
 #获取order信息生成字典
 def get_order_basic_forms():
@@ -54,13 +67,14 @@ def get_order_basic_forms():
     call_details = bottle.request.forms.get('call_details')
     contract = bottle.request.forms.get('contract')
     status = bottle.request.forms.get('status')
+    lenderid = bottle.request.forms.get('lenderid')
     return {'dispid': dispid, 'source': source, 'accountday':accountday,
         'product': product, 'amount': amount,
         'monthpay': monthpay, 'periods': periods,
         'paidperiods': paidperiods, 'recvamount': recvamount,
         'orderdate': orderdate, 'takeorderdate': takeorderdate,
         'call_details': call_details, 'contract': contract,
-        'status': status, 'id': id}
+        'status': status, 'id': id, 'lenderid': lenderid}
 
 #更新order信息到数据库中
 def update_order_basic_info():
@@ -70,7 +84,7 @@ def update_order_basic_info():
         id = order['id']
     else:
         result, id = OrderTable.insertbasic(order)
-    return {'result': result, 'id': id}
+    return json.dumps({'result': result, 'id': id})
 
 #获取order的借款人亲属信息生成字典
 def get_lender_relatives_forms():
@@ -94,7 +108,7 @@ def update_lender_relatives_info():
         id = order['id']
     else:
         result, id = OrderTable.insertrelatives(order)
-    return {'result': result, 'id': id}
+    return json.dumps({'result': result, 'id': id})
 
 #获取操作信息生成字典
 def get_operations_forms():
@@ -115,4 +129,40 @@ def update_operations_info():
         id = op['id']
     else:
         result,id = OperationTable.insert(op)
-    return {'result': result, 'id': id}
+    return json.dumps({'result': result, 'id': id})
+
+
+#上传文件接口
+def save_orderdetail_file():
+    logger.debug('i am save_orderdetail_file......')
+    file_md5 = request.forms.md5
+    logger.debug("file md5 " + file_md5)
+    orderid = int(request.forms.orderid)
+    logger.debug("orderid " + str(orderid))
+    file_type = request.forms.type
+    data = request.files.data
+    ext  = data.filename.split('.')[-1] #上传文件后缀
+    save_name = file_md5 + '.' + ext
+
+
+    data_path = resource.get_data_path(orderid)
+    if data_path is not None:
+        new_file=os.path.join(data_path,save_name)
+        logger.debug("saving file at: " + new_file)
+        if not os.path.exists(new_file):
+            data.filename=save_name
+            data.save(data_path, overwrite=True)
+            if resource.get_md5(new_file)==file_md5:
+                result, id = FilesTable.insert(orderid, file_type, save_name)
+                if result == 'success':
+                    return '上传成功'
+                else:
+                    os.remove(new_file)
+                    return '数据库插入失败'
+            else:
+                os.remove(new_file)
+                return '上传失败,请重新上传'
+        else:
+            return '文件已存在，请勿重复上传'
+    else:
+        return '创建路径失败'

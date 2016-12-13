@@ -34,15 +34,9 @@ class Resource:
         self.orders = self.ROOT_PATH + os.sep + 'orders'
         self.lenderdata = self.ROOT_PATH + os.sep + 'lenderdata'
         self.orders_path=''
-        self.data_path=''
         if not os.path.exists(self.ROOT_PATH): # 创建根目录
             os.makedirs(os.path.join(self.ROOT_PATH, self.orders))
             os.makedirs(os.path.join(self.ROOT_PATH, self.lenderdata, '1'))
-
-
-    @property
-    def get_data_path(self):
-        return self.data_path
 
     @property
     def get_orders_path(self):
@@ -67,21 +61,19 @@ class Resource:
             logger.error(e)
             return False
 
-
-    def set_data_path(self, id):
-        max_num_dir = max([int(filename) for filename in os.listdir(self.lenderdata)])
-
-        if len(os.listdir(os.path.join(self.lenderdata, str(max_num_dir)))) < 100 :
-            self.data_path = os.path.join(self.lenderdata, str(max_num_dir), str(id))
-        else:
-            self.data_path = os.path.join(self.lenderdata, str(max_num_dir+1), str(id))
+    #根据id获取目录，如果目录不存在，则创建
+    #获取规则，取模：
+    #1-99 -》0
+    #100- 199 > 1
+    def get_data_path(self, id):
+        data_path = os.path.join(self.lenderdata, str(id/100), str(id))
         try:
-            if not os.path.exists(self.data_path):
-                os.makedirs(self.data_path) # 创建
-            return True
+            if not os.path.exists(data_path):
+                os.makedirs(data_path) # 创建
+            return data_path
         except BaseException,e:
             logger.error(e)
-            return False
+            return None
 
 
 resource = Resource()

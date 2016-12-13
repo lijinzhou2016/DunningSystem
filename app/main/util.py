@@ -34,7 +34,7 @@ def lib_path():
 
 sys.path.append(lib_path())
 from userinfo import Userinfo 
-from Orderinfo import Orderinfo, LenderTable, OrderTable, OperationTable
+from Orderinfo import Orderinfo, LenderTable, OrderTable, OperationTable, FilesTable
 
 def www_path():
     return get_path('www',parent=True)
@@ -48,6 +48,11 @@ def css_path():
     return www_path()+os.sep+'css'
 def images_path():
     return www_path()+os.sep+'images'
+
+def upload_path():
+    return get_path('DunningSystemUpload',parent=True)
+def orderdata_path():
+    return upload_path()+os.sep+'lenderdata'
 
 
 # os.sep 自适配系统路径分隔符

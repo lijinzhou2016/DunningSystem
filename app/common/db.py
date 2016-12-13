@@ -1,6 +1,6 @@
 from peewee import *
 
-database = MySQLDatabase('dunning', **{'host': 'localhost', 'port': 3306, 'user': 'root','passwd':'123456'})
+database = MySQLDatabase('dunning', **{'host': 'localhost', 'port': 3306, 'user': 'root'})
 
 class UnknownField(object):
     def __init__(self, *_, **__): pass
@@ -66,27 +66,14 @@ class Orders(BaseModel):
     class Meta:
         db_table = 'orders'
 
-class Calldetails(BaseModel):
+class Files(BaseModel):
     order = ForeignKeyField(db_column='order_id', null=True, rel_model=Orders, to_field='id')
     path = CharField(null=True)
+    time = DateTimeField(null=True)
+    type = IntegerField(null=True)
 
     class Meta:
-        db_table = 'calldetails'
-
-class Contract(BaseModel):
-    id = ForeignKeyField(db_column='id', primary_key=True, rel_model=Orders, to_field='id')
-    order = IntegerField(db_column='order_id', null=True)
-    path = CharField(null=True)
-
-    class Meta:
-        db_table = 'contract'
-
-class Image(BaseModel):
-    order = ForeignKeyField(db_column='order_id', null=True, rel_model=Orders, to_field='id')
-    path = CharField(null=True)
-
-    class Meta:
-        db_table = 'image'
+        db_table = 'files'
 
 class Operation(BaseModel):
     admin = ForeignKeyField(db_column='admin_id', null=True, rel_model=Admin, to_field='id')

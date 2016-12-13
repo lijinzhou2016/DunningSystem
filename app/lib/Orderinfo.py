@@ -44,6 +44,8 @@ class Orderinfo:
         self.lender = Lender()
         #订单操作，dict,格式为dict {order_id: op}，其中op为操作list
         self.operation = []
+        #图片操作
+        self.orderfiles = []
 
     #根据订单ID获取订单详情
     def get_order_detail_by_id(self, id):
@@ -67,6 +69,14 @@ class Orderinfo:
                     .order_by(Operation.time.desc()))
         for item in query:
             self.operation.append(item)
+        query = (Files
+                    .select()
+                    .where(Files.order == id)
+                    .order_by(Files.time.desc()))
+        files = []
+        for item in query:
+            files.append({'id': item.id,'type':item.type, 'name': item.path})
+        self.orderfiles.append(files)
         return True
         
 
@@ -81,6 +91,15 @@ class Orderinfo:
                     & (Orders.is_del == 0) & (Orders.id != self.id)))
             for item in query:
                 self.order.append(item)
+                #获取单个id文件列表详情
+                files = []
+                filequery =  (Files
+                                .select()
+                                .where(Files.order == item.id)
+                                .order_by(Files.time.desc()))
+                for fileitem in filequery:
+                    files.append({'id': fileitem.id,'type':fileitem.type, 'name': fileitem.path})
+                self.orderfiles.append(files)
             return True
         else:
             return False
@@ -118,8 +137,36 @@ class Orderinfo:
         for op in ops:
             order_ops.append({'id': op.id, 'admin': op.admin.name, 
             'op_desc':  op.op_desc, 'time': op.time})
-        return {'orders':orders_list, 'lender': lender, 'operations': order_ops}
+        return {'orders':orders_list, 'lender': lender, 'operations': order_ops, 'files':self.orderfiles}
 
+        #获取一个空白订单用于渲染模板
+    @classmethod
+    def get_blank_dict(self):
+        orders_list = []
+        orders_list.append({'id':'', 'source': '', 
+        'disp_id': '',
+        'account_day': '', 'product': '',
+        'amount': '', 'month_pay': '',
+        'periods': '', 'paid_periods':'',
+        'recv_amount': '', 
+        'order_date':'', 
+        'takeorder_date': '',
+        'call_details': '',
+        'contract': '', 
+        'lender_pic': '',
+        'parent': '', 'parent_call': '',
+        'roommate': '', 'roommate_call': '',
+        'classmate': '', 
+        'classmate_call': '',
+        'status': ''})
+        lender = {'id': '', 'idcard': '',
+        'name': '', 'tel': '',
+        'university': '', 
+        'univers_area': '',
+        'family_addr': '',
+        'family_area': ''}
+        order_ops = []
+        return {'orders':orders_list, 'lender': lender, 'operations': order_ops, 'files': [[]]}
 
 
 #欠款人信息
@@ -145,13 +192,24 @@ class LenderTable:
     @classmethod
     def insert(self, dict):
         try:
-            Lender.insert(name=dict['name'], tel=dict['tel'],
+            #判断如果存在名字和身份证信息相同的人，则认为是同一个人，直接更新信息即可
+            query = Lender.select().where((Lender.idcard == dict['idcard']) 
+                    & (Lender.name == dict['name']) & (Lender.is_del == 0))
+            if len(query) >= 1:
+                id = query[0].id
+                Lender.update(name=dict['name'], tel=dict['tel'],
+                        idcard = dict['idcard'], family_addr = dict['family_addr'],
+                        family_area = dict['family_area'], university = dict['university'],
+                        univers_area = dict['univers_area']).where(Lender.id == query[0].id).execute()
+                return ('success', id)
+            else:
+                Lender.insert(name=dict['name'], tel=dict['tel'],
                         idcard = dict['idcard'], family_addr = dict['family_addr'],
                         family_area = dict['family_area'], university = dict['university'],
                         univers_area = dict['univers_area'], is_del = 0).execute()
-            query = Lender.select().where((idcard == dict['idcard']) & (is_del == 0))
-            id = query[0].id
-            return ('success', id)
+                query = Lender.select().where((Lender.idcard == dict['idcard']) & (Lender.is_del == 0))
+                id = query[0].id
+                return ('success', id)
         except BaseException,e:
             logger.error(e)
             return ('error', 0)
@@ -181,13 +239,13 @@ class OrderTable:
     @classmethod
     def insertbasic(self, dict):
         try:
-            Orders.insert(disp=dict['dispid'], source=dict['source'],
+            Orders.insert(disp=dict['dispid'], source=dict['source'],lender = dict['lenderid'],
                         account_day = dict['accountday'], product = dict['product'],
                         amount = dict['amount'], month_pay = dict['monthpay'],
                         periods = dict['periods'], paid_periods = dict['paidperiods'],
                         received_amount = dict['recvamount'], order_date = dict['orderdate'],
                         takeorder_data = dict['takeorderdate'], status = dict['status'], is_del = 0).execute()
-            query = Orders.select().where((disp == dict['dispid']) & (is_del == 0))
+            query = Orders.select().where((Orders.disp == dict['dispid']) & (Orders.is_del == 0))
             id = query[0].id
             return ('success', id)
         except BaseException,e:
@@ -213,7 +271,7 @@ class OrderTable:
             Orders.insert(parent=dict['parent'], parent_call=dict['parentcall'],
                         roommate = dict['roommate'], roommate_call = dict['roommatecall'],
                         classmate = dict['classmate'], classmate_call = dict['classmatecall'], is_del = 0).execute()
-            query = Orders.select().where((parent == dict['parent'])& (is_del == 0))
+            query = Orders.select().where((Orders.parent == dict['parent'])& (Orders.is_del == 0))
             id = query[0].id
             return ('success', id)
         except BaseException,e:
@@ -247,3 +305,47 @@ class OperationTable:
         except BaseException,e:
             logger.error(e)
             return 'error',0
+
+#文件信息
+class FilesTable:
+
+    def __init__(self, id = 0):
+        self.id = id
+    
+    #传入字典删除记录
+    @classmethod
+    def delete(self, id):
+        try:
+            query = Files.delete().where(Files.id == id).execute()
+            return 'success'
+        except BaseException,e:
+            logger.error(e)
+            return 'error'
+    
+    #传入字典插入数据
+    @classmethod
+    def insert(self, order_id, type, path):
+        try:
+            id = Files.insert(order =order_id, type=type,
+                        path = path, time=datetime.datetime.now()).execute()
+            return 'success', id
+        except BaseException,e:
+            logger.error(e)
+            return 'error',0
+    
+    #传入字典查询数据
+    @classmethod
+    def query(self, order_id):
+        try:
+            query = (Files
+                    .select()
+                    .where(Files.order == orderid)
+                    .order_by(Files.time.desc()))
+            files = []
+            for item in query:
+                file = {'id': item.id, 'type': item.type, 'path': item.path}
+                files.append(file)
+            return  files
+        except BaseException,e:
+            logger.error(e)
+            return  None

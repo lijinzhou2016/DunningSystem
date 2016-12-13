@@ -435,6 +435,14 @@
     height:120px;
     line-height:50px;
     position:relative;
+    padding: 10px;
+}
+
+.orderStatus-upload-image-box{
+    float:left;
+}
+.orderStatus-upload-form{
+
 }
 
 .orderStatus-upload-image{
@@ -457,6 +465,10 @@
     line-height:50px;
     position:relative;
 }
+
+.orderStatus-upload-contract-box{
+    float:left;
+}
 .orderStatus-upload-contract{
     width:90%;
     position:relative;
@@ -476,6 +488,10 @@
     height:60px;
     line-height:50px;
     position:relative;
+}
+
+.orderStatus-upload-phonelist-box{
+    float:left;
 }
 
 .orderStatus-upload-phonelist{

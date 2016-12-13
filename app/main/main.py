@@ -118,6 +118,11 @@ def orderlist():
 def upload_server():
     logger.debug('i am upload server.............')
     return OrderList.save_orders_file()
+# 上传数据文件接口
+@bottle.route('/uploadlenderfile', method='POST')
+def uploadlenderfile_server():
+    logger.debug('i am uploadlenderfile server.............')
+    return save_orderdetail_file()
 
 
 @bottle.route('/orderdetail/<id:int>', method = 'GET')
@@ -131,12 +136,16 @@ def orderdetail(id):
         logger.info('session check invalid, redirect to login')
         bottle.redirect("/login")
     #获取订单信息
-    order_info = Orderinfo(id)
-    if order_info.get_order_detail_all():
-        order_detail = order_info.get_format_dict()
-        #封装管理员信息到订单信息中
-        order_detail['user'] = userinfo.dict_format()
-        return order_detail
+    #如果为0则返回空白信息，用于创建新订单
+    if id == 0:
+        order_detail = Orderinfo.get_blank_dict()
+    else:
+        order_info = Orderinfo(id)
+        if order_info.get_order_detail_all():
+            order_detail = order_info.get_format_dict()
+    #封装管理员信息到订单信息中
+    order_detail['user'] = userinfo.dict_format()
+    return order_detail
 
 # 提交用户信息表单处理
 @bottle.route('/orderdetail', method='POST')
@@ -169,6 +178,17 @@ def setting_index():
         bottle.redirect("/login")
     setting_info['username']=userinfo.dict_format()['name']
     return init_setting_html()
+
+# 订单相关文件
+@bottle.route('/orderdata/<filename>')
+def orderdata_file(filename):
+    idx = bottle.request.query.idx
+    logger.debug("idx " + idx)
+    id  = bottle.request.query.id
+    logger.debug("id " + id)
+    filepath = os.sep.join([str(idx), str(id), filename])
+    logger.debug("filepath " + filepath)
+    return bottle.static_file(filepath, root=orderdata_path())
 
 
 # 设置操作接口

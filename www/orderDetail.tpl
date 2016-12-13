@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="../orderDetail.css">
     <script src="../jquery-1.11.1.min.js"></script>
     <script src="../orderDetail.js"></script>
+	<script src="../spark-md5.min.js"></script>
 </head>
 
 <body>
@@ -76,6 +77,8 @@
 			</div>
 			%orderNo = {1:'一', 2:'二',3:'三',4:'四',5:'五',6:'六',7:'七',8:'八',9:'九',10:'十'}
 			%orderStatus = {0:'已结清', 1:'联系本人', 2:'联系亲属',3:'联系同学',4:'失联',5:'待外访',6:'外访中',7:'承诺还款',8:'部分还款'}
+			%fileName = {1: '图片', 2: '合同', 3: '通话详单'}
+			%fileType = {1: 'image', 2: 'contract', 3: 'phonelist'}
 			%orderIndex = 0
 			%for order in orders:
 			%orderIndex += 1
@@ -167,18 +170,18 @@
 					<div class="orderStatus-lianxiren-content">
 						<div class="parents">
 							<div style="width:50px;height:20px;line-height:20px;float:left">父母</div>
-							<input name = "parent" class="parentsname" value={{order.get('parent')}} title="刘能中华人民共和国" readonly="true">
+							<input name = "parent" class="parentsname" readonly="true" value={{order.get('parent')}}  >
 							<input name = "parentcall" class="parentsphone" value={{order.get('parent_call')}}>
 							<a href="">张三</a><a href="">李四</a>
 						</div>
 						<div class="sheyou">
 							<div style="width:50px;height:20px;line-height:20px;float:left">同寝</div>
-							<input name = "roommate" class="sheyouname" value={{order.get('roommate')}} title="刘能中华人民共和国" readonly="true">
+							<input name = "roommate" class="sheyouname" readonly="true" value={{order.get('roommate')}}  >
 							<input name = "roommatecall" class="sheyouphone" value={{order.get('roommate_call')}}>
 						</div>
 						<div class="tongxue">
 							<div style="width:50px;height:20px;line-height:20px;float:left">同学</div>
-							<input name = "classmate" class="tongxuename" value={{order.get('classmate')}} title="刘能中华人民共和国" readonly="true">
+							<input name = "classmate" class="tongxuename" readonly="true" value={{order.get('classmate')}} >
 							<input name = "classmatecall" class="tongxuephone" value={{order.get('classmate_call')}}>
 						</div>
 					</div>
@@ -187,27 +190,103 @@
 						<button class="lianxirenbtn-cancel">取消</button>
 					</div>
 				</div>
+				
 				<div class="orderStatus-upload-image">
-					<div class="orderStatus-upload-image-list">
-						<image class="orderStatus-image-thumb" src="../1.jpg">
-						<image class="orderStatus-image-thumb" src="../2.png">
-						<image class="orderStatus-image-thumb" src="../3.jpg">
-						<image class="orderStatus-image-thumb" src="../4.jpg">
-						<button>上传图片</button>
-					</div>
+					<table>
+						<tbody>
+							<tr>
+								<td class="orderStatus-upload-image-list">
+									%for per_order_files in files[orderIndex - 1]:
+										%if per_order_files['type'] == 1:
+											%idx=order['id'] / 100
+											<div class="orderStatus-upload-image-box">
+												<image class="orderStatus-image-thumb" src="../orderdata/{{per_order_files.get('name')}}?idx={{idx}}&id={{order.get('id')}}" />
+												<a href="../orderdata/{{per_order_files.get('name')}}?idx={{idx}}&id={{order.get('id')}}" download = "">下载</a>
+											</div>
+										%end
+									%end
+								</td>
+								<td>
+									<form name="uploadForm" class="orderStatus-upload-form"  enctype="multipart/form-data">
+											<input name='testmd5' id='pic_md5' hidden />
+											<input name='type' value=1 hidden />
+											<input type="file" class='uploadfile' name='data' value="选择文件" />
+											<input type="button" value="上传图片" class='upload'/>
+									</form>
+									<img class='loadding' src='../loading.gif'/>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 				<div class="orderStatus-upload-contract">
-					<div class="orderStatus-upload-contract-list">
-						<image class="orderStatus-contract-thumb" src="../word_icon.jpg">
-						<image class="orderStatus-contract-thumb" src="../pdf_icon.png">
-						<button>上传合同</button>
-					</div>
+					<table>
+						<tbody>
+							<tr>
+								<td class="orderStatus-upload-contract-list">
+									%for per_order_files in files[orderIndex - 1]:
+										%if per_order_files['type'] == 2:
+											%idx=order['id'] / 100
+											%ext=per_order_files.get('name').split('.')[-1]
+											%if ext == 'doc' or ext == 'docx':
+												%src_img = "../word_icon.jpg"
+											%elif ext == 'pdf':
+												%src_img = "../pdf_icon.png"
+											%else:
+												%src_img = "../unknow.jpg"
+											%end
+											<div class="orderStatus-upload-contract-box">
+												<image class="orderStatus-contract-thumb" src="../orderdata/{{src_img}}" />
+												<a href="../orderdata/{{per_order_files.get('name')}}?idx={{idx}}&id={{order.get('id')}}" download = "">下载</a>
+											</div>
+										%end
+									%end
+								</td>
+								<td >
+									<form id="uploadForm" class="orderStatus-upload-form">
+												<input name='testmd5' id='contract_md5' hidden />
+												<input name='type' value=2 hidden />
+												<input type="file" class='uploadfile' name='data' value="选择文件" />
+												<input type="button" value="上传合同" class='upload'/>
+									</form>
+									<img class='loadding' src='../loading.gif'/>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 				<div class="orderStatus-upload-phonelist">
-					<div class="orderStatus-upload-phonelist-list">
-						<image class="orderStatus-phonelist-thumb" src="../excel_icon.png">
-						<button>上传通话详单</button>
-					</div>
+					<table>
+							<tbody>
+								<tr>
+									<td class="orderStatus-upload-phonelist-list">
+										%for per_order_files in files[orderIndex - 1]:
+										%if per_order_files['type'] == 3:
+											%idx=order['id'] / 100
+											%ext=per_order_files.get('name').split('.')[-1]
+											%if ext == 'xls' or ext == 'xlsx':
+												%src_img = "../excel_icon.jpg"
+											%else:
+												%src_img = "../unknow.jpg"
+											%end
+											<div class="orderStatus-upload-phonelist-box">
+												<image class="orderStatus-phonelist-thumb" src="../orderdata/{{src_img}}" />
+												<a href="../orderdata/{{per_order_files.get('name')}}?idx={{idx}}&id={{order.get('id')}}" download = "">下载</a>
+											</div>
+										%end
+									%end
+									</td>
+									<td >
+										<form id="uploadForm" class="orderStatus-upload-form">
+													<input name='testmd5' id='phonelist_md5' hidden />
+													<input name='type' value=3 hidden />
+													<input type="file" class='uploadfile' name='data' value="选择文件" />
+													<input type="button" value="上传通话详单" class='upload'/>
+										</form>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 				</div>
 				<div class=""></div>
 			</div>
@@ -215,7 +294,7 @@
 		</div>
 		<div class="orderDetail-content-right">
 			<div class="orderDetail-content-right-top">
-				<button class="addorderlist">添加订单</button>
+				<button class="addorderlist" onclick = "location='./0?session={{user.get('session')}}'">添加订单</button>
 			</div>
 			<div class="orderDetail-content-caozuo">
 				<div class="orderDetail-content-caozuo-title">操作记录
