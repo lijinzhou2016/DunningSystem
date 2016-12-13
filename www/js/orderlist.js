@@ -183,8 +183,19 @@ function resetBtn() {
 }
 
 function ajaxupLoad() {
+    var mysession = $('.session_info').val();
     var file = $("#myfile").val();
+    var wherefrom = $("#wherefrom").val();
     var ext = file.slice(file.lastIndexOf(".") + 1).toLowerCase();
+
+    if (wherefrom==''){
+        alert('请输入订单来源');
+        return;
+    }
+    if (file==''){
+        alert('请选择文件');
+        return;
+    }
 
     if ('xls' == ext || 'xlsx' == ext || 'xlsm' == ext) {
         $('.upload').hide()
@@ -202,17 +213,17 @@ function ajaxupLoad() {
                 $('.loadding').hide()
                 $('.upload').show()
                 alert(returndata);
+                location.href='/orderlist?pageIndex=1&condition=0&session='+mysession
             },
             error: function (returndata) {
                 $('.loadding').hide()
                 $('.upload').show()
-                alert('error')
                 alert(returndata)
             }
         });
     }
     else {
-        alert('请上传excel文件')
+        alert('请选择excel文件')
     }
 
 }
