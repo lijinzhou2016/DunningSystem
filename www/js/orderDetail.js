@@ -428,6 +428,8 @@ $(document).ready(function () {
         btn_save_cancel($(this), $(this).parent().parent().find(".sheyouphone"))
         btn_save_cancel($(this), $(this).parent().parent().find(".tongxuename"))
         btn_save_cancel($(this), $(this).parent().parent().find(".tongxuephone"))
+        $(".caozuo-title-edit").show()
+
         //恢复最初的信息
         restore_lender_relatives($(this).parent().parent());
 
@@ -440,6 +442,7 @@ $(document).ready(function () {
         btn_save_cancel($(this), $(this).parent().parent().find(".sheyouphone"))
         btn_save_cancel($(this), $(this).parent().parent().find(".tongxuename"))
         btn_save_cancel($(this), $(this).parent().parent().find(".tongxuephone"))
+        $(".caozuo-title-edit").show()
 
          //保存信息到数据库
         update_order_relatives($(this).parent().parent().parent());
@@ -450,7 +453,7 @@ $(document).ready(function () {
     //     display_save_cancel_button(".jichuxinxi-btn")
     // })
     $(".caozuo-title-edit").click(function () {
-
+        $(this).hide();
         //获取当前时间
         var d = new Date();
         var admin_name = $("#admin_name").text();
@@ -462,9 +465,11 @@ $(document).ready(function () {
         $(".caozuo-line").prepend(li);
         $(".caozuo-cancelbtn").click(function () {
             $(".caozuo-line li:eq(0)").remove();
+            $(".caozuo-title-edit").show()
         });
         $(".caozuo-savebtn").click(function(){
             update_operations();
+            $(".caozuo-title-edit").show()
 
             $(this).parent().css("display","none");
             $(this).parent().parent().find(".caozuo-content").removeClass("on");
