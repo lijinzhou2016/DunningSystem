@@ -60,13 +60,50 @@ $(document).ready(function () {
     var old_order_classmatecall;
     var old_order_status;
 
-
+    var orderStatusDict = {0:'已结清', 1:'联系本人', 2:'联系亲属',3:'联系同学',4:'失联',5:'待外访',6:'外访中',7:'承诺还款',8:'部分还款'};
     //下拉列表设置默认值
     //$("select[name='status_select']").val($("select[name='status_select']").parent().find("input[name='status_value']").val());
     //有多个select标签，页面加载的时候即设置默认值，需要each实现循环设置
     $("select[name='status_select']").each(function(index, data){
         $(data).val($(data).parent().find("input[name='status_value']").val())
     })
+
+    $(".loadding").hide();
+
+
+    //处理新建订单的情况，新建订单的时候lender-id和order-id都为空
+    if ($("input[name='lender-id']").val() == ""){
+        //如果为空，则订单处于编辑状态
+
+
+        display_save_cancel_button(".jichuxinxi-btn", ".orderDetail-content-jichuxinxi-right")
+        //编辑的时候获取一次页面信息，防止用户取消操作
+        store_lender_basic();
+
+
+        display_save_cancel_button(".orderStatus-btn", ".orderStatus-content-right")
+        //设置input下拉框可编辑
+        $("select[name='status_select']").removeAttr("disabled");
+        store_order_basic(".orderStatus-info");
+
+
+        display_save_cancel_button(".orderStatus-lianxiren-btn", 
+                            ".parentsname");
+        display_save_cancel_button(".orderStatus-lianxiren-btn", 
+                            ".parentsphone");
+        display_save_cancel_button(".orderStatus-lianxiren-btn", 
+                            ".sheyouname");
+        display_save_cancel_button(".orderStatus-lianxiren-btn", 
+                            ".sheyouphone");
+        display_save_cancel_button(".orderStatus-lianxiren-btn", 
+                            ".tongxuename");
+        display_save_cancel_button(".orderStatus-lianxiren-btn", 
+                            ".tongxuephone");
+        //保存最初的信息
+        store_lender_relatives(".orderStatus-lianxiren");
+    }
+
+
 
     //保存页面中的用户基本信息
     function store_lender_basic(){
@@ -90,6 +127,13 @@ $(document).ready(function () {
         $("input[name='familyarea']").val(old_lender_familyarea);
     }
 
+    //回调函数用于更新lender-id
+    function update_lender_basic_id(id){
+        $("input[name='lender-id']").val(id);
+        
+
+    }
+
     //更新页面中的用户基本信息
     function update_lender_basic(){
         var idcard = $("input[name='idcard']").val();
@@ -107,9 +151,22 @@ $(document).ready(function () {
                         "univers": univers, "universarea":universarea, 
                         "familyaddr": familyaddr, "familyarea": familyarea,
                         "id": id};
+        if (id == "")
+        {
+            id = ajax_post(send_url, send_data, false);
+            if(id == "0")
+            {
+                alert("新增贷款人失败");
+            }
+            else{
+                alert("新增贷款人成功");
+                update_lender_basic_id(id);
+            }
+        }
+        else{
+            ajax_post(send_url, send_data, false);
+        }
         
-        ajax_post(send_url, send_data, false);
-
     }
 
     //保存页面中的订单信息
@@ -148,6 +205,10 @@ $(document).ready(function () {
         $(parentclass).find("select[name='status_select']").val(old_order_status);
     }
 
+    //回调函数用于更新order-id
+    function update_order_basic_id(parentclass,id){
+        $(parentclass).find("input[name='order-id']").val(id);
+    }
 
     //更新页面中的用户基本信息
     function update_order_basic(parentclass){
@@ -165,6 +226,8 @@ $(document).ready(function () {
         var status = $(parentclass).find("select[name='status_select']").val();
         var id = $(parentclass).find("input[name='order-id']").val();
 
+        var lenderid =  $("input[name='lender-id']").val()
+
         var send_url = "/orderdetail"
         var send_data = {"action":"update", "section": "orderbasic", 
                         "source": source, "dispid": dispid, "accountday": accountday,
@@ -172,11 +235,25 @@ $(document).ready(function () {
                         "periods": periods, "paidperiods": paidperiods,
                         "recvamount": recvamount, "orderdate": orderdate,
                         "takeorderdate": takeorderdate, "status": status,
-                        "id": id};
+                        "id": id, "lenderid": lenderid};
         
-        ajax_post(send_url, send_data, false);
-
-        //更新title的标签
+         if (id == "")
+        {
+            id = ajax_post(send_url, send_data, false);
+            if(id == "0")
+            {
+                alert("新增订单失败");
+            }
+            else{
+                alert("新增订单成功");
+                update_order_basic_id(parentclass, id);
+                //更新title的标签
+                $(parentclass).find(".orderStatus-title").children("span").text(orderStatusDict[status]);
+            }
+        }
+        else{
+            ajax_post(send_url, send_data, false);
+        }
         
 
     }
@@ -218,8 +295,12 @@ $(document).ready(function () {
                         "classmate":classmate, "classmatecall":classmatecall, 
                         "id": id};
         
-        ajax_post(send_url, send_data, false);
-
+        if(id == ""){
+            alert("必须先新增一个订单");
+        }
+        else{
+            ajax_post(send_url, send_data, false);
+        }
     }
 
 
@@ -391,9 +472,150 @@ $(document).ready(function () {
         })
     });
 
+    //实现md5计算功能
+    $(".uploadfile").change( function(){
+        var log3=$(this).parent().find("input[name='testmd5']")[0];
+        var blobSlice = File.prototype.slice || File.prototype.mozSlice || File.prototype.webkitSlice,
+					file = this.files[0],
+					chunkSize = 2097152, // read in chunks of 2MB
+					chunks = Math.ceil(file.size / chunkSize),
+					currentChunk = 0,
+					spark = new SparkMD5.ArrayBuffer(),
+					frOnload = function(e){
+						//log3.innerHTML+="\nread chunk number "+parseInt(currentChunk+1)+" of "+chunks;
+						spark.append(e.target.result); // append array buffer
+						currentChunk++;
+						if (currentChunk < chunks)
+							loadNext();
+						else
+						   //log3.innerHTML+="\nfinished loading :)\n\ncomputed hash:\n"+spark.end()+"\n\nyou can select another file now!\n";
+						   log3.value=spark.end();
+						   //alert(spark.end())
+					},
+					frOnerror = function () {
+						log3.value="\noops, something went wrong.";
+					};
+				function loadNext() {
+					var fileReader = new FileReader();
+					fileReader.onload = frOnload;
+					fileReader.onerror = frOnerror;
+					var start = currentChunk * chunkSize,
+						end = ((start + chunkSize) >= file.size) ? file.size : start + chunkSize;
+					fileReader.readAsArrayBuffer(blobSlice.call(file, start, end));
+				};
+				//log3.style.display="inline-block";
+				//log3.innerHTML="file name: "+file.name+" ("+file.size.toString().replace(/\B(?=(?:\d{3})+(?!\d))/g, ',')+" bytes)\n";
+				loadNext();
+    });
+    
 
+    //实现图片点击放大功能
+    $(".orderStatus-image-thumb").click( function() {
+        var largeImage = '<img src=' + $(this).attr("src") + '></img>'
+        $("#largeImage")
+            .html($(largeImage)
+            .animate({height: '100%', width: '100%'}, 500));
+    });
+
+    //ajax上传后即时显示图片
+    function add_file_div(uploadbtn, id, type, md5, ext){
+        var name = md5 + "." + ext;
+        src = "../orderdata/" + name + "?idx="+ Math.floor(id/100) + "&id=" + id
+        //图片
+        if (type == 1){
+            var div ="<div class='orderStatus-upload-image-box'>" 
+					    + "<image class='orderStatus-image-thumb' src='" + src + "' />"
+                        + "<a href='" + src+ "' download = ''>下载</a>"
+						+ "</div>"
+            $(uploadbtn).parents(".orderStatus-upload-image").find(".orderStatus-upload-image-list").prepend(div);
+        }
+        //合同
+        else if (type == 2){
+            if (ext == 'doc' || ext == 'docx'){
+				src_img = "../word_icon.jpg"
+            }
+            else if(ext == 'pdf'){
+                src_img = "../pdf_icon.png"
+            }
+            else{
+                src_img = "../unknow.jpg"
+            }
+            var div ="<div class='orderStatus-upload-contract-box'>" 
+					    + "<image class='orderStatus-contract-thumb' src='" + src_img + "' />"
+                        + "<a href='" + src+ "' download = ''>下载</a>"
+						+ "</div>"
+            $(uploadbtn).parents(".orderStatus-upload-contract").find(".orderStatus-upload-contract-list").prepend(div);
+
+        }
+        //通话详单
+        else if (type == 3){
+            if (ext == 'xls' || ext == 'xlsx'){
+				src_img = "../excel_icon.jpg"
+            }
+            else{
+                src_img = "../unknow.jpg"
+            }
+
+            var div ="<div class='orderStatus-upload-phonelist-box'>" 
+					    + "<image class='orderStatus-phonelist-thumb' src='" + src_img + "' />"
+                        + "<a href='" + src+ "' download = ''>下载</a>"
+						+ "</div>"
+            $(uploadbtn).parents(".orderStatus-upload-phonelist").find(".orderStatus-upload-phonelist-list").prepend(div);
+
+        }
+
+    }
+
+    $(".upload").click(function () {
+        //this指针在AJAX中表示AJAX作用域，必须要在外面定义，用全局变量表示
+        var uploadobj = $(this).parent().find('.upload');
+        var loadingobj = $(this).parents("td").find('.loadding');
+        var dataobj = $(this).parent().find("input[name='data']");
+        uploadobj.hide();
+        loadingobj.show();
+         var id = $(this).parents(".orderDetail-content-orderStatus").find("input[name='order-id']").val();
+        var file = $(dataobj).val();
+        var ext = file.slice(file.lastIndexOf(".") + 1).toLowerCase();
+        var md5 = $(this).parent().find("input[name='testmd5']").val();
+        var type= $(this).parent().find("input[name='type']").val();     
+
+        var formData = new FormData($(this).parent()[0]);
+        //增加订单ID
+        formData.append("orderid", id);
+        //增加MD5
+        formData.append("md5", md5);
+        //增加文件类型
+        formData.append("type", type);
+
+        $.ajax({
+            url: '/uploadlenderfile',
+            type: 'POST',
+            data: formData,
+            async: true,
+            cache: false,
+            contentType: false,
+            processData: false,
+            //this指针在AJAX中表示AJAX作用域，必须要在外面定义，用全局变量表示
+            success: function (returndata) {
+                loadingobj.hide()
+                uploadobj.show()
+                //dataobj.val("未选择任何文件")
+                alert(returndata);
+                add_file_div(uploadobj, id, type, md5, ext)
+            },
+            error: function (returndata) {
+                loadingobj.hide()
+                uploadobj.show()
+                alert('error')
+                //dataobj.val("未选择任何文件")
+                alert(returndata)
+            }
+        });
+
+    });
 
       function ajax_post(send_url, send_data, is_async) {
+          var id = "0";   //需要新增的情况下，如果失败则为0
         $.ajax({
             type: 'post',
             url: send_url,
@@ -401,15 +623,25 @@ $(document).ready(function () {
             async: is_async,
             timeout: 60000,
             success: function (result) {
-                if(result=='error'){
+                //alert(result);
+                var dataObj=eval("("+result+")");
+                //alert("result id = " + dataObj.id)            
+                if(dataObj.result=='error'){
                     alert('操作失败')
+                }
+                else if(dataObj.result== 'success'){
+                    id = dataObj.id;
                 }
             },
             error: function(result){
                 alert(result)
             }
         });
+
+        return id;
     }
+
+    
 
 
     function Format(now,mask)
@@ -462,6 +694,46 @@ $(document).ready(function () {
     };
 
 })
+
+
+function ajaxupLoad() {
+        alert("value = " + $(this).val());
+        $(this).parent().find('.upload').hide();
+        $('.loadding').show();
+         var id = $(this).parents("input[name='order-id']").val();
+        alert("id = " + id);
+        var file = $(this).parent().find("input[name='data']").val();
+        alert("file = " + file);
+        var ext = file.slice(file.lastIndexOf(".") + 1).toLowerCase();
+
+        
+
+        var formData = new FormData($(this).parent().find("form[name='uploadForm']")[0]);
+        //增加订单ID
+        formData.append("orderid", id);
+        $.ajax({
+            url: '/uploadlenderfile',
+            type: 'POST',
+            data: formData,
+            async: true,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (returndata) {
+                $('.loadding').hide()
+                $(this).parent().find('.upload').show()
+                alert(returndata);
+            },
+            error: function (returndata) {
+                $('.loadding').hide()
+                $(this).parent().find('.upload').show()
+                alert('error')
+                alert(returndata)
+            }
+        });
+        
+
+    }
 
 
 
