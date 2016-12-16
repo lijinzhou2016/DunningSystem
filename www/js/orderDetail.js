@@ -477,6 +477,31 @@ $(document).ready(function () {
         })
     });
 
+
+    //校验待上传文件的后缀，不合格则提示用户
+    function check_upload_file(type, ext) {
+        //图片类型
+        if(type == 1){
+            if(ext.toUpperCase() != 'JPG'
+                && ext.toUpperCase() != 'JPEG'
+                && ext.toUpperCase() != 'BMP'
+                && ext.toUpperCase() != 'PNG'
+                && ext.toUpperCase() != 'GIF'){
+                    alert("图片文件格式必须是jpg,jpeg,bmp,png和gif格式的一种，请检查后再上传!")
+                    return false
+                }
+            return true
+        }
+        else if (type == 2){
+            return true
+        }
+        else if (type == 3){
+            return true
+        }
+        alert("页面获取元素出错，上传失败，请重新刷新页面!")
+        return false
+    }
+
     //实现md5计算功能
     $(".uploadfile").change( function(){
         var log3=$(this).parent().find("input[name='testmd5']")[0];
@@ -576,8 +601,6 @@ $(document).ready(function () {
         var uploadobj = $(this).parent().find('.upload');
         var loadingobj = $(this).parents("td").find('.loadding');
         var dataobj = $(this).parent().find("input[name='data']");
-        uploadobj.hide();
-        loadingobj.show();
          var id = $(this).parents(".orderDetail-content-orderStatus").find("input[name='order-id']").val();
         var file = $(dataobj).val();
         var ext = file.slice(file.lastIndexOf(".") + 1).toLowerCase();
@@ -592,6 +615,13 @@ $(document).ready(function () {
         //增加文件类型
         formData.append("type", type);
 
+        if (check_upload_file(type, ext)== false)
+        {
+            return
+        }
+
+        uploadobj.hide();
+        loadingobj.show();
         $.ajax({
             url: '/uploadlenderfile',
             type: 'POST',

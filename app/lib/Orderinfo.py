@@ -46,9 +46,12 @@ class Orderinfo:
         self.operation = []
         #图片操作
         self.orderfiles = []
+        #冲突信息
+        self.duplicate_cont = []
 
     #根据订单ID获取订单详情
     def get_order_detail_by_id(self, id):
+        #获取订单信息
         query = (Orders.select().where((Orders.id == id) 
                 & (Orders.is_del == 0) ))
         if(len(query) == 1):
@@ -56,12 +59,14 @@ class Orderinfo:
             print "lender: " + self.order[0].lender.name
         else:
             return False
+        #获取欠款人信息
         query = (Lender.select().where((Lender.id == self.order[0].lender.id) 
                 & (Lender.is_del == 0) ))
         if(len(query) == 1):
             self.lender = query[0]
         else:
             return False
+        #获取单个订单操作信息
         query = (Operation
                     .select(Operation, Admin)
                     .join(Admin)
@@ -69,6 +74,7 @@ class Orderinfo:
                     .order_by(Operation.time.desc()))
         for item in query:
             self.operation.append(item)
+        #获取订单附件信息
         query = (Files
                     .select()
                     .where(Files.order == id)
@@ -77,6 +83,9 @@ class Orderinfo:
         for item in query:
             files.append({'id': item.id,'type':item.type, 'name': item.path})
         self.orderfiles.append(files)
+        #检查订单下面的联系人信息是否跟数据库中其他订单有冲突
+        res = self.get_duplicate_contract(self.order[0])
+        self.duplicate_cont.append(res)
         return True
         
 
@@ -100,6 +109,9 @@ class Orderinfo:
                 for fileitem in filequery:
                     files.append({'id': fileitem.id,'type':fileitem.type, 'name': fileitem.path})
                 self.orderfiles.append(files)
+                #获取单个文件ID的联系人冲突状况
+                res = self.get_duplicate_contract(item)
+                self.duplicate_cont.append(res)
             return True
         else:
             return False
@@ -137,7 +149,7 @@ class Orderinfo:
         for op in ops:
             order_ops.append({'id': op.id, 'admin': op.admin.name, 
             'op_desc':  op.op_desc, 'time': op.time})
-        return {'orders':orders_list, 'lender': lender, 'operations': order_ops, 'files':self.orderfiles}
+        return {'orders':orders_list, 'lender': lender, 'operations': order_ops, 'files':self.orderfiles, 'dupcontact': self.duplicate_cont}
 
         #获取一个空白订单用于渲染模板
     @classmethod
@@ -167,6 +179,48 @@ class Orderinfo:
         'family_area': ''}
         order_ops = []
         return {'orders':orders_list, 'lender': lender, 'operations': order_ops, 'files': [[]]}
+
+    #获取特定order query，检查对应的联系人是否有重复
+    #返回一个字典{'parent':[], 'roommate': [], 'classmate':[{'id': 1, 'name': '贝贝'}]}
+    #如果不重复，则字典里面对应的列表为空，否则为重复的订单信息和借款人名字
+    #如果联系方式为空，则不进行检查
+    @classmethod
+    def get_duplicate_contract(self, record):
+        result = {'parent':[], 'roommate': [], 'classmate':[]}
+        #检查parent号码
+        if record.parent_call is not None and record.parent_call.strip() != "":
+            search_str = record.parent_call.strip()
+            query = Orders.select(Orders, Lender).join(Lender).where((
+                (Orders.parent_call.contains(search_str))
+                | (Orders.roommate_call.contains(search_str))
+                | (Orders.classmate_call.contains(search_str)))
+                &(Orders.id != record.id))
+            if len(query) >= 1:
+                for item in query:
+                    result['parent'].append({'id': item.id, 'name': item.lender.name})
+        #检查roommate号码
+        if record.roommate_call is not None and record.roommate_call.strip() != "":
+            search_str = record.roommate_call.strip()
+            query = Orders.select(Orders, Lender).join(Lender).where((
+                (Orders.parent_call.contains(search_str))
+                | (Orders.roommate_call.contains(search_str))
+                | (Orders.classmate_call.contains(search_str)))
+                &(Orders.id != record.id))
+            if len(query) >= 1:
+                for item in query:
+                    result['roommate'].append({'id': item.id, 'name': item.lender.name})
+        #检查classmate号码
+        if record.classmate_call is not None and record.classmate_call.strip() != "":
+            search_str = record.classmate_call.strip()
+            query = Orders.select(Orders, Lender).join(Lender).where((
+                (Orders.parent_call.contains(search_str))
+                | (Orders.roommate_call.contains(search_str))
+                | (Orders.classmate_call.contains(search_str)))
+                &(Orders.id != record.id))
+            if len(query) >= 1:
+                for item in query:
+                    result['classmate'].append({'id': item.id, 'name': item.lender.name})
+        return result
 
 
 #欠款人信息
@@ -229,7 +283,8 @@ class OrderTable:
                         amount = dict['amount'], month_pay = dict['monthpay'],
                         periods = dict['periods'], paid_periods = dict['paidperiods'],
                         received_amount = dict['recvamount'], order_date = dict['orderdate'],
-                        takeorder_data = dict['takeorderdate'], status = dict['status']).where(Orders.id == id).execute()
+                        takeorder_data = dict['takeorderdate'], modify_time=datetime.datetime.now(),
+                        status = dict['status']).where(Orders.id == id).execute()
             return 'success'
         except BaseException,e:
             logger.error(e)
@@ -244,7 +299,8 @@ class OrderTable:
                         amount = dict['amount'], month_pay = dict['monthpay'],
                         periods = dict['periods'], paid_periods = dict['paidperiods'],
                         received_amount = dict['recvamount'], order_date = dict['orderdate'],
-                        takeorder_data = dict['takeorderdate'], status = dict['status'], is_del = 0).execute()
+                        takeorder_data = dict['takeorderdate'], status = dict['status'], 
+                        create_time=datetime.datetime.now(),modify_time=datetime.datetime.now(),is_del = 0).execute()
             query = Orders.select().where((Orders.disp == dict['dispid']) & (Orders.is_del == 0))
             id = query[0].id
             return ('success', id)

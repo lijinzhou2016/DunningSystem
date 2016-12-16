@@ -17,7 +17,7 @@
 				<input type="text" name="admin_id" style="display:none" value={{user.get('id')}}>
 				{{user.get('name')}}
 			</li>
-			<li><img src="../icon_tuichu.png" style="height:16px;" alt="">退出</li>
+			<li><img src="../icon_tuichu.png" style="height:16px;" alt=""><a href="javascript:window.opener=null;window.open('','_self');window.close();">退出</a></li>
 		</ul>
 	</div>
 	<div class="orderDetail-content">
@@ -168,21 +168,30 @@
 				<div class="orderStatus-lianxiren">
 					<div class="orderStatus-lianxiren-edit"></div>
 					<div class="orderStatus-lianxiren-content">
+					%dupContact = dupcontact[orderIndex - 1]
 						<div class="parents">
 							<div style="width:50px;height:20px;line-height:20px;float:left">父母</div>
 							<input name = "parent" class="parentsname" readonly="true" value={{order.get('parent')}}  >
 							<input name = "parentcall" class="parentsphone" value={{order.get('parent_call')}}>
-							<a href="">张三</a><a href="">李四</a>
+							%for contact in dupContact['parent']:
+							<a href="./{{contact.get('id')}}?session={{user.get('session')}}">{{contact.get('name')}}</a>
+							%end
 						</div>
 						<div class="sheyou">
 							<div style="width:50px;height:20px;line-height:20px;float:left">同寝</div>
 							<input name = "roommate" class="sheyouname" readonly="true" value={{order.get('roommate')}}  >
 							<input name = "roommatecall" class="sheyouphone" value={{order.get('roommate_call')}}>
+							%for contact in dupContact['roommate']:
+							<a href="./{{contact.get('id')}}?session={{user.get('session')}}">{{contact.get('name')}}</a>
+							%end
 						</div>
 						<div class="tongxue">
 							<div style="width:50px;height:20px;line-height:20px;float:left">同学</div>
 							<input name = "classmate" class="tongxuename" readonly="true" value={{order.get('classmate')}} >
 							<input name = "classmatecall" class="tongxuephone" value={{order.get('classmate_call')}}>
+							%for contact in dupContact['classmate']:
+							<a href="./{{contact.get('id')}}?session={{user.get('session')}}">{{contact.get('name')}}</a>
+							%end
 						</div>
 					</div>
 					<div class="orderStatus-lianxiren-btn">
