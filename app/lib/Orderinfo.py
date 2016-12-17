@@ -178,7 +178,8 @@ class Orderinfo:
         'family_addr': '',
         'family_area': ''}
         order_ops = []
-        return {'orders':orders_list, 'lender': lender, 'operations': order_ops, 'files': [[]]}
+        duplicate_cont = [{'parent':[], 'roommate':[], 'classmate':[]}]
+        return {'orders':orders_list, 'lender': lender, 'operations': order_ops, 'files': [[]], 'dupcontact': duplicate_cont}
 
     #获取特定order query，检查对应的联系人是否有重复
     #返回一个字典{'parent':[], 'roommate': [], 'classmate':[{'id': 1, 'name': '贝贝'}]}

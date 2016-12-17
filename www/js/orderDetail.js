@@ -356,10 +356,16 @@ $(document).ready(function () {
     })
     //基础信息保存按钮
     $(".btn-save").click(function () {
-        btn_save_cancel(".btn-cancel", ".orderDetail-content-jichuxinxi-right");
+
+        var phone = $(".tel").val();
+        var flag=phoneVal(phone)&&IDnumber();
+        if(flag==true){
+            btn_save_cancel(".btn-cancel", ".orderDetail-content-jichuxinxi-right");
 
         //保存信息到数据库
-        update_lender_basic();
+           update_lender_basic();
+        }
+        
     })
 
     $(".orderStatus-info").hover(function () {
@@ -387,11 +393,17 @@ $(document).ready(function () {
     })
     //订单状态保存按钮
     $(".orderStatusbtn-save").click(function () {
-        btn_save_cancel($(this), $(this).parent().parent().find(".orderStatus-content-right"))
+        var periods=$(".periods").val();
+        var paidperiods=$(".paidperiods").val();
+        var flag = phoneValnum(periods)&&phoneValnum(paidperiods);
+        if(flag==true){
+             btn_save_cancel($(this), $(this).parent().parent().find(".orderStatus-content-right"))
         //设置input下拉框不可编辑
         $("select[name='status_select']").attr("disabled","disabled");
          //保存信息到数据库
         update_order_basic($(this).parent().parent().parent());
+        }
+       
     })
 
     //联系人
@@ -770,5 +782,56 @@ function ajaxupLoad() {
 
     }
 
+    //验证手机号
+    function phoneVal(phone){
+        if(phone==""){
+            alert("手机号不能为空！");
+             return false;
+        }else{
+            if(phone && /^1[34578]\d{9}$/.test(phone)){
+                return true;
+            }else{
+                
+                alert("手机号输入不正确！");
+                 return false;
+            }
+        }
+       
+    }
+
+    //验证身份证
+    function IDnumber(){
+         var pattern = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/; 
+         var IDnumber = $(".idcard").val();
+         if(IDnumber==""){
+             alert("身份证号不能为空！");
+            return false;
+        }else{
+             if(IDnumber&&pattern.test(IDnumber)){
+                 return true;
+
+            }else{
+                
+                alert("身份证号不正确！");
+                 return false;
+            }
+        }
+    }
+
+     function phoneValnum(number){
+        if(number==""){
+            number=0;
+             return true;
+        }else{
+            if(number && /^\d+$/.test(number)){
+                return true;
+            }else{
+                
+                alert("请输入数字！");
+                 return false;
+            }
+        }
+       
+    }
 
 

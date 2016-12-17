@@ -145,6 +145,8 @@ $(document).ready(function () {
     })
 
     function ajax_post(send_url, send_data, is_async) {
+        var session = $('.session').html();
+        send_data['session'] = session
         $.ajax({
             type: 'post',
             url: send_url,
@@ -155,9 +157,12 @@ $(document).ready(function () {
                 if(result=='error'){
                     alert('操作失败')
                 }
+                if (result='unknown'){
+                    location.href='/login'
+                }
             },
             error: function(result){
-                alert(result)
+                alert(str(result))
             }
         });
     }
@@ -208,9 +213,13 @@ $(document).ready(function () {
             var account = user_item[1];
             var passwd = user_item[2];
             var name = user_item[3];
+            var enable = user_item[4];
 
             user_ids[i] = id;
-            add_user(id, account, passwd, name);
+            if (enable == '1'){
+                add_user(id, account, passwd, name);
+            }
+            
         }
     }
 
@@ -252,7 +261,7 @@ $(document).ready(function () {
         var cls_account;
         var cls_passwd;
         var cls_name;
-        var send_data = {'action':'adduser', "id": "", "user": "", "passwd": "", "name": "" }
+        var send_data = {'action':'adduser', "id": "", "user": "", "passwd": "", "name": "",session:"" }
         var send_url = "/set"
         for (i = 0; i < new_user_ids.length; i++) {
             if (new_user_ids[i] != 0) {

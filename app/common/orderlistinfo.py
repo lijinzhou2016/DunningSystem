@@ -14,6 +14,7 @@ import time
 import uuid
 import os
 import math
+import datetime
 from peewee import *
 import xlrd
 
@@ -80,7 +81,7 @@ class OrderList:
             if self.orders_count == 0:
                 self.orders_list_info =[]
             else :
-                query = Orders.select().where(Orders.is_del == 0)
+                query = Orders.select().where(Orders.is_del == 0).order_by(-Orders.create_time,-Orders.modify_time)
                 if self.orders_count > int(pageindex)*10:
                     self.orders_list_info = query[(int(pageindex)-1)*10:int(pageindex)*10]
                 else:
@@ -136,7 +137,8 @@ class OrderList:
                 Lender.name.contains(condition_item['order_username']),
                 Lender.university.contains(condition_item['order_school']),
                 Lender.family_addr.contains(condition_item['order_jtzz']),
-                Lender.family_area.contains(condition_item['order_jtqy']))
+                Lender.family_area.contains(condition_item['order_jtqy'])
+            )
 
             # 按条件查询到的数据，取出id添加到lender_id
             if len(lender_query)>=1:  
@@ -146,18 +148,18 @@ class OrderList:
                 lender_flag = 1 # 表示按照搜索条件没有查询到数据
 
         if condition_item['order_zhangqi']: # 账期
-            account_day_query = Orders.select().where(Orders.account_day == condition_item['order_zhangqi'])
+            account_day_query = Orders.select().where(Orders.account_day == condition_item['order_zhangqi']).order_by(-Orders.create_time, -Orders.modify_time)
             temp_query.append(account_day_query) 
         if condition_item['order_shxx']: # 接单日期
             logger.debug('查询接单日期字段：'+condition_item['order_shxx'])
-            takeorder_data_query = Orders.select().where(Orders.takeorder_data == condition_item['order_shxx'])
+            takeorder_data_query = Orders.select().where(Orders.takeorder_data == condition_item['order_shxx']).order_by(-Orders.create_time, -Orders.modify_time)
             logger.debug(len(takeorder_data_query))
             temp_query.append(takeorder_data_query)
         if condition_item['order_ddzt']: # 订单状态
-            status_query = Orders.select().where(Orders.status == orderStatusKey[condition_item['order_ddzt']])
+            status_query = Orders.select().where(Orders.status == orderStatusKey[condition_item['order_ddzt']]).order_by(-Orders.create_time, -Orders.modify_time)
             temp_query.append(status_query)
         if condition_item['order_jdrq']: # 订单日期
-            order_date_query = Orders.select().where(Orders.order_date == condition_item['order_jdrq'])
+            order_date_query = Orders.select().where(Orders.order_date == condition_item['order_jdrq']).order_by(-Orders.create_time, -Orders.modify_time)
             temp_query.append(order_date_query)
         
         logger.debug(len(temp_query))
@@ -181,7 +183,7 @@ class OrderList:
             self.orders_list_info = orders_query # 搜索的最终数据 ！！！
 
         else: # lender表中查到数据
-            self.orders_list_info = Orders.select().where(Orders.lender_id << lender_id) # 搜索的最终数据 ！！！
+            self.orders_list_info = Orders.select().where(Orders.lender_id << lender_id).order_by(-Orders.create_time, -Orders.modify_time) # 搜索的最终数据 ！！！
         
         self.orders_count = len(self.orders_list_info)
         self.total_pages =  1 if self.orders_count==0 else int(math.ceil(self.orders_count/10.0)) # 分页数
@@ -240,7 +242,8 @@ class OrderList:
             table = data.sheets()[0]
             nrows = table.nrows # 行数
         except BaseException,e:
-            logger.error('打开文件出错: '+e)
+            logger.error('打开文件出错: ')
+            logger.error(str(e))
             os.remove(filepath)
             return '打开文件出错，请重新上传'
 
@@ -256,7 +259,7 @@ class OrderList:
                 if Orders.select().where(Orders.disp == one_data[0]): #重复订单
                     exception_disp += ('重复订单: '+str(one_data[0])+' '+one_data[1]+'\n')
                     continue
-                order_insert_dict['disp'] = one_data[0]
+                order_insert_dict['disp'] = str(one_data[0])
             else:
                 exception_disp += ('订单号为空的订单: '+one_data[1]+'\n')
                 continue
@@ -264,15 +267,15 @@ class OrderList:
                 if one_data[8]: # 订单状态
                     order_insert_dict['status'] = orderStatusKey[one_data[8]]
                 if one_data[9]: # 账期
-                    order_insert_dict['account_day'] = one_data[9]
+                    order_insert_dict['account_day'] = str(one_data[9])
                 if one_data[10]: # 产品名称
                     order_insert_dict['product'] = one_data[10]
                 if one_data[11]: # 分期金额
-                    order_insert_dict['amount'] = one_data[11]
+                    order_insert_dict['amount'] = int(one_data[11])
                 if one_data[12]: # 首次还款日
                     order_insert_dict['payment_day'] = one_data[12]
                 if one_data[13]: # 月供
-                    order_insert_dict['month_pay'] = one_data[13]
+                    order_insert_dict['month_pay'] = str(one_data[13])
                 if one_data[14]: # 期数
                     order_insert_dict['periods'] = int(one_data[14])
                 if one_data[15]: # 已付期数
@@ -282,7 +285,7 @@ class OrderList:
                 if one_data[17]: # 接单日期
                     order_insert_dict['takeorder_data'] = one_data[17]
                 if one_data[18]: # 已还金额
-                    order_insert_dict['received_amount'] = str(one_data[18])
+                    order_insert_dict['received_amount'] = int(one_data[18])
                 if one_data[19]: # 父母
                     order_insert_dict['parent'] = one_data[19]
                 if one_data[20]: # 父母电话
@@ -292,9 +295,12 @@ class OrderList:
                 if one_data[22]: # 同寝电话
                     order_insert_dict['roommate_call'] = str(int(one_data[22]))
                 if one_data[23]: # 同学
-                    order_insert_dict['classmate'] = one_data[23]
+                    order_insert_dict['classmate'] = str(one_data[23])
                 if one_data[24]: # 同学电话
                     order_insert_dict['classmate_call'] = str(int(one_data[24]))
+                
+                order_insert_dict['create_time'] = datetime.datetime.now()
+                order_insert_dict['modify_time'] = order_insert_dict['create_time']
 
                 #################################################################
 
@@ -313,7 +319,8 @@ class OrderList:
                 if one_data[7]: # 家庭住址
                     lender_insert_dict['family_addr'] = one_data[7]
             except BaseException,e:
-                logger.error('解析失败订单: '+ str(one_data[0])+' '+one_data[1]+e)
+                logger.error('解析失败订单: '+ str(one_data[0])+' '+one_data[1])
+                logger.error(str(e))
                 exception_disp += ('解析失败订单: '+ str(one_data[0])+' '+one_data[1]+'\n')
                 continue
 
@@ -324,7 +331,7 @@ class OrderList:
                 Orders.insert(order_insert_dict).execute()
                 success_insert_count += 1
             except BaseException,e:
-                logger.error('插入数据库失败订单号: '+ str(one_data[0])+e)
+                logger.error('插入数据库失败订单号: '+ str(one_data[0])+str(e))
                 exception_disp += ('插入数据库失败订单号: '+ str(one_data[0])+'\n')
 
         if len(exception_disp)>0:

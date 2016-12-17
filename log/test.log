@@ -6334,3 +6334,2281 @@
 2016-12-14 22:34:18,106 main.py checkuser 153 DEBUG - post to orderdetail
 2016-12-14 22:34:31,344 main.py checkuser 153 DEBUG - post to orderdetail
 2016-12-14 22:34:58,468 main.py checkuser 153 DEBUG - post to orderdetail
+2016-12-16 20:28:05,481 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 20:28:53,037 main.py server_www 45 DEBUG - login
+2016-12-16 20:28:53,193 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:29:06,524 main.py checkuser 84 DEBUG - check the user
+2016-12-16 20:29:06,541 main.py orderlist 100 DEBUG - Got session admin_3c8feec2-c38b-11e6-92e9-000000000030
+2016-12-16 20:29:06,541 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 20:29:06,564 main.py server_www 45 DEBUG - fenye.js
+2016-12-16 20:29:06,565 main.py server_www 45 DEBUG - orderlist.js
+2016-12-16 20:29:06,591 main.py server_www 45 DEBUG - orderlist.css
+2016-12-16 20:29:06,594 main.py server_www 45 DEBUG - loading.gif
+2016-12-16 20:29:06,757 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:29:10,132 main.py setting_index 174 DEBUG - Got session admin_3c8feec2-c38b-11e6-92e9-000000000030
+2016-12-16 20:29:10,145 main.py server_www 45 DEBUG - setting.css
+2016-12-16 20:29:10,146 main.py server_www 45 DEBUG - setting.js
+2016-12-16 20:29:10,165 main.py server_www 45 DEBUG - Design.png
+2016-12-16 20:29:10,209 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:29:21,371 main.py orderdetail 133 DEBUG - Got session admin_3c8feec2-c38b-11e6-92e9-000000000030
+2016-12-16 20:29:21,441 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:33:41,792 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-16 20:33:41,792 main.py save_orders_file 341 DEBUG - i am save_ordersource......
+2016-12-16 20:46:27,989 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 20:46:32,624 main.py orderlist 100 DEBUG - Got session admin_3c8feec2-c38b-11e6-92e9-000000000030
+2016-12-16 20:46:32,624 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 20:46:32,626 main.py server_www 45 DEBUG - login
+2016-12-16 20:46:32,676 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:46:41,012 main.py checkuser 84 DEBUG - check the user
+2016-12-16 20:46:41,024 main.py orderlist 100 DEBUG - Got session admin_b115a666-c38d-11e6-a1a7-000000000030
+2016-12-16 20:46:41,024 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 20:46:41,128 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:49:00,685 main.py orderdetail 133 DEBUG - Got session admin_b115a666-c38d-11e6-a1a7-000000000030
+2016-12-16 20:49:00,723 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-16 20:49:00,724 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-16 20:49:00,756 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-16 20:49:00,818 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:49:11,136 main.py orderdetail 133 DEBUG - Got session admin_b115a666-c38d-11e6-a1a7-000000000030
+2016-12-16 20:49:11,170 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:49:27,224 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-16 20:49:27,224 main.py save_orders_file 344 DEBUG - i am save_ordersource......
+2016-12-16 20:49:33,845 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:50:43,158 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 20:50:48,907 main.py server_www 45 DEBUG - login
+2016-12-16 20:50:48,957 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:50:56,154 main.py checkuser 84 DEBUG - check the user
+2016-12-16 20:50:56,166 main.py orderlist 100 DEBUG - Got session admin_4929539e-c38e-11e6-9fa2-000000000030
+2016-12-16 20:50:56,167 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 20:50:56,267 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:51:06,176 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-16 20:51:06,177 main.py save_orders_file 346 DEBUG - i am save_ordersource......
+2016-12-16 20:51:06,273 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20161015143114180988 刘永
+2016-12-16 20:51:06,273 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,275 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20161023113817186530 程博
+2016-12-16 20:51:06,275 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,277 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20161008091807176003 木尼热艾克木
+2016-12-16 20:51:06,277 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,280 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20161007162900175828 王宇晨
+2016-12-16 20:51:06,281 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,283 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20161016125211181589 周正
+2016-12-16 20:51:06,283 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,285 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20161005160015174909 万开鹏
+2016-12-16 20:51:06,285 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,287 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20161015144501181024 蒋鑫
+2016-12-16 20:51:06,287 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,289 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20161016155856181875 刘雨龙
+2016-12-16 20:51:06,289 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,291 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20161002110245174005 宋晶
+2016-12-16 20:51:06,291 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,293 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20161011112358178269 孙强
+2016-12-16 20:51:06,293 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,295 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20161010121815177643 李汝琪
+2016-12-16 20:51:06,295 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,297 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20161009154735177212 吴霜霜
+2016-12-16 20:51:06,297 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,299 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20161009134745177054 易存雷
+2016-12-16 20:51:06,299 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,301 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160910112544160905 杨朋
+2016-12-16 20:51:06,301 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,303 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160920105919166656 开丽曼
+2016-12-16 20:51:06,303 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,305 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160907114006159213 黄科军
+2016-12-16 20:51:06,305 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,307 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160918144425165467 王柯中
+2016-12-16 20:51:06,307 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,310 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160904112250157462 章钦
+2016-12-16 20:51:06,310 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,313 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160903161100157233 王祥林
+2016-12-16 20:51:06,313 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,315 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160903151930157195 努尔兰
+2016-12-16 20:51:06,315 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,317 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160829133017155057 唐登川
+2016-12-16 20:51:06,317 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,319 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160908153537160037 周伟
+2016-12-16 20:51:06,319 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,322 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160819121737152122 蓝仕成
+2016-12-16 20:51:06,322 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,325 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160812141824150124 刘璐
+2016-12-16 20:51:06,325 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,327 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160810100728148915 彭字伟
+2016-12-16 20:51:06,327 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,331 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160822122219152852 周勇军
+2016-12-16 20:51:06,331 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,334 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160822112732152825 许晨
+2016-12-16 20:51:06,335 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,336 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160805142012147667 汪洋
+2016-12-16 20:51:06,337 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,338 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160804130249147345 仰旭
+2016-12-16 20:51:06,338 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,340 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160802115638146953 黄多多
+2016-12-16 20:51:06,340 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,343 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160808145309148300 王羽
+2016-12-16 20:51:06,343 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,350 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160804154958147413 王震
+2016-12-16 20:51:06,350 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,353 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160802194103147064 邓楠
+2016-12-16 20:51:06,353 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,355 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160721132940144662 邓楠
+2016-12-16 20:51:06,355 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,358 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160801134941146846 刘闯
+2016-12-16 20:51:06,358 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,362 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160729185144146402 董久萌
+2016-12-16 20:51:06,362 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,365 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160714173851143396 艾晟
+2016-12-16 20:51:06,365 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,367 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160714112704143278 洪朗
+2016-12-16 20:51:06,367 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,369 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160713154637143147 汤慧芳
+2016-12-16 20:51:06,369 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,371 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160708121219142107 徐熊军
+2016-12-16 20:51:06,371 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,373 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160711131217142674 谢宇豪
+2016-12-16 20:51:06,373 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,375 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160627143215139559 谭琦
+2016-12-16 20:51:06,375 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:51:06,377 main.py save_orders_to_database 320 ERROR - 解析失败订单: 20160622160006138404 马建英
+2016-12-16 20:51:06,377 main.py save_orders_to_database 321 ERROR - type object 'datetime.datetime' has no attribute 'datetime'
+2016-12-16 20:54:28,505 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 20:54:33,272 main.py orderlist 100 DEBUG - Got session admin_4929539e-c38e-11e6-9fa2-000000000030
+2016-12-16 20:54:33,273 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 20:54:33,338 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:54:56,348 main.py server_www 45 DEBUG - login
+2016-12-16 20:54:56,402 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:55:05,126 main.py checkuser 84 DEBUG - check the user
+2016-12-16 20:55:05,137 main.py orderlist 100 DEBUG - Got session admin_dd8f4b94-c38e-11e6-acd6-000000000030
+2016-12-16 20:55:05,137 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 20:55:05,235 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:55:14,578 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-16 20:55:14,578 main.py save_orders_file 347 DEBUG - i am save_ordersource......
+2016-12-16 20:55:14,675 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161015143114180988invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:55:14,680 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161023113817186530invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:55:14,684 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161008091807176003invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:55:14,689 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161007162900175828invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:55:14,694 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161016125211181589invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:55:14,699 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161005160015174909invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:55:14,703 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161015144501181024invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:55:14,708 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161016155856181875invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:55:14,713 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161002110245174005invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:55:14,717 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161011112358178269invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:55:14,722 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161010121815177643invalid literal for int() with base 10: '1001.0'
+2016-12-16 20:55:14,727 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161009154735177212invalid literal for int() with base 10: '1002.0'
+2016-12-16 20:55:14,732 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161009134745177054invalid literal for int() with base 10: '1003.0'
+2016-12-16 20:55:14,738 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160910112544160905invalid literal for int() with base 10: '1004.0'
+2016-12-16 20:55:14,743 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160920105919166656invalid literal for int() with base 10: '1005.0'
+2016-12-16 20:55:14,748 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160907114006159213invalid literal for int() with base 10: '1006.0'
+2016-12-16 20:55:14,754 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160918144425165467invalid literal for int() with base 10: '1007.0'
+2016-12-16 20:55:14,758 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160904112250157462invalid literal for int() with base 10: '1008.0'
+2016-12-16 20:55:14,763 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160903161100157233invalid literal for int() with base 10: '1009.0'
+2016-12-16 20:55:14,767 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160903151930157195invalid literal for int() with base 10: '1010.0'
+2016-12-16 20:55:14,772 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160829133017155057invalid literal for int() with base 10: '1011.0'
+2016-12-16 20:55:14,776 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160908153537160037invalid literal for int() with base 10: '2000.0'
+2016-12-16 20:55:14,781 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160819121737152122invalid literal for int() with base 10: '2000.0'
+2016-12-16 20:55:14,785 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160812141824150124invalid literal for int() with base 10: '2000.0'
+2016-12-16 20:55:14,790 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160810100728148915invalid literal for int() with base 10: '2000.0'
+2016-12-16 20:55:14,795 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160822122219152852invalid literal for int() with base 10: '2001.0'
+2016-12-16 20:55:14,799 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160822112732152825invalid literal for int() with base 10: '2002.0'
+2016-12-16 20:55:14,804 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160805142012147667invalid literal for int() with base 10: '2003.0'
+2016-12-16 20:55:14,809 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160804130249147345invalid literal for int() with base 10: '2004.0'
+2016-12-16 20:55:14,813 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160802115638146953invalid literal for int() with base 10: '2005.0'
+2016-12-16 20:55:14,818 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160808145309148300invalid literal for int() with base 10: '2006.0'
+2016-12-16 20:55:14,822 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160804154958147413invalid literal for int() with base 10: '3000.0'
+2016-12-16 20:55:14,827 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160802194103147064invalid literal for int() with base 10: '3001.0'
+2016-12-16 20:55:14,832 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160721132940144662invalid literal for int() with base 10: '3002.0'
+2016-12-16 20:55:14,837 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160801134941146846invalid literal for int() with base 10: '3003.0'
+2016-12-16 20:55:14,842 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160729185144146402invalid literal for int() with base 10: '3004.0'
+2016-12-16 20:55:14,847 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160714173851143396invalid literal for int() with base 10: '3005.0'
+2016-12-16 20:55:14,852 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160714112704143278invalid literal for int() with base 10: '3006.0'
+2016-12-16 20:55:14,856 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160713154637143147invalid literal for int() with base 10: '3007.0'
+2016-12-16 20:55:14,861 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160708121219142107invalid literal for int() with base 10: '3008.0'
+2016-12-16 20:55:14,866 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160711131217142674invalid literal for int() with base 10: '3009.0'
+2016-12-16 20:55:14,871 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160627143215139559invalid literal for int() with base 10: '3010.0'
+2016-12-16 20:55:14,876 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160622160006138404invalid literal for int() with base 10: '3011.0'
+2016-12-16 20:56:46,029 main.py orderlist 100 DEBUG - Got session admin_dd8f4b94-c38e-11e6-acd6-000000000030
+2016-12-16 20:56:46,030 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 20:56:46,212 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:59:24,031 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-16 20:59:24,031 main.py save_orders_file 347 DEBUG - i am save_ordersource......
+2016-12-16 20:59:24,109 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161015143114180988invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:59:24,113 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161023113817186530invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:59:24,118 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161008091807176003invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:59:24,122 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161007162900175828invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:59:24,127 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161016125211181589invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:59:24,132 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161005160015174909invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:59:24,136 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161015144501181024invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:59:24,142 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161016155856181875invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:59:24,147 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161002110245174005invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:59:24,152 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161011112358178269invalid literal for int() with base 10: '1000.0'
+2016-12-16 20:59:24,158 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161010121815177643invalid literal for int() with base 10: '1001.0'
+2016-12-16 20:59:24,162 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161009154735177212invalid literal for int() with base 10: '1002.0'
+2016-12-16 20:59:24,167 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20161009134745177054invalid literal for int() with base 10: '1003.0'
+2016-12-16 20:59:24,172 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160910112544160905invalid literal for int() with base 10: '1004.0'
+2016-12-16 20:59:24,177 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160920105919166656invalid literal for int() with base 10: '1005.0'
+2016-12-16 20:59:24,182 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160907114006159213invalid literal for int() with base 10: '1006.0'
+2016-12-16 20:59:24,186 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160918144425165467invalid literal for int() with base 10: '1007.0'
+2016-12-16 20:59:24,192 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160904112250157462invalid literal for int() with base 10: '1008.0'
+2016-12-16 20:59:24,196 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160903161100157233invalid literal for int() with base 10: '1009.0'
+2016-12-16 20:59:24,201 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160903151930157195invalid literal for int() with base 10: '1010.0'
+2016-12-16 20:59:24,206 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160829133017155057invalid literal for int() with base 10: '1011.0'
+2016-12-16 20:59:24,211 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160908153537160037invalid literal for int() with base 10: '2000.0'
+2016-12-16 20:59:24,215 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160819121737152122invalid literal for int() with base 10: '2000.0'
+2016-12-16 20:59:24,220 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160812141824150124invalid literal for int() with base 10: '2000.0'
+2016-12-16 20:59:24,224 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160810100728148915invalid literal for int() with base 10: '2000.0'
+2016-12-16 20:59:24,229 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160822122219152852invalid literal for int() with base 10: '2001.0'
+2016-12-16 20:59:24,233 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160822112732152825invalid literal for int() with base 10: '2002.0'
+2016-12-16 20:59:24,238 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160805142012147667invalid literal for int() with base 10: '2003.0'
+2016-12-16 20:59:24,243 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160804130249147345invalid literal for int() with base 10: '2004.0'
+2016-12-16 20:59:24,248 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160802115638146953invalid literal for int() with base 10: '2005.0'
+2016-12-16 20:59:24,253 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160808145309148300invalid literal for int() with base 10: '2006.0'
+2016-12-16 20:59:24,258 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160804154958147413invalid literal for int() with base 10: '3000.0'
+2016-12-16 20:59:24,262 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160802194103147064invalid literal for int() with base 10: '3001.0'
+2016-12-16 20:59:24,267 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160721132940144662invalid literal for int() with base 10: '3002.0'
+2016-12-16 20:59:24,271 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160801134941146846invalid literal for int() with base 10: '3003.0'
+2016-12-16 20:59:24,275 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160729185144146402invalid literal for int() with base 10: '3004.0'
+2016-12-16 20:59:24,281 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160714173851143396invalid literal for int() with base 10: '3005.0'
+2016-12-16 20:59:24,285 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160714112704143278invalid literal for int() with base 10: '3006.0'
+2016-12-16 20:59:24,290 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160713154637143147invalid literal for int() with base 10: '3007.0'
+2016-12-16 20:59:24,295 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160708121219142107invalid literal for int() with base 10: '3008.0'
+2016-12-16 20:59:24,299 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160711131217142674invalid literal for int() with base 10: '3009.0'
+2016-12-16 20:59:24,304 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160627143215139559invalid literal for int() with base 10: '3010.0'
+2016-12-16 20:59:24,309 main.py save_orders_to_database 333 ERROR - 插入数据库失败订单号: 20160622160006138404invalid literal for int() with base 10: '3011.0'
+2016-12-16 20:59:29,833 main.py orderlist 100 DEBUG - Got session admin_dd8f4b94-c38e-11e6-acd6-000000000030
+2016-12-16 20:59:29,834 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 20:59:30,013 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 20:59:32,791 main.py orderlist 100 DEBUG - Got session admin_dd8f4b94-c38e-11e6-acd6-000000000030
+2016-12-16 20:59:32,792 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 20:59:32,859 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:07:36,141 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 21:07:39,431 main.py orderlist 100 DEBUG - Got session admin_dd8f4b94-c38e-11e6-acd6-000000000030
+2016-12-16 21:07:39,431 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 21:07:39,434 main.py server_www 45 DEBUG - login
+2016-12-16 21:07:39,485 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:07:46,670 main.py checkuser 84 DEBUG - check the user
+2016-12-16 21:07:46,683 main.py orderlist 100 DEBUG - Got session ljz_a379cbbd-c390-11e6-bd63-000000000031
+2016-12-16 21:07:46,683 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:07:46,779 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:07:57,464 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-16 21:07:57,464 main.py save_orders_file 347 DEBUG - i am save_ordersource......
+2016-12-16 21:08:07,876 main.py orderlist 100 DEBUG - Got session ljz_a379cbbd-c390-11e6-bd63-000000000031
+2016-12-16 21:08:07,876 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:08:08,054 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:08:23,957 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-16 21:08:23,957 main.py save_orders_file 347 DEBUG - i am save_ordersource......
+2016-12-16 21:08:28,610 main.py orderlist 100 DEBUG - Got session ljz_a379cbbd-c390-11e6-bd63-000000000031
+2016-12-16 21:08:28,610 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:08:28,788 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:24:45,422 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 21:24:54,987 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:24:56,107 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:25:05,772 main.py checkuser 84 DEBUG - check the user
+2016-12-16 21:25:05,781 main.py orderlist 100 DEBUG - Got session wll_0ed4054c-c393-11e6-a49c-000000000030
+2016-12-16 21:25:05,781 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:25:05,889 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:25:14,052 main.py orderlist 100 DEBUG - Got session wll_0ed4054c-c393-11e6-a49c-000000000030
+2016-12-16 21:25:14,052 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:25:14,165 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:25:19,476 main.py orderlist 100 DEBUG - Got session wll_0ed4054c-c393-11e6-a49c-000000000030
+2016-12-16 21:25:19,477 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:25:19,577 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:25:20,870 main.py orderlist 100 DEBUG - Got session wll_0ed4054c-c393-11e6-a49c-000000000030
+2016-12-16 21:25:20,870 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:25:20,978 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:25:23,063 main.py orderlist 100 DEBUG - Got session wll_0ed4054c-c393-11e6-a49c-000000000030
+2016-12-16 21:25:23,063 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:25:23,164 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:25:46,376 main.py orderdetail 133 DEBUG - Got session wll_0ed4054c-c393-11e6-a49c-000000000030
+2016-12-16 21:25:46,489 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:27:38,039 main.py orderlist 100 DEBUG - Got session wll_0ed4054c-c393-11e6-a49c-000000000030
+2016-12-16 21:27:38,039 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-16 21:27:38,040 main.py condition_data 122 DEBUG - order_username : 许
+2016-12-16 21:27:38,040 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-16 21:27:38,088 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:29:38,516 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 21:29:42,251 main.py orderlist 100 DEBUG - Got session wll_0ed4054c-c393-11e6-a49c-000000000030
+2016-12-16 21:29:42,251 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 21:29:42,254 main.py server_www 45 DEBUG - login
+2016-12-16 21:29:42,473 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:29:52,548 main.py checkuser 84 DEBUG - check the user
+2016-12-16 21:29:52,560 main.py orderlist 100 DEBUG - Got session ljz_b9c2bafd-c393-11e6-8f94-000000000031
+2016-12-16 21:29:52,560 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:29:52,813 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:30:12,037 main.py orderlist 100 DEBUG - Got session ljz_b9c2bafd-c393-11e6-8f94-000000000031
+2016-12-16 21:30:12,037 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-16 21:30:12,038 main.py condition_data 122 DEBUG - order_username : 刘
+2016-12-16 21:30:12,038 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-16 21:30:12,043 main.py condition_data 165 DEBUG - 0
+2016-12-16 21:30:12,135 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:30:32,358 main.py orderlist 100 DEBUG - Got session ljz_b9c2bafd-c393-11e6-8f94-000000000031
+2016-12-16 21:30:32,358 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:30:32,449 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:30:34,935 main.py orderdetail 133 DEBUG - Got session ljz_b9c2bafd-c393-11e6-8f94-000000000031
+2016-12-16 21:30:35,023 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-16 21:30:35,093 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:30:55,271 main.py checkuser 153 DEBUG - post to orderdetail
+2016-12-16 21:31:02,162 main.py orderlist 100 DEBUG - Got session ljz_b9c2bafd-c393-11e6-8f94-000000000031
+2016-12-16 21:31:02,162 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:31:02,283 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:31:05,626 main.py orderlist 100 DEBUG - Got session ljz_b9c2bafd-c393-11e6-8f94-000000000031
+2016-12-16 21:31:05,626 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:31:05,701 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:32:19,473 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 21:32:23,889 main.py orderlist 100 DEBUG - Got session ljz_b9c2bafd-c393-11e6-8f94-000000000031
+2016-12-16 21:32:23,889 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 21:32:23,892 main.py server_www 45 DEBUG - login
+2016-12-16 21:32:23,946 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:32:31,656 main.py checkuser 84 DEBUG - check the user
+2016-12-16 21:32:31,669 main.py orderlist 100 DEBUG - Got session ljz_1898bc6e-c394-11e6-8df2-000000000031
+2016-12-16 21:32:31,669 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:32:31,791 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:33:44,216 main.py orderdetail 133 DEBUG - Got session ljz_1898bc6e-c394-11e6-8df2-000000000031
+2016-12-16 21:33:44,396 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:33:52,986 main.py checkuser 153 DEBUG - post to orderdetail
+2016-12-16 21:33:58,560 main.py orderlist 100 DEBUG - Got session ljz_1898bc6e-c394-11e6-8df2-000000000031
+2016-12-16 21:33:58,560 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:33:58,656 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:34:49,869 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:37:54,372 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:37:57,317 main.py orderlist 100 DEBUG - Got session ljz_1898bc6e-c394-11e6-8df2-000000000031
+2016-12-16 21:37:57,318 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:37:57,391 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:38:10,963 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-16 21:38:10,963 main.py save_orders_file 348 DEBUG - i am save_ordersource......
+2016-12-16 21:38:14,474 main.py orderlist 100 DEBUG - Got session ljz_1898bc6e-c394-11e6-8df2-000000000031
+2016-12-16 21:38:14,474 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:38:14,610 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:38:28,361 main.py orderdetail 133 DEBUG - Got session ljz_1898bc6e-c394-11e6-8df2-000000000031
+2016-12-16 21:38:28,423 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-16 21:38:28,514 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:38:36,213 main.py checkuser 153 DEBUG - post to orderdetail
+2016-12-16 21:38:41,020 main.py orderlist 100 DEBUG - Got session ljz_1898bc6e-c394-11e6-8df2-000000000031
+2016-12-16 21:38:41,021 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:38:41,123 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:39:34,095 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 21:39:37,436 main.py orderlist 100 DEBUG - Got session ljz_1898bc6e-c394-11e6-8df2-000000000031
+2016-12-16 21:39:37,436 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 21:39:37,439 main.py server_www 45 DEBUG - login
+2016-12-16 21:39:37,491 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:39:48,453 main.py checkuser 84 DEBUG - check the user
+2016-12-16 21:39:57,664 main.py checkuser 84 DEBUG - check the user
+2016-12-16 21:40:40,972 main.py checkuser 84 DEBUG - check the user
+2016-12-16 21:40:40,988 main.py orderlist 100 DEBUG - Got session admin_3c4009e8-c395-11e6-97c4-000000000030
+2016-12-16 21:40:40,988 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:40:41,109 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:40:46,284 main.py orderlist 100 DEBUG - Got session admin_3c4009e8-c395-11e6-97c4-000000000030
+2016-12-16 21:40:46,285 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:40:46,386 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:41:28,866 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 21:41:35,037 main.py orderlist 100 DEBUG - Got session admin_3c4009e8-c395-11e6-97c4-000000000030
+2016-12-16 21:41:35,037 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 21:41:35,043 main.py server_www 45 DEBUG - login
+2016-12-16 21:41:35,107 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:41:43,445 main.py checkuser 84 DEBUG - check the user
+2016-12-16 21:41:43,457 main.py orderlist 100 DEBUG - Got session admin _617cfcca-c395-11e6-b73c-000000000031
+2016-12-16 21:41:43,457 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:41:43,587 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:41:56,895 main.py orderlist 100 DEBUG - Got session admin
+2016-12-16 21:41:56,895 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 21:41:56,943 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:42:01,616 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:42:03,952 main.py orderlist 100 DEBUG - Got session admin
+2016-12-16 21:42:03,953 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 21:42:04,006 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:42:46,285 main.py checkuser 84 DEBUG - check the user
+2016-12-16 21:42:46,292 main.py orderlist 100 DEBUG - Got session admin_86f11d5e-c395-11e6-b8ee-000000000030
+2016-12-16 21:42:46,292 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:42:46,410 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:42:49,349 main.py orderlist 100 DEBUG - Got session admin_86f11d5e-c395-11e6-b8ee-000000000030
+2016-12-16 21:42:49,350 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:42:49,441 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:42:51,097 main.py orderlist 100 DEBUG - Got session admin_86f11d5e-c395-11e6-b8ee-000000000030
+2016-12-16 21:42:51,097 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:42:51,183 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:42:52,237 main.py orderlist 100 DEBUG - Got session admin_86f11d5e-c395-11e6-b8ee-000000000030
+2016-12-16 21:42:52,237 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:42:52,328 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:42:53,792 main.py orderlist 100 DEBUG - Got session admin_86f11d5e-c395-11e6-b8ee-000000000030
+2016-12-16 21:42:53,793 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:42:53,877 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:43:07,269 main.py orderlist 100 DEBUG - Got session admin_86f11d5e-c395-11e6-b8ee-000000000030
+2016-12-16 21:43:07,270 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:43:07,371 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:43:25,342 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-16 21:43:25,343 main.py save_orders_file 348 DEBUG - i am save_ordersource......
+2016-12-16 21:43:29,624 main.py orderlist 100 DEBUG - Got session admin_86f11d5e-c395-11e6-b8ee-000000000030
+2016-12-16 21:43:29,624 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:43:29,786 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:44:02,251 main.py orderlist 100 DEBUG - Got session admin_86f11d5e-c395-11e6-b8ee-000000000030
+2016-12-16 21:44:02,251 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:44:02,374 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:51:35,872 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 21:51:50,130 main.py orderlist 100 DEBUG - Got session admin_86f11d5e-c395-11e6-b8ee-000000000030
+2016-12-16 21:51:50,131 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 21:51:50,136 main.py server_www 45 DEBUG - login
+2016-12-16 21:51:50,202 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:52:00,248 main.py checkuser 84 DEBUG - check the user
+2016-12-16 21:52:00,261 main.py orderlist 100 DEBUG - Got session admin_d121ba23-c396-11e6-b795-000000000030
+2016-12-16 21:52:00,261 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:52:00,401 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:52:12,622 main.py orderlist 100 DEBUG - Got session admin_d121ba23-c396-11e6-b795-000000000030
+2016-12-16 21:52:12,622 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:52:12,760 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:53:31,334 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 21:53:35,486 main.py orderlist 100 DEBUG - Got session admin_d121ba23-c396-11e6-b795-000000000030
+2016-12-16 21:53:35,486 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 21:53:35,491 main.py server_www 45 DEBUG - login
+2016-12-16 21:53:35,539 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:53:46,468 main.py checkuser 84 DEBUG - check the user
+2016-12-16 21:53:46,481 main.py orderlist 100 DEBUG - Got session admin_10719e80-c397-11e6-99c0-000000000030
+2016-12-16 21:53:46,481 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:53:46,633 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:53:55,430 main.py orderlist 100 DEBUG - Got session admin_10719e80-c397-11e6-99c0-000000000030
+2016-12-16 21:53:55,431 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:53:55,567 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:54:07,362 main.py orderlist 100 DEBUG - Got session admin_10719e80-c397-11e6-99c0-000000000030
+2016-12-16 21:54:07,363 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:54:07,498 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:54:09,042 main.py orderlist 100 DEBUG - Got session admin_10719e80-c397-11e6-99c0-000000000030
+2016-12-16 21:54:09,043 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:54:09,160 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:54:10,429 main.py orderlist 100 DEBUG - Got session admin_10719e80-c397-11e6-99c0-000000000030
+2016-12-16 21:54:10,429 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:54:10,527 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:54:12,407 main.py orderlist 100 DEBUG - Got session admin_10719e80-c397-11e6-99c0-000000000030
+2016-12-16 21:54:12,408 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:54:12,514 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:54:13,972 main.py orderlist 100 DEBUG - Got session admin_10719e80-c397-11e6-99c0-000000000030
+2016-12-16 21:54:13,972 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:54:14,073 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:54:28,383 main.py orderdetail 133 DEBUG - Got session admin_10719e80-c397-11e6-99c0-000000000030
+2016-12-16 21:54:28,476 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-16 21:54:28,526 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:54:37,583 main.py checkuser 153 DEBUG - post to orderdetail
+2016-12-16 21:56:10,660 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 21:56:14,577 main.py orderlist 100 DEBUG - Got session admin_10719e80-c397-11e6-99c0-000000000030
+2016-12-16 21:56:14,578 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 21:56:14,581 main.py server_www 45 DEBUG - login
+2016-12-16 21:56:14,627 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:56:24,099 main.py checkuser 84 DEBUG - check the user
+2016-12-16 21:56:24,110 main.py orderlist 100 DEBUG - Got session admin_6e6615fa-c397-11e6-b4a1-000000000030
+2016-12-16 21:56:24,111 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:56:24,275 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:56:47,214 main.py orderlist 100 DEBUG - Got session admin_6e6615fa-c397-11e6-b4a1-000000000030
+2016-12-16 21:56:47,215 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:56:47,358 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:57:30,880 main.py orderdetail 133 DEBUG - Got session admin_6e6615fa-c397-11e6-b4a1-000000000030
+2016-12-16 21:57:30,991 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:57:40,637 main.py checkuser 153 DEBUG - post to orderdetail
+2016-12-16 21:57:47,040 main.py orderlist 100 DEBUG - Got session admin_6e6615fa-c397-11e6-b4a1-000000000030
+2016-12-16 21:57:47,040 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:57:47,124 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:58:53,514 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 21:58:57,878 main.py orderlist 100 DEBUG - Got session admin_6e6615fa-c397-11e6-b4a1-000000000030
+2016-12-16 21:58:57,878 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 21:58:57,883 main.py server_www 45 DEBUG - login
+2016-12-16 21:58:57,946 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:59:07,530 main.py checkuser 84 DEBUG - check the user
+2016-12-16 21:59:07,542 main.py orderlist 100 DEBUG - Got session admin_cfcfb935-c397-11e6-af29-000000000030
+2016-12-16 21:59:07,542 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:59:07,691 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 21:59:14,392 main.py orderlist 100 DEBUG - Got session admin_cfcfb935-c397-11e6-af29-000000000030
+2016-12-16 21:59:14,392 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 21:59:14,485 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:07:07,677 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 22:07:11,235 main.py orderlist 100 DEBUG - Got session admin_cfcfb935-c397-11e6-af29-000000000030
+2016-12-16 22:07:11,235 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 22:07:11,237 main.py server_www 45 DEBUG - login
+2016-12-16 22:07:11,288 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:07:20,687 main.py checkuser 84 DEBUG - check the user
+2016-12-16 22:07:20,701 main.py orderlist 100 DEBUG - Got session admin_f5c16fbd-c398-11e6-ae1e-000000000030
+2016-12-16 22:07:20,702 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:07:20,850 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:07:29,555 main.py orderlist 100 DEBUG - Got session admin_f5c16fbd-c398-11e6-ae1e-000000000030
+2016-12-16 22:07:29,556 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:07:29,694 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:07:31,402 main.py orderlist 100 DEBUG - Got session admin_f5c16fbd-c398-11e6-ae1e-000000000030
+2016-12-16 22:07:31,402 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:07:31,517 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:07:34,049 main.py orderlist 100 DEBUG - Got session admin_f5c16fbd-c398-11e6-ae1e-000000000030
+2016-12-16 22:07:34,049 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:07:34,159 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:07:42,490 main.py orderlist 100 DEBUG - Got session admin_f5c16fbd-c398-11e6-ae1e-000000000030
+2016-12-16 22:07:42,490 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:07:42,598 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:07:45,296 main.py orderlist 100 DEBUG - Got session admin_f5c16fbd-c398-11e6-ae1e-000000000030
+2016-12-16 22:07:45,296 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:07:45,402 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:07:48,100 main.py orderdetail 133 DEBUG - Got session admin_f5c16fbd-c398-11e6-ae1e-000000000030
+2016-12-16 22:07:48,207 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-16 22:07:48,261 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:07:56,069 main.py checkuser 153 DEBUG - post to orderdetail
+2016-12-16 22:08:01,264 main.py orderlist 100 DEBUG - Got session admin_f5c16fbd-c398-11e6-ae1e-000000000030
+2016-12-16 22:08:01,264 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:08:01,362 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:11:26,737 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 22:11:34,094 main.py orderlist 100 DEBUG - Got session admin_f5c16fbd-c398-11e6-ae1e-000000000030
+2016-12-16 22:11:34,094 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 22:11:34,099 main.py server_www 45 DEBUG - login
+2016-12-16 22:11:34,163 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:11:43,633 main.py checkuser 84 DEBUG - check the user
+2016-12-16 22:11:43,645 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:11:43,646 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:11:43,791 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:11:51,273 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:11:51,274 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:11:51,394 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:11:53,246 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:11:53,246 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:11:53,335 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:12:01,968 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:12:01,968 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:12:02,069 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:12:09,402 main.py orderdetail 133 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:12:09,567 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:12:17,626 main.py checkuser 153 DEBUG - post to orderdetail
+2016-12-16 22:12:22,927 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:12:22,928 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:12:23,022 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:12:27,577 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:12:27,577 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:12:27,672 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:12:29,363 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:12:29,363 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:12:29,458 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:12:39,305 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:12:39,306 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:12:39,423 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:12:47,566 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:12:47,566 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:12:47,673 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:12:48,831 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:12:48,831 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:12:48,945 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:12:50,701 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:12:50,701 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:12:50,800 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:12:52,806 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:12:52,806 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:12:52,915 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:12:58,091 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:12:58,091 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:12:58,184 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:12:59,557 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:12:59,558 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:12:59,658 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:14:47,056 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:14:47,056 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:14:47,139 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:14:58,214 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-16 22:14:58,215 main.py save_orders_file 348 DEBUG - i am save_ordersource......
+2016-12-16 22:15:01,477 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:15:01,477 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:15:01,614 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:15:31,019 main.py orderdetail 133 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:15:31,184 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:15:40,739 main.py checkuser 153 DEBUG - post to orderdetail
+2016-12-16 22:15:45,861 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:15:45,861 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:15:45,940 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:15:48,200 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:15:48,201 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:15:48,281 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:15:51,607 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:15:51,607 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:15:51,685 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:07,782 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-16 22:16:07,782 main.py save_orders_file 348 DEBUG - i am save_ordersource......
+2016-12-16 22:16:13,652 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:13,652 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:13,821 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:23,768 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:23,768 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:23,887 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:26,343 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:26,344 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:26,439 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:28,988 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:28,989 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:29,086 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:30,054 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:30,054 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:30,148 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:33,826 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:33,826 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:33,917 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:34,938 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:34,939 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:35,017 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:37,947 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:37,948 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:38,029 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:39,726 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:39,727 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:39,806 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:41,558 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:41,558 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:41,637 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:43,421 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:43,422 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:43,541 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:45,165 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:45,166 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:45,262 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:48,417 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:48,418 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:48,503 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:16:50,674 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:16:50,674 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:16:50,760 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:17:06,908 main.py orderdetail 133 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:17:07,075 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:17:14,559 main.py checkuser 153 DEBUG - post to orderdetail
+2016-12-16 22:17:23,112 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:17:23,113 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:17:23,217 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:17:25,353 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:17:25,354 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:17:25,454 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:17:27,520 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:17:27,520 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:17:27,594 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:17:30,848 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:17:30,849 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:17:30,962 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:17:34,805 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:17:34,805 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:17:34,897 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:19:18,463 main.py <module> 26 DEBUG - dunning server start
+2016-12-16 22:19:25,853 main.py orderlist 100 DEBUG - Got session admin_927bd3b0-c399-11e6-ab2e-000000000030
+2016-12-16 22:19:25,853 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-16 22:19:25,856 main.py server_www 45 DEBUG - login
+2016-12-16 22:19:25,909 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:19:31,779 main.py checkuser 84 DEBUG - check the user
+2016-12-16 22:19:57,318 main.py server_www 45 DEBUG - login
+2016-12-16 22:19:57,366 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:20:02,082 main.py checkuser 84 DEBUG - check the user
+2016-12-16 22:20:36,259 main.py server_www 45 DEBUG - login
+2016-12-16 22:20:36,315 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:20:44,470 main.py checkuser 84 DEBUG - check the user
+2016-12-16 22:21:30,193 main.py server_www 45 DEBUG - login
+2016-12-16 22:21:30,201 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-16 22:21:30,213 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-16 22:21:30,342 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:21:38,759 main.py checkuser 84 DEBUG - check the user
+2016-12-16 22:22:00,368 main.py checkuser 84 DEBUG - check the user
+2016-12-16 22:22:00,383 main.py orderlist 100 DEBUG - Got session admin_0215e354-c39b-11e6-a3b5-000000000030
+2016-12-16 22:22:00,383 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:22:00,444 main.py server_www 45 DEBUG - fenye.js
+2016-12-16 22:22:00,447 main.py server_www 45 DEBUG - orderlist.js
+2016-12-16 22:22:00,448 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-16 22:22:00,452 main.py server_www 45 DEBUG - fenye.css
+2016-12-16 22:22:00,453 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-16 22:22:00,456 main.py server_www 45 DEBUG - orderlist.css
+2016-12-16 22:22:00,458 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-16 22:22:00,461 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-16 22:22:00,463 main.py server_www 45 DEBUG - loading.gif
+2016-12-16 22:22:00,483 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-16 22:22:00,495 main.py skin 73 DEBUG - datePicker.gif
+2016-12-16 22:22:00,498 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-16 22:22:00,625 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:22:23,021 main.py orderlist 100 DEBUG - Got session admin_0215e354-c39b-11e6-a3b5-000000000030
+2016-12-16 22:22:23,022 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:22:23,166 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:22:24,467 main.py orderlist 100 DEBUG - Got session admin_0215e354-c39b-11e6-a3b5-000000000030
+2016-12-16 22:22:24,467 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:22:24,598 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:22:28,397 main.py orderlist 100 DEBUG - Got session admin_0215e354-c39b-11e6-a3b5-000000000030
+2016-12-16 22:22:28,397 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:22:28,537 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:22:32,184 main.py orderlist 100 DEBUG - Got session admin_0215e354-c39b-11e6-a3b5-000000000030
+2016-12-16 22:22:32,185 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:22:32,320 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:22:34,274 main.py orderlist 100 DEBUG - Got session admin_0215e354-c39b-11e6-a3b5-000000000030
+2016-12-16 22:22:34,275 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:22:34,413 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:22:36,483 main.py orderlist 100 DEBUG - Got session admin_0215e354-c39b-11e6-a3b5-000000000030
+2016-12-16 22:22:36,484 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:22:36,593 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:22:43,599 main.py orderlist 100 DEBUG - Got session admin_0215e354-c39b-11e6-a3b5-000000000030
+2016-12-16 22:22:43,600 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:22:43,705 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:22:49,649 main.py orderdetail 133 DEBUG - Got session admin_0215e354-c39b-11e6-a3b5-000000000030
+2016-12-16 22:22:49,729 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-16 22:22:49,733 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-16 22:22:49,763 main.py server_www 45 DEBUG - Design.png
+2016-12-16 22:22:49,765 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-16 22:22:49,831 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:22:56,908 main.py checkuser 153 DEBUG - post to orderdetail
+2016-12-16 22:23:07,910 main.py orderlist 100 DEBUG - Got session admin_0215e354-c39b-11e6-a3b5-000000000030
+2016-12-16 22:23:07,911 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:23:08,040 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:23:09,641 main.py orderlist 100 DEBUG - Got session admin_0215e354-c39b-11e6-a3b5-000000000030
+2016-12-16 22:23:09,641 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-16 22:23:09,760 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:24:34,961 main.py orderlist 100 DEBUG - Got session admin_0215e354-c39b-11e6-a3b5-000000000030
+2016-12-16 22:24:34,962 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-16 22:24:34,962 main.py condition_data 122 DEBUG - order_ddzt : 失联
+2016-12-16 22:24:34,963 main.py condition_data 165 DEBUG - 1
+2016-12-16 22:24:35,060 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:31:37,089 main.py orderdetail 133 DEBUG - Got session admin_0215e354-c39b-11e6-a3b5-000000000030
+2016-12-16 22:31:37,187 main.py server_www 45 DEBUG - favicon.ico
+2016-12-16 22:32:24,329 main.py uploadlenderfile_server 124 DEBUG - i am uploadlenderfile server.............
+2016-12-16 22:32:24,329 main.py save_orderdetail_file 137 DEBUG - i am save_orderdetail_file......
+2016-12-16 22:32:24,334 main.py save_orderdetail_file 139 DEBUG - file md5 caf128df4db2b1aadbed6796f258a896
+2016-12-16 22:32:24,335 main.py save_orderdetail_file 141 DEBUG - orderid 62
+2016-12-16 22:32:24,335 main.py save_orderdetail_file 151 DEBUG - saving file at: /Users/lijinzhou/Documents/DunningSystem/DunningSystemUpload/lenderdata/0/62/caf128df4db2b1aadbed6796f258a896.jpg
+2016-12-16 22:32:26,781 main.py orderdata_file 186 DEBUG - idx 0
+2016-12-16 22:32:26,781 main.py orderdata_file 188 DEBUG - id 62
+2016-12-16 22:32:26,781 main.py orderdata_file 190 DEBUG - filepath 0/62/caf128df4db2b1aadbed6796f258a896.jpg
+2016-12-17 13:18:36,891 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 13:18:46,567 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 13:18:55,624 main.py checkuser 84 DEBUG - check the user
+2016-12-17 13:18:55,658 main.py orderlist 100 DEBUG - Got session admin_4e7db6c2-c418-11e6-a75f-000000000030
+2016-12-17 13:18:55,658 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 13:18:55,717 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 13:18:55,871 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 13:18:57,635 main.py orderdetail 133 DEBUG - Got session admin_4e7db6c2-c418-11e6-a75f-000000000030
+2016-12-17 13:18:57,688 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 13:21:51,867 main.py orderdetail 133 DEBUG - Got session admin_4e7db6c2-c418-11e6-a75f-000000000030
+2016-12-17 13:21:51,904 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 13:21:51,906 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 13:21:52,024 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 13:21:53,566 main.py orderdetail 133 DEBUG - Got session admin_4e7db6c2-c418-11e6-a75f-000000000030
+2016-12-17 13:21:53,625 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 13:22:08,116 main.py orderlist 100 DEBUG - Got session admin_4e7db6c2-c418-11e6-a75f-000000000030
+2016-12-17 13:22:08,117 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 13:22:08,225 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 13:45:09,915 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 13:45:18,114 main.py orderlist 100 DEBUG - Got session admin_4e7db6c2-c418-11e6-a75f-000000000030
+2016-12-17 13:45:18,114 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-17 13:45:18,117 main.py server_www 45 DEBUG - login
+2016-12-17 13:45:18,146 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 13:45:24,091 main.py checkuser 84 DEBUG - check the user
+2016-12-17 13:45:24,111 main.py orderlist 100 DEBUG - Got session admin_0147a530-c41c-11e6-9cd1-000000000030
+2016-12-17 13:45:24,112 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 13:45:24,378 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 13:45:26,238 main.py orderdetail 133 DEBUG - Got session admin_0147a530-c41c-11e6-9cd1-000000000030
+2016-12-17 13:45:26,323 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 13:45:33,979 main.py orderdetail 133 DEBUG - Got session admin_0147a530-c41c-11e6-9cd1-000000000030
+2016-12-17 13:45:34,060 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 13:47:22,335 main.py orderdetail 133 DEBUG - Got session admin_0147a530-c41c-11e6-9cd1-000000000030
+2016-12-17 13:47:22,425 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 13:47:50,389 main.py orderdetail 133 DEBUG - Got session admin_0147a530-c41c-11e6-9cd1-000000000030
+2016-12-17 13:47:50,438 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 13:57:37,304 main.py setting_index 174 DEBUG - Got session admin_0147a530-c41c-11e6-9cd1-000000000030
+2016-12-17 13:57:37,317 main.py server_www 45 DEBUG - setting.css
+2016-12-17 13:57:37,319 main.py server_www 45 DEBUG - setting.js
+2016-12-17 13:57:37,398 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:05:43,615 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 14:05:52,538 main.py setting_index 174 DEBUG - Got session admin_0147a530-c41c-11e6-9cd1-000000000030
+2016-12-17 14:05:52,539 main.py setting_index 177 INFO - session check invalid, redirect to login
+2016-12-17 14:05:52,541 main.py server_www 45 DEBUG - login
+2016-12-17 14:05:52,565 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:05:58,151 main.py checkuser 84 DEBUG - check the user
+2016-12-17 14:05:58,164 main.py orderlist 100 DEBUG - Got session admin_e0d62102-c41e-11e6-b644-000000000030
+2016-12-17 14:05:58,164 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 14:05:58,287 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:06:00,431 main.py setting_index 174 DEBUG - Got session admin_e0d62102-c41e-11e6-b644-000000000030
+2016-12-17 14:06:00,477 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:07:17,136 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:07:18,547 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:07:26,589 main.py checkuser 84 DEBUG - check the user
+2016-12-17 14:07:26,598 main.py orderlist 100 DEBUG - Got session ljz_158c24bd-c41f-11e6-bd75-000000000031
+2016-12-17 14:07:26,598 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 14:07:26,709 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:07:42,037 main.py setting_index 174 DEBUG - Got session admin_e0d62102-c41e-11e6-b644-000000000030
+2016-12-17 14:07:42,076 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:07:59,506 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:09:32,062 main.py setting_index 174 DEBUG - Got session admin_e0d62102-c41e-11e6-b644-000000000030
+2016-12-17 14:09:32,120 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:09:40,070 main.py setting_index 174 DEBUG - Got session admin_e0d62102-c41e-11e6-b644-000000000030
+2016-12-17 14:09:40,118 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:11:34,042 main.py server_www 45 DEBUG - login
+2016-12-17 14:11:34,053 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 14:11:34,060 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 14:11:34,098 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:11:39,148 main.py checkuser 84 DEBUG - check the user
+2016-12-17 14:11:39,158 main.py orderlist 100 DEBUG - Got session admin_ac15b378-c41f-11e6-bf44-000000000030
+2016-12-17 14:11:39,158 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 14:11:39,211 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 14:11:39,214 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 14:11:39,216 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 14:11:39,218 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 14:11:39,239 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 14:11:39,240 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 14:11:39,242 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 14:11:39,243 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 14:11:39,245 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 14:11:39,248 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 14:11:39,254 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 14:11:39,256 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 14:11:39,291 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:11:41,690 main.py setting_index 174 DEBUG - Got session admin_ac15b378-c41f-11e6-bf44-000000000030
+2016-12-17 14:11:41,699 main.py server_www 45 DEBUG - setting.css
+2016-12-17 14:11:41,700 main.py server_www 45 DEBUG - setting.js
+2016-12-17 14:11:41,717 main.py server_www 45 DEBUG - Design.png
+2016-12-17 14:11:44,046 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:12:04,438 main.py setting_index 174 DEBUG - Got session admin_ac15b378-c41f-11e6-bf44-000000000030
+2016-12-17 14:12:04,453 main.py server_www 45 DEBUG - setting.js
+2016-12-17 14:12:07,638 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:59:20,170 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 14:59:27,005 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:59:27,669 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:59:34,846 main.py checkuser 84 DEBUG - check the user
+2016-12-17 14:59:34,858 main.py orderlist 100 DEBUG - Got session admin_5e22d807-c426-11e6-a254-000000000030
+2016-12-17 14:59:34,858 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 14:59:34,986 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:59:38,079 main.py setting_index 174 DEBUG - Got session admin_5e22d807-c426-11e6-a254-000000000030
+2016-12-17 14:59:38,090 main.py server_www 45 DEBUG - setting.js
+2016-12-17 14:59:41,178 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 14:59:46,682 main.py set_data 200 DEBUG - Got session 
+2016-12-17 14:59:46,682 main.py set_data 203 INFO - session check invalid, redirect to login
+2016-12-17 14:59:58,840 main.py setting_index 174 DEBUG - Got session admin_5e22d807-c426-11e6-a254-000000000030
+2016-12-17 14:59:58,855 main.py server_www 45 DEBUG - setting.js
+2016-12-17 15:00:02,463 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:04:16,602 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:05:40,334 main.py server_www 45 DEBUG - login
+2016-12-17 15:05:40,340 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 15:05:40,384 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 15:05:40,462 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:05:41,065 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:05:48,535 main.py checkuser 84 DEBUG - check the user
+2016-12-17 15:05:48,544 main.py orderlist 100 DEBUG - Got session admin_3cdeb6c7-c427-11e6-b749-000000000030
+2016-12-17 15:05:48,544 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 15:05:48,594 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 15:05:48,596 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 15:05:48,598 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 15:05:48,599 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 15:05:48,624 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 15:05:48,625 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 15:05:48,626 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 15:05:48,628 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 15:05:48,630 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 15:05:48,632 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 15:05:48,638 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 15:05:48,641 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 15:05:48,686 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:05:51,112 main.py setting_index 174 DEBUG - Got session admin_3cdeb6c7-c427-11e6-b749-000000000030
+2016-12-17 15:05:51,141 main.py server_www 45 DEBUG - setting.css
+2016-12-17 15:05:51,142 main.py server_www 45 DEBUG - setting.js
+2016-12-17 15:05:51,158 main.py server_www 45 DEBUG - Design.png
+2016-12-17 15:05:54,093 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:05:57,676 main.py set_data 200 DEBUG - Got session 
+2016-12-17 15:05:57,676 main.py set_data 203 INFO - session check invalid, redirect to login
+2016-12-17 15:05:59,488 main.py setting_index 174 DEBUG - Got session admin_3cdeb6c7-c427-11e6-b749-000000000030
+2016-12-17 15:06:02,225 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:07:31,038 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 15:07:37,709 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:07:38,454 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:07:46,346 main.py checkuser 84 DEBUG - check the user
+2016-12-17 15:07:46,359 main.py orderlist 100 DEBUG - Got session admin_8317cf8a-c427-11e6-b813-000000000030
+2016-12-17 15:07:46,359 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 15:07:46,487 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:07:48,258 main.py setting_index 174 DEBUG - Got session admin_8317cf8a-c427-11e6-b813-000000000030
+2016-12-17 15:07:48,269 main.py server_www 45 DEBUG - setting.js
+2016-12-17 15:07:48,351 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:07:57,091 main.py set_data 200 DEBUG - Got session 
+2016-12-17 15:07:57,091 main.py set_data 203 INFO - session check invalid, redirect to login
+2016-12-17 15:08:00,739 main.py setting_index 174 DEBUG - Got session admin_8317cf8a-c427-11e6-b813-000000000030
+2016-12-17 15:08:00,755 main.py server_www 45 DEBUG - setting.js
+2016-12-17 15:08:00,788 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:11:07,953 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 15:11:12,483 main.py setting_index 174 DEBUG - Got session admin_8317cf8a-c427-11e6-b813-000000000030
+2016-12-17 15:11:12,484 main.py setting_index 177 INFO - session check invalid, redirect to login
+2016-12-17 15:11:12,489 main.py server_www 45 DEBUG - login
+2016-12-17 15:11:12,549 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:11:20,726 main.py checkuser 84 DEBUG - check the user
+2016-12-17 15:11:20,738 main.py orderlist 100 DEBUG - Got session admin_02df844c-c428-11e6-b38c-000000000030
+2016-12-17 15:11:20,738 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 15:11:20,867 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:11:22,255 main.py setting_index 174 DEBUG - Got session admin_02df844c-c428-11e6-b38c-000000000030
+2016-12-17 15:11:22,291 main.py server_www 45 DEBUG - setting.js
+2016-12-17 15:11:22,362 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:11:25,343 main.py set_data 200 DEBUG - Got session admin_02df844c-c428-11e6-b38c-000000000030
+2016-12-17 15:11:27,713 main.py setting_index 174 DEBUG - Got session admin_02df844c-c428-11e6-b38c-000000000030
+2016-12-17 15:11:27,729 main.py server_www 45 DEBUG - setting.js
+2016-12-17 15:11:27,762 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:11:51,603 main.py set_data 200 DEBUG - Got session admin_02df844c-c428-11e6-b38c-000000000030
+2016-12-17 15:11:54,476 main.py setting_index 174 DEBUG - Got session admin_02df844c-c428-11e6-b38c-000000000030
+2016-12-17 15:11:54,492 main.py server_www 45 DEBUG - setting.js
+2016-12-17 15:11:54,520 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:13:07,554 main.py orderdetail 133 DEBUG - Got session admin_02df844c-c428-11e6-b38c-000000000030
+2016-12-17 15:13:07,608 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 15:13:07,612 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 15:13:07,664 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-17 15:13:07,705 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:13:45,863 main.py uploadlenderfile_server 124 DEBUG - i am uploadlenderfile server.............
+2016-12-17 15:13:45,864 main.py save_orderdetail_file 137 DEBUG - i am save_orderdetail_file......
+2016-12-17 15:13:45,872 main.py save_orderdetail_file 139 DEBUG - file md5 5b7c710c69caf229f142b33cf5f734f2
+2016-12-17 15:13:45,873 main.py save_orderdetail_file 141 DEBUG - orderid 60
+2016-12-17 15:13:45,873 main.py save_orderdetail_file 151 DEBUG - saving file at: /Users/lijinzhou/Documents/DunningSystem/DunningSystemUpload/lenderdata/0/60/5b7c710c69caf229f142b33cf5f734f2.jpeg
+2016-12-17 15:13:48,587 main.py orderdata_file 187 DEBUG - idx 0
+2016-12-17 15:13:48,587 main.py orderdata_file 189 DEBUG - id 60
+2016-12-17 15:13:48,587 main.py orderdata_file 191 DEBUG - filepath 0/60/5b7c710c69caf229f142b33cf5f734f2.jpeg
+2016-12-17 15:14:03,074 main.py uploadlenderfile_server 124 DEBUG - i am uploadlenderfile server.............
+2016-12-17 15:14:03,074 main.py save_orderdetail_file 137 DEBUG - i am save_orderdetail_file......
+2016-12-17 15:14:03,084 main.py save_orderdetail_file 139 DEBUG - file md5 3631fd9f7eefee85a92961436e718c18
+2016-12-17 15:14:03,084 main.py save_orderdetail_file 141 DEBUG - orderid 60
+2016-12-17 15:14:03,084 main.py save_orderdetail_file 151 DEBUG - saving file at: /Users/lijinzhou/Documents/DunningSystem/DunningSystemUpload/lenderdata/0/60/3631fd9f7eefee85a92961436e718c18.jpeg
+2016-12-17 15:14:05,340 main.py orderdata_file 187 DEBUG - idx 0
+2016-12-17 15:14:05,341 main.py orderdata_file 189 DEBUG - id 60
+2016-12-17 15:14:05,341 main.py orderdata_file 191 DEBUG - filepath 0/60/3631fd9f7eefee85a92961436e718c18.jpeg
+2016-12-17 15:14:45,409 main.py server_www 45 DEBUG - icon_listStyle.png
+2016-12-17 15:33:07,058 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 15:33:22,512 main.py orderlist 100 DEBUG - Got session admin_02df844c-c428-11e6-b38c-000000000030
+2016-12-17 15:33:22,513 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-17 15:33:22,515 main.py server_www 45 DEBUG - login
+2016-12-17 15:33:22,573 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:33:29,202 main.py checkuser 84 DEBUG - check the user
+2016-12-17 15:33:29,215 main.py orderlist 100 DEBUG - Got session admin_1ab4e74c-c42b-11e6-acbe-000000000030
+2016-12-17 15:33:29,215 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 15:33:29,372 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:33:42,503 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-17 15:33:42,511 main.py upload_server 122 DEBUG - Got session 
+2016-12-17 15:33:42,511 main.py upload_server 125 INFO - session check invalid, redirect to login
+2016-12-17 15:33:49,000 main.py orderlist 100 DEBUG - Got session admin_1ab4e74c-c42b-11e6-acbe-000000000030
+2016-12-17 15:33:49,000 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 15:33:49,163 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:38:37,819 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:40:12,140 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 15:40:17,974 main.py orderlist 100 DEBUG - Got session admin_3cdeb6c7-c427-11e6-b749-000000000030
+2016-12-17 15:40:17,974 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-17 15:40:17,977 main.py server_www 45 DEBUG - login
+2016-12-17 15:40:18,042 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:40:23,611 main.py checkuser 84 DEBUG - check the user
+2016-12-17 15:40:23,624 main.py orderlist 100 DEBUG - Got session admin_11b6ba40-c42c-11e6-8d6f-000000000030
+2016-12-17 15:40:23,624 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 15:40:23,788 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:41:00,592 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-17 15:41:00,598 main.py upload_server 122 DEBUG - Got session admin_11b6ba40-c42c-11e6-8d6f-000000000030/
+2016-12-17 15:41:00,599 main.py upload_server 125 INFO - session check invalid, redirect to login
+2016-12-17 15:41:02,959 main.py orderlist 100 DEBUG - Got session admin_11b6ba40-c42c-11e6-8d6f-000000000030
+2016-12-17 15:41:02,959 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 15:41:03,139 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:41:18,312 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 15:57:52,175 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 15:59:57,537 main.py server_www 45 DEBUG - login
+2016-12-17 15:59:57,548 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 15:59:57,597 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 15:59:57,687 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:00:07,583 main.py checkuser 84 DEBUG - check the user
+2016-12-17 16:00:07,596 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:00:07,596 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:00:07,618 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 16:00:07,619 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 16:00:07,621 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 16:00:07,622 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 16:00:07,646 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 16:00:07,647 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 16:00:07,648 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 16:00:07,651 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 16:00:07,652 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 16:00:07,655 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 16:00:07,664 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 16:00:07,667 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 16:00:07,801 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:00:22,082 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-17 16:00:22,082 main.py save_orders_file 348 DEBUG - i am save_ordersource......
+2016-12-17 16:00:25,014 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:00:25,015 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:00:25,187 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:00:41,200 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:00:41,200 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 16:00:41,200 main.py condition_data 122 DEBUG - order_ddzt : 待外访
+2016-12-17 16:00:41,200 main.py condition_data 165 DEBUG - 1
+2016-12-17 16:00:41,301 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:00:49,788 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:00:49,788 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 16:00:49,788 main.py condition_data 122 DEBUG - order_ddzt : 待外访
+2016-12-17 16:00:49,789 main.py condition_data 122 DEBUG - order_username : 刘
+2016-12-17 16:00:49,789 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 16:00:49,793 main.py condition_data 165 DEBUG - 1
+2016-12-17 16:00:49,852 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:00:54,628 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:00:54,628 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:00:54,717 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:00:57,742 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:00:57,743 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:00:57,841 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:00:59,784 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:00:59,784 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:00:59,881 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:01:02,072 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:01:02,072 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:01:02,156 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:01:03,453 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:01:03,454 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:01:03,552 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:01:08,910 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:01:08,910 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:01:08,990 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:01:17,295 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:01:17,295 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 16:01:17,295 main.py condition_data 122 DEBUG - order_zhangqi : M0
+2016-12-17 16:01:17,296 main.py condition_data 165 DEBUG - 1
+2016-12-17 16:01:17,360 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:01:25,920 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:01:25,921 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:01:26,009 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:01:31,212 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:01:31,213 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 16:01:31,213 main.py condition_data 122 DEBUG - order_school : 武汉
+2016-12-17 16:01:31,213 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 16:01:31,219 main.py condition_data 165 DEBUG - 0
+2016-12-17 16:01:31,304 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:01:38,759 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:01:38,760 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 16:01:38,760 main.py condition_data 122 DEBUG - order_school : 武汉
+2016-12-17 16:01:38,760 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 16:01:38,763 main.py condition_data 165 DEBUG - 0
+2016-12-17 16:01:38,852 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:01:39,906 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:01:39,906 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 16:01:39,907 main.py condition_data 122 DEBUG - order_school : 武汉
+2016-12-17 16:01:39,907 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 16:01:39,913 main.py condition_data 165 DEBUG - 0
+2016-12-17 16:01:39,980 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:01:49,206 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:01:49,207 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 16:01:49,207 main.py condition_data 122 DEBUG - order_school : 武汉工商学院
+2016-12-17 16:01:49,207 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 16:01:49,209 main.py condition_data 165 DEBUG - 0
+2016-12-17 16:01:49,220 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 16:01:49,308 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:01:57,003 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:01:57,004 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 16:01:57,004 main.py condition_data 122 DEBUG - order_school : 武汉工商
+2016-12-17 16:01:57,004 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 16:01:57,006 main.py condition_data 165 DEBUG - 0
+2016-12-17 16:01:57,048 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:02:00,684 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:02:00,684 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 16:02:00,685 main.py condition_data 122 DEBUG - order_school : 武汉
+2016-12-17 16:02:00,685 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 16:02:00,688 main.py condition_data 165 DEBUG - 0
+2016-12-17 16:02:00,795 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:02:05,418 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:02:05,418 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 16:02:05,419 main.py condition_data 122 DEBUG - order_school : 武汉
+2016-12-17 16:02:05,419 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 16:02:05,426 main.py condition_data 165 DEBUG - 0
+2016-12-17 16:02:05,488 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:02:13,819 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:02:13,819 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 16:02:13,819 main.py condition_data 122 DEBUG - order_school : 武汉商学院
+2016-12-17 16:02:13,820 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 16:02:13,823 main.py condition_data 165 DEBUG - 0
+2016-12-17 16:02:13,914 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:02:23,118 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:02:23,119 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:02:23,205 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:02:33,921 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-17 16:02:33,921 main.py save_orders_file 348 DEBUG - i am save_ordersource......
+2016-12-17 16:02:40,500 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:02:40,500 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:02:40,593 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:03:02,049 main.py orderdetail 134 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:03:02,083 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 16:03:02,085 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 16:03:02,104 main.py server_www 45 DEBUG - Design.png
+2016-12-17 16:03:02,105 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-17 16:03:02,171 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:03:07,249 main.py orderdetail 134 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:03:07,349 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:03:13,668 main.py orderdetail 134 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:03:13,747 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:03:19,391 main.py orderdetail 134 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:03:19,462 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:03:34,759 main.py orderdetail 134 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:03:34,826 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:03:48,596 main.py orderdetail 134 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:03:48,675 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:03:50,835 main.py server_www 45 DEBUG - icon_listStyle.png
+2016-12-17 16:04:05,878 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 16:04:14,089 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 16:04:20,744 main.py orderlist 100 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:04:20,744 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:04:20,797 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 16:04:20,839 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:11:49,490 main.py orderdetail 134 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:11:49,574 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:12:02,081 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 16:12:07,121 main.py orderdetail 134 DEBUG - Got session admin_d36a6d9c-c42e-11e6-938b-000000000030
+2016-12-17 16:12:07,121 main.py orderdetail 137 INFO - session check invalid, redirect to login
+2016-12-17 16:12:07,124 main.py server_www 45 DEBUG - login
+2016-12-17 16:12:07,179 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:12:13,774 main.py checkuser 84 DEBUG - check the user
+2016-12-17 16:12:13,788 main.py orderlist 100 DEBUG - Got session admin_844282f0-c430-11e6-b09a-000000000030
+2016-12-17 16:12:13,788 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:12:13,859 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 16:12:13,930 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:12:16,834 main.py setting_index 175 DEBUG - Got session admin_844282f0-c430-11e6-b09a-000000000030
+2016-12-17 16:12:16,852 main.py server_www 45 DEBUG - setting.css
+2016-12-17 16:12:16,855 main.py server_www 45 DEBUG - setting.js
+2016-12-17 16:12:16,918 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:12:22,949 main.py orderdetail 134 DEBUG - Got session admin_844282f0-c430-11e6-b09a-000000000030
+2016-12-17 16:12:23,109 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:12:36,273 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:15:21,042 main.py orderdetail 134 DEBUG - Got session admin_844282f0-c430-11e6-b09a-000000000030
+2016-12-17 16:15:21,151 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:16:23,245 main.py uploadlenderfile_server 125 DEBUG - i am uploadlenderfile server.............
+2016-12-17 16:16:23,246 main.py save_orderdetail_file 137 DEBUG - i am save_orderdetail_file......
+2016-12-17 16:16:23,259 main.py save_orderdetail_file 139 DEBUG - file md5 818c6ce63fc29a1277c839168eae3b3a
+2016-12-17 16:16:23,260 main.py save_orderdetail_file 141 DEBUG - orderid 108
+2016-12-17 16:16:23,260 main.py save_orderdetail_file 151 DEBUG - saving file at: /Users/lijinzhou/Documents/DunningSystem/DunningSystemUpload/lenderdata/1/108/818c6ce63fc29a1277c839168eae3b3a.jpeg
+2016-12-17 16:16:25,115 main.py orderdata_file 188 DEBUG - idx 1
+2016-12-17 16:16:25,115 main.py orderdata_file 190 DEBUG - id 108
+2016-12-17 16:16:25,115 main.py orderdata_file 192 DEBUG - filepath 1/108/818c6ce63fc29a1277c839168eae3b3a.jpeg
+2016-12-17 16:19:22,081 main.py uploadlenderfile_server 125 DEBUG - i am uploadlenderfile server.............
+2016-12-17 16:19:22,082 main.py save_orderdetail_file 137 DEBUG - i am save_orderdetail_file......
+2016-12-17 16:19:22,094 main.py save_orderdetail_file 139 DEBUG - file md5 0c1a4733bf62a6aa49010a76f2c93e55
+2016-12-17 16:19:22,094 main.py save_orderdetail_file 141 DEBUG - orderid 108
+2016-12-17 16:19:22,094 main.py save_orderdetail_file 151 DEBUG - saving file at: /Users/lijinzhou/Documents/DunningSystem/DunningSystemUpload/lenderdata/1/108/0c1a4733bf62a6aa49010a76f2c93e55.png
+2016-12-17 16:19:23,864 main.py orderdata_file 188 DEBUG - idx 1
+2016-12-17 16:19:23,864 main.py orderdata_file 190 DEBUG - id 108
+2016-12-17 16:19:23,864 main.py orderdata_file 192 DEBUG - filepath 1/108/0c1a4733bf62a6aa49010a76f2c93e55.png
+2016-12-17 16:19:26,814 main.py uploadlenderfile_server 125 DEBUG - i am uploadlenderfile server.............
+2016-12-17 16:19:26,814 main.py save_orderdetail_file 137 DEBUG - i am save_orderdetail_file......
+2016-12-17 16:19:26,830 main.py save_orderdetail_file 139 DEBUG - file md5 0c1a4733bf62a6aa49010a76f2c93e55
+2016-12-17 16:19:26,830 main.py save_orderdetail_file 141 DEBUG - orderid 108
+2016-12-17 16:19:26,830 main.py save_orderdetail_file 151 DEBUG - saving file at: /Users/lijinzhou/Documents/DunningSystem/DunningSystemUpload/lenderdata/1/108/0c1a4733bf62a6aa49010a76f2c93e55.png
+2016-12-17 16:19:41,881 main.py orderdetail 134 DEBUG - Got session admin_844282f0-c430-11e6-b09a-000000000030
+2016-12-17 16:19:41,921 main.py orderdata_file 188 DEBUG - idx 1
+2016-12-17 16:19:41,921 main.py orderdata_file 190 DEBUG - id 108
+2016-12-17 16:19:41,921 main.py orderdata_file 192 DEBUG - filepath 1/108/0c1a4733bf62a6aa49010a76f2c93e55.png
+2016-12-17 16:19:41,922 main.py orderdata_file 188 DEBUG - idx 1
+2016-12-17 16:19:41,922 main.py orderdata_file 190 DEBUG - id 108
+2016-12-17 16:19:41,923 main.py orderdata_file 192 DEBUG - filepath 1/108/818c6ce63fc29a1277c839168eae3b3a.jpeg
+2016-12-17 16:19:41,963 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:19:58,235 main.py uploadlenderfile_server 125 DEBUG - i am uploadlenderfile server.............
+2016-12-17 16:19:58,236 main.py save_orderdetail_file 137 DEBUG - i am save_orderdetail_file......
+2016-12-17 16:19:58,237 main.py save_orderdetail_file 139 DEBUG - file md5 cf81ec20423bef2b3b0abe7b47244948
+2016-12-17 16:19:58,238 main.py save_orderdetail_file 141 DEBUG - orderid 108
+2016-12-17 16:19:58,238 main.py save_orderdetail_file 151 DEBUG - saving file at: /Users/lijinzhou/Documents/DunningSystem/DunningSystemUpload/lenderdata/1/108/cf81ec20423bef2b3b0abe7b47244948.png
+2016-12-17 16:19:59,848 main.py orderdata_file 188 DEBUG - idx 1
+2016-12-17 16:19:59,848 main.py orderdata_file 190 DEBUG - id 108
+2016-12-17 16:19:59,848 main.py orderdata_file 192 DEBUG - filepath 1/108/cf81ec20423bef2b3b0abe7b47244948.png
+2016-12-17 16:20:08,002 main.py uploadlenderfile_server 125 DEBUG - i am uploadlenderfile server.............
+2016-12-17 16:20:08,002 main.py save_orderdetail_file 137 DEBUG - i am save_orderdetail_file......
+2016-12-17 16:20:08,007 main.py save_orderdetail_file 139 DEBUG - file md5 ed049c77ae41a3d0f01ea9340b6ad967
+2016-12-17 16:20:08,007 main.py save_orderdetail_file 141 DEBUG - orderid 108
+2016-12-17 16:20:08,007 main.py save_orderdetail_file 151 DEBUG - saving file at: /Users/lijinzhou/Documents/DunningSystem/DunningSystemUpload/lenderdata/1/108/ed049c77ae41a3d0f01ea9340b6ad967.png
+2016-12-17 16:20:09,690 main.py orderdata_file 188 DEBUG - idx 1
+2016-12-17 16:20:09,691 main.py orderdata_file 190 DEBUG - id 108
+2016-12-17 16:20:09,691 main.py orderdata_file 192 DEBUG - filepath 1/108/ed049c77ae41a3d0f01ea9340b6ad967.png
+2016-12-17 16:20:30,985 main.py orderdetail 134 DEBUG - Got session admin_844282f0-c430-11e6-b09a-000000000030
+2016-12-17 16:20:31,084 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:20:47,608 main.py orderdetail 134 DEBUG - Got session admin_844282f0-c430-11e6-b09a-000000000030
+2016-12-17 16:20:47,673 main.py orderdata_file 188 DEBUG - idx 1
+2016-12-17 16:20:47,673 main.py orderdata_file 190 DEBUG - id 108
+2016-12-17 16:20:47,673 main.py orderdata_file 192 DEBUG - filepath 1/108/0c1a4733bf62a6aa49010a76f2c93e55.png
+2016-12-17 16:20:47,674 main.py orderdata_file 188 DEBUG - idx 1
+2016-12-17 16:20:47,674 main.py orderdata_file 190 DEBUG - id 108
+2016-12-17 16:20:47,675 main.py orderdata_file 192 DEBUG - filepath 1/108/818c6ce63fc29a1277c839168eae3b3a.jpeg
+2016-12-17 16:20:47,690 main.py orderdata_file 188 DEBUG - idx 1
+2016-12-17 16:20:47,691 main.py orderdata_file 190 DEBUG - id 108
+2016-12-17 16:20:47,691 main.py orderdata_file 192 DEBUG - filepath 1/108/ed049c77ae41a3d0f01ea9340b6ad967.png
+2016-12-17 16:20:47,692 main.py orderdata_file 188 DEBUG - idx 1
+2016-12-17 16:20:47,692 main.py orderdata_file 190 DEBUG - id 108
+2016-12-17 16:20:47,692 main.py orderdata_file 192 DEBUG - filepath 1/108/cf81ec20423bef2b3b0abe7b47244948.png
+2016-12-17 16:20:47,712 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:20:49,341 main.py orderdetail 134 DEBUG - Got session admin_844282f0-c430-11e6-b09a-000000000030
+2016-12-17 16:20:49,411 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:53:05,788 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 16:53:19,529 main.py server_www 45 DEBUG - login
+2016-12-17 16:53:19,539 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 16:53:19,583 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 16:53:19,676 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 16:53:32,699 main.py checkuser 84 DEBUG - check the user
+2016-12-17 16:53:32,711 main.py orderlist 100 DEBUG - Got session admin_49d03e38-c436-11e6-a3f7-000000000030
+2016-12-17 16:53:32,711 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 16:53:32,734 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 16:53:32,735 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 16:53:32,737 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 16:53:32,738 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 16:53:32,770 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 16:53:32,772 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 16:53:32,774 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 16:53:32,776 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 16:53:32,779 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 16:53:32,781 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 16:53:32,789 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 16:53:32,792 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 16:53:32,930 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:00:23,894 main.py skin_default 63 DEBUG - datepicker.css
+2016-12-17 17:00:23,899 main.py server_www 45 DEBUG - calendar.js
+2016-12-17 17:00:23,947 main.py skin_default 63 DEBUG - img.gif
+2016-12-17 17:00:27,729 main.py orderdetail 134 DEBUG - Got session admin_49d03e38-c436-11e6-a3f7-000000000030
+2016-12-17 17:00:27,749 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 17:00:27,751 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 17:00:27,795 main.py server_www 45 DEBUG - Design.png
+2016-12-17 17:00:27,796 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-17 17:00:27,874 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:02:13,143 main.py orderdetail 134 DEBUG - Got session admin_49d03e38-c436-11e6-a3f7-000000000030
+2016-12-17 17:02:13,207 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:02:21,945 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 17:02:31,995 main.py orderlist 100 DEBUG - Got session admin_49d03e38-c436-11e6-a3f7-000000000030
+2016-12-17 17:02:31,996 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-17 17:02:32,001 main.py server_www 45 DEBUG - login
+2016-12-17 17:02:32,062 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:02:41,977 main.py checkuser 84 DEBUG - check the user
+2016-12-17 17:02:41,991 main.py orderlist 100 DEBUG - Got session admin_9135a19c-c437-11e6-86d7-000000000030
+2016-12-17 17:02:41,991 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:02:42,009 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 17:02:42,068 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:02:44,423 main.py orderdetail 134 DEBUG - Got session admin_9135a19c-c437-11e6-86d7-000000000030
+2016-12-17 17:02:44,509 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:03:05,917 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-17 17:03:05,917 main.py save_orders_file 348 DEBUG - i am save_ordersource......
+2016-12-17 17:03:08,166 main.py orderlist 100 DEBUG - Got session admin_9135a19c-c437-11e6-86d7-000000000030
+2016-12-17 17:03:08,166 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:03:08,337 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:03:10,084 main.py orderdetail 134 DEBUG - Got session admin_9135a19c-c437-11e6-86d7-000000000030
+2016-12-17 17:03:10,176 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:06:31,334 main.py orderdetail 134 DEBUG - Got session admin_9135a19c-c437-11e6-86d7-000000000030
+2016-12-17 17:06:31,366 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 17:06:31,367 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 17:06:31,369 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 17:06:31,371 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 17:06:31,382 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 17:06:31,386 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 17:06:31,389 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 17:06:31,421 main.py server_www 45 DEBUG - Design.png
+2016-12-17 17:06:31,425 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-17 17:06:31,480 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:06:37,586 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 17:06:39,525 main.py orderdetail 134 DEBUG - Got session admin_9135a19c-c437-11e6-86d7-000000000030
+2016-12-17 17:06:39,525 main.py orderdetail 137 INFO - session check invalid, redirect to login
+2016-12-17 17:06:39,540 main.py server_www 45 DEBUG - login
+2016-12-17 17:06:39,556 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 17:06:39,558 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 17:06:39,675 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:06:46,380 main.py checkuser 84 DEBUG - check the user
+2016-12-17 17:06:46,394 main.py orderlist 100 DEBUG - Got session admin_22e26ef3-c438-11e6-93c5-000000000030
+2016-12-17 17:06:46,394 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:06:46,458 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 17:06:46,462 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 17:06:46,469 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 17:06:46,479 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 17:06:46,490 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 17:06:46,514 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 17:06:46,519 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 17:06:46,530 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 17:06:46,544 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 17:06:46,551 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 17:06:46,559 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 17:06:46,562 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 17:06:46,615 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 17:06:46,668 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:06:48,463 main.py orderdetail 134 DEBUG - Got session admin_22e26ef3-c438-11e6-93c5-000000000030
+2016-12-17 17:06:48,604 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:07:10,340 main.py orderdetail 134 DEBUG - Got session admin_22e26ef3-c438-11e6-93c5-000000000030
+2016-12-17 17:07:10,443 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:07:41,034 main.py orderdetail 134 DEBUG - Got session admin_22e26ef3-c438-11e6-93c5-000000000030
+2016-12-17 17:07:41,136 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:14:12,703 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 17:14:15,393 main.py orderlist 100 DEBUG - Got session admin_22e26ef3-c438-11e6-93c5-000000000030
+2016-12-17 17:14:15,393 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-17 17:14:15,399 main.py server_www 45 DEBUG - login
+2016-12-17 17:14:15,464 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:14:21,783 main.py checkuser 84 DEBUG - check the user
+2016-12-17 17:14:28,035 main.py checkuser 84 DEBUG - check the user
+2016-12-17 17:14:28,043 main.py orderlist 100 DEBUG - Got session admin_360cd3de-c439-11e6-bcda-000000000030
+2016-12-17 17:14:28,044 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:14:28,198 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:14:32,266 main.py orderdetail 134 DEBUG - Got session admin_360cd3de-c439-11e6-bcda-000000000030
+2016-12-17 17:14:32,382 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:22:59,611 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 17:26:02,594 main.py server_www 45 DEBUG - login
+2016-12-17 17:26:02,625 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 17:26:02,747 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 17:26:03,195 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:26:19,092 main.py checkuser 84 DEBUG - check the user
+2016-12-17 17:26:19,132 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:26:19,132 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:26:19,477 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 17:26:19,478 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 17:26:19,480 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 17:26:19,481 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 17:26:19,483 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 17:26:19,495 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 17:26:19,539 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 17:26:19,577 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 17:26:19,580 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 17:26:19,582 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 17:26:19,620 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 17:26:19,623 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 17:26:19,826 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:28:41,323 main.py orderdetail 134 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:28:41,395 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 17:28:41,396 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 17:28:41,468 main.py server_www 45 DEBUG - Design.png
+2016-12-17 17:28:41,469 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-17 17:28:41,733 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:30:01,746 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 17:30:50,721 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 17:30:50,722 Orderinfo.py insertbasic 309 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 17:31:08,164 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 17:31:08,165 Orderinfo.py insertbasic 309 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 17:31:23,729 main.py skin_default 63 DEBUG - datepicker.css
+2016-12-17 17:31:23,731 main.py server_www 45 DEBUG - calendar.js
+2016-12-17 17:31:23,832 main.py skin_default 63 DEBUG - img.gif
+2016-12-17 17:31:32,434 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 17:31:32,436 Orderinfo.py insertbasic 309 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 17:32:19,642 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 17:32:19,643 Orderinfo.py insertbasic 309 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 17:32:33,258 main.py orderdetail 134 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:32:33,729 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:33:35,621 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 17:35:03,582 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 17:36:22,943 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 17:37:11,499 main.py uploadlenderfile_server 125 DEBUG - i am uploadlenderfile server.............
+2016-12-17 17:37:11,500 main.py save_orderdetail_file 137 DEBUG - i am save_orderdetail_file......
+2016-12-17 17:37:11,515 main.py save_orderdetail_file 139 DEBUG - file md5 56e548e44315219b57124808fce36fcf
+2016-12-17 17:37:11,515 main.py save_orderdetail_file 141 DEBUG - orderid 59
+2016-12-17 17:37:11,517 main.py save_orderdetail_file 151 DEBUG - saving file at: /Users/lijinzhou/Documents/DunningSystem/DunningSystemUpload/lenderdata/0/59/56e548e44315219b57124808fce36fcf.jpg
+2016-12-17 17:37:14,187 main.py orderdata_file 188 DEBUG - idx 0
+2016-12-17 17:37:14,187 main.py orderdata_file 190 DEBUG - id 59
+2016-12-17 17:37:14,188 main.py orderdata_file 192 DEBUG - filepath 0/59/56e548e44315219b57124808fce36fcf.jpg
+2016-12-17 17:37:18,393 main.py orderdata_file 188 DEBUG - idx 0
+2016-12-17 17:37:18,394 main.py orderdata_file 190 DEBUG - id 59
+2016-12-17 17:37:18,394 main.py orderdata_file 192 DEBUG - filepath 0/59/56e548e44315219b57124808fce36fcf.jpg
+2016-12-17 17:39:34,869 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-17 17:39:34,869 main.py save_orders_file 348 DEBUG - i am save_ordersource......
+2016-12-17 17:39:37,313 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:39:37,313 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:39:37,422 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 17:39:37,708 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:39:47,334 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:39:47,334 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 17:39:47,335 main.py condition_data 122 DEBUG - order_ddzt : 失联
+2016-12-17 17:39:47,335 main.py condition_data 165 DEBUG - 1
+2016-12-17 17:39:47,538 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:40:21,630 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:40:21,631 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:40:21,726 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:40:33,165 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:40:33,165 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:40:33,414 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:40:42,947 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:40:42,948 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 17:40:42,948 main.py condition_data 122 DEBUG - order_ddzt : 联系亲属
+2016-12-17 17:40:42,949 main.py condition_data 165 DEBUG - 1
+2016-12-17 17:40:43,051 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:40:51,591 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:40:51,591 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 17:40:51,591 main.py condition_data 122 DEBUG - order_ddzt : 失联
+2016-12-17 17:40:51,592 main.py condition_data 165 DEBUG - 1
+2016-12-17 17:40:51,719 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:41:03,623 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:41:03,624 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 17:41:03,624 main.py condition_data 122 DEBUG - order_ddzt : 联系本人
+2016-12-17 17:41:03,624 main.py condition_data 165 DEBUG - 1
+2016-12-17 17:41:03,760 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:41:12,327 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:41:12,328 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 17:41:12,328 main.py condition_data 122 DEBUG - order_ddzt : 外访中
+2016-12-17 17:41:12,329 main.py condition_data 165 DEBUG - 1
+2016-12-17 17:41:12,942 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:41:21,339 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:41:21,339 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 17:41:21,339 main.py condition_data 122 DEBUG - order_ddzt : 部分还款
+2016-12-17 17:41:21,340 main.py condition_data 165 DEBUG - 1
+2016-12-17 17:41:21,422 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:41:27,673 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:41:27,673 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 17:41:27,674 main.py condition_data 122 DEBUG - order_ddzt : 承诺还款
+2016-12-17 17:41:27,674 main.py condition_data 165 DEBUG - 1
+2016-12-17 17:41:27,809 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:41:33,934 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:41:33,934 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 17:41:33,934 main.py condition_data 122 DEBUG - order_ddzt : 联系同学
+2016-12-17 17:41:33,935 main.py condition_data 165 DEBUG - 1
+2016-12-17 17:41:34,138 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:41:47,040 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:41:47,041 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:41:47,143 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:41:54,169 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:41:54,170 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 17:41:54,170 main.py condition_data 122 DEBUG - order_school : 武汉
+2016-12-17 17:41:54,170 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 17:41:54,175 main.py condition_data 165 DEBUG - 0
+2016-12-17 17:41:54,540 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:41:59,099 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:41:59,100 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 17:41:59,100 main.py condition_data 122 DEBUG - order_school : 武汉
+2016-12-17 17:41:59,100 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 17:41:59,106 main.py condition_data 165 DEBUG - 0
+2016-12-17 17:41:59,229 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:42:03,441 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:42:03,441 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 17:42:03,441 main.py condition_data 122 DEBUG - order_school : 武汉
+2016-12-17 17:42:03,442 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 17:42:03,446 main.py condition_data 165 DEBUG - 0
+2016-12-17 17:42:03,818 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:42:19,092 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:42:19,093 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 17:42:19,093 main.py condition_data 122 DEBUG - order_school : 武汉商学院
+2016-12-17 17:42:19,093 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 17:42:19,096 main.py condition_data 165 DEBUG - 0
+2016-12-17 17:42:19,176 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:42:31,426 main.py orderdetail 134 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:42:31,568 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:42:40,596 main.py server_www 45 DEBUG - icon_listStyle.png
+2016-12-17 17:42:52,787 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 17:43:08,964 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 17:44:06,534 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 17:44:17,061 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:44:17,061 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 17:44:17,062 main.py condition_data 122 DEBUG - order_school : 武汉商学院
+2016-12-17 17:44:17,062 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 17:44:17,065 main.py condition_data 165 DEBUG - 0
+2016-12-17 17:44:17,140 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 17:44:17,141 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 17:44:17,142 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 17:44:17,143 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 17:44:17,144 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 17:44:17,145 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 17:44:17,149 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 17:44:17,182 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 17:44:17,193 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 17:44:17,194 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 17:44:17,209 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 17:44:17,211 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 17:44:17,295 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:44:45,321 main.py orderdetail 134 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:44:45,389 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:45:08,259 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:45:08,260 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:45:08,409 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:45:09,214 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:45:09,214 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:45:09,317 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:45:09,716 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:45:09,716 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:45:09,821 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:45:10,102 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:45:10,102 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:45:10,191 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:45:10,192 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:45:10,239 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:45:10,239 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:45:10,333 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:45:10,614 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:45:10,614 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:45:10,759 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:45:10,759 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:45:10,796 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:45:10,881 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 17:45:10,987 main.py orderlist 100 DEBUG - Got session wll_dde01f73-c43a-11e6-9938-000000000030
+2016-12-17 17:45:10,988 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 17:45:11,331 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:19:23,790 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 18:20:21,327 main.py server_www 45 DEBUG - login
+2016-12-17 18:20:21,338 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 18:20:21,347 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 18:20:21,538 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:20:34,187 main.py checkuser 84 DEBUG - check the user
+2016-12-17 18:20:34,200 main.py orderlist 100 DEBUG - Got session wll_72104038-c442-11e6-b1af-000000000030
+2016-12-17 18:20:34,200 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 18:20:34,260 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 18:20:34,262 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 18:20:34,264 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 18:20:34,266 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 18:20:34,289 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 18:20:34,290 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 18:20:34,292 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 18:20:34,294 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 18:20:34,296 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 18:20:34,298 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 18:20:34,308 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 18:20:34,310 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 18:20:34,448 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:20:38,419 main.py orderdetail 134 DEBUG - Got session wll_72104038-c442-11e6-b1af-000000000030
+2016-12-17 18:20:38,481 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 18:20:38,483 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 18:20:38,508 main.py server_www 45 DEBUG - Design.png
+2016-12-17 18:20:38,511 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-17 18:20:38,514 main.py server_www 45 DEBUG - icon_listStyle.png
+2016-12-17 18:20:38,602 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:24:21,908 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 18:24:36,183 main.py orderdetail 134 DEBUG - Got session wll_72104038-c442-11e6-b1af-000000000030
+2016-12-17 18:24:36,183 main.py orderdetail 137 INFO - session check invalid, redirect to login
+2016-12-17 18:24:36,186 main.py server_www 45 DEBUG - login
+2016-12-17 18:24:36,226 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:24:45,128 main.py checkuser 84 DEBUG - check the user
+2016-12-17 18:24:45,145 main.py orderlist 100 DEBUG - Got session wll_07a2ef1c-c443-11e6-92a9-000000000030
+2016-12-17 18:24:45,145 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 18:24:45,269 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:24:48,152 main.py orderdetail 134 DEBUG - Got session wll_07a2ef1c-c443-11e6-92a9-000000000030
+2016-12-17 18:24:48,232 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 18:24:48,300 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:40:38,219 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 18:40:50,880 main.py orderlist 100 DEBUG - Got session wll_07a2ef1c-c443-11e6-92a9-000000000030
+2016-12-17 18:40:50,880 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-17 18:40:50,889 main.py server_www 45 DEBUG - login
+2016-12-17 18:40:50,960 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:40:57,976 main.py checkuser 84 DEBUG - check the user
+2016-12-17 18:40:57,988 main.py orderlist 100 DEBUG - Got session admin_4b7f7602-c445-11e6-92f6-000000000030
+2016-12-17 18:40:57,988 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 18:40:58,057 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 18:40:58,150 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:41:00,141 main.py orderdetail 134 DEBUG - Got session admin_4b7f7602-c445-11e6-92f6-000000000030
+2016-12-17 18:41:00,226 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 18:41:00,334 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:41:57,681 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 18:42:14,813 main.py orderlist 100 DEBUG - Got session admin_4b7f7602-c445-11e6-92f6-000000000030
+2016-12-17 18:42:14,813 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-17 18:42:14,816 main.py server_www 45 DEBUG - login
+2016-12-17 18:42:14,828 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 18:42:14,832 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 18:42:14,888 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:42:21,767 main.py checkuser 84 DEBUG - check the user
+2016-12-17 18:42:21,779 main.py orderlist 100 DEBUG - Got session admin_7d710c4a-c445-11e6-80e9-000000000030
+2016-12-17 18:42:21,779 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 18:42:21,843 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 18:42:21,848 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 18:42:21,851 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 18:42:21,853 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 18:42:21,854 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 18:42:21,856 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 18:42:21,858 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 18:42:21,860 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 18:42:21,865 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 18:42:21,886 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 18:42:21,899 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 18:42:21,901 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 18:42:21,943 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:42:28,268 main.py orderdetail 134 DEBUG - Got session admin_7d710c4a-c445-11e6-80e9-000000000030
+2016-12-17 18:42:28,336 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 18:42:28,339 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 18:42:28,390 main.py server_www 45 DEBUG - Design.png
+2016-12-17 18:42:28,394 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-17 18:42:28,404 main.py server_www 45 DEBUG - icon_listStyle.png
+2016-12-17 18:42:28,432 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:47:24,032 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 18:47:41,683 main.py orderlist 100 DEBUG - Got session wll_72104038-c442-11e6-b1af-000000000030
+2016-12-17 18:47:41,683 main.py orderlist 104 INFO - session check invalid, redirect to login
+2016-12-17 18:47:41,686 main.py server_www 45 DEBUG - login
+2016-12-17 18:47:41,753 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:47:50,603 main.py checkuser 84 DEBUG - check the user
+2016-12-17 18:47:50,617 main.py orderlist 100 DEBUG - Got session wll_41718817-c446-11e6-94a8-000000000030
+2016-12-17 18:47:50,617 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 18:47:50,761 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:47:53,058 main.py orderdetail 134 DEBUG - Got session wll_41718817-c446-11e6-94a8-000000000030
+2016-12-17 18:47:53,182 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 18:47:53,271 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:49:17,942 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 18:49:23,939 main.py orderdetail 134 DEBUG - Got session wll_41718817-c446-11e6-94a8-000000000030
+2016-12-17 18:49:23,939 main.py orderdetail 137 INFO - session check invalid, redirect to login
+2016-12-17 18:49:23,944 main.py server_www 45 DEBUG - login
+2016-12-17 18:49:23,963 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 18:49:23,968 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 18:49:24,325 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:49:32,828 main.py checkuser 84 DEBUG - check the user
+2016-12-17 18:49:32,844 main.py orderlist 100 DEBUG - Got session wll_7e5fec23-c446-11e6-8aaa-000000000030
+2016-12-17 18:49:32,844 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 18:49:32,912 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 18:49:32,915 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 18:49:32,919 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 18:49:32,926 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 18:49:32,931 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 18:49:32,953 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 18:49:32,976 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 18:49:32,979 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 18:49:32,983 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 18:49:32,990 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 18:49:32,997 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 18:49:33,004 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 18:49:33,030 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 18:49:33,106 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:49:36,243 main.py orderdetail 134 DEBUG - Got session wll_7e5fec23-c446-11e6-8aaa-000000000030
+2016-12-17 18:49:36,346 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 18:49:36,451 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:52:59,683 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 18:53:10,241 main.py orderdetail 134 DEBUG - Got session wll_7e5fec23-c446-11e6-8aaa-000000000030
+2016-12-17 18:53:10,241 main.py orderdetail 137 INFO - session check invalid, redirect to login
+2016-12-17 18:53:10,243 main.py server_www 45 DEBUG - login
+2016-12-17 18:53:10,309 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:53:19,545 main.py checkuser 84 DEBUG - check the user
+2016-12-17 18:53:19,558 main.py orderlist 100 DEBUG - Got session wll_0581ede1-c447-11e6-8bf6-000000000030
+2016-12-17 18:53:19,559 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 18:53:19,706 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:53:22,822 main.py orderdetail 134 DEBUG - Got session wll_0581ede1-c447-11e6-8bf6-000000000030
+2016-12-17 18:53:22,933 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 18:53:23,044 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:54:38,006 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 18:54:44,845 main.py orderdetail 134 DEBUG - Got session wll_0581ede1-c447-11e6-8bf6-000000000030
+2016-12-17 18:54:44,845 main.py orderdetail 137 INFO - session check invalid, redirect to login
+2016-12-17 18:54:44,848 main.py server_www 45 DEBUG - login
+2016-12-17 18:54:44,911 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:54:57,064 main.py checkuser 84 DEBUG - check the user
+2016-12-17 18:54:57,078 main.py orderlist 100 DEBUG - Got session wll_3fa24380-c447-11e6-af47-000000000030
+2016-12-17 18:54:57,078 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 18:54:57,230 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:54:59,275 main.py orderdetail 134 DEBUG - Got session wll_3fa24380-c447-11e6-af47-000000000030
+2016-12-17 18:54:59,351 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 18:54:59,451 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 18:55:59,104 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 18:59:10,385 main.py orderdetail 134 DEBUG - Got session wll_3fa24380-c447-11e6-af47-000000000030
+2016-12-17 18:59:10,481 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 18:59:10,564 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:20:22,906 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 19:20:30,098 main.py orderdetail 134 DEBUG - Got session wll_3fa24380-c447-11e6-af47-000000000030
+2016-12-17 19:20:30,098 main.py orderdetail 137 INFO - session check invalid, redirect to login
+2016-12-17 19:20:30,101 main.py server_www 45 DEBUG - login
+2016-12-17 19:20:30,190 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:20:45,094 main.py checkuser 84 DEBUG - check the user
+2016-12-17 19:20:45,111 main.py orderlist 100 DEBUG - Got session wll_da54f0ab-c44a-11e6-bf19-000000000030
+2016-12-17 19:20:45,112 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 19:20:45,174 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 19:20:45,260 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:20:47,426 main.py orderdetail 134 DEBUG - Got session wll_da54f0ab-c44a-11e6-bf19-000000000030
+2016-12-17 19:20:47,523 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 19:20:47,614 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:21:59,897 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 19:22:05,247 main.py orderdetail 134 DEBUG - Got session wll_da54f0ab-c44a-11e6-bf19-000000000030
+2016-12-17 19:22:05,247 main.py orderdetail 137 INFO - session check invalid, redirect to login
+2016-12-17 19:22:05,259 main.py server_www 45 DEBUG - login
+2016-12-17 19:22:05,276 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 19:22:05,281 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 19:22:05,365 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:22:14,957 main.py checkuser 84 DEBUG - check the user
+2016-12-17 19:22:23,774 main.py checkuser 84 DEBUG - check the user
+2016-12-17 19:22:23,788 main.py orderlist 100 DEBUG - Got session wll_152601d1-c44b-11e6-98e9-000000000030
+2016-12-17 19:22:23,788 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 19:22:23,867 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 19:22:23,869 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 19:22:23,870 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 19:22:23,871 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 19:22:23,873 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 19:22:23,876 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 19:22:23,877 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 19:22:23,884 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 19:22:23,896 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 19:22:23,912 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 19:22:23,927 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 19:22:23,944 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 19:22:23,946 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 19:22:24,044 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:22:26,364 main.py orderdetail 134 DEBUG - Got session wll_152601d1-c44b-11e6-98e9-000000000030
+2016-12-17 19:22:26,479 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 19:22:26,575 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:22:45,449 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 19:23:05,670 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 19:23:57,717 main.py orderdetail 134 DEBUG - Got session wll_152601d1-c44b-11e6-98e9-000000000030
+2016-12-17 19:23:57,748 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 19:23:57,841 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:25:39,613 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 19:25:44,628 main.py orderdetail 134 DEBUG - Got session wll_152601d1-c44b-11e6-98e9-000000000030
+2016-12-17 19:25:44,629 main.py orderdetail 137 INFO - session check invalid, redirect to login
+2016-12-17 19:25:44,631 main.py server_www 45 DEBUG - login
+2016-12-17 19:25:44,699 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:25:53,463 main.py checkuser 84 DEBUG - check the user
+2016-12-17 19:25:53,476 main.py orderlist 100 DEBUG - Got session wll_92223294-c44b-11e6-a0d6-000000000030
+2016-12-17 19:25:53,477 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 19:25:53,628 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:25:56,092 main.py orderdetail 134 DEBUG - Got session wll_92223294-c44b-11e6-a0d6-000000000030
+2016-12-17 19:25:56,200 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 19:25:56,304 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:26:31,819 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 19:27:12,671 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 19:28:45,733 main.py orderdetail 134 DEBUG - Got session wll_92223294-c44b-11e6-a0d6-000000000030
+2016-12-17 19:28:45,768 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 19:28:45,845 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:34:31,824 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 19:39:50,603 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:40:17,556 main.py server_www 45 DEBUG - login
+2016-12-17 19:40:40,700 main.py server_www 45 DEBUG - login
+2016-12-17 19:40:42,939 main.py <module> 26 DEBUG - dunning server start
+2016-12-17 19:40:49,174 main.py server_www 45 DEBUG - login
+2016-12-17 19:40:49,397 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 19:40:49,410 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 19:40:49,968 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:40:49,989 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:41:04,730 main.py checkuser 84 DEBUG - check the user
+2016-12-17 19:41:14,209 main.py checkuser 84 DEBUG - check the user
+2016-12-17 19:41:21,888 main.py checkuser 84 DEBUG - check the user
+2016-12-17 19:41:24,555 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 19:41:24,560 main.py server_www 45 DEBUG - login
+2016-12-17 19:41:24,672 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 19:41:24,675 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 19:41:27,725 main.py checkuser 84 DEBUG - check the user
+2016-12-17 19:41:36,628 main.py checkuser 84 DEBUG - check the user
+2016-12-17 19:41:36,647 main.py orderlist 100 DEBUG - Got session wll_c44d72a3-c44d-11e6-82d4-000000000030
+2016-12-17 19:41:36,647 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 19:41:36,768 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 19:41:36,769 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 19:41:36,769 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 19:41:36,770 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 19:41:36,784 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 19:41:36,786 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 19:41:36,791 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 19:41:36,892 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 19:41:36,972 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 19:41:36,976 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 19:41:37,248 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 19:41:37,250 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 19:42:38,995 main.py server_www 45 DEBUG - login
+2016-12-17 19:42:39,103 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 19:42:39,105 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 19:42:44,628 main.py checkuser 84 DEBUG - check the user
+2016-12-17 19:42:44,654 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:42:44,654 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 19:42:44,790 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 19:42:44,793 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 19:42:44,795 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 19:42:44,797 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 19:42:45,110 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 19:42:45,114 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 19:42:45,128 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 19:42:45,135 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 19:42:45,143 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 19:42:45,157 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 19:42:45,200 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 19:42:51,588 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 19:44:42,295 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:44:42,295 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 19:44:58,776 main.py skin_default 63 DEBUG - datepicker.css
+2016-12-17 19:44:58,778 main.py server_www 45 DEBUG - calendar.js
+2016-12-17 19:44:58,988 main.py skin_default 63 DEBUG - img.gif
+2016-12-17 19:45:19,764 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:45:19,765 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 19:45:27,240 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:45:27,240 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 19:50:27,692 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:50:27,693 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 19:50:37,412 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:50:37,412 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 19:50:43,464 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:50:43,464 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 19:50:46,422 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:50:46,422 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 19:50:51,543 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:50:51,544 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 19:51:06,494 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:51:06,595 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 19:51:06,597 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 19:51:06,902 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-17 19:51:06,906 main.py server_www 45 DEBUG - Design.png
+2016-12-17 19:51:30,771 main.py server_www 45 DEBUG - icon_listStyle.png
+2016-12-17 19:52:37,631 main.py uploadlenderfile_server 125 DEBUG - i am uploadlenderfile server.............
+2016-12-17 19:52:37,631 main.py save_orderdetail_file 137 DEBUG - i am save_orderdetail_file......
+2016-12-17 19:52:39,088 main.py save_orderdetail_file 139 DEBUG - file md5 cf30838dae9d6f1825827c2e3e91dae5
+2016-12-17 19:54:14,922 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:54:14,923 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 19:54:14,923 main.py condition_data 122 DEBUG - order_jdrq : 2016-12-17
+2016-12-17 19:54:14,924 main.py condition_data 122 DEBUG - order_shxx : 2016-12-17
+2016-12-17 19:54:14,924 main.py condition_data 122 DEBUG - order_zhangqi : M0
+2016-12-17 19:54:14,924 main.py condition_data 122 DEBUG - order_jtqy : 江苏徐州
+2016-12-17 19:54:14,925 main.py condition_data 122 DEBUG - order_username : 彭字伟
+2016-12-17 19:54:14,925 main.py condition_data 122 DEBUG - order_school : 南信
+2016-12-17 19:54:14,925 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 19:54:14,928 main.py condition_data 154 DEBUG - 查询接单日期字段：2016-12-17
+2016-12-17 19:54:14,932 main.py condition_data 156 DEBUG - 0
+2016-12-17 19:54:14,933 main.py condition_data 165 DEBUG - 3
+2016-12-17 19:54:39,498 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:54:39,498 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 19:54:39,499 main.py condition_data 122 DEBUG - order_jtqy : 江苏徐州
+2016-12-17 19:54:39,499 main.py condition_data 122 DEBUG - order_username : 彭字伟
+2016-12-17 19:54:39,499 main.py condition_data 122 DEBUG - order_school : 南信
+2016-12-17 19:54:39,499 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 19:54:39,502 main.py condition_data 165 DEBUG - 0
+2016-12-17 19:54:40,307 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:54:40,307 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 19:54:40,308 main.py condition_data 122 DEBUG - order_jtqy : 江苏徐州
+2016-12-17 19:54:40,308 main.py condition_data 122 DEBUG - order_username : 彭字伟
+2016-12-17 19:54:40,308 main.py condition_data 122 DEBUG - order_school : 南信
+2016-12-17 19:54:40,309 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 19:54:40,311 main.py condition_data 165 DEBUG - 0
+2016-12-17 19:54:50,241 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:54:50,241 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 19:54:50,241 main.py condition_data 122 DEBUG - order_username : 彭字伟
+2016-12-17 19:54:50,242 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 19:54:50,245 main.py condition_data 165 DEBUG - 0
+2016-12-17 19:55:19,019 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 19:55:19,020 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:02:21,225 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:02:21,226 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:02:22,044 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:02:22,044 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:02:37,425 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:02:37,425 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:04:11,808 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:04:11,809 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:05:18,164 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:05:18,165 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:06:47,356 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:06:47,500 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:06:55,550 main.py uploadlenderfile_server 125 DEBUG - i am uploadlenderfile server.............
+2016-12-17 20:06:55,551 main.py save_orderdetail_file 137 DEBUG - i am save_orderdetail_file......
+2016-12-17 20:06:55,845 main.py save_orderdetail_file 139 DEBUG - file md5 f4e7845d10e09033b88e21540e73329e
+2016-12-17 20:06:55,845 main.py save_orderdetail_file 141 DEBUG - orderid 100
+2016-12-17 20:06:55,846 main.py save_orderdetail_file 151 DEBUG - saving file at: /Users/lijinzhou/Documents/DunningSystem/DunningSystemUpload/lenderdata/1/100/f4e7845d10e09033b88e21540e73329e.bmp
+2016-12-17 20:06:57,209 main.py orderdata_file 188 DEBUG - idx 1
+2016-12-17 20:06:57,209 main.py orderdata_file 190 DEBUG - id 100
+2016-12-17 20:06:57,209 main.py orderdata_file 192 DEBUG - filepath 1/100/f4e7845d10e09033b88e21540e73329e.bmp
+2016-12-17 20:07:09,201 main.py uploadlenderfile_server 125 DEBUG - i am uploadlenderfile server.............
+2016-12-17 20:07:09,201 main.py save_orderdetail_file 137 DEBUG - i am save_orderdetail_file......
+2016-12-17 20:07:11,021 main.py save_orderdetail_file 139 DEBUG - file md5 cf30838dae9d6f1825827c2e3e91dae5
+2016-12-17 20:07:11,021 main.py save_orderdetail_file 141 DEBUG - orderid 100
+2016-12-17 20:07:11,021 main.py save_orderdetail_file 151 DEBUG - saving file at: /Users/lijinzhou/Documents/DunningSystem/DunningSystemUpload/lenderdata/1/100/cf30838dae9d6f1825827c2e3e91dae5.png
+2016-12-17 20:07:12,362 main.py orderdata_file 188 DEBUG - idx 1
+2016-12-17 20:07:12,362 main.py orderdata_file 190 DEBUG - id 100
+2016-12-17 20:07:12,363 main.py orderdata_file 192 DEBUG - filepath 1/100/cf30838dae9d6f1825827c2e3e91dae5.png
+2016-12-17 20:07:17,412 main.py orderdata_file 188 DEBUG - idx 1
+2016-12-17 20:07:17,412 main.py orderdata_file 190 DEBUG - id 100
+2016-12-17 20:07:17,412 main.py orderdata_file 192 DEBUG - filepath 1/100/cf30838dae9d6f1825827c2e3e91dae5.png
+2016-12-17 20:08:54,715 main.py checkuser 84 DEBUG - check the user
+2016-12-17 20:08:54,731 main.py orderlist 100 DEBUG - Got session wll_94add382-c451-11e6-9183-000000000030
+2016-12-17 20:08:54,731 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:08:54,832 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 20:09:05,836 main.py server_www 45 DEBUG - login
+2016-12-17 20:09:05,951 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:09:05,954 main.py server_www 45 DEBUG - bg21.jpg
+2016-12-17 20:09:06,056 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:09:06,155 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:09:14,033 main.py checkuser 84 DEBUG - check the user
+2016-12-17 20:09:14,083 main.py orderlist 100 DEBUG - Got session admin_a03158bd-c451-11e6-b53c-000000000030
+2016-12-17 20:09:14,083 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:09:14,284 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 20:09:14,287 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 20:09:14,289 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:09:14,291 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:09:14,292 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 20:09:14,293 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 20:09:14,297 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:09:14,299 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:09:14,300 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:09:14,348 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:09:14,362 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 20:09:14,365 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 20:09:17,539 main.py orderlist 100 DEBUG - Got session wll_94add382-c451-11e6-9183-000000000030
+2016-12-17 20:09:17,540 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:09:19,965 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-17 20:09:19,965 main.py save_orders_file 348 DEBUG - i am save_ordersource......
+2016-12-17 20:09:22,188 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:09:22,189 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:09:22,332 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 20:09:25,172 main.py orderlist 100 DEBUG - Got session wll_94add382-c451-11e6-9183-000000000030
+2016-12-17 20:09:25,172 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:10:09,831 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:10:09,832 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:10:09,917 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:10:09,919 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 20:10:09,919 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 20:10:09,920 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 20:10:09,921 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 20:10:09,922 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:10:09,954 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:10:09,957 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:10:09,989 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:10:09,996 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:10:10,097 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:10:10,160 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 20:10:10,195 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 20:10:10,536 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:10:19,020 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:10:19,020 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:10:19,429 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:10:37,350 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:10:37,368 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 20:10:37,372 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:10:37,511 main.py server_www 45 DEBUG - Design.png
+2016-12-17 20:10:37,516 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-17 20:10:37,759 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:10:39,602 main.py orderlist 100 DEBUG - Got session wll_94add382-c451-11e6-9183-000000000030
+2016-12-17 20:10:39,603 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:10:39,735 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:10:39,739 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 20:10:39,743 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 20:10:39,751 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:10:39,753 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:10:39,767 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 20:10:39,771 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 20:10:39,812 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:10:39,814 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:10:39,815 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:10:39,890 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:10:40,049 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 20:10:40,070 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 20:10:40,318 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:10:40,350 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:12:33,063 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:12:47,382 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:12:47,560 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:12:48,935 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:12:49,092 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:12:49,959 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:12:50,099 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:12:52,013 main.py server_www 45 DEBUG - icon_listStyle.png
+2016-12-17 20:12:57,129 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:12:57,130 Orderinfo.py insert 363 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 20:13:04,093 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:13:04,094 Orderinfo.py insert 363 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 20:13:14,843 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:13:14,844 Orderinfo.py insert 363 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 20:14:14,428 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:14:14,642 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:14:16,170 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:14:16,490 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:14:17,044 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:14:17,176 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:14:17,820 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:14:18,011 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:14:18,265 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:14:18,397 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:14:19,560 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:14:19,766 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:14:20,436 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:14:20,566 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:14:21,199 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:14:21,403 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:14:22,223 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:14:22,384 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:14:34,909 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:14:47,106 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:14:47,107 Orderinfo.py insert 363 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 20:14:51,381 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:14:51,382 Orderinfo.py insert 363 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 20:15:09,124 main.py orderlist 100 DEBUG - Got session wll_94add382-c451-11e6-9183-000000000030
+2016-12-17 20:15:09,124 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:15:17,126 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:15:20,207 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:15:22,812 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:15:25,638 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:15:30,852 main.py orderdetail 134 DEBUG - Got session wll_92223294-c44b-11e6-a0d6-000000000030
+2016-12-17 20:15:30,852 main.py orderdetail 137 INFO - session check invalid, redirect to login
+2016-12-17 20:15:30,855 main.py server_www 45 DEBUG - login
+2016-12-17 20:15:30,907 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:15:47,323 main.py checkuser 84 DEBUG - check the user
+2016-12-17 20:15:47,333 main.py orderlist 100 DEBUG - Got session admin_8a9c84dc-c452-11e6-b14d-000000000030
+2016-12-17 20:15:47,333 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:15:47,384 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 20:15:47,469 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:16:54,393 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:16:54,394 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:16:54,737 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:17:05,144 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:17:05,144 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 20:17:05,145 main.py condition_data 122 DEBUG - order_username : 张三
+2016-12-17 20:17:05,146 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 20:17:05,150 main.py condition_data 165 DEBUG - 0
+2016-12-17 20:17:05,434 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:17:11,084 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:17:11,155 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:17:11,389 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:18:14,365 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:18:16,310 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:18:16,310 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:18:16,379 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:18:16,383 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 20:18:16,385 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 20:18:16,386 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:18:16,387 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:18:16,398 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 20:18:16,400 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 20:18:16,404 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:18:16,417 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:18:16,419 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:18:16,493 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:18:16,523 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 20:18:16,606 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:18:17,849 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:18:17,850 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:18:18,101 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:19:06,080 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:19:06,386 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:19:39,789 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:19:40,052 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:19:49,702 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:20:01,787 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:20:14,280 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:20:14,280 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:20:14,360 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:20:14,362 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 20:20:14,363 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 20:20:14,369 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:20:14,379 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 20:20:14,380 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 20:20:14,382 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:20:14,385 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:20:14,398 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:20:14,401 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:20:14,496 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:20:14,525 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 20:20:14,583 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:21:01,356 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-17 20:21:01,356 main.py save_orders_file 348 DEBUG - i am save_ordersource......
+2016-12-17 20:21:13,060 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:21:13,060 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:21:13,367 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:21:22,990 main.py upload_server 119 DEBUG - i am upload server.............
+2016-12-17 20:21:22,991 main.py save_orders_file 348 DEBUG - i am save_ordersource......
+2016-12-17 20:21:28,010 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:21:28,010 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:21:28,426 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:21:40,192 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:21:40,193 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:21:40,603 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:21:47,674 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:21:47,874 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:21:48,691 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:21:48,898 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:21:51,297 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:21:51,457 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:23:11,331 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:23:25,873 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:23:45,225 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:23:45,271 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:23:45,431 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:24:56,394 main.py skin_default 63 DEBUG - datepicker.css
+2016-12-17 20:24:56,396 main.py server_www 45 DEBUG - calendar.js
+2016-12-17 20:24:56,486 main.py skin_default 63 DEBUG - img.gif
+2016-12-17 20:25:12,988 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:25:12,990 Orderinfo.py insertbasic 309 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 20:25:44,251 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:25:59,002 main.py orderdetail 134 DEBUG - Got session admin_8a9c84dc-c452-11e6-b14d-000000000030
+2016-12-17 20:25:59,088 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:25:59,189 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:26:08,078 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:26:08,080 Orderinfo.py insertbasic 309 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 20:26:24,870 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:26:24,872 Orderinfo.py insertbasic 309 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 20:26:50,473 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:26:50,473 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:26:50,789 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:26:54,567 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:26:54,567 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:26:54,649 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:26:54,653 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 20:26:54,658 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 20:26:54,662 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:26:54,669 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 20:26:54,670 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 20:26:54,671 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:26:54,672 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:26:54,686 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:26:54,775 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:26:54,781 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:26:54,805 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 20:26:54,878 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:26:57,334 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:26:57,334 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:26:57,406 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:26:57,408 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 20:26:57,419 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 20:26:57,421 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 20:26:57,423 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 20:26:57,424 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:26:57,426 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:26:57,428 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:26:57,447 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:26:57,448 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:26:57,468 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:26:57,506 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 20:26:57,743 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:26:59,374 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:26:59,402 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 20:26:59,406 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:26:59,407 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:26:59,410 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:26:59,411 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:26:59,412 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:26:59,425 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:26:59,427 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:26:59,488 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:26:59,580 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:27:01,017 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:27:01,046 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 20:27:01,048 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:27:01,057 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:27:01,062 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:27:01,064 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:27:01,065 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:27:01,079 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:27:01,081 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:27:01,135 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:27:01,244 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:27:01,734 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:27:01,764 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 20:27:01,766 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:27:01,769 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:27:01,771 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:27:01,772 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:27:01,774 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:27:01,787 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:27:01,788 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:27:01,821 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:27:01,902 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:27:02,023 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:27:02,057 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 20:27:02,059 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:27:02,063 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:27:02,064 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:27:02,066 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:27:02,067 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:27:02,087 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:27:02,089 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:27:02,123 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:27:02,219 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:27:02,301 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:27:02,336 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 20:27:02,338 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:27:02,339 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:27:02,341 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:27:02,342 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:27:02,343 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:27:02,355 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:27:02,357 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:27:02,384 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:27:02,466 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:27:02,573 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:27:02,607 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 20:27:02,610 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:27:02,612 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:27:02,618 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:27:02,621 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:27:02,623 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:27:02,643 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:27:02,644 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:27:02,664 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:27:02,862 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:27:02,863 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:27:02,949 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 20:27:02,950 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:27:02,952 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:27:02,953 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:27:02,954 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:27:02,955 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:27:02,969 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:27:02,981 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:27:03,013 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:27:03,092 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:27:03,126 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:27:03,154 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 20:27:03,160 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:27:03,162 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:27:03,165 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:27:03,171 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:27:03,186 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:27:03,190 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:27:03,192 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:27:03,237 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:27:03,315 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:27:03,428 main.py orderdetail 134 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:27:03,463 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 20:27:03,466 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:27:03,468 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:27:03,469 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:27:03,470 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:27:03,471 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:27:03,489 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:27:03,491 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:27:03,527 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:27:03,613 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:27:55,518 main.py skin_default 63 DEBUG - datepicker.css
+2016-12-17 20:27:55,521 main.py server_www 45 DEBUG - calendar.js
+2016-12-17 20:27:55,567 main.py skin_default 63 DEBUG - img.gif
+2016-12-17 20:28:56,605 main.py orderdetail 134 DEBUG - Got session wll_94add382-c451-11e6-9183-000000000030
+2016-12-17 20:28:56,693 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 20:28:56,694 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:28:56,935 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-17 20:28:56,936 main.py server_www 45 DEBUG - Design.png
+2016-12-17 20:29:18,337 main.py uploadlenderfile_server 125 DEBUG - i am uploadlenderfile server.............
+2016-12-17 20:29:18,337 main.py save_orderdetail_file 137 DEBUG - i am save_orderdetail_file......
+2016-12-17 20:29:18,338 main.py save_orderdetail_file 139 DEBUG - file md5 c85f6bdf0bd3fad10e631896f1ddd849
+2016-12-17 20:29:18,338 main.py save_orderdetail_file 141 DEBUG - orderid 89
+2016-12-17 20:29:18,339 main.py save_orderdetail_file 151 DEBUG - saving file at: /Users/lijinzhou/Documents/DunningSystem/DunningSystemUpload/lenderdata/0/89/c85f6bdf0bd3fad10e631896f1ddd849.png
+2016-12-17 20:29:19,798 main.py orderdata_file 188 DEBUG - idx 0
+2016-12-17 20:29:19,798 main.py orderdata_file 190 DEBUG - id 89
+2016-12-17 20:29:19,799 main.py orderdata_file 192 DEBUG - filepath 0/89/c85f6bdf0bd3fad10e631896f1ddd849.png
+2016-12-17 20:29:49,058 main.py orderdetail 134 DEBUG - Got session wll_94add382-c451-11e6-9183-000000000030
+2016-12-17 20:29:49,128 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 20:29:49,129 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:29:49,131 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:29:49,139 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:29:49,141 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:29:49,236 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:29:49,243 main.py orderdata_file 188 DEBUG - idx 0
+2016-12-17 20:29:49,243 main.py orderdata_file 190 DEBUG - id 89
+2016-12-17 20:29:49,244 main.py orderdata_file 192 DEBUG - filepath 0/89/c85f6bdf0bd3fad10e631896f1ddd849.png
+2016-12-17 20:29:49,262 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-17 20:29:49,271 main.py server_www 45 DEBUG - Design.png
+2016-12-17 20:29:49,278 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:29:49,280 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:29:49,281 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:29:49,301 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 20:30:34,603 main.py orderdetail 134 DEBUG - Got session wll_94add382-c451-11e6-9183-000000000030
+2016-12-17 20:30:43,024 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:30:43,024 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:30:43,330 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:30:44,663 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:30:44,663 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:30:45,071 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:30:45,789 main.py orderlist 100 DEBUG - Got session ljy_ecd56fba-c44d-11e6-a7a0-000000000030
+2016-12-17 20:30:45,789 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:30:46,096 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:31:12,003 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:31:12,004 Orderinfo.py insert 363 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 20:31:21,735 main.py checkuser 154 DEBUG - post to orderdetail
+2016-12-17 20:31:21,736 Orderinfo.py insert 363 ERROR - invalid literal for int() with base 10: ''
+2016-12-17 20:31:38,938 main.py skin_default 63 DEBUG - datepicker.css
+2016-12-17 20:31:38,939 main.py server_www 45 DEBUG - calendar.js
+2016-12-17 20:31:39,068 main.py skin_default 63 DEBUG - img.gif
+2016-12-17 20:37:42,520 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:38:28,094 main.py checkuser 84 DEBUG - check the user
+2016-12-17 20:38:28,105 main.py orderlist 100 DEBUG - Got session admin_b5b1aa59-c455-11e6-bdce-000000000030
+2016-12-17 20:38:28,105 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:38:28,367 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:38:31,146 main.py setting_index 175 DEBUG - Got session admin_b5b1aa59-c455-11e6-bdce-000000000030
+2016-12-17 20:38:31,164 main.py server_www 45 DEBUG - setting.css
+2016-12-17 20:38:31,167 main.py server_www 45 DEBUG - setting.js
+2016-12-17 20:38:31,230 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:41:55,978 main.py orderdetail 134 DEBUG - Got session admin_b5b1aa59-c455-11e6-bdce-000000000030
+2016-12-17 20:41:56,116 main.py server_www 45 DEBUG - orderDetail.css
+2016-12-17 20:41:56,118 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:41:56,119 main.py server_www 45 DEBUG - orderDetail.js
+2016-12-17 20:41:56,124 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:41:56,126 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:41:56,137 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:41:56,146 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:41:56,150 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:41:56,181 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:41:56,188 main.py server_www 45 DEBUG - Design.png
+2016-12-17 20:41:56,189 main.py server_www 45 DEBUG - icon_fenxiang.png
+2016-12-17 20:41:56,286 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 20:41:56,317 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:43:30,376 main.py orderlist 100 DEBUG - Got session admin_b5b1aa59-c455-11e6-bdce-000000000030
+2016-12-17 20:43:30,377 main.py orderlist 109 DEBUG - Got conditon : 0
+2016-12-17 20:43:30,433 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:43:30,435 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 20:43:30,436 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 20:43:30,438 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:43:30,442 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:43:30,443 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 20:43:30,445 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 20:43:30,452 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:43:30,458 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:43:30,462 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:43:30,487 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:43:30,502 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 20:43:30,505 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 20:43:30,810 main.py server_www 45 DEBUG - favicon.ico
+2016-12-17 20:43:37,324 main.py orderlist 100 DEBUG - Got session admin_b5b1aa59-c455-11e6-bdce-000000000030
+2016-12-17 20:43:37,324 main.py orderlist 109 DEBUG - Got conditon : 1
+2016-12-17 20:43:37,324 main.py condition_data 122 DEBUG - order_username : 川
+2016-12-17 20:43:37,324 main.py condition_data 135 DEBUG - select lender ... 
+2016-12-17 20:43:37,326 main.py condition_data 165 DEBUG - 0
+2016-12-17 20:43:37,354 main.py server_www 45 DEBUG - jquery-1.11.1.min.js
+2016-12-17 20:43:37,356 main.py server_www 45 DEBUG - fenye.js
+2016-12-17 20:43:37,357 main.py server_www 45 DEBUG - orderlist.js
+2016-12-17 20:43:37,358 main.py server_www 45 DEBUG - WdatePicker.js
+2016-12-17 20:43:37,360 main.py server_www 45 DEBUG - fenye.css
+2016-12-17 20:43:37,361 main.py server_www 45 DEBUG - spark-md5.min.js
+2016-12-17 20:43:37,365 main.py server_www 45 DEBUG - orderlist.css
+2016-12-17 20:43:37,375 main.py server_www 45 DEBUG - icon_wp.png
+2016-12-17 20:43:37,381 main.py server_www 45 DEBUG - icon_tuichu.png
+2016-12-17 20:43:37,385 main.py server_www 45 DEBUG - loading.gif
+2016-12-17 20:43:37,409 main.py skin 73 DEBUG - WdatePicker.css
+2016-12-17 20:43:37,423 main.py skin 73 DEBUG - datePicker.gif
+2016-12-17 20:43:37,426 main.py server_www 45 DEBUG - icon-zhanghushezhi.png
+2016-12-17 20:43:37,555 main.py server_www 45 DEBUG - favicon.ico

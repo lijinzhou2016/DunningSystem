@@ -186,6 +186,7 @@ function ajaxupLoad() {
     var mysession = $('.session_info').val();
     var file = $("#myfile").val();
     var wherefrom = $("#wherefrom").val();
+    var session = $('#session').val();
     var ext = file.slice(file.lastIndexOf(".") + 1).toLowerCase();
 
     if (wherefrom==''){

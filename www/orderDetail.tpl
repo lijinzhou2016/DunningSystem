@@ -7,6 +7,7 @@
     <script src="../jquery-1.11.1.min.js"></script>
     <script src="../orderDetail.js"></script>
 	<script src="../spark-md5.min.js"></script>
+	<script src="../WdatePicker.js"></script>
 </head>
 
 <body>
@@ -45,7 +46,7 @@
 
 					<div>
 						<div class="orderDetail-content-jichuxinxi-left">电话:</div>
-						<input name = "tel" class="orderDetail-content-jichuxinxi-right" type="text" readonly="true" value={{lender.get('tel')}}>
+						<input name = "tel"  class="orderDetail-content-jichuxinxi-right tel" type="text" readonly="true" value={{lender.get('tel')}}>
 					</div>
 
 					<div>
@@ -55,7 +56,7 @@
 
 					<div>
 						<div class="orderDetail-content-jichuxinxi-left">身份证:</div>
-						<input name = "idcard" class="orderDetail-content-jichuxinxi-right" type="text" readonly="true" value={{lender.get('idcard')}}>
+						<input name = "idcard" class="orderDetail-content-jichuxinxi-right idcard" type="text" readonly="true" value={{lender.get('idcard')}}>
 					</div>
 
 					<div>
@@ -120,11 +121,26 @@
 						</div>
 						<div>
 							<div class="orderStatus-content-left">账期:</div>
-							<input name = "accountday" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('account_day')}}>
+							<select name = "accountday" class="orderStatus-content-right" type="text" readonly="true">
+							<option value="">{{order.get('account_day')}}</option>
+							<option value="">M0</option>
+							<option value="">M1</option>
+							<option value="">M2</option>
+							<option value="">M3</option>
+							<option value="">M4</option>
+							<option value="">M5</option>
+							<option value="">M6</option>
+							<option value="">M7</option>
+							<option value="">M8</option>
+							<option value="">M9</option>
+							<option value="">M10</option>
+							<option value="">M11</option>
+							<option value="">M12</option>
+							</select>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">期数:</div>
-							<input name = "periods" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('periods')}}>
+							<input name = "periods" class="orderStatus-content-right periods" type="text" readonly="true" value={{order.get('periods')}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">产品名称:</div>
@@ -132,7 +148,7 @@
 						</div>
 						<div>
 							<div class="orderStatus-content-left">已还期数:</div>
-							<input name = "paidperiods" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('paid_periods')}}>
+							<input name = "paidperiods" class="orderStatus-content-right paidperiods" type="text" readonly="true" value={{order.get('paid_periods')}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">分期金额:</div>
@@ -140,7 +156,7 @@
 						</div>
 						<div>
 							<div class="orderStatus-content-left">订单日期:</div>
-							<input name = "orderdate" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('order_date')}}>
+							<input name = "orderdate" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{order.get('order_date')}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">滞纳金:</div>
@@ -148,7 +164,7 @@
 						</div>
 						<div>
 							<div class="orderStatus-content-left">接单日期:</div>
-							<input name = "takeorderdate" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('takeorder_date')}}>
+							<input name = "takeorderdate" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{order.get('takeorder_date')}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">现总欠款:</div>
@@ -302,7 +318,7 @@
 			%end
 		</div>
 		<div class="orderDetail-content-right">
-			<div class="orderDetail-content-right-top">
+			<div class="orderDetail-content-right-top" hidden>
 				<button class="addorderlist" onclick = "location='./0?session={{user.get('session')}}'">添加订单</button>
 			</div>
 			<div class="orderDetail-content-caozuo">

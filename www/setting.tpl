@@ -77,6 +77,7 @@
 		</div>
 	</div>
 	<div class="userinfo" hidden>{{users}}</div>
+	<div class="session" hidden>{{session}}</div>
 </body>
 
 </html>

@@ -118,6 +118,7 @@ def orderlist():
 def upload_server():
     logger.debug('i am upload server.............')
     return OrderList.save_orders_file()
+
 # 上传数据文件接口
 @bottle.route('/uploadlenderfile', method='POST')
 def uploadlenderfile_server():
@@ -175,8 +176,9 @@ def setting_index():
     userinfo = Userinfo.get_by_session(session)
     if not userinfo:
         logger.info('session check invalid, redirect to login')
-        bottle.redirect("/login")
+        return 'unknown'
     setting_info['username']=userinfo.dict_format()['name']
+    setting_info['session']=userinfo.dict_format()['session']
     return init_setting_html()
 
 # 订单相关文件
@@ -194,6 +196,13 @@ def orderdata_file(filename):
 # 设置操作接口
 @bottle.route('/set', method='POST')
 def set_data():
+    #获取URL中的session，校验并获取URL信息
+    session = bottle.request.forms.get('session')
+    logger.debug('Got session ' + session)
+    userinfo = Userinfo.get_by_session(session)
+    if not userinfo:
+        logger.info('session check invalid, redirect to login')
+        bottle.redirect("/login")
     action = bottle.request.forms.get('action')
  
     if action == 'yunpan':
@@ -213,5 +222,5 @@ def get_userinfo_dic(userinfo):
 
 
 
-bottle.run(host='127.0.0.1', port='8080', debug=False)
+bottle.run(host='192.168.2.116', port='8080', debug=False)
 

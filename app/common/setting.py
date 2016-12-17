@@ -44,8 +44,8 @@ def init_setting_html():
         system_query = System.select()
         admin_query = Admin.select()
     except BaseException,e:
-        logger.error(e)
-        return e
+        logger.error(str(e))
+        return str(e)
     user_str=''
     if (len(system_query) == 1):
         setting_info['account'] = system_query[0].username
@@ -62,6 +62,8 @@ def init_setting_html():
                 user_str += item.passwd
                 user_str += '#'
                 user_str += item.name
+                user_str += '#'
+                user_str += str(item.enable)
                 user_str += ','
         user_str = user_str[0:-1]
         setting_info['users'] = user_str 
@@ -92,15 +94,15 @@ def adduser():
         Admin.insert(id=user_id, user=user, name=name,passwd=passwd,is_admin=0,enable=1).execute()
         return 'success'
     except BaseException,e:
-        logger.error(e)
+        logger.error(str(e))
         return 'error'
 
 
 def deluser():
     user_id=bottle.request.forms.get('id')
     try:
-        Admin.delete().where(Admin.id==user_id).execute()
+        Admin.update(enable=0).where(Admin.id==user_id).execute()
         return 'success'
     except BaseException,e:
-        logger.error(e)
+        logger.error(str(e))
         return 'error'

@@ -144,6 +144,7 @@
 		<div class="order-list-right">
 			<form id="uploadForm">
 				<input name='testmd5' id='jisuan_md5' hidden />
+				<input name='session' id='session' hidden value={{userinfo.get('session')}}/>
 				<input name='name' id='wherefrom' type="text" placeholder="请输入订单来源" />
 				<input type="file" id='myfile' name='data' value="选择文件" />
 				<input type="button" value="上传" class='upload' onclick='ajaxupLoad()'/>
