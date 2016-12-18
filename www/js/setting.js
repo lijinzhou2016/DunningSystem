@@ -157,9 +157,6 @@ $(document).ready(function () {
                 if(result=='error'){
                     alert('操作失败')
                 }
-                if (result='unknown'){
-                    location.href='/login'
-                }
             },
             error: function(result){
                 alert(str(result))

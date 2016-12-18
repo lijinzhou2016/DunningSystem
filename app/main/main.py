@@ -200,6 +200,7 @@ def set_data():
     session = bottle.request.forms.get('session')
     logger.debug('Got session ' + session)
     userinfo = Userinfo.get_by_session(session)
+    logger.debug(str(userinfo))
     if not userinfo:
         logger.info('session check invalid, redirect to login')
         bottle.redirect("/login")
@@ -222,5 +223,5 @@ def get_userinfo_dic(userinfo):
 
 
 
-bottle.run(host='192.168.2.116', port='8080', debug=False)
+bottle.run(host='127.0.0.1', port='8080', debug=False)
 

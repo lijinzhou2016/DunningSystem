@@ -210,13 +210,48 @@ class OrderList:
         '''
         for order_info_tmp in self.orders_list_info:
             lender_query=Lender.select().join(Orders).where(Orders.lender==order_info_tmp.lender).get()
+            
+            # 计算总欠款
+            def total_debt():
+                month_pay = float(order_info_tmp.month_pay) # 月供
+                periods = int(order_info_tmp.periods) # 期数
+                paid_periods = int(order_info_tmp.paid_periods) # 已还期数
+                amount = float(order_info_tmp.amount) # 分期金额
+                payment_day = order_info_tmp.payment_day # 首次还款日
+
+                payment_day_list = payment_day.split('-') # 格式如： ['2016', '12', '10']
+                if int(payment_day_list[1]) + int(paid_periods) > 12:
+                    payment_day_list[0] = str(int(payment_day_list[0])+1)
+                    payment_day_list[1] = str(int(payment_day_list[1])+int(paid_periods)-12)
+                else:
+                    payment_day_list[1] = str(int(payment_day_list[1])+int(paid_periods))
+
+                # 计算逾期天数的起始日期：
+                laste_day = datetime.date(int(payment_day_list[0]),int(payment_day_list[1]),int(payment_day_list[2]))
+                # 当前日期
+                today = datetime.date(datetime.datetime.now().year, datetime.datetime.now().month, datetime.datetime.now().day)
+
+                over_day = (today - laste_day).days #逾期天数
+
+                # 计算滞纳金
+                if over_day > 0:
+                    if over_day >90:
+                        late_fee = (month_pay*0.26/30.0)*90+(month_pay*0.50/30.0)*(over_day-90)
+                    else:
+                        late_fee = (month_pay*0.26/30.0)*over_day
+                else:
+                    late_fee = 0.0
+
+                # 总欠款
+                debt = month_pay*(periods - paid_periods)+late_fee
+                return round(debt, 2) #保留两位小数
 
             self.orders_return_info['orders_list'].append({
                 'name' : lender_query.name,
                 'detailurl' : r'/orderdetail/'+ str(order_info_tmp.id) + r'?session=' + self.userinfo['session'],
                 'ordernumber' : order_info_tmp.disp,
                 'phone' : lender_query.tel,
-                'qiankuan' : 888, # 需要计算
+                'qiankuan' : total_debt(), # 需要计算
                 'orderdata' : order_info_tmp.order_date,
                 'acquiringdata' : order_info_tmp.takeorder_data,
                 'school' : lender_query.university,
@@ -255,15 +290,16 @@ class OrderList:
             return '文件模版错误，请核对后重新上传'
 
         for one_data in total_datas:
-            if one_data[0]: # 订单编号 (必要唯一字段)
-                if Orders.select().where(Orders.disp == one_data[0]): #重复订单
-                    exception_disp += ('重复订单: '+str(one_data[0])+' '+one_data[1]+'\n')
-                    continue
-                order_insert_dict['disp'] = str(one_data[0])
-            else:
-                exception_disp += ('订单号为空的订单: '+one_data[1]+'\n')
-                continue
+            
             try:
+                if one_data[0]: # 订单编号 (必要唯一字段)
+                    if Orders.select().where(Orders.disp == one_data[0]): #重复订单
+                        exception_disp += ('重复订单: '+str(one_data[0])+' '+one_data[1]+'\n')
+                        continue
+                    order_insert_dict['disp'] = str(one_data[0])
+                else:
+                    exception_disp += ('订单号为空的订单: '+one_data[1]+'\n')
+                    continue
                 if one_data[8]: # 订单状态
                     order_insert_dict['status'] = orderStatusKey[one_data[8]]
                 if one_data[9]: # 账期
@@ -272,14 +308,29 @@ class OrderList:
                     order_insert_dict['product'] = one_data[10]
                 if one_data[11]: # 分期金额
                     order_insert_dict['amount'] = int(one_data[11])
+                else:
+                    exception_disp += ('分期金额为空： '+str(one_data[0])+' '+one_data[1]+'\n')
+                    continue
                 if one_data[12]: # 首次还款日
                     order_insert_dict['payment_day'] = one_data[12]
+                else:
+                    exception_disp += ('首次还款日为空： '+str(one_data[0])+' '+one_data[1]+'\n')
+                    continue
                 if one_data[13]: # 月供
                     order_insert_dict['month_pay'] = str(one_data[13])
+                else:
+                    exception_disp += ('月供为空： '+str(one_data[0])+' '+one_data[1]+'\n')
+                    continue
                 if one_data[14]: # 期数
                     order_insert_dict['periods'] = int(one_data[14])
+                else:
+                    exception_disp += ('期数为空： '+str(one_data[0])+' '+one_data[1]+'\n')
+                    continue
                 if one_data[15]: # 已付期数
                     order_insert_dict['paid_periods'] = int(one_data[15])
+                else:
+                    exception_disp += ('已还分期金额为空： '+str(one_data[0])+' '+one_data[1]+'\n')
+                    continue
                 if one_data[16]: # 订单日期
                     order_insert_dict['order_date'] = one_data[16]
                 if one_data[17]: # 接单日期
@@ -335,10 +386,10 @@ class OrderList:
                 exception_disp += ('插入数据库失败订单号: '+ str(one_data[0])+'\n')
 
         if len(exception_disp)>0:
-            exception_disp += '共插入{0} 条数据'.format(success_insert_count)
+            exception_disp += '成功插入 {0}/{1} 条数据'.format(success_insert_count,nrows)
             return exception_disp
         else:
-            return '成功插入 {0} 条数据'.format(success_insert_count)
+            return '成功插入 {0}/{1} 条数据'.format(success_insert_count,nrows)
 
         
 
