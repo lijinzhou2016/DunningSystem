@@ -160,7 +160,7 @@
 						</div>
 						<div>
 							<div class="orderStatus-content-left">滞纳金:</div>
-							<input class="orderStatus-content-right" type="text" readonly="true" >
+							<input name = "latefees" class="orderStatus-content-right" type="text" readonly="true" >
 						</div>
 						<div>
 							<div class="orderStatus-content-left">接单日期:</div>
@@ -168,11 +168,15 @@
 						</div>
 						<div>
 							<div class="orderStatus-content-left">现总欠款:</div>
-							<input class="orderStatus-content-right" type="text" readonly="true">
+							<input name = "sumdebt" class="orderStatus-content-right" type="text" readonly="true">
 						</div>
 						<div>
 							<div class="orderStatus-content-left">已收金额:</div>
 							<input name = "recvamount" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('recv_amount')}}>
+						</div>
+						<div>
+							<div class="orderStatus-content-left">首次还款日:</div>
+							<input name = "paymentday" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('payment_day')}}>
 						</div>
 					</div>
 					<div class="orderStatus-btn">
