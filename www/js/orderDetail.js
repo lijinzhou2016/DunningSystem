@@ -647,13 +647,17 @@ $(document).ready(function () {
                 loadingobj.hide()
                 uploadobj.show()
                 //dataobj.val("未选择任何文件")
-                alert(returndata);
-                add_file_div(uploadobj, id, type, md5, ext)
+                var dataObj=eval("("+returndata+")");
+                alert(dataObj.desc);
+                if(dataObj.result == 'success'){
+                    add_file_div(uploadobj, id, type, md5, ext)
+                }
             },
             error: function (returndata) {
                 loadingobj.hide()
                 uploadobj.show()
-                alert('error')
+                var dataObj=eval("("+returndata+")");
+                alert(dataObj.desc)
                 //dataobj.val("未选择任何文件")
                 alert(returndata)
             }
@@ -743,95 +747,56 @@ $(document).ready(function () {
 })
 
 
-function ajaxupLoad() {
-        alert("value = " + $(this).val());
-        $(this).parent().find('.upload').hide();
-        $('.loadding').show();
-         var id = $(this).parents("input[name='order-id']").val();
-        alert("id = " + id);
-        var file = $(this).parent().find("input[name='data']").val();
-        alert("file = " + file);
-        var ext = file.slice(file.lastIndexOf(".") + 1).toLowerCase();
-
-        
-
-        var formData = new FormData($(this).parent().find("form[name='uploadForm']")[0]);
-        //增加订单ID
-        formData.append("orderid", id);
-        $.ajax({
-            url: '/uploadlenderfile',
-            type: 'POST',
-            data: formData,
-            async: true,
-            cache: false,
-            contentType: false,
-            processData: false,
-            success: function (returndata) {
-                $('.loadding').hide()
-                $(this).parent().find('.upload').show()
-                alert(returndata);
-            },
-            error: function (returndata) {
-                $('.loadding').hide()
-                $(this).parent().find('.upload').show()
-                alert('error')
-                alert(returndata)
-            }
-        });
-        
-
-    }
-
-    //验证手机号
-    function phoneVal(phone){
-        if(phone==""){
-            alert("手机号不能为空！");
-             return false;
-        }else{
-            if(phone && /^1[34578]\d{9}$/.test(phone)){
-                return true;
-            }else{
-                
-                alert("手机号输入不正确！");
-                 return false;
-            }
-        }
-       
-    }
-
-    //验证身份证
-    function IDnumber(){
-         var pattern = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/; 
-         var IDnumber = $(".idcard").val();
-         if(IDnumber==""){
-             alert("身份证号不能为空！");
+//验证手机号
+function phoneVal(phone){
+    if(phone==""){
+        alert("手机号不能为空！");
             return false;
+    }else{
+        if(phone && /^1[34578]\d{9}$/.test(phone)){
+            return true;
         }else{
-             if(IDnumber&&pattern.test(IDnumber)){
-                 return true;
-
-            }else{
-                
-                alert("身份证号不正确！");
-                 return false;
-            }
+            
+            alert("手机号输入不正确！");
+                return false;
         }
     }
+    
+}
 
-     function phoneValnum(number){
-        if(number==""){
-            number=0;
-             return true;
-        }else{
-            if(number && /^\d+$/.test(number)){
+//验证身份证
+function IDnumber(){
+        var pattern = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/; 
+        var IDnumber = $(".idcard").val();
+        if(IDnumber==""){
+            alert("身份证号不能为空！");
+        return false;
+    }else{
+            if(IDnumber&&pattern.test(IDnumber)){
                 return true;
-            }else{
-                
-                alert("请输入数字！");
-                 return false;
-            }
+
+        }else{
+            
+            alert("身份证号不正确！");
+                return false;
         }
-       
     }
+}
+
+    function phoneValnum(number){
+    if(number==""){
+        number=0;
+            return true;
+    }else{
+        if(number && /^\d+$/.test(number)){
+            return true;
+        }else{
+            
+            alert("请输入数字！");
+                return false;
+        }
+    }
+    
+}
 
 

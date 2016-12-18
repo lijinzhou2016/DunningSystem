@@ -155,14 +155,14 @@ def save_orderdetail_file():
             if resource.get_md5(new_file)==file_md5:
                 result, id = FilesTable.insert(orderid, file_type, save_name)
                 if result == 'success':
-                    return '上传成功'
+                    return json.dumps({'result': result, 'desc': '上传成功'})
                 else:
                     os.remove(new_file)
-                    return '数据库插入失败'
+                    return json.dumps({'result': 'fail', 'desc': '数据库插入失败'})
             else:
                 os.remove(new_file)
-                return '上传失败,请重新上传'
+                return json.dumps({'result': 'fail', 'desc': '上传失败,请重新上传'})
         else:
-            return '文件已存在，请勿重复上传'
+            return json.dumps({'result': 'fail', 'desc': '文件已存在，请勿重复上传'})
     else:
-        return '创建路径失败'
+        return json.dumps({'result': 'fail', 'desc': '创建路径失败'})
