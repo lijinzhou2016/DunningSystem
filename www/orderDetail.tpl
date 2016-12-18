@@ -159,12 +159,16 @@
 							<input name = "orderdate" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{order.get('order_date')}}>
 						</div>
 						<div>
-							<div class="orderStatus-content-left">滞纳金:</div>
-							<input name = "latefees" class="orderStatus-content-right" type="text" readonly="true" >
+							<div class="orderStatus-content-left">首次还款日:</div>
+							<input name = "paymentday" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('payment_day')}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">接单日期:</div>
 							<input name = "takeorderdate" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{order.get('takeorder_date')}}>
+						</div>
+						<div>
+							<div class="orderStatus-content-left">滞纳金:</div>
+							<input name = "latefees" class="orderStatus-content-right" type="text" readonly="true" >
 						</div>
 						<div>
 							<div class="orderStatus-content-left">现总欠款:</div>
@@ -174,10 +178,7 @@
 							<div class="orderStatus-content-left">已收金额:</div>
 							<input name = "recvamount" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('recv_amount')}}>
 						</div>
-						<div>
-							<div class="orderStatus-content-left">首次还款日:</div>
-							<input name = "paymentday" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('payment_day')}}>
-						</div>
+						
 					</div>
 					<div class="orderStatus-btn">
 						<button class="orderStatusbtn-save">保存</button>
