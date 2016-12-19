@@ -82,6 +82,7 @@ def lang(filename):
 @bottle.route('/checkuser', method='POST')
 def checkuser():
     logger.debug('check the user')
+    database = MySQLDatabase('dunning', **{'host': 'localhost', 'port': 3306, 'user': 'root','passwd':'123456'})
     name = bottle.request.forms.get('username')
     passwd = bottle.request.forms.get('password')
     userinfo = Userinfo.check_login(name, passwd)

@@ -1,0 +1,21 @@
+2016-12-20 02:34:30,199 main.py <module> 26 DEBUG - dunning server start
+2016-12-20 02:34:40,856 main.py server_www 45 DEBUG - favicon.ico
+2016-12-20 02:34:42,930 main.py server_www 45 DEBUG - favicon.ico
+2016-12-20 03:03:06,617 main.py <module> 26 DEBUG - dunning server start
+2016-12-20 03:03:12,123 main.py server_www 45 DEBUG - favicon.ico
+2016-12-20 03:03:13,421 main.py server_www 45 DEBUG - favicon.ico
+2016-12-20 03:03:19,448 main.py checkuser 84 DEBUG - check the user
+2016-12-20 03:03:19,461 main.py orderlist 101 DEBUG - Got session admin_ce0abadc-c61d-11e6-9e9a-000000000030
+2016-12-20 03:03:19,461 main.py orderlist 110 DEBUG - Got conditon : 0
+2016-12-20 03:03:19,477 main.py no_condition_data 241 DEBUG - 徐熊军
+2016-12-20 03:03:19,479 main.py no_condition_data 241 DEBUG - 谢宇豪
+2016-12-20 03:03:19,482 main.py no_condition_data 241 DEBUG - 谭琦
+2016-12-20 03:03:19,487 main.py no_condition_data 241 DEBUG - 刘一鸣
+2016-12-20 03:03:19,491 main.py no_condition_data 241 DEBUG - 郑吉添
+2016-12-20 03:03:19,494 main.py no_condition_data 241 DEBUG - 王婷婷
+2016-12-20 03:03:19,497 main.py no_condition_data 241 DEBUG - 袁鑫
+2016-12-20 03:03:19,500 main.py no_condition_data 241 DEBUG - 许印亮
+2016-12-20 03:03:19,504 main.py no_condition_data 241 DEBUG - 刘永
+2016-12-20 03:03:19,512 main.py no_condition_data 241 DEBUG - 程博
+2016-12-20 03:03:19,530 main.py server_www 45 DEBUG - orderlist.js
+2016-12-20 03:03:19,696 main.py server_www 45 DEBUG - favicon.ico
