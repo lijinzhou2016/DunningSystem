@@ -78,13 +78,18 @@
                 <option value="">已结清</option>
             	</select>
 				</div>
+				<div class="order-list-content-search">
+					<div class="order-list-content-search-left">学校区域:</div><input class="order-list-content-search-right school-area" type="text" value={{condition.get('school_area')}}>
+					
+				
+				</div>
+				<div style="width:50%;float:left;text-align:center;height:30px;margin-top:10px">
+					    <input type="button" class="search-btn" onclick="searchBtn()" value="搜索">
+						<input type="button" class="reset-btn" onclick="resetBtn()" value="重置">
+					</div>
 				
 				<div class="clear"></div>
-				<div class="order-search-btn">
-					<input type="button" class="search-btn" onclick="searchBtn()" value="搜索">
-					<input type="button" class="reset-btn" onclick="resetBtn()" value="重置">
-				</div>
-
+				
 
 			</div>
 			<table class="order-list-table">

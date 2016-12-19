@@ -17,7 +17,8 @@ $(document).ready(function () {
         'order_jtqy': '',
         'order_jdrq': '',
         'order_ddzt': '',
-        'order_shxx': ''
+        'order_shxx': '',
+        'school_area': ''
     }
 
     search_item.order_username = $(".orderlist-username").val();
@@ -27,6 +28,7 @@ $(document).ready(function () {
     search_item.order_jtqy = $(".order-jtqy").val();
     search_item.order_jdrq = $(".order-jdrq").val();
     search_item.order_ddzt = $(".order-ddzt").find("option:selected").text();
+    search_item.school_area = $(".school-area").val()
     var mysession = '&session=' + $('.session_info').val();
 
     if (search_item.order_ddzt == "全部") {
@@ -42,7 +44,7 @@ $(document).ready(function () {
         inputval += (search_item[key] + ' ');
     }
 
-    if (inputval.length > 8) {
+    if (inputval.length > 9) {
         condition=1
         $(".select-result-content").show();
         $(".chooseinputval").text(inputval);
@@ -134,7 +136,8 @@ var search_item = {
     'order_jtqy': '',
     'order_jdrq': '',
     'order_ddzt': '',
-    'order_shxx': ''
+    'order_shxx': '',
+    'school_area': ''
 }
 
 function searchBtn() {
@@ -145,6 +148,7 @@ function searchBtn() {
     search_item.order_jtqy = $(".order-jtqy").val();
     search_item.order_jdrq = $(".order-jdrq").val();
     search_item.order_ddzt = $(".order-ddzt").find("option:selected").text();
+    search_item.school_area = $(".school-area").val()
     var mysession = '&session=' + $('.session_info').val();
     if (search_item.order_ddzt == "全部") {
         search_item.order_ddzt = "";
@@ -160,7 +164,7 @@ function searchBtn() {
         inputval += (search_item[key] + ' ');
     }
 
-    if (inputval.length > 8) {
+    if (inputval.length > 9) {
         for (var key in search_item) {
             if (search_item[key] != '') {
                 search_condition += ('&' + key + '=' + search_item[key])

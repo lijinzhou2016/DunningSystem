@@ -54,8 +54,13 @@ search_item = {
         'order_jtqy': '',
         'order_jdrq': '',
         'order_ddzt': '',
-        'order_shxx': ''
+        'order_shxx': '',
+        'school_area': ''
     }
+
+statues_keys = ['已结清','联系本人', '联系亲属','联系同学',
+                '失联','待外访', '外访中', '承诺还款', '部分还款']
+zhangaqi_keys= ['M0', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7', 'M8', 'M9', 'M10', 'M11', 'M12']
 
 class OrderList:
     def __init__(self, pageindex, userinfo, condition):
@@ -66,7 +71,7 @@ class OrderList:
         self.orders_one_info={'name':'','detailurl':'','ordernumber':'','phone':'','qiankuan':'','orderdata':'','acquiringdata':'','school':'','state':''}
         self.orders_return_info['userinfo']=self.userinfo
         if self.condition == 0:
-            self.orders_count = Orders.select().count()   # 订单总条数
+            self.orders_count = Orders.select().where(Orders.is_del == 0).count()   # 订单总条数
             self.total_pages = 1 if self.orders_count==0 else int(math.ceil(self.orders_count/10.0))   # 分页数
             self.orders_return_info['condition'] = search_item
             self.orders_return_info['fenyeinfo']={
@@ -113,7 +118,8 @@ class OrderList:
             'order_jtqy': bottle.request.query.order_jtqy,
             'order_jdrq': bottle.request.query.order_jdrq,
             'order_ddzt': bottle.request.query.order_ddzt,
-            'order_shxx': bottle.request.query.order_shxx
+            'order_shxx': bottle.request.query.order_shxx,
+            'school_area': bottle.request.query.school_area
         }
 
         # debug
@@ -131,42 +137,61 @@ class OrderList:
         orders_query = [] # 最终查到的数据
 
         # 如果lender表有搜索字段，则查询lender表
-        if len(condition_item['order_jtzz'] + condition_item['order_username'] + condition_item['order_school'] + condition_item['order_jtqy'])>0:
+        if len(condition_item['order_jtzz'] + condition_item['order_username'] + condition_item['order_school'] + condition_item['order_jtqy'] + condition_item['school_area'])>0:
             logger.debug('select lender ... ')
             lender_query = Lender.select().where(   
                 Lender.name.contains(condition_item['order_username']),
                 Lender.university.contains(condition_item['order_school']),
                 Lender.family_addr.contains(condition_item['order_jtzz']),
-                Lender.family_area.contains(condition_item['order_jtqy'])
+                Lender.family_area.contains(condition_item['order_jtqy']),
+                Lender.univers_area.contains(condition_item['school_area'])
             )
 
             # 按条件查询到的数据，取出id添加到lender_id
             if len(lender_query)>=1:  
                 for lender in lender_query:
-                    lender_id.append(lender.id)
+                    if lender.is_del == 0:
+                        lender_id.append(lender.id)
             else: 
                 lender_flag = 1 # 表示按照搜索条件没有查询到数据
+            logger.debug('lender id : '+str(len(lender_id)))
 
-        if condition_item['order_zhangqi']: # 账期
-            account_day_query = Orders.select().where(Orders.account_day == condition_item['order_zhangqi']).order_by(-Orders.create_time, -Orders.modify_time)
-            temp_query.append(account_day_query) 
-        if condition_item['order_shxx']: # 接单日期
+        if condition_item['order_zhangqi']: # 账期搜索
+            account_day_query = Orders.select().where((Orders.account_day == condition_item['order_zhangqi']) & (Orders.is_del == 0)).order_by(-Orders.create_time, -Orders.modify_time)
+            if len(account_day_query)>0:
+                temp_query.append(account_day_query)
+            else:
+                orders_flag = 1 
+        if condition_item['order_shxx']: # 接单日期搜索
             logger.debug('查询接单日期字段：'+condition_item['order_shxx'])
-            takeorder_data_query = Orders.select().where(Orders.takeorder_data == condition_item['order_shxx']).order_by(-Orders.create_time, -Orders.modify_time)
+            takeorder_data_query = Orders.select().where((Orders.takeorder_data == condition_item['order_shxx']) & (Orders.is_del == 0)).order_by(-Orders.create_time, -Orders.modify_time)
             logger.debug(len(takeorder_data_query))
-            temp_query.append(takeorder_data_query)
-        if condition_item['order_ddzt']: # 订单状态
-            status_query = Orders.select().where(Orders.status == orderStatusKey[condition_item['order_ddzt']]).order_by(-Orders.create_time, -Orders.modify_time)
-            temp_query.append(status_query)
-        if condition_item['order_jdrq']: # 订单日期
-            order_date_query = Orders.select().where(Orders.order_date == condition_item['order_jdrq']).order_by(-Orders.create_time, -Orders.modify_time)
-            temp_query.append(order_date_query)
+            if len(takeorder_data_query)>0:
+                temp_query.append(takeorder_data_query)
+            else:
+                logger.debug('按接单字段查无数据')
+                orders_flag = 1
+        if condition_item['order_ddzt']: # 订单状态搜索
+            logger.debug('开始查询订单状态')
+            status_query = Orders.select().where((Orders.status == orderStatusKey[condition_item['order_ddzt']]) & (Orders.is_del == 0)).order_by(-Orders.create_time, -Orders.modify_time)
+            if len(status_query)>0:
+                temp_query.append(status_query)
+            else:
+                orders_flag = 1
+        if condition_item['order_jdrq']: # 订单日期搜索
+            order_date_query = Orders.select().where((Orders.order_date == condition_item['order_jdrq']) & (Orders.is_del == 0)).order_by(-Orders.create_time, -Orders.modify_time)
+            if len(order_date_query)>0:
+                temp_query.append(order_date_query)
+            else:
+                orders_flag = 1
         
         logger.debug(len(temp_query))
         if len(temp_query)>0: # 在orders表中查询到数据
             # 取交集
             orders_query = list(set(temp_query[0]).intersection(*temp_query[1:]))
+
             if len(orders_query)==0: # 若无交集，说明搜索条件有冲突，无数据
+                logger.debug('说明搜索条件有冲突，无数据')
                 orders_flag = 1
 
         
@@ -174,17 +199,20 @@ class OrderList:
             self.orders_return_info['orders_list'].append(self.orders_one_info)
 
         elif len(orders_query)>0 and len(lender_id)>0: # 两个表均有查到数据
+            logger.debug('lender orders中查到数据')
             for id_tmp in lender_id: # 依次取出lender表中搜索到的记录id
                 for query_tmp in orders_query: # 取出orders表中搜索到的记录
                     if query_tmp.lender_id == id_tmp: # 若id相等，则保存
                         self.orders_list_info.append(query_tmp) # 搜索的最终数据 ！！！
 
         elif len(orders_query)>0: # orders 表中查到数据
+            logger.debug('orders中查到数据')
             self.orders_list_info = orders_query # 搜索的最终数据 ！！！
 
         else: # lender表中查到数据
-            self.orders_list_info = Orders.select().where(Orders.lender_id << lender_id).order_by(-Orders.create_time, -Orders.modify_time) # 搜索的最终数据 ！！！
-        
+            logger.debug('lender中查到数据')
+            self.orders_list_info = Orders.select().where((Orders.lender_id << lender_id) & (Orders.is_del == 0)).order_by(-Orders.create_time, -Orders.modify_time) # 搜索的最终数据 ！！！
+            
         self.orders_count = len(self.orders_list_info)
         self.total_pages =  1 if self.orders_count==0 else int(math.ceil(self.orders_count/10.0)) # 分页数
         self.orders_return_info['fenyeinfo']={
@@ -210,7 +238,7 @@ class OrderList:
         '''
         for order_info_tmp in self.orders_list_info:
             lender_query=Lender.select().join(Orders).where(Orders.lender==order_info_tmp.lender).get()
-            
+            logger.debug(lender_query.name)
             # 计算总欠款
             def total_debt():
                 month_pay = float(order_info_tmp.month_pay) # 月供
@@ -285,15 +313,19 @@ class OrderList:
         for i in range(nrows): #着行读取文件数据
             total_datas.append(table.row_values(i))
         title = total_datas.pop(0) # 去掉标题栏
-        if not title == order_file_title:
-            os.remove(filepath)
-            return '文件模版错误，请核对后重新上传'
+        # for i in title:
+        #     logger.debug(i)
+        for i in range(25):
+            if not title[i] == order_file_title[i]:
+                os.remove(filepath)
+                return '文件模版错误，请核对后重新上传'
 
         for one_data in total_datas:
+            # logger.debug(one_data)
             
             try:
                 if one_data[0]: # 订单编号 (必要唯一字段)
-                    if Orders.select().where(Orders.disp == one_data[0]): #重复订单
+                    if Orders.select().where((Orders.disp == one_data[0]) & (Orders.is_del == 0)): #重复订单
                         exception_disp += ('重复订单: '+str(one_data[0])+' '+one_data[1]+'\n')
                         continue
                     order_insert_dict['disp'] = str(one_data[0])
@@ -301,9 +333,17 @@ class OrderList:
                     exception_disp += ('订单号为空的订单: '+one_data[1]+'\n')
                     continue
                 if one_data[8]: # 订单状态
-                    order_insert_dict['status'] = orderStatusKey[one_data[8]]
+                    if one_data[8] in statues_keys:
+                        order_insert_dict['status'] = orderStatusKey[one_data[8]]
+                    else:
+                        exception_disp += ('订单状态格式错误 '+str(one_data[0])+' '+one_data[1]+' '+one_data[8]+'\n')
+                        continue
                 if one_data[9]: # 账期
-                    order_insert_dict['account_day'] = str(one_data[9])
+                    if one_data[9] in zhangaqi_keys:
+                        order_insert_dict['account_day'] = str(one_data[9])
+                    else:
+                        exception_disp += ('账期格式错误 '+str(one_data[0])+' '+one_data[1]+' '+one_data[9]+'\n')
+                        continue
                 if one_data[10]: # 产品名称
                     order_insert_dict['product'] = one_data[10]
                 if one_data[11]: # 分期金额
@@ -321,15 +361,16 @@ class OrderList:
                 else:
                     exception_disp += ('月供为空： '+str(one_data[0])+' '+one_data[1]+'\n')
                     continue
-                if one_data[14]: # 期数
+                if one_data[14]>0: # 期数
                     order_insert_dict['periods'] = int(one_data[14])
                 else:
                     exception_disp += ('期数为空： '+str(one_data[0])+' '+one_data[1]+'\n')
                     continue
-                if one_data[15]: # 已付期数
+               
+                if one_data[15] or int(one_data[15])==0: # 已付期数
                     order_insert_dict['paid_periods'] = int(one_data[15])
                 else:
-                    exception_disp += ('已还分期金额为空： '+str(one_data[0])+' '+one_data[1]+'\n')
+                    exception_disp += ('已还分期数为空： '+str(one_data[0])+' '+one_data[1]+'\n')
                     continue
                 if one_data[16]: # 订单日期
                     order_insert_dict['order_date'] = one_data[16]
@@ -337,6 +378,9 @@ class OrderList:
                     order_insert_dict['takeorder_data'] = one_data[17]
                 if one_data[18]: # 已还金额
                     order_insert_dict['received_amount'] = int(one_data[18])
+                else:
+                    exception_disp += ('已还金额为空： '+str(one_data[0])+' '+one_data[1]+'\n')
+                    continue
                 if one_data[19]: # 父母
                     order_insert_dict['parent'] = one_data[19]
                 if one_data[20]: # 父母电话
@@ -354,13 +398,20 @@ class OrderList:
                 order_insert_dict['modify_time'] = order_insert_dict['create_time']
 
                 #################################################################
-
+                logger.debug(one_data[1])
                 if one_data[1]: # 姓名
                     lender_insert_dict['name'] = one_data[1]
                 if one_data[2]: # 电话
                     lender_insert_dict['tel'] = str(int(one_data[2]))
                 if one_data[3]: # 身份证
+                    if Lender.select().where((Lender.idcard == one_data[3]) & (Lender.is_del == 0)): # 身份证重复
+                        exception_disp += ('身份证重复: '+str(one_data[0])+' '+one_data[1]+'\n')
+                        continue
                     lender_insert_dict['idcard'] = (str(one_data[3])).split('.')[0]
+                else:
+                    exception_disp += ('身份证为空的订单: '+str(one_data[0])+' '+one_data[1]+'\n')
+                    continue
+                    
                 if one_data[4]: # 学院区域
                     lender_insert_dict['univers_area'] = one_data[4]
                 if one_data[5]: # 学校
@@ -386,10 +437,10 @@ class OrderList:
                 exception_disp += ('插入数据库失败订单号: '+ str(one_data[0])+'\n')
 
         if len(exception_disp)>0:
-            exception_disp += '成功插入 {0}/{1} 条数据'.format(success_insert_count,nrows)
+            exception_disp += '成功插入 {0}/{1} 条数据'.format(success_insert_count,nrows-1)
             return exception_disp
         else:
-            return '成功插入 {0}/{1} 条数据'.format(success_insert_count,nrows)
+            return '成功插入 {0}/{1} 条数据'.format(success_insert_count,nrows-1)
 
         
 

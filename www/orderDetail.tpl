@@ -117,7 +117,7 @@
 						</div>
 						<div>
 							<div class="orderStatus-content-left">月供:</div>
-							<input name = "monthpay" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('month_pay')}}>
+							<input name = "monthpay" class="orderStatus-content-right monthpay" type="text" readonly="true" value={{order.get('month_pay')}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">账期:</div>
@@ -152,7 +152,7 @@
 						</div>
 						<div>
 							<div class="orderStatus-content-left">分期金额:</div>
-							<input name = "amount" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('amount')}}>
+							<input name = "amount" class="orderStatus-content-right fenqijine" type="text" readonly="true" value={{order.get('amount')}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">订单日期:</div>
@@ -160,7 +160,7 @@
 						</div>
 						<div>
 							<div class="orderStatus-content-left">首次还款日:</div>
-							<input name = "paymentday" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('payment_day')}}>
+							<input name = "paymentday" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{order.get('payment_day')}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">接单日期:</div>
@@ -168,7 +168,7 @@
 						</div>
 						<div>
 							<div class="orderStatus-content-left">滞纳金:</div>
-							<input name = "latefees" class="orderStatus-content-right" type="text" readonly="true" >
+							<input name = "latefees" class="orderStatus-content-right latefees" type="text" readonly="true" >
 						</div>
 						<div>
 							<div class="orderStatus-content-left">现总欠款:</div>
@@ -176,7 +176,7 @@
 						</div>
 						<div>
 							<div class="orderStatus-content-left">已收金额:</div>
-							<input name = "recvamount" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('recv_amount')}}>
+							<input name = "recvamount" class="orderStatus-content-right alreadyamount" type="text" readonly="true" value={{order.get('recv_amount')}}>
 						</div>
 						
 					</div>
