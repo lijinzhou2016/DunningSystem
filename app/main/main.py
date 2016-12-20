@@ -14,6 +14,7 @@ import bottle
 from bottle import *
 import os
 import sys
+import time
 reload(sys)
 sys.setdefaultencoding('utf8')
 
@@ -83,6 +84,7 @@ def lang(filename):
 def checkuser():
     logger.debug('check the user')
     database = MySQLDatabase('dunning', **{'host': 'localhost', 'port': 3306, 'user': 'root','passwd':'123456'})
+    time.sleep(1)
     name = bottle.request.forms.get('username')
     passwd = bottle.request.forms.get('password')
     userinfo = Userinfo.check_login(name, passwd)
