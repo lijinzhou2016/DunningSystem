@@ -68,6 +68,10 @@ $(document).ready(function () {
         $(data).val($(data).parent().find("input[name='status_value']").val())
     })
 
+    $("select[name='accountday']").each(function (index, data) {
+        $(data).val($(data).parent().find("input[name='accountday_value']").val())
+    })
+
     $(".loadding").hide();
 
     $(".orderDetail-content-orderStatus").each(function (index, data) {
@@ -88,6 +92,7 @@ $(document).ready(function () {
         display_save_cancel_button(".orderStatus-btn", ".orderStatus-content-right")
         //设置input下拉框可编辑
         $("select[name='status_select']").removeAttr("disabled");
+        $("select[name='accountday']").removeAttr("disabled");
         store_order_basic(".orderStatus-info");
 
 
@@ -177,7 +182,7 @@ $(document).ready(function () {
     function store_order_basic(parentclass) {
         old_order_source = $(parentclass).find("input[name='source']").val();
         old_order_dispid = $(parentclass).find("input[name='dispid']").val();
-        old_order_accountday = $(parentclass).find("input[name='accountday']").val();
+        old_order_accountday = $(parentclass).find("select[name='accountday']").val();
         old_order_product = $(parentclass).find("input[name='product']").val();
         old_order_amount = $(parentclass).find("input[name='amount']").val();
         old_order_monthpay = $(parentclass).find("input[name='monthpay']").val();
@@ -195,7 +200,7 @@ $(document).ready(function () {
     function restore_order_basic(parentclass) {
         $(parentclass).find("input[name='source']").val(old_order_source);
         $(parentclass).find("input[name='dispid']").val(old_order_dispid);
-        $(parentclass).find("input[name='accountday']").val(old_order_accountday);
+        $(parentclass).find("select[name='accountday']").val(old_order_accountday);
         $(parentclass).find("input[name='product']").val(old_order_product);
         $(parentclass).find("input[name='amount']").val(old_order_amount);
         $(parentclass).find("input[name='monthpay']").val(old_order_monthpay);
@@ -218,7 +223,7 @@ $(document).ready(function () {
     function update_order_basic(parentclass) {
         var source = $(parentclass).find("input[name='source']").val();
         var dispid = $(parentclass).find("input[name='dispid']").val();
-        var accountday = $(parentclass).find("input[name='accountday']").val();
+        var accountday = $(parentclass).find("select[name='accountday']").val();
         var product = $(parentclass).find("input[name='product']").val();
         var amount = $(parentclass).find("input[name='amount']").val();
         var monthpay = $(parentclass).find("input[name='monthpay']").val();
@@ -392,6 +397,7 @@ $(document).ready(function () {
             $(this).parent().find(".orderStatus-content-right"))
         //设置input下拉框可编辑
         $("select[name='status_select']").removeAttr("disabled");
+        $("select[name='accountday']").removeAttr("disabled");
         store_order_basic($(this).parent());
     })
     //订单状态取消按钮
@@ -399,6 +405,7 @@ $(document).ready(function () {
         btn_save_cancel($(this), $(this).parent().parent().find(".orderStatus-content-right"))
         //设置input下拉框不可编辑
         $("select[name='status_select']").attr("disabled", "disabled");
+        $("select[name='accountday']").removeAttr("disabled");
 
         restore_order_basic($(this).parent().parent());
     })
@@ -434,6 +441,7 @@ $(document).ready(function () {
         btn_save_cancel($(this), $(this).parent().parent().find(".orderStatus-content-right"))
         //设置input下拉框不可编辑
         $("select[name='status_select']").attr("disabled", "disabled");
+        $("select[name='accountday']").attr("disabled", "disabled");
         //保存信息到数据库
         update_order_basic($(this).parent().parent().parent());
 

@@ -121,22 +121,22 @@
 						</div>
 						<div>
 							<div class="orderStatus-content-left">账期:</div>
-							<select name = "accountday" class="orderStatus-content-right" type="text" readonly="true">
-							<option value="">{{order.get('account_day')}}</option>
-							<option value="">M0</option>
-							<option value="">M1</option>
-							<option value="">M2</option>
-							<option value="">M3</option>
-							<option value="">M4</option>
-							<option value="">M5</option>
-							<option value="">M6</option>
-							<option value="">M7</option>
-							<option value="">M8</option>
-							<option value="">M9</option>
-							<option value="">M10</option>
-							<option value="">M11</option>
-							<option value="">M12</option>
+							<select name = "accountday" class="orderStatus-content-right" type="text" disabled="disabled">
+							<option value="M0">M0</option>
+							<option value="M1">M1</option>
+							<option value="M2">M2</option>
+							<option value="M3">M3</option>
+							<option value="M4">M4</option>
+							<option value="M5">M5</option>
+							<option value="M6">M6</option>
+							<option value="M7">M7</option>
+							<option value="M8">M8</option>
+							<option value="M9">M9</option>
+							<option value="M10">M10</option>
+							<option value="M11">M11</option>
+							<option value="M12">M12</option>
 							</select>
+							<input name = "accountday_value" style="display:none" type="text" readonly="true" value={{order.get('account_day')}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">期数:</div>
