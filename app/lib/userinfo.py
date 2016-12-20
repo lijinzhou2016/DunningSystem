@@ -33,7 +33,9 @@ def common_path():
 
 
 execfile(common_path() + os.sep + 'db.py')
+execfile(common_path()+os.sep+'mylogger.py')
 
+logger = log('userinfo.py')
 
 #用户登录信息
 class Session(object):
@@ -49,6 +51,7 @@ class Session(object):
     
     #更新记录，刷新过期时间
     def __refresh(self):
+        logger.debug("refresh session expire time")
         self.expire_time = int(time.time()) + session_expires
     
     #校验session是否正确，如正确，则刷新过期时间（说明客户端访问过一次）
@@ -58,11 +61,16 @@ class Session(object):
             #再判断是否正确
             if self.session == session_str:
                 #刷新时间
+                logger.debug("session check valid")
                 self.__refresh()
                 return True
             else:
+                logger.debug("session check invalid: session:" + self.session
+                    + ", tobechecked session str:" + session_str)
                 return False
         else:
+            logger.debug("the session is expired, exceed: "+ self.expire_time 
+                    + ", now:" + time.time())
             return False
 
 #用户信息
@@ -85,8 +93,10 @@ class Userinfo:
             if user_list[name].session.validate(session_str):
                 return user_list[name]
             else:
+                logger.info(name + " check session failed")
                 return None
         else:
+            logger.info("user_list do not have the key:" + name)
             return None
     
     #校验用户名和密码，生成用户信息，插入到user_list中
