@@ -17,6 +17,7 @@ import math
 import datetime
 from peewee import *
 import xlrd
+import re
 
 def get_path(name, parent=False):
     path = os.path.dirname(os.path.abspath(__file__))
@@ -322,7 +323,8 @@ class OrderList:
 
         for one_data in total_datas:
             # logger.debug(one_data)
-            
+            pattern =r'^\d{4}-\d{1,2}-\d{1,2}$'
+            p = re.compile(pattern)
             try:
                 if one_data[0]: # 订单编号 (必要唯一字段)
                     if Orders.select().where((Orders.disp == one_data[0]) & (Orders.is_del == 0)): #重复订单
@@ -345,23 +347,26 @@ class OrderList:
                         exception_disp += ('账期格式错误 '+str(one_data[0])+' '+one_data[1]+' '+one_data[9]+'\n')
                         continue
                 if one_data[10]: # 产品名称
-                    order_insert_dict['product'] = one_data[10]
+                    order_insert_dict['product'] = str(one_data[10])
                 if one_data[11]: # 分期金额
-                    order_insert_dict['amount'] = int(one_data[11])
+                    order_insert_dict['amount'] = float(one_data[11])
                 else:
                     exception_disp += ('分期金额为空： '+str(one_data[0])+' '+one_data[1]+'\n')
                     continue
                 if one_data[12]: # 首次还款日
+                    if not p.match(one_data[12]):
+                        exception_disp += ('首次还款日格式有误 '+str(one_data[0])+' '+one_data[1]+'\n')
+                        continue
                     order_insert_dict['payment_day'] = one_data[12]
                 else:
                     exception_disp += ('首次还款日为空： '+str(one_data[0])+' '+one_data[1]+'\n')
                     continue
                 if one_data[13]: # 月供
-                    order_insert_dict['month_pay'] = str(one_data[13])
+                    order_insert_dict['month_pay'] = float(one_data[13])
                 else:
                     exception_disp += ('月供为空： '+str(one_data[0])+' '+one_data[1]+'\n')
                     continue
-                if one_data[14]>0: # 期数
+                if one_data[14]: # 期数
                     order_insert_dict['periods'] = int(one_data[14])
                 else:
                     exception_disp += ('期数为空： '+str(one_data[0])+' '+one_data[1]+'\n')
@@ -373,11 +378,17 @@ class OrderList:
                     exception_disp += ('已还分期数为空： '+str(one_data[0])+' '+one_data[1]+'\n')
                     continue
                 if one_data[16]: # 订单日期
+                    if not p.match(one_data[16]):
+                        exception_disp += ('订单日格式有误 '+str(one_data[0])+' '+one_data[1]+'\n')
+                        continue
                     order_insert_dict['order_date'] = one_data[16]
                 if one_data[17]: # 接单日期
+                    if not p.match(one_data[17]):
+                        exception_disp += ('接单日格式有误 '+str(one_data[0])+' '+one_data[1]+'\n')
+                        continue
                     order_insert_dict['takeorder_data'] = one_data[17]
                 if one_data[18]: # 已还金额
-                    order_insert_dict['received_amount'] = int(one_data[18])
+                    order_insert_dict['received_amount'] = float(one_data[18])
                 else:
                     exception_disp += ('已还金额为空： '+str(one_data[0])+' '+one_data[1]+'\n')
                     continue
@@ -400,7 +411,7 @@ class OrderList:
                 #################################################################
                 logger.debug(one_data[1])
                 if one_data[1]: # 姓名
-                    lender_insert_dict['name'] = one_data[1]
+                    lender_insert_dict['name'] = str(one_data[1])
                 if one_data[2]: # 电话
                     lender_insert_dict['tel'] = str(int(one_data[2]))
                 if one_data[3]: # 身份证

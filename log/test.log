@@ -19,3 +19,164 @@
 2016-12-20 03:03:19,512 main.py no_condition_data 241 DEBUG - 程博
 2016-12-20 03:03:19,530 main.py server_www 45 DEBUG - orderlist.js
 2016-12-20 03:03:19,696 main.py server_www 45 DEBUG - favicon.ico
+2016-12-21 20:55:49,647 main.py <module> 27 DEBUG - dunning server start
+2016-12-21 20:55:56,996 main.py server_www 46 DEBUG - login
+2016-12-21 20:55:57,133 main.py server_www 46 DEBUG - favicon.ico
+2016-12-21 20:56:06,681 main.py checkuser 85 DEBUG - check the user
+2016-12-21 20:56:07,708 main.py orderlist 103 DEBUG - Got session admin_d6ead328-c77c-11e6-815e-000000000030
+2016-12-21 20:56:07,709 userinfo.py validate 64 DEBUG - session check valid
+2016-12-21 20:56:07,709 userinfo.py __refresh 54 DEBUG - refresh session expire time
+2016-12-21 20:56:07,709 main.py orderlist 112 DEBUG - Got conditon : 0
+2016-12-21 20:56:07,745 main.py server_www 46 DEBUG - orderlist.js
+2016-12-21 20:56:07,874 main.py server_www 46 DEBUG - favicon.ico
+2016-12-21 21:04:16,062 main.py upload_server 122 DEBUG - i am upload server.............
+2016-12-21 21:04:16,062 main.py save_orders_file 461 DEBUG - i am save_ordersource......
+2016-12-21 21:05:07,446 main.py <module> 27 DEBUG - dunning server start
+2016-12-21 21:05:12,644 main.py orderlist 103 DEBUG - Got session admin_d6ead328-c77c-11e6-815e-000000000030
+2016-12-21 21:05:12,644 userinfo.py get_by_session 99 INFO - user_list do not have the key:admin
+2016-12-21 21:05:12,645 main.py orderlist 107 INFO - session check invalid, redirect to login
+2016-12-21 21:05:12,650 main.py server_www 46 DEBUG - login
+2016-12-21 21:05:12,700 main.py server_www 46 DEBUG - favicon.ico
+2016-12-21 21:05:20,301 main.py checkuser 85 DEBUG - check the user
+2016-12-21 21:05:21,320 main.py orderlist 103 DEBUG - Got session admin_20e5ab8f-c77e-11e6-8b00-000000000030
+2016-12-21 21:05:21,320 userinfo.py validate 64 DEBUG - session check valid
+2016-12-21 21:05:21,320 userinfo.py __refresh 54 DEBUG - refresh session expire time
+2016-12-21 21:05:21,321 main.py orderlist 112 DEBUG - Got conditon : 0
+2016-12-21 21:05:21,388 main.py server_www 46 DEBUG - favicon.ico
+2016-12-21 21:05:38,485 main.py upload_server 122 DEBUG - i am upload server.............
+2016-12-21 21:05:38,485 main.py save_orders_file 461 DEBUG - i am save_ordersource......
+2016-12-21 21:05:38,557 main.py save_orders_to_database 412 DEBUG - 刘一鸣
+2016-12-21 21:05:38,568 main.py save_orders_to_database 412 DEBUG - 郑吉添
+2016-12-21 21:05:38,576 main.py save_orders_to_database 412 DEBUG - 
+2016-12-21 21:05:38,583 main.py save_orders_to_database 412 DEBUG - 袁鑫
+2016-12-21 21:05:38,591 main.py save_orders_to_database 412 DEBUG - 许印亮
+2016-12-21 21:05:38,599 main.py save_orders_to_database 412 DEBUG - 刘永
+2016-12-21 21:05:38,607 main.py save_orders_to_database 435 ERROR - 解析失败订单: 20161023113817186530 程博
+2016-12-21 21:05:38,607 main.py save_orders_to_database 436 ERROR - invalid literal for float(): 10p07
+2016-12-21 21:05:38,609 main.py save_orders_to_database 412 DEBUG - 木尼热艾克木
+2016-12-21 21:05:38,617 main.py save_orders_to_database 435 ERROR - 解析失败订单: 20161007162900175828 王宇晨
+2016-12-21 21:05:38,617 main.py save_orders_to_database 436 ERROR - invalid literal for int() with base 10: '1779324179o'
+2016-12-21 21:05:38,619 main.py save_orders_to_database 412 DEBUG - 周正
+2016-12-21 21:05:38,626 main.py save_orders_to_database 412 DEBUG - 万开鹏
+2016-12-21 21:05:38,636 main.py save_orders_to_database 412 DEBUG - 刘雨龙
+2016-12-21 21:05:38,643 main.py save_orders_to_database 412 DEBUG - 宋晶
+2016-12-21 21:05:38,651 main.py save_orders_to_database 435 ERROR - 解析失败订单: 20161011112358178269 孙强
+2016-12-21 21:05:38,651 main.py save_orders_to_database 436 ERROR - could not convert string to float: i6000
+2016-12-21 21:05:38,653 main.py save_orders_to_database 435 ERROR - 解析失败订单: 20161010121815177643 李汝琪
+2016-12-21 21:05:38,653 main.py save_orders_to_database 436 ERROR - invalid literal for float(): 100o1
+2016-12-21 21:05:38,655 main.py save_orders_to_database 412 DEBUG - 吴霜霜
+2016-12-21 21:05:38,665 main.py save_orders_to_database 412 DEBUG - 杨朋
+2016-12-21 21:05:38,675 main.py save_orders_to_database 412 DEBUG - 黄科军
+2016-12-21 21:05:38,682 main.py save_orders_to_database 412 DEBUG - 王柯中
+2016-12-21 21:05:38,693 main.py save_orders_to_database 412 DEBUG - 王祥林
+2016-12-21 21:05:38,700 main.py save_orders_to_database 412 DEBUG - 努尔兰
+2016-12-21 21:05:38,707 main.py save_orders_to_database 412 DEBUG - 唐登川
+2016-12-21 21:05:38,716 main.py save_orders_to_database 412 DEBUG - 蓝仕成
+2016-12-21 21:05:38,723 main.py save_orders_to_database 412 DEBUG - 刘璐
+2016-12-21 21:05:38,731 main.py save_orders_to_database 412 DEBUG - 彭字伟
+2016-12-21 21:05:38,739 main.py save_orders_to_database 412 DEBUG - 周勇军
+2016-12-21 21:05:38,746 main.py save_orders_to_database 412 DEBUG - 许晨
+2016-12-21 21:05:38,753 main.py save_orders_to_database 412 DEBUG - 汪洋
+2016-12-21 21:05:38,760 main.py save_orders_to_database 412 DEBUG - 仰旭
+2016-12-21 21:05:38,769 main.py save_orders_to_database 412 DEBUG - 黄多多
+2016-12-21 21:05:38,779 main.py save_orders_to_database 412 DEBUG - 王羽
+2016-12-21 21:05:38,787 main.py save_orders_to_database 412 DEBUG - 王震
+2016-12-21 21:05:38,795 main.py save_orders_to_database 412 DEBUG - 邓楠
+2016-12-21 21:05:38,802 main.py save_orders_to_database 412 DEBUG - 刘闯
+2016-12-21 21:05:38,809 main.py save_orders_to_database 412 DEBUG - 董久萌
+2016-12-21 21:05:38,817 main.py save_orders_to_database 412 DEBUG - 艾晟
+2016-12-21 21:05:38,824 main.py save_orders_to_database 412 DEBUG - 洪朗
+2016-12-21 21:05:38,832 main.py save_orders_to_database 412 DEBUG - 汤慧芳
+2016-12-21 21:05:38,839 main.py save_orders_to_database 412 DEBUG - 徐熊军
+2016-12-21 21:05:38,847 main.py save_orders_to_database 435 ERROR - 解析失败订单: 20160711131217142674 谢宇豪
+2016-12-21 21:05:38,847 main.py save_orders_to_database 436 ERROR - invalid literal for int() with base 10: 'a'
+2016-12-21 21:05:38,849 main.py save_orders_to_database 435 ERROR - 解析失败订单: 20160627143215139559 谭琦
+2016-12-21 21:05:38,849 main.py save_orders_to_database 436 ERROR - invalid literal for int() with base 10: '13871041725o'
+2016-12-21 21:05:38,851 main.py save_orders_to_database 412 DEBUG - 马建英
+2016-12-21 21:06:07,639 main.py orderlist 103 DEBUG - Got session admin_20e5ab8f-c77e-11e6-8b00-000000000030
+2016-12-21 21:06:07,640 userinfo.py validate 64 DEBUG - session check valid
+2016-12-21 21:06:07,640 userinfo.py __refresh 54 DEBUG - refresh session expire time
+2016-12-21 21:06:07,640 main.py orderlist 112 DEBUG - Got conditon : 0
+2016-12-21 21:06:07,660 main.py no_condition_data 242 DEBUG - 刘一鸣
+2016-12-21 21:06:07,663 main.py no_condition_data 242 DEBUG - 郑吉添
+2016-12-21 21:06:07,667 main.py no_condition_data 242 DEBUG - 郑吉添
+2016-12-21 21:06:07,671 main.py no_condition_data 242 DEBUG - 袁鑫
+2016-12-21 21:06:07,675 main.py no_condition_data 242 DEBUG - 许印亮
+2016-12-21 21:06:07,678 main.py no_condition_data 242 DEBUG - 刘永
+2016-12-21 21:06:07,681 main.py no_condition_data 242 DEBUG - 木尼热艾克木
+2016-12-21 21:06:07,684 main.py no_condition_data 242 DEBUG - 周正
+2016-12-21 21:06:07,686 main.py no_condition_data 242 DEBUG - 万开鹏
+2016-12-21 21:06:07,689 main.py no_condition_data 242 DEBUG - 刘雨龙
+2016-12-21 21:06:07,826 main.py server_www 46 DEBUG - favicon.ico
+2016-12-21 21:12:43,605 main.py <module> 27 DEBUG - dunning server start
+2016-12-21 21:13:23,243 main.py server_www 46 DEBUG - login
+2016-12-21 21:13:23,254 main.py server_www 46 DEBUG - loading.gif
+2016-12-21 21:13:23,257 main.py server_www 46 DEBUG - jquery-1.11.1.min.js
+2016-12-21 21:13:23,299 main.py server_www 46 DEBUG - bg21.jpg
+2016-12-21 21:13:23,383 main.py server_www 46 DEBUG - favicon.ico
+2016-12-21 21:13:31,027 main.py checkuser 85 DEBUG - check the user
+2016-12-21 21:13:56,462 main.py checkuser 85 DEBUG - check the user
+2016-12-21 21:13:57,483 main.py orderlist 103 DEBUG - Got session admin_548d5a30-c77f-11e6-a1ff-000000000030
+2016-12-21 21:13:57,484 userinfo.py validate 64 DEBUG - session check valid
+2016-12-21 21:13:57,484 userinfo.py __refresh 54 DEBUG - refresh session expire time
+2016-12-21 21:13:57,484 main.py orderlist 112 DEBUG - Got conditon : 0
+2016-12-21 21:13:57,497 main.py no_condition_data 242 DEBUG - 刘一鸣
+2016-12-21 21:13:57,501 main.py no_condition_data 242 DEBUG - 郑吉添
+2016-12-21 21:13:57,504 main.py no_condition_data 242 DEBUG - 郑吉添
+2016-12-21 21:13:57,507 main.py no_condition_data 242 DEBUG - 袁鑫
+2016-12-21 21:13:57,510 main.py no_condition_data 242 DEBUG - 许印亮
+2016-12-21 21:13:57,513 main.py no_condition_data 242 DEBUG - 刘永
+2016-12-21 21:13:57,516 main.py no_condition_data 242 DEBUG - 木尼热艾克木
+2016-12-21 21:13:57,519 main.py no_condition_data 242 DEBUG - 周正
+2016-12-21 21:13:57,521 main.py no_condition_data 242 DEBUG - 万开鹏
+2016-12-21 21:13:57,524 main.py no_condition_data 242 DEBUG - 刘雨龙
+2016-12-21 21:13:57,539 main.py server_www 46 DEBUG - fenye.js
+2016-12-21 21:13:57,544 main.py server_www 46 DEBUG - orderlist.js
+2016-12-21 21:13:57,546 main.py server_www 46 DEBUG - WdatePicker.js
+2016-12-21 21:13:57,548 main.py server_www 46 DEBUG - spark-md5.min.js
+2016-12-21 21:13:57,572 main.py server_www 46 DEBUG - fenye.css
+2016-12-21 21:13:57,574 main.py server_www 46 DEBUG - orderlist.css
+2016-12-21 21:13:57,576 main.py server_www 46 DEBUG - icon_wp.png
+2016-12-21 21:13:57,577 main.py skin 74 DEBUG - WdatePicker.css
+2016-12-21 21:13:57,579 main.py server_www 46 DEBUG - icon_tuichu.png
+2016-12-21 21:13:57,590 main.py skin 74 DEBUG - datePicker.gif
+2016-12-21 21:13:57,592 main.py server_www 46 DEBUG - icon-zhanghushezhi.png
+2016-12-21 21:13:57,726 main.py server_www 46 DEBUG - favicon.ico
+2016-12-21 21:14:37,455 main.py <module> 27 DEBUG - dunning server start
+2016-12-21 21:14:42,072 main.py orderlist 103 DEBUG - Got session admin_548d5a30-c77f-11e6-a1ff-000000000030
+2016-12-21 21:14:42,072 userinfo.py get_by_session 99 INFO - user_list do not have the key:admin
+2016-12-21 21:14:42,072 main.py orderlist 107 INFO - session check invalid, redirect to login
+2016-12-21 21:14:42,075 main.py server_www 46 DEBUG - login
+2016-12-21 21:14:42,134 main.py server_www 46 DEBUG - favicon.ico
+2016-12-21 21:14:49,278 main.py checkuser 85 DEBUG - check the user
+2016-12-21 21:14:50,302 main.py orderlist 103 DEBUG - Got session admin_74095a45-c77f-11e6-b240-000000000030
+2016-12-21 21:14:50,303 userinfo.py validate 64 DEBUG - session check valid
+2016-12-21 21:14:50,303 userinfo.py __refresh 54 DEBUG - refresh session expire time
+2016-12-21 21:14:50,303 main.py orderlist 112 DEBUG - Got conditon : 0
+2016-12-21 21:14:50,319 main.py no_condition_data 242 DEBUG - 刘一鸣
+2016-12-21 21:14:50,322 main.py no_condition_data 242 DEBUG - 郑吉添
+2016-12-21 21:14:50,326 main.py no_condition_data 242 DEBUG - 郑吉添
+2016-12-21 21:14:50,329 main.py no_condition_data 242 DEBUG - 袁鑫
+2016-12-21 21:14:50,332 main.py no_condition_data 242 DEBUG - 许印亮
+2016-12-21 21:14:50,337 main.py no_condition_data 242 DEBUG - 刘永
+2016-12-21 21:14:50,340 main.py no_condition_data 242 DEBUG - 木尼热艾克木
+2016-12-21 21:14:50,343 main.py no_condition_data 242 DEBUG - 周正
+2016-12-21 21:14:50,346 main.py no_condition_data 242 DEBUG - 万开鹏
+2016-12-21 21:14:50,349 main.py no_condition_data 242 DEBUG - 刘雨龙
+2016-12-21 21:14:50,417 main.py server_www 46 DEBUG - favicon.ico
+2016-12-21 21:14:55,957 main.py orderdetail 137 DEBUG - Got session admin_74095a45-c77f-11e6-b240-000000000030
+2016-12-21 21:14:55,957 userinfo.py validate 64 DEBUG - session check valid
+2016-12-21 21:14:55,957 userinfo.py __refresh 54 DEBUG - refresh session expire time
+2016-12-21 21:14:56,001 main.py server_www 46 DEBUG - orderDetail.css
+2016-12-21 21:14:56,006 main.py server_www 46 DEBUG - orderDetail.js
+2016-12-21 21:14:56,026 main.py server_www 46 DEBUG - Design.png
+2016-12-21 21:14:56,028 main.py server_www 46 DEBUG - icon_fenxiang.png
+2016-12-21 21:14:56,109 main.py server_www 46 DEBUG - favicon.ico
+2016-12-21 21:15:40,277 main.py <module> 27 DEBUG - dunning server start
+2016-12-21 21:15:47,760 main.py orderdetail 137 DEBUG - Got session admin_74095a45-c77f-11e6-b240-000000000030
+2016-12-21 21:15:47,760 userinfo.py get_by_session 99 INFO - user_list do not have the key:admin
+2016-12-21 21:15:47,760 main.py orderdetail 140 INFO - session check invalid, redirect to login
+2016-12-21 21:15:47,763 main.py server_www 46 DEBUG - login
+2016-12-21 21:15:47,845 main.py server_www 46 DEBUG - favicon.ico
+2016-12-21 21:15:54,619 main.py checkuser 85 DEBUG - check the user
+2016-12-21 21:16:01,845 main.py checkuser 85 DEBUG - check the user

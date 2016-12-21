@@ -148,7 +148,13 @@
 							//location.href='http://127.0.0.1:8080/orderdetail/1?;session=' + result['session']
 							location.href='/orderlist?pageIndex=1&condition=0&session=' + result['session']
 						}
-					}
+					},
+				error:function(){
+					alert('登录失败，请重新登录')
+					$('.submitcss').show()
+					$('.loadding').hide()
+
+				}
 			});
 		}
 		else{
