@@ -283,9 +283,9 @@ class OrderTable:
         try:
             query = Orders.update(disp=dict['dispid'], source=dict['source'],
                         account_day = dict['accountday'], product = dict['product'],
-                        amount = dict['amount'], month_pay = dict['monthpay'],
+                        amount = float(dict['amount']), month_pay = float(dict['monthpay']),
                         periods = dict['periods'], paid_periods = dict['paidperiods'],
-                        received_amount = dict['recvamount'], order_date = dict['orderdate'],
+                        received_amount = float(dict['recvamount']), order_date = dict['orderdate'],
                         takeorder_data = dict['takeorderdate'], modify_time=datetime.datetime.now(),
                         status = dict['status']).where(Orders.id == id).execute()
             return 'success'
@@ -299,9 +299,9 @@ class OrderTable:
         try:
             Orders.insert(disp=dict['dispid'], source=dict['source'],lender = dict['lenderid'],
                         account_day = dict['accountday'], product = dict['product'],
-                        amount = dict['amount'], month_pay = dict['monthpay'],
+                        amount = float(dict['amount']), month_pay = float(dict['monthpay']),
                         periods = dict['periods'], paid_periods = dict['paidperiods'],
-                        received_amount = dict['recvamount'], order_date = dict['orderdate'],
+                        received_amount = float(dict['recvamount']), order_date = dict['orderdate'],
                         takeorder_data = dict['takeorderdate'], status = dict['status'], 
                         create_time=datetime.datetime.now(),modify_time=datetime.datetime.now(),is_del = 0).execute()
             query = Orders.select().where((Orders.disp == dict['dispid']) & (Orders.is_del == 0))

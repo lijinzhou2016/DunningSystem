@@ -166,14 +166,24 @@ $(document).ready(function () {
             id = ajax_post(send_url, send_data, false);
             if (id == "0") {
                 alert("新增贷款人失败");
+                return false
             }
             else {
                 alert("新增贷款人成功");
                 update_lender_basic_id(id);
+                return true
             }
         }
         else {
-            ajax_post(send_url, send_data, false);
+            id = ajax_post(send_url, send_data, false);
+            if (id == "0") {
+                alert("更新贷款人信息失败");
+                return false
+            }
+            else {
+                alert("更新贷款人信息成功");
+                return true
+            }
         }
 
     }
@@ -252,6 +262,7 @@ $(document).ready(function () {
             id = ajax_post(send_url, send_data, false);
             if (id == "0") {
                 alert("新增订单失败");
+                return false
             }
             else {
                 alert("新增订单成功");
@@ -261,14 +272,26 @@ $(document).ready(function () {
                 $(parentclass).find(".orderStatus-title").children("span").text(orderStatusDict[status]);
                 //更新逾期金额
                 total_debt(parentclass);
+                return true
             }
         }
         else {
-            ajax_post(send_url, send_data, false);
+            id = ajax_post(send_url, send_data, false);
+            if (id == "0") {
+                alert("更新订单失败");
+                return false
+            }
+            else {
+                alert("更新订单成功");
+                //更新title的标签
+                $(parentclass).find(".orderStatus-title").children("span").text(orderStatusDict[status]);
+                //更新逾期金额
+                total_debt(parentclass);
+                return true
         }
 
 
-    }
+    }}
 
     //保存页面中的订单的联系人信息
     function store_lender_relatives(parentclass) {
@@ -313,7 +336,16 @@ $(document).ready(function () {
             alert("必须先新增一个订单");
         }
         else {
-            ajax_post(send_url, send_data, false);
+            id = ajax_post(send_url, send_data, false);
+            if(id == "0")
+            {
+                alert("更新订单联系人信息失败");
+                return false
+            }
+            else{
+                alert("更新订单联系人信息成功");
+                return true
+            }
         }
     }
 
@@ -376,10 +408,11 @@ $(document).ready(function () {
         var phone = $(".tel").val();
         var flag = phoneVal(phone) && IDnumber();
         if (flag == true) {
-            btn_save_cancel(".btn-cancel", ".orderDetail-content-jichuxinxi-right");
 
             //保存信息到数据库
-            update_lender_basic();
+            if(update_lender_basic()){
+                btn_save_cancel(".btn-cancel", ".orderDetail-content-jichuxinxi-right");
+            }
         }
 
     })
@@ -438,13 +471,13 @@ $(document).ready(function () {
             return
         }
 
-        btn_save_cancel($(this), $(this).parent().parent().find(".orderStatus-content-right"))
-        //设置input下拉框不可编辑
-        $("select[name='status_select']").attr("disabled", "disabled");
-        $("select[name='accountday']").attr("disabled", "disabled");
         //保存信息到数据库
-        update_order_basic($(this).parent().parent().parent());
-
+        if(update_order_basic($(this).parent().parent().parent())){
+            btn_save_cancel($(this), $(this).parent().parent().find(".orderStatus-content-right"))
+            //设置input下拉框不可编辑
+            $("select[name='status_select']").attr("disabled", "disabled");
+            $("select[name='accountday']").attr("disabled", "disabled");
+        }
     })
 
     //联系人
@@ -489,16 +522,16 @@ $(document).ready(function () {
     })
     //联系人保存按钮
     $(".lianxirenbtn-save").click(function () {
-        btn_save_cancel($(this), $(this).parent().parent().find(".parentsname"))
-        btn_save_cancel($(this), $(this).parent().parent().find(".parentsphone"))
-        btn_save_cancel($(this), $(this).parent().parent().find(".sheyouname"))
-        btn_save_cancel($(this), $(this).parent().parent().find(".sheyouphone"))
-        btn_save_cancel($(this), $(this).parent().parent().find(".tongxuename"))
-        btn_save_cancel($(this), $(this).parent().parent().find(".tongxuephone"))
-        $(".caozuo-title-edit").show()
-
         //保存信息到数据库
-        update_order_relatives($(this).parent().parent().parent());
+        if(update_order_relatives($(this).parent().parent().parent())){
+            btn_save_cancel($(this), $(this).parent().parent().find(".parentsname"))
+            btn_save_cancel($(this), $(this).parent().parent().find(".parentsphone"))
+            btn_save_cancel($(this), $(this).parent().parent().find(".sheyouname"))
+            btn_save_cancel($(this), $(this).parent().parent().find(".sheyouphone"))
+            btn_save_cancel($(this), $(this).parent().parent().find(".tongxuename"))
+            btn_save_cancel($(this), $(this).parent().parent().find(".tongxuephone"))
+            $(".caozuo-title-edit").show()
+        }
     })
 
     //dingdanxinxi
@@ -725,7 +758,7 @@ $(document).ready(function () {
                 }
             },
             error: function (result) {
-                alert(result)
+                alert('与后台通信失败')
             }
         });
 
@@ -757,10 +790,10 @@ $(document).ready(function () {
         var late_fee;
         if (over_day > 0) {
             if (over_day > 90) {
-                late_fee = (parseInt(month_pay) * 0.26 / 30.0) * 90 + (parseInt(month_pay) * 0.50 / 30.0) * (over_day - 90)
+                late_fee = (parseFloat(month_pay) * 0.26 / 30.0) * 90 + (parseFloat(month_pay) * 0.50 / 30.0) * (over_day - 90)
             }
             else {
-                late_fee = (parseInt(month_pay) * 0.26 / 30.0) * over_day
+                late_fee = (parseFloat(month_pay) * 0.26 / 30.0) * over_day
             }
         }
         else {
@@ -768,7 +801,7 @@ $(document).ready(function () {
         }
 
         //总欠款                   
-        debt = parseInt(month_pay) * (parseInt(periods) - parseInt(paid_periods)) + late_fee
+        debt = parseFloat(month_pay) * (parseInt(periods) - parseFloat(paid_periods)) + late_fee
 
         //设置相关标签
         $(basicObject).find("input[name='latefees']").val(late_fee.toFixed(2))

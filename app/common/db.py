@@ -39,7 +39,7 @@ class Lender(BaseModel):
 
 class Orders(BaseModel):
     account_day = CharField(null=True)
-    amount = IntegerField(null=True)
+    amount = FloatField(null=True)
     call_details = CharField(null=True)
     classmate = CharField(null=True)
     classmate_call = CharField(null=True)
@@ -50,7 +50,7 @@ class Orders(BaseModel):
     lender = ForeignKeyField(db_column='lender_id', rel_model=Lender, to_field='id')
     lender_pic = CharField(null=True)
     modify_time = DateTimeField(null=True)
-    month_pay = CharField(null=True)
+    month_pay = FloatField(null=True)
     order_date = DateField(null=True)
     paid_periods = IntegerField(null=True)
     parent = CharField(null=True)
@@ -58,7 +58,7 @@ class Orders(BaseModel):
     payment_day = CharField(null=True)
     periods = IntegerField(null=True)
     product = CharField(null=True)
-    received_amount = IntegerField(null=True)
+    received_amount = FloatField(null=True)
     roommate = CharField(null=True)
     roommate_call = CharField(null=True)
     source = CharField(null=True)

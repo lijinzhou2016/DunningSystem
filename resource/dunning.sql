@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2016-12-14 22:35:18
+Date: 2016-12-21 12:41:07
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,7 +27,7 @@ CREATE TABLE `admin` (
   `is_admin` tinyint(4) NOT NULL DEFAULT '0' COMMENT '是否管理员',
   `enable` tinyint(4) DEFAULT NULL COMMENT '是否禁用',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for files
@@ -42,7 +42,7 @@ CREATE TABLE `files` (
   PRIMARY KEY (`id`),
   KEY `file_order_id` (`order_id`),
   CONSTRAINT `file_order_id` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for lender
@@ -60,7 +60,7 @@ CREATE TABLE `lender` (
   `is_del` tinyint(4) NOT NULL COMMENT '删除标志位',
   PRIMARY KEY (`id`,`idcard_id`),
   KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=117 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for operation
@@ -82,7 +82,7 @@ CREATE TABLE `operation` (
   KEY `operation_lender_id_fkey` (`lender_id`),
   CONSTRAINT `operation_lender_id_fkey` FOREIGN KEY (`lender_id`) REFERENCES `lender` (`id`),
   CONSTRAINT `operation_user_id_fkey` FOREIGN KEY (`admin_id`) REFERENCES `admin` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for orders
@@ -95,11 +95,11 @@ CREATE TABLE `orders` (
   `lender_id` int(11) NOT NULL COMMENT '贷款人id',
   `account_day` varchar(255) DEFAULT '' COMMENT '账期？？ 啥意思',
   `product` varchar(255) DEFAULT '' COMMENT '产品名称',
-  `amount` int(11) DEFAULT '0' COMMENT '分期金额（总额）',
-  `month_pay` varchar(255) DEFAULT '' COMMENT '每期金额，月供',
+  `amount` double(11,2) DEFAULT '0.00' COMMENT '分期金额（总额）',
+  `month_pay` double(11,2) DEFAULT '0.00' COMMENT '每期金额，月供',
   `periods` int(11) DEFAULT '0' COMMENT '期数--通过总额和期数计算月供',
   `paid_periods` int(255) DEFAULT '0' COMMENT '已付期数',
-  `received_amount` int(255) DEFAULT '0' COMMENT '已收金额',
+  `received_amount` double(11,2) DEFAULT '0.00' COMMENT '已收金额',
   `order_date` date DEFAULT NULL COMMENT '订单日期',
   `takeorder_data` date DEFAULT NULL COMMENT '接单日期',
   `call_details` varchar(255) DEFAULT '' COMMENT '通话详单文件存放路径',
@@ -119,7 +119,7 @@ CREATE TABLE `orders` (
   PRIMARY KEY (`id`),
   KEY `orders_lender_id_fkey` (`lender_id`),
   CONSTRAINT `orders_lender_id_fkey` FOREIGN KEY (`lender_id`) REFERENCES `lender` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=105 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for system
