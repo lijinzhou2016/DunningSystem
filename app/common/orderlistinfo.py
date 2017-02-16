@@ -360,23 +360,23 @@ class OrderList:
                     order_insert_dict['payment_day'] = one_data[12]
                 else:
                     exception_disp += ('首次还款日为空： '+str(one_data[0])+' '+one_data[1]+'\n')
-                    continue
+                    # continue
                 if one_data[13]: # 月供
                     order_insert_dict['month_pay'] = float(one_data[13])
                 else:
                     exception_disp += ('月供为空： '+str(one_data[0])+' '+one_data[1]+'\n')
-                    continue
+                    # continue
                 if one_data[14]: # 期数
                     order_insert_dict['periods'] = int(one_data[14])
                 else:
                     exception_disp += ('期数为空： '+str(one_data[0])+' '+one_data[1]+'\n')
-                    continue
+                    # continue
                
                 if one_data[15] or int(one_data[15])==0: # 已付期数
                     order_insert_dict['paid_periods'] = int(one_data[15])
                 else:
                     exception_disp += ('已还分期数为空： '+str(one_data[0])+' '+one_data[1]+'\n')
-                    continue
+                    # continue
                 if one_data[16]: # 订单日期
                     if not p.match(one_data[16]):
                         exception_disp += ('订单日格式有误 '+str(one_data[0])+' '+one_data[1]+'\n')
@@ -391,7 +391,7 @@ class OrderList:
                     order_insert_dict['received_amount'] = float(one_data[18])
                 else:
                     exception_disp += ('已还金额为空： '+str(one_data[0])+' '+one_data[1]+'\n')
-                    continue
+                    # continue
                 if one_data[19]: # 父母
                     order_insert_dict['parent'] = one_data[19]
                 if one_data[20]: # 父母电话
@@ -412,6 +412,9 @@ class OrderList:
                 logger.debug(one_data[1])
                 if one_data[1]: # 姓名
                     lender_insert_dict['name'] = str(one_data[1])
+                else:
+                    exception_disp += ('姓名为空: '+str(one_data[0])+'\n')
+                    continue
                 if one_data[2]: # 电话
                     lender_insert_dict['tel'] = str(int(one_data[2]))
                 if one_data[3]: # 身份证
