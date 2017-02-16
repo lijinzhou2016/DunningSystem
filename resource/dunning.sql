@@ -52,7 +52,7 @@ CREATE TABLE `lender` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `idcard_id` varchar(255) NOT NULL DEFAULT '' COMMENT '身份证号',
   `name` varchar(255) NOT NULL COMMENT '姓名',
-  `tel` varchar(255) NOT NULL COMMENT '电话',
+  `tel` varchar(255) DEFAULT NULL COMMENT '电话',
   `university` varchar(255) DEFAULT NULL COMMENT '学校',
   `univers_area` varchar(255) DEFAULT NULL COMMENT '学校区域',
   `family_addr` varchar(255) DEFAULT NULL COMMENT '家庭住址',
