@@ -43,6 +43,7 @@ orderStatus = {0:'已结清', 1:'联系本人', 2:'联系亲属',3:'联系同学
 orderStatusKey = {u'已结清':0, u'联系本人':1, u'联系亲属':2,u'联系同学':3,
                 u'失联':4,u'待外访':5,u'外访中':6,u'承诺还款':7,u'部分还款':8}
 
+# 上传的Excel表格模板字段
 order_file_title=[u'订单编号',u'姓名',u'电话',u'身份证',u'学校区域',u'学校',u'家庭区域',u'家庭住址',u'订单状态',
                     u'账期',u'产品名称',u'分期金额',u'首次还款日',u'月供',u'期数',u'已还期数',
                     u'订单日期',u'接单日期',u'已还金额',u'父母',u'父母电话',u'同寝',u'同寝电话',u'同学',u'同学电话']
@@ -71,7 +72,7 @@ class OrderList:
         self.orders_return_info = {'userinfo':{},'fenyeinfo':{}, 'orders_list':[], 'condition':{}}   # 返回字典
         self.orders_one_info={'name':'','detailurl':'','ordernumber':'','phone':'','qiankuan':'','orderdata':'','acquiringdata':'','school':'','state':''}
         self.orders_return_info['userinfo']=self.userinfo
-        if self.condition == 0:
+        if self.condition == 0: # 无搜索条件
             self.orders_count = Orders.select().where(Orders.is_del == 0).count()   # 订单总条数
             self.total_pages = 1 if self.orders_count==0 else int(math.ceil(self.orders_count/10.0))   # 分页数
             self.orders_return_info['condition'] = search_item
@@ -92,7 +93,7 @@ class OrderList:
                     self.orders_list_info = query[(int(pageindex)-1)*10:int(pageindex)*10]
                 else:
                     self.orders_list_info = query[(int(pageindex)-1)*10:]
-        else:
+        else: # condition == 1：有搜索条件的情况
             self.orders_count = 0
             self.total_pages = 0
             self.orders_list_info =[]
@@ -149,7 +150,8 @@ class OrderList:
             )
 
             # 按条件查询到的数据，取出id添加到lender_id
-            if len(lender_query)>=1:  
+            if len(lender_query)>=1: 
+                logger.debug("find data in lender") 
                 for lender in lender_query:
                     if lender.is_del == 0:
                         lender_id.append(lender.id)
@@ -242,11 +244,15 @@ class OrderList:
             logger.debug(lender_query.name)
             # 计算总欠款
             def total_debt():
-                month_pay = float(order_info_tmp.month_pay) # 月供
-                periods = int(order_info_tmp.periods) # 期数
-                paid_periods = int(order_info_tmp.paid_periods) # 已还期数
-                amount = float(order_info_tmp.amount) # 分期金额
-                payment_day = order_info_tmp.payment_day # 首次还款日
+                month_pay = float(order_info_tmp.month_pay) # 月供 0.00
+                periods = int(order_info_tmp.periods) # 期数  0
+                paid_periods = int(order_info_tmp.paid_periods) # 已还期数  0
+                amount = float(order_info_tmp.amount) # 分期金额  0.00
+                payment_day = order_info_tmp.payment_day # 首次还款日   ''
+
+                # 缺少字段，无法计算
+                if (month_pay == 0) or (periods == 0) or (amount == 0) or (payment_day == ''):
+                    return 0
 
                 payment_day_list = payment_day.split('-') # 格式如： ['2016', '12', '10']
                 if int(payment_day_list[1]) + int(paid_periods) > 12:
@@ -281,10 +287,10 @@ class OrderList:
                 'ordernumber' : order_info_tmp.disp,
                 'phone' : lender_query.tel,
                 'qiankuan' : total_debt(), # 需要计算
-                'orderdata' : order_info_tmp.order_date,
-                'acquiringdata' : order_info_tmp.takeorder_data,
-                'school' : lender_query.university,
-                'state' : orderStatus[order_info_tmp.status]
+                'orderdata' : order_info_tmp.order_date if order_info_tmp.order_date else "NULL",
+                'acquiringdata' : order_info_tmp.takeorder_data if order_info_tmp.takeorder_data  else "NULL",
+                'school' : lender_query.university if lender_query.university  else "NULL",
+                'state' : orderStatus[order_info_tmp.status] if order_info_tmp.status else "NULL"
             })
 
         # 不足10条数据，补空，满足前端显示一致
@@ -323,8 +329,10 @@ class OrderList:
 
         for one_data in total_datas:
             # logger.debug(one_data)
-            pattern =r'^\d{4}-\d{1,2}-\d{1,2}$'
+            pattern =r'^\d{4}-\d{1,2}-\d{1,2}$' #匹配日期格式例如：2017-01-11
             p = re.compile(pattern)
+            order_insert_dict = {'is_del':0, 'source':wherefrom} # 插入order表的一条记录字典
+            lender_insert_dict = {'is_del':0} # 插入lender表中的一条记录字典
             try:
                 if one_data[0]: # 订单编号 (必要唯一字段)
                     if Orders.select().where((Orders.disp == one_data[0]) & (Orders.is_del == 0)): #重复订单
@@ -339,25 +347,26 @@ class OrderList:
                         order_insert_dict['status'] = orderStatusKey[one_data[8]]
                     else:
                         exception_disp += ('订单状态格式错误 '+str(one_data[0])+' '+one_data[1]+' '+one_data[8]+'\n')
-                        continue
+                        # continue
                 if one_data[9]: # 账期
                     if one_data[9] in zhangaqi_keys:
                         order_insert_dict['account_day'] = str(one_data[9])
                     else:
                         exception_disp += ('账期格式错误 '+str(one_data[0])+' '+one_data[1]+' '+one_data[9]+'\n')
-                        continue
+                        # continue
                 if one_data[10]: # 产品名称
                     order_insert_dict['product'] = str(one_data[10])
                 if one_data[11]: # 分期金额
                     order_insert_dict['amount'] = float(one_data[11])
                 else:
                     exception_disp += ('分期金额为空： '+str(one_data[0])+' '+one_data[1]+'\n')
-                    continue
+                    # continue
                 if one_data[12]: # 首次还款日
                     if not p.match(one_data[12]):
                         exception_disp += ('首次还款日格式有误 '+str(one_data[0])+' '+one_data[1]+'\n')
-                        continue
-                    order_insert_dict['payment_day'] = one_data[12]
+                        # continue
+                    else:
+                        order_insert_dict['payment_day'] = one_data[12]
                 else:
                     exception_disp += ('首次还款日为空： '+str(one_data[0])+' '+one_data[1]+'\n')
                     # continue
@@ -380,13 +389,15 @@ class OrderList:
                 if one_data[16]: # 订单日期
                     if not p.match(one_data[16]):
                         exception_disp += ('订单日格式有误 '+str(one_data[0])+' '+one_data[1]+'\n')
-                        continue
-                    order_insert_dict['order_date'] = one_data[16]
+                        # continue
+                    else:
+                        order_insert_dict['order_date'] = one_data[16]
                 if one_data[17]: # 接单日期
                     if not p.match(one_data[17]):
                         exception_disp += ('接单日格式有误 '+str(one_data[0])+' '+one_data[1]+'\n')
-                        continue
-                    order_insert_dict['takeorder_data'] = one_data[17]
+                        # continue
+                    else:
+                        order_insert_dict['takeorder_data'] = one_data[17]
                 if one_data[18]: # 已还金额
                     order_insert_dict['received_amount'] = float(one_data[18])
                 else:
@@ -417,6 +428,8 @@ class OrderList:
                     continue
                 if one_data[2]: # 电话
                     lender_insert_dict['tel'] = str(int(one_data[2]))
+                else:
+                    lender_insert_dict['tel'] = "0"
                 if one_data[3]: # 身份证
                     if Lender.select().where((Lender.idcard == one_data[3]) & (Lender.is_del == 0)): # 身份证重复
                         exception_disp += ('身份证重复: '+str(one_data[0])+' '+one_data[1]+'\n')
@@ -428,12 +441,20 @@ class OrderList:
                     
                 if one_data[4]: # 学院区域
                     lender_insert_dict['univers_area'] = one_data[4]
+                else:
+                    ender_insert_dict['univers_area'] = "NULL"
                 if one_data[5]: # 学校
                     lender_insert_dict['university'] = one_data[5]
+                else:
+                    lender_insert_dict['university'] = "NULL"
                 if one_data[6]: # 家庭区域
                     lender_insert_dict['family_area'] = one_data[6]
+                else:
+                    lender_insert_dict['family_area'] = "NULL"
                 if one_data[7]: # 家庭住址
                     lender_insert_dict['family_addr'] = one_data[7]
+                else:
+                    lender_insert_dict['family_addr'] = "NULL"
             except BaseException,e:
                 logger.error('解析失败订单: '+ str(one_data[0])+' '+one_data[1])
                 logger.error(str(e))
@@ -451,7 +472,7 @@ class OrderList:
                 exception_disp += ('插入数据库失败订单号: '+ str(one_data[0])+'\n')
 
         if len(exception_disp)>0:
-            exception_disp += '成功插入 {0}/{1} 条数据'.format(success_insert_count,nrows-1)
+            exception_disp = '成功插入 {0}/{1} 条数据\n\n'.format(success_insert_count,nrows-1) + exception_disp
             return exception_disp
         else:
             return '成功插入 {0}/{1} 条数据'.format(success_insert_count,nrows-1)
