@@ -277,17 +277,31 @@ class OrderTable:
     def __init__(self, id = 0):
         self.id = id
     
+    #校验处理传入为空或者None的数据
+    @classmethod
+    def handle_record(self, record):
+        record['amount'] = float(record['amount']) if record['amount'] != "" else None
+        record['monthpay'] = float(record['monthpay']) if record['monthpay'] != "" else None
+        record['periods'] = float(record['periods']) if record['periods'] != "" else None
+        record['paidperiods'] = float(record['paidperiods']) if record['paidperiods'] != "" else None
+        record['recvamount'] = float(record['recvamount']) if record['recvamount'] != "" else None
+        record['orderdate'] = record['orderdate'] if record['orderdate'] != "" else None
+        record['takeorderdate'] = record['takeorderdate'] if record['takeorderdate'] != "" else None
+        record['status'] = int(record['status']) if record['status'] != "" else None
+        return record
+
     #传入字典更新数据库
     @classmethod
-    def updatebasic(self, id, dict):
+    def updatebasic(self, id, record):
         try:
-            query = Orders.update(disp=dict['dispid'], source=dict['source'],
-                        account_day = dict['accountday'], product = dict['product'],
-                        amount = float(dict['amount']), month_pay = float(dict['monthpay']),
-                        periods = dict['periods'], paid_periods = dict['paidperiods'],
-                        received_amount = float(dict['recvamount']), order_date = dict['orderdate'],
-                        takeorder_data = dict['takeorderdate'], modify_time=datetime.datetime.now(),
-                        status = dict['status']).where(Orders.id == id).execute()
+            record=OrderTable.handle_record(record)
+            query = Orders.update(disp=record['dispid'], source=record['source'],
+                        account_day = record['accountday'], product = record['product'],
+                        amount = record['amount'], month_pay = record['monthpay'],
+                        periods = record['periods'], paid_periods = record['paidperiods'],
+                        received_amount = record['recvamount'], order_date = record['orderdate'],
+                        takeorder_data = record['takeorderdate'], modify_time=datetime.datetime.now(),
+                        status = record['status']).where(Orders.id == id).execute()
             return 'success'
         except BaseException,e:
             logger.error(e)
@@ -295,16 +309,17 @@ class OrderTable:
     
     #传入字典插入数据
     @classmethod
-    def insertbasic(self, dict):
+    def insertbasic(self, record):
         try:
-            Orders.insert(disp=dict['dispid'], source=dict['source'],lender = dict['lenderid'],
-                        account_day = dict['accountday'], product = dict['product'],
-                        amount = float(dict['amount']), month_pay = float(dict['monthpay']),
-                        periods = dict['periods'], paid_periods = dict['paidperiods'],
-                        received_amount = float(dict['recvamount']), order_date = dict['orderdate'],
-                        takeorder_data = dict['takeorderdate'], status = dict['status'], 
+            record=OrderTable.handle_record(record)
+            query=Orders.insert(disp=record['dispid'], source=record['source'],lender = record['lenderid'],
+                        account_day = record['accountday'], product = record['product'],
+                        amount = record['amount'], month_pay = record['monthpay'],
+                        periods = record['periods'], paid_periods = record['paidperiods'],
+                        received_amount = record['recvamount'], order_date = record['orderdate'],
+                        takeorder_data = record['takeorderdate'], status = record['status'], 
                         create_time=datetime.datetime.now(),modify_time=datetime.datetime.now(),is_del = 0).execute()
-            query = Orders.select().where((Orders.disp == dict['dispid']) & (Orders.is_del == 0))
+            query = Orders.select().where((Orders.disp == record['dispid']) & (Orders.is_del == 0))
             id = query[0].id
             return ('success', id)
         except BaseException,e:
