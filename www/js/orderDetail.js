@@ -450,6 +450,7 @@ $(document).ready(function () {
         var monthpay = $(".monthpay").val()
         var alreadyamount = $(".alreadyamount").val()
 
+
         if (!phoneValnum(periods)){
             alert ('请检查期数的输入');
             return;
@@ -458,18 +459,19 @@ $(document).ready(function () {
             alert ('请检查已还期数的输入')
             return
         }
-        if (!check_float(fenqijine)){
+        if (!check_float_or_empty(fenqijine)){
             alert ('请检查分期金额的输入')
             return
         }
-        if (!check_float(monthpay)){
+        if (!check_float_or_empty(monthpay)){
             alert ('请检查月供的输入')
             return
         }
-        if (!check_float(alreadyamount)){
+        if (!check_float_or_empty(alreadyamount)){
             alert('请检查已收金额的输入')
             return
         }
+        
 
         //保存信息到数据库
         if(update_order_basic($(this).parent().parent().parent())){
@@ -858,13 +860,13 @@ $(document).ready(function () {
 //验证手机号
 function phoneVal(phone) {
     if (phone == "") {
-        alert("手机号不能为空！");
-        return false;
+        //alert("手机号不能为空！");
+        return true;
     } else {
         if (phone && /^1[34578]\d{9}$/.test(phone)) {
             return true;
         } else {
-            alert("请检查手机号的输入");
+            alert("请检查手机号的输入格式");
             return false;
         }
     }
@@ -907,6 +909,16 @@ function phoneValnum(number) {
 //验证小数
 function check_float(number) {
     if (number && /^\d+[\.]?\d*$/.test(number)) {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+
+//验证小数同时允许为空
+function check_float_or_empty(number) {
+    if (number=="" || /^\d+[\.]?\d*$/.test(number)) {
         return true;
     } else {
         return false;
