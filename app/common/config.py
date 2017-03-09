@@ -10,6 +10,7 @@
 # Description   : support base conf
 #*****************************************************************************
 import sys,os  
+import ConfigParser
 
 
 # 当前绝对路径
@@ -27,10 +28,32 @@ def common_path():
 execfile(common_path()+os.sep+'mylogger.py')
 logger = log('config.py')
 
-class Resource:
+def read_conf(model):
+    try:
+        cf = ConfigParser.ConfigParser()
+        if os.path.exists(os.path.join(get_path("",parent=True), "..", 'conf.ini')):
+            cf.read(os.path.join(get_path("",parent=True), "..", 'conf.ini'))
+            item = dict(cf.items(model))
+            return dict(item)
+        else:
+            return {}
+    except Exception as e:
+        return {}
+#print os.path.join(get_path("",parent=True), "..", 'conf.ini')
+def get_root_path():
+    '''上传文件保存路径根目录从配置文件加载
 
+        若配置文件缺失，默认系统上级目录为跟目录
+    '''
+    root_path = read_conf('upload')
+    if root_path:
+        return os.path.join(root_path['root'], 'Upload')
+    else:
+        return get_path(os.path.join('..', 'Upload'),parent=True)
+
+class Resource:
     def __init__(self):
-        self.ROOT_PATH = get_path('DunningSystemUpload',parent=True) #部署时，手动配置此路径
+        self.ROOT_PATH = get_root_path()
         self.orders = self.ROOT_PATH + os.sep + 'orders'
         self.lenderdata = self.ROOT_PATH + os.sep + 'lenderdata'
         self.orders_path=''

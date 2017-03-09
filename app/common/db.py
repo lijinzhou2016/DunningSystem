@@ -1,6 +1,44 @@
-from peewee import *
+#!/usr/bin/env python 
+# -*- coding: UTF-8 -*-
 
-database = MySQLDatabase('dunning', **{'host': 'localhost', 'port': 3306, 'user': 'root','passwd':'123456'})
+from peewee import *
+import ConfigParser
+import os,sys
+
+# 当前绝对路径
+def get_path(name, parent=False):
+    path = os.path.dirname(os.path.abspath(__file__))
+    path_comp = path.split(os.sep)
+    if parent:
+        path_comp.pop()
+    path_comp[-1] = name
+    return os.sep.join(path_comp)
+
+def read_conf(model):
+    try:
+        cf = ConfigParser.ConfigParser()
+        if os.path.exists(os.path.join(get_path("",parent=True), "..", 'conf.ini')):
+            cf.read(os.path.join(get_path("",parent=True), "..", 'conf.ini'))
+            item = dict(cf.items(model))
+            return dict(item)
+        else:
+            return {}
+    except Exception as e:
+        return {}
+
+HOST='localhost'
+PORT='3306'
+USER='root'
+PASSWD='123456'
+
+dbconf = read_conf('db')
+if dbconf:
+    HOST=dbconf['host']
+    PORT=dbconf['port']
+    USER=dbconf['user']
+    PASSWD=dbconf['password']
+
+database = MySQLDatabase('dunning', **{'host': HOST, 'port': int(PORT), 'user': USER,'passwd':PASSWD})
 
 class UnknownField(object):
     def __init__(self, *_, **__): pass

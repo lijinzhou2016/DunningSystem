@@ -24,7 +24,7 @@ execfile(os.path.dirname(os.path.abspath(__file__))+os.sep+'util.py')
 bottle.TEMPLATE_PATH.append(www_path())
 # create log obj
 logger = log('main.py')
-logger.debug('dunning server start')
+logger.info('dunning server start')
 
 # resource.set_save_path(123)
 # logger.debug(resource.get_save_path)
@@ -82,9 +82,7 @@ def lang(filename):
 # 登陆用户验证接口
 @bottle.route('/checkuser', method='POST')
 def checkuser():
-    logger.debug('check the user')
-    database = MySQLDatabase('dunning', **{'host': 'localhost', 'port': 3306, 'user': 'root','passwd':'123456'})
-    time.sleep(1)
+    logger.info('check the user')
     name = bottle.request.forms.get('username')
     passwd = bottle.request.forms.get('password')
     userinfo = Userinfo.check_login(name, passwd)
@@ -225,6 +223,12 @@ def get_userinfo_dic(userinfo):
         ['success',userinfo.name, userinfo.passwd, userinfo.is_admin, userinfo.session.session]))
 
 
+SERVER_HOST='127.0.0.1'
+SERVER_PORT='8080'
 
-bottle.run(host='127.0.0.1', port='8080', debug=False)
+server=read_conf('server')
+if server:
+    SERVER_HOST = server['host']
+    SERVER_PORT = server['port']
 
+bottle.run(host=SERVER_HOST, port=SERVER_PORT, debug=False)

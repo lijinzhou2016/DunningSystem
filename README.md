@@ -1,8 +1,12 @@
 # DunningSystem
 
-environment
+### environment
 
     1) windows or mac
     2) python 2.7.12
     3) mysql 5.7
-    4) python bottle peewee pymysql
+    4) bottle peewee pymysql
+
+### config
+
+    拷贝 config/conf.ini 到DunningSystem同级目录，进行配置
