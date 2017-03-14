@@ -242,6 +242,7 @@ $(document).ready(function () {
         var recvamount = $(parentclass).find("input[name='recvamount']").val();
         var orderdate = $(parentclass).find("input[name='orderdate']").val();
         var takeorderdate = $(parentclass).find("input[name='takeorderdate']").val();
+        var paymentday = $(parentclass).find("input[name='paymentday']").val();
         var status = $(parentclass).find("select[name='status_select']").val();
         var id = $(parentclass).find("input[name='order-id']").val();
 
@@ -254,7 +255,7 @@ $(document).ready(function () {
             "product": product, "amount": amount, "monthpay": monthpay,
             "periods": periods, "paidperiods": paidperiods,
             "recvamount": recvamount, "orderdate": orderdate,
-            "takeorderdate": takeorderdate, "status": status,
+            "takeorderdate": takeorderdate, "paymentday": paymentday,"status": status,
             "id": id, "lenderid": lenderid
         };
 

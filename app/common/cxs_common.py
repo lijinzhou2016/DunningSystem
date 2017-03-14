@@ -64,6 +64,7 @@ def get_order_basic_forms():
     recvamount = bottle.request.forms.get('recvamount')
     orderdate = bottle.request.forms.get('orderdate')
     takeorderdate = bottle.request.forms.get('takeorderdate')
+    paymentday = bottle.request.forms.get('paymentday')
     call_details = bottle.request.forms.get('call_details')
     contract = bottle.request.forms.get('contract')
     status = bottle.request.forms.get('status')
@@ -73,6 +74,7 @@ def get_order_basic_forms():
         'monthpay': monthpay, 'periods': periods,
         'paidperiods': paidperiods, 'recvamount': recvamount,
         'orderdate': orderdate, 'takeorderdate': takeorderdate,
+        'paymentday': paymentday,
         'call_details': call_details, 'contract': contract,
         'status': status, 'id': id, 'lenderid': lenderid}
 

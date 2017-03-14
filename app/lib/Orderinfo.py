@@ -287,6 +287,7 @@ class OrderTable:
         record['recvamount'] = float(record['recvamount']) if record['recvamount'] != "" else None
         record['orderdate'] = record['orderdate'] if record['orderdate'] != "" else None
         record['takeorderdate'] = record['takeorderdate'] if record['takeorderdate'] != "" else None
+        record['paymentday'] = record['paymentday'] if record['paymentday'] != "" else None
         record['status'] = int(record['status']) if record['status'] != "" else None
         return record
 
@@ -300,7 +301,8 @@ class OrderTable:
                         amount = record['amount'], month_pay = record['monthpay'],
                         periods = record['periods'], paid_periods = record['paidperiods'],
                         received_amount = record['recvamount'], order_date = record['orderdate'],
-                        takeorder_data = record['takeorderdate'], modify_time=datetime.datetime.now(),
+                        takeorder_data = record['takeorderdate'], 
+                        payment_day = record['paymentday'], modify_time=datetime.datetime.now(),
                         status = record['status']).where(Orders.id == id).execute()
             return 'success'
         except BaseException,e:
@@ -317,7 +319,8 @@ class OrderTable:
                         amount = record['amount'], month_pay = record['monthpay'],
                         periods = record['periods'], paid_periods = record['paidperiods'],
                         received_amount = record['recvamount'], order_date = record['orderdate'],
-                        takeorder_data = record['takeorderdate'], status = record['status'], 
+                        takeorder_data = record['takeorderdate'], 
+                        payment_day = record['paymentday'], status = record['status'], 
                         create_time=datetime.datetime.now(),modify_time=datetime.datetime.now(),is_del = 0).execute()
             query = Orders.select().where((Orders.disp == record['dispid']) & (Orders.is_del == 0))
             id = query[0].id
