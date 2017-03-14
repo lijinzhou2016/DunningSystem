@@ -66,11 +66,11 @@ class Session(object):
                 return True
             else:
                 logger.debug("session check invalid: session:" + self.session
-                    + ", tobechecked session str:" + session_str)
+                    + ", tobechecked session str:" + str(session_str))
                 return False
         else:
             logger.debug("the session is expired, exceed: "+ self.expire_time 
-                    + ", now:" + time.time())
+                    + ", now:" + str(time.time()))
             return False
 
 #用户信息

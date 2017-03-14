@@ -767,54 +767,130 @@ $(document).ready(function () {
         return id;
     }
 
+    function isLeapYear(year) {
+        var cond1 = year % 4 == 0;  //条件1：年份必须要能被4整除
+        var cond2 = year % 100 != 0;  //条件2：年份不能是整百数
+        var cond3 = year % 400 ==0;  //条件3：年份是400的倍数
+        //当条件1和条件2同时成立时，就肯定是闰年，所以条件1和条件2之间为“与”的关系。
+        //如果条件1和条件2不能同时成立，但如果条件3能成立，则仍然是闰年。所以条件3与前2项为“或”的关系。
+        //所以得出判断闰年的表达式：
+        var cond = cond1 && cond2 || cond3;
+        if(cond) {
+            //alert(year + "是闰年");
+            return true;
+        } else {
+            //alert(year + "不是闰年");
+            return false;
+        }
+    }
+
     //计算金额
     function total_debt(basicObject) {
-
         var month_pay = $(basicObject).find("input[name='monthpay']").val();
         var periods = $(basicObject).find("input[name='periods']").val();
         var paid_periods = $(basicObject).find("input[name='paidperiods']").val();
         var amount = $(basicObject).find("input[name='paidperiods']").val();
         var payment_day = $(basicObject).find("input[name='paymentday']").val();
-
-        payment_day_list = payment_day.split('-') //分割成字符串数组
+        //alert("periods "+periods+"\n"+"paid_periods "+paid_periods+"\n"+"payment_day "+payment_day+"\n"+"month_pay "+month_pay);
+     
+        if (periods == paid_periods){//期数已还完
+            //设置相关标签
+            $(basicObject).find("input[name='latefees']").val("0.0");
+            $(basicObject).find("input[name='sumdebt']").val("0.0");   //保留2位小数
+            return;
+        }
+        // payment_day_list = payment_day.split('-') //分割成字符串数组
 
         if(payment_day != "" && month_pay != "" && periods !="" && paid_periods !=""){
+
+            var over_day_arr = new Array();// 每月逾期的天数
+            var i=0;
+
             //获取首次账期日
             var paymentDate = new Date(payment_day);
+            
             //计算开始逾期账单日
-            var exceedDate = paymentDate;
-            exceedDate.setMonth(exceedDate.getMonth() + parseInt(paid_periods));
-            //计算逾期天数
+            // now.getMonth()获取的是索引！！！
             var now = new Date();
+            var is_LeapYear = isLeapYear(now.getYear() + 1900)
             var today_date = new Date((now.getYear() + 1900) + '-' + (now.getMonth() + 1) + '-' + (now.getDate()));
-            var over_day = Math.abs(today_date - exceedDate) / 3600 / 24 / 1000;//计算毫秒差值换算成日差值   
+            var exceedDate;
+            
+            // 计算出每月逾期的天数
+            while(true){
+                exceedDate = new Date(payment_day); //首次还款日期
 
-            //滞纳金
-            var late_fee;
-            if (over_day > 0) {
-                if (over_day > 90) {
-                    late_fee = (parseFloat(month_pay) * 0.26 / 30.0) * 90 + (parseFloat(month_pay) * 0.50 / 30.0) * (over_day - 90)
+                // exceedDate.getMonth() + parseInt(paid_periods)：开始逾期的月份
+                // exceedDate.getMonth() + parseInt(paid_periods)+parseInt(i):从开始逾期的月份开始往后推，找出所有的逾期月份
+                exceedDate.setMonth(exceedDate.getMonth() + parseInt(paid_periods)+parseInt(i));
+
+                if(exceedDate.getMonth()==2 && paymentDate.getDate()>28 && exceedDate.getDate()!=paymentDate.getDate()){
+                    //如果首次还款日期大于28，二月份还款日设置为最后一天
+                    if (is_LeapYear){//闰年
+                        exceedDate.setDate(29);
+                        exceedDate.setMonth(exceedDate.getMonth()-1);
+                    }
+                    else{//平年
+                        exceedDate.setDate(28);
+                        exceedDate.setMonth(exceedDate.getMonth()-1);
+                    }
                 }
-                else {
-                    late_fee = (parseFloat(month_pay) * 0.26 / 30.0) * over_day
+                
+                if(exceedDate.getMonth()!=1 && exceedDate.getDate() != 31 && paymentDate.getDate() == 31){
+                    //如果首次还款日期为31，小月份还款日设置为30
+                    exceedDate.setDate(30);
+                    exceedDate.setMonth(exceedDate.getMonth()-1);
+                }
+                
+                //计算逾期天数
+                var over_day = parseInt((today_date - exceedDate) / 3600 / 24 / 1000)+1;//计算毫秒差值换算成日差值
+                // alert(exceedDate+"\n"+over_day)
+                // alert(over_day)
+                if (parseInt(paid_periods)+parseInt(i)==parseInt(periods)){
+                    // 逾期月份的个数 + 已还期数 = 总期数
+                    // 说明所有账期都逾期，所有逾期月份均以计算
+                    break;
+                }  
+                if(over_day>0){
+                    over_day_arr[i] = over_day; //加入逾期数组
+                    i++;
+                }
+                else{// 该月账期为逾期
+                    break;
                 }
             }
+            
+            //滞纳金
+            var late_fee;
+            var total_late_fee=parseFloat(0.0);
+            var j;
+            if (i > 0) {
+                for(j=0; j<i; j++){
+                    if (over_day_arr[j] > 90) {
+                        late_fee = (parseFloat(month_pay) * 0.26 / 30.0) * 90 + (parseFloat(month_pay) * 0.50 / 30.0) * (over_day_arr[j] - 90)
+                    }
+                    else {
+                        late_fee = (parseFloat(month_pay) * 0.26 / 30.0) * over_day_arr[j]
+                    }
+                    total_late_fee = total_late_fee + late_fee;
+                } 
+            }
             else {
-                late_fee = 0.0
+                total_late_fee = 0.0
             }
 
             //总欠款                   
-            debt = parseFloat(month_pay) * (parseInt(periods) - parseFloat(paid_periods)) + late_fee
+            debt = parseFloat(month_pay) * (parseInt(periods) - parseFloat(paid_periods)) + total_late_fee
             
             //设置相关标签
-            $(basicObject).find("input[name='latefees']").val(late_fee.toFixed(2))
+            $(basicObject).find("input[name='latefees']").val(total_late_fee.toFixed(2))
             $(basicObject).find("input[name='sumdebt']").val(debt.toFixed(2))   //保留2位小数
         }
         //如果其中任意值为空，则计算值的框显示为空字符串
         else{
              //设置相关标签
-            $(basicObject).find("input[name='latefees']").val("")
-            $(basicObject).find("input[name='sumdebt']").val("")   //保留2位小数
+            $(basicObject).find("input[name='latefees']").val("NULL")
+            $(basicObject).find("input[name='sumdebt']").val("NULL")   //保留2位小数
         }
     }
 

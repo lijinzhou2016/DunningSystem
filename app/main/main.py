@@ -96,9 +96,10 @@ def checkuser():
 @bottle.route('/orderlist')
 @bottle.view('orderlist')
 def orderlist():
+    logger.info('visist orderlist ')
     #获取URL中的session，校验并获取URL信息
     session = bottle.request.query.session
-    logger.debug('Got session ' + session)
+    logger.info('Got session ' + session)
 
     userinfo = Userinfo.get_by_session(session)
     if not userinfo:
@@ -107,10 +108,9 @@ def orderlist():
 
     condition = bottle.request.query.condition
     page_index = bottle.request.query.pageIndex
-    logger.debug('Got conditon : '+condition)
+    logger.info('Got conditon : {0} Got page_index: {1}'.format(condition, page_index))
     orderlist_cls = OrderList(page_index, userinfo.dict_format(), condition)
     orderlist_cls.set_orders_data()
-
     return orderlist_cls.get_orders_data
 
 
