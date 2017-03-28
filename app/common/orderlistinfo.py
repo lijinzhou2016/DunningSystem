@@ -243,10 +243,14 @@ class OrderList:
             logger.debug(lender_query.name)
 
             def get_state():
-                state = orderStatus[order_info_tmp.status]
-                if state:
-                    return state
-                else:
+                try:
+                    state = orderStatus[order_info_tmp.status]
+                    if state:
+                        return state
+                    else:
+                        return "NULL"
+                except BaseException as e:
+                    logger.info(str(e))
                     return "NULL"
             # 计算总欠款
             def total_debt():
