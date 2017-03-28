@@ -177,7 +177,7 @@
 								%payment_day=""
 							%end
 							<div class="orderStatus-content-left">首次还款日:</div>
-							<input name = "paymentday" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{payment_day)}}>
+							<input name = "paymentday" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{payment_day}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">接单日期:</div>
@@ -185,7 +185,7 @@
 							%if order.get('takeorder_date') is None:
 								%takeorder_date=""
 							%end
-							<input name = "takeorderdate" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{takeorder_date)}}>
+							<input name = "takeorderdate" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{takeorder_date}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">滞纳金:</div>
