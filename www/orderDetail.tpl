@@ -112,8 +112,12 @@
 							<input name = "status_value" style="display:none" type="text" readonly="true" value={{order.get('status')}}>
 						</div>
 						<div>
+							%source=order.get('source')
+							%if order.get('source') is None:
+								%source=""
+							%end
 							<div class="orderStatus-content-left">订单来源:</div>
-							<input name = "source" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('source')}}>
+							<input name = "source" class="orderStatus-content-right" type="text" readonly="true" value={{source}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">月供:</div>
@@ -143,8 +147,12 @@
 							<input name = "periods" class="orderStatus-content-right periods" type="text" readonly="true" value={{order.get('periods')}}>
 						</div>
 						<div>
+							%product=order.get('product')
+							%if order.get('product') is None:
+								%product=""
+							%end
 							<div class="orderStatus-content-left">产品名称:</div>
-							<input name = "product" class="orderStatus-content-right" type="text" readonly="true" value={{order.get('product')}}> 
+							<input name = "product" class="orderStatus-content-right" type="text" readonly="true" value={{product}}> 
 						</div>
 						<div>
 							<div class="orderStatus-content-left">已还期数:</div>
@@ -155,16 +163,29 @@
 							<input name = "amount" class="orderStatus-content-right fenqijine" type="text" readonly="true" value={{order.get('amount')}}>
 						</div>
 						<div>
+							%order_date=order.get('order_date')
+							%if order.get('order_date') is None:
+								%order_date=""
+							%end
 							<div class="orderStatus-content-left">订单日期:</div>
-							<input name = "orderdate" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{order.get('order_date')}}>
-						</div>
-						<div>
-							<div class="orderStatus-content-left">首次还款日:</div>
-							<input name = "paymentday" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{order.get('payment_day')}}>
+							<input name = "orderdate" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{order_date}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">接单日期:</div>
-							<input name = "takeorderdate" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{order.get('takeorder_date')}}>
+							%payment_day=order.get('payment_day')
+							%if order.get('payment_day') is None:
+								%payment_day=""
+							%end
+							<div class="orderStatus-content-left">首次还款日:</div>
+							<input name = "paymentday" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{payment_day)}}>
+						</div>
+						<div>
+							<div class="orderStatus-content-left">接单日期:</div>
+							%takeorder_date=order.get('takeorder_date')
+							%if order.get('takeorder_date') is None:
+								%takeorder_date=""
+							%end
+							<input name = "takeorderdate" class="orderStatus-content-right Wdate" type="text" readonly="true" onClick="WdatePicker()" value={{takeorder_date)}}>
 						</div>
 						<div>
 							<div class="orderStatus-content-left">滞纳金:</div>
