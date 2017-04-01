@@ -254,11 +254,15 @@ class OrderList:
                     return "NULL"
             # 计算总欠款
             def total_debt():
-                month_pay = float(order_info_tmp.month_pay) # 月供 0.00
-                periods = int(order_info_tmp.periods) # 期数  0
-                paid_periods = int(order_info_tmp.paid_periods) # 已还期数  0
-                amount = float(order_info_tmp.amount) # 分期金额  0.00
-                payment_day = order_info_tmp.payment_day # 首次还款日   ''
+                try:
+                    month_pay = float(order_info_tmp.month_pay) # 月供 0.00
+                    periods = int(order_info_tmp.periods) # 期数  0
+                    paid_periods = int(order_info_tmp.paid_periods) # 已还期数  0
+                    amount = float(order_info_tmp.amount) # 分期金额  0.00
+                    payment_day = order_info_tmp.payment_day # 首次还款日   ''
+                except BaseException as e:
+                    logger.info(str(e))
+                    return "ERROR"
 
                 # 缺少字段，无法计算
                 if (month_pay == 0) or (periods == 0) or (amount == 0) or (payment_day == ''):
