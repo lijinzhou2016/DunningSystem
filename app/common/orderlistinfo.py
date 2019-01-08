@@ -15,9 +15,16 @@ import uuid
 import os
 import math
 import datetime
+
+import bottle
 from peewee import *
 import xlrd
 import re
+
+from common.config import resource
+from common.db import Orders, Lender
+from common.mylogger import log
+
 
 def get_path(name, parent=False):
     path = os.path.dirname(os.path.abspath(__file__))
@@ -30,9 +37,7 @@ def get_path(name, parent=False):
 def common_path():
     return get_path('common')
 
-execfile(common_path() + os.sep + 'db.py')
-execfile(common_path() + os.sep + 'config.py')
-execfile(common_path() + os.sep + 'mylogger.py')
+
 logger = log('orderlistinfo.py')
 
 # 数据库表状态字段转换字符状态的对应列表
@@ -568,8 +573,8 @@ class OrderList:
                     
                 if one_data[4]: # 学院区域
                     lender_insert_dict['univers_area'] = one_data[4]
-                else:
-                    ender_insert_dict['univers_area'] = "NULL"
+                # else:
+                #     ender_insert_dict['univers_area'] = "NULL"
                 if one_data[5]: # 学校
                     lender_insert_dict['university'] = one_data[5]
                 else:
@@ -610,9 +615,9 @@ class OrderList:
     @staticmethod
     def save_orders_file():
         logger.debug('i am save_ordersource......')
-        name = request.forms.name #订单来源名称
-        file_md5 = request.forms.testmd5
-        data = request.files.data
+        name = bottle.request.forms.name #订单来源名称
+        file_md5 = bottle.request.forms.testmd5
+        data = bottle.request.files.data
         ext  = data.filename.split('.')[-1] #上传文件后缀
         save_name = file_md5 + '.' + ext
 

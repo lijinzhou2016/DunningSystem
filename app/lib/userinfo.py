@@ -16,6 +16,9 @@ import os
 from peewee import *
 
 # 过期时间为300秒
+from common.db import Admin
+from common.mylogger import log
+
 session_expires = 3000
 #存放所有用户的信息
 user_list = {}
@@ -31,9 +34,6 @@ def get_path(name, parent=False):
 def common_path():
     return get_path('common')
 
-
-execfile(common_path() + os.sep + 'db.py')
-execfile(common_path()+os.sep+'mylogger.py')
 
 logger = log('userinfo.py')
 

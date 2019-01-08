@@ -10,11 +10,13 @@
 # Description   : Get order info by order id
 #*****************************************************************************
 
-import time
-import uuid
+
 import os
 import datetime
-from peewee import *
+
+
+from common.db import Lender, Operation, Admin, Files, Orders
+from common.mylogger import log
 
 
 def get_path(name, parent=False):
@@ -28,9 +30,6 @@ def get_path(name, parent=False):
 def common_path():
     return get_path('common')
 
-
-execfile(common_path() + os.sep + 'db.py')
-execfile(common_path()+os.sep+'mylogger.py')
 
 logger = log('Orderinfo.py')
 #用户信息
@@ -416,7 +415,7 @@ class FilesTable:
         try:
             query = (Files
                     .select()
-                    .where(Files.order == orderid)
+                    .where(Files.order == order_id)
                     .order_by(Files.time.desc()))
             files = []
             for item in query:

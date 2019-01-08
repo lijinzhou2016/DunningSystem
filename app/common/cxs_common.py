@@ -11,6 +11,12 @@
 #*****************************************************************************
 import sys,os  
 import json
+import bottle
+from bottle import request
+
+from common.config import resource, logger
+from lib.Orderinfo import LenderTable, OrderTable, OperationTable, FilesTable
+
 
 def get_path(name, parent=False):
     path = os.path.dirname(os.path.abspath(__file__))
@@ -23,7 +29,6 @@ def get_path(name, parent=False):
 def common_path():
     return get_path('common')
 
-execfile(common_path() + os.sep + 'config.py')
 
 #获取lender信息生成字典
 def get_lender_forms():
@@ -40,6 +45,7 @@ def get_lender_forms():
         'family_addr': familyaddr, 'family_area': familyarea,
         'id': id}
 
+
 #更新lender信息到数据库中
 def update_lender_info():
     lender = get_lender_forms()
@@ -49,6 +55,7 @@ def update_lender_info():
     else:
         result, id = LenderTable.insert(lender)
     return json.dumps({'result': result, 'id': id})
+
 
 #获取order信息生成字典
 def get_order_basic_forms():
@@ -78,6 +85,7 @@ def get_order_basic_forms():
         'call_details': call_details, 'contract': contract,
         'status': status, 'id': id, 'lenderid': lenderid}
 
+
 #更新order信息到数据库中
 def update_order_basic_info():
     order = get_order_basic_forms()
@@ -87,6 +95,7 @@ def update_order_basic_info():
     else:
         result, id = OrderTable.insertbasic(order)
     return json.dumps({'result': result, 'id': id})
+
 
 #获取order的借款人亲属信息生成字典
 def get_lender_relatives_forms():
@@ -102,6 +111,7 @@ def get_lender_relatives_forms():
         'classmate': classmate, 'classmatecall': classmatecall,
         'id': id}
 
+
 #更新order借款人亲属信息到数据库中
 def update_lender_relatives_info():
     order = get_lender_relatives_forms()
@@ -111,6 +121,7 @@ def update_lender_relatives_info():
     else:
         result, id = OrderTable.insertrelatives(order)
     return json.dumps({'result': result, 'id': id})
+
 
 #获取操作信息生成字典
 def get_operations_forms():
@@ -122,6 +133,7 @@ def get_operations_forms():
         'adminid': adminid, 'lenderid': lenderid}
     print forms
     return forms
+
 
 #更新操作信息到数据库中
 def update_operations_info():
@@ -145,7 +157,6 @@ def save_orderdetail_file():
     data = request.files.data
     ext  = data.filename.split('.')[-1] #上传文件后缀
     save_name = file_md5 + '.' + ext
-
 
     data_path = resource.get_data_path(orderid)
     if data_path is not None:

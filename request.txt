@@ -1,0 +1,5 @@
+bottle==0.12.16
+peewee==3.8.1
+PyMySQL==0.9.3
+PyYAML==3.13
+xlrd==1.2.0

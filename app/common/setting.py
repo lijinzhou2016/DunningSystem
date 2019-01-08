@@ -14,6 +14,12 @@ from hashlib import md5
 
 
 # 当前绝对路径
+import bottle
+
+from common.db import System, Admin
+from common.mylogger import log
+
+
 def get_path(name, parent=False):
     path = os.path.dirname(os.path.abspath(__file__))
     path_comp = path.split(os.sep)
@@ -25,8 +31,7 @@ def get_path(name, parent=False):
 def common_path():
     return get_path('common')
 
-execfile(common_path()+os.sep+'db.py')
-execfile(common_path()+os.sep+'mylogger.py')
+
 logger = log('setting.py')
 
 # setting.tpl
