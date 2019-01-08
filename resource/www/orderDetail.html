@@ -1,0 +1,237 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>详情页面</title>
+	<link rel="stylesheet" href="css/orderDetail.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/orderDetail.js"></script>
+</head>
+
+<body>
+	<div class="head">
+		<div class="container">
+			<ul class="head-user">
+			<li><img src="images/icon_wp.png" style="height:16px;" alt=""><span>用户名</span></li>
+			<li><img src="images/icon_tuichu.png" style="height:16px;" alt=""><span>退出</span></li>
+		</ul>
+		</div>
+		
+	</div>
+	<div class="orderDetail-content">
+		<div class="orderDetail-content-title">
+			<div style="width:3px;height:20px;background:#FF6600;float:left;margin-right:20px;"></div>
+			详情页面
+		</div>
+		<div class="orderDetail-content-list">
+			<div class="orderDetail-content-jichuxinxi">
+				<div class="jichuxinxi-title">基本信息
+					<div class="edit"></div>
+				</div>
+				<div class="clear"></div>
+				<div class="jichuxinxi-info" style="width:90%;position:relative;height:130px;margin-left:8%;">
+					<div>
+						<div class="orderDetail-content-jichuxinxi-left">姓名:</div>
+						<input class="orderDetail-content-jichuxinxi-right" type="text" readonly="true" value="刘德华">
+					</div>
+
+					<div>
+						<div class="orderDetail-content-jichuxinxi-left">家庭住址:</div>
+						<input class="orderDetail-content-jichuxinxi-right" type="text" readonly="true" value="江苏省南京市">
+					</div>
+
+					<div>
+						<div class="orderDetail-content-jichuxinxi-left">电话:</div>
+						<input class="orderDetail-content-jichuxinxi-right" type="text" readonly="true" value="13850559131">
+					</div>
+
+					<div>
+						<div class="orderDetail-content-jichuxinxi-left">家庭区域:</div>
+						<input class="orderDetail-content-jichuxinxi-right" type="text" readonly="true">
+					</div>
+
+					<div>
+						<div class="orderDetail-content-jichuxinxi-left">身份证:</div>
+						<input class="orderDetail-content-jichuxinxi-right" type="text" readonly="true">
+					</div>
+
+					<div>
+						<div class="orderDetail-content-jichuxinxi-left">学校:</div>
+						<input class="orderDetail-content-jichuxinxi-right" type="text" readonly="true">
+					</div>
+
+					<div>
+						<div class="orderDetail-content-jichuxinxi-left">学校区域:</div>
+						<input class="orderDetail-content-jichuxinxi-right" type="text" readonly="true">
+					</div>
+				</div>
+
+				<div class="clear"></div>
+				<div class="jichuxinxi-btn">
+					<button class="btn-save">保存</button>
+					<button class="btn-cancel">取消</button>
+				</div>
+			</div>
+			<div class="orderDetail-content-orderStatus">
+				<div class="orderStatus-title">
+					订单一：<span>电催</span>
+					<input type="button" class="daochu">
+
+				</div>
+				<div class="orderStatus-info">
+					<div class="status-edit"></div>
+					<div class="orderStatus-content">
+                        <div>
+							<div class="orderStatus-content-left">订单编号:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+						<div>
+							<div class="orderStatus-content-left">订单状态:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+						<div>
+							<div class="orderStatus-content-left">订单来源:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+						<div>
+							<div class="orderStatus-content-left">月供:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+						<div>
+							<div class="orderStatus-content-left">账期:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+						<div>
+							<div class="orderStatus-content-left">期数:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+						<div>
+							<div class="orderStatus-content-left">产品名称:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+						<div>
+							<div class="orderStatus-content-left">已还期数:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+						<div>
+							<div class="orderStatus-content-left">分期金额:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+						<div>
+							<div class="orderStatus-content-left">订单日期:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+						<div>
+							<div class="orderStatus-content-left">滞纳金:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+						<div>
+							<div class="orderStatus-content-left">接单日期:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+						<div>
+							<div class="orderStatus-content-left">现总欠款:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+						<div>
+							<div class="orderStatus-content-left">已收金额:</div>
+							<input class="orderStatus-content-right" type="text" readonly="true">
+						</div>
+					</div>
+					<div class="orderStatus-btn">
+						<button class="orderStatusbtn-save">保存</button>
+						<button class="orderStatusbtn-cancel">取消</button>
+					</div>
+				</div>
+
+				<div class="orderStatus-lianxiren">
+					<div class="orderStatus-lianxiren-edit"></div>
+					<div class="orderStatus-lianxiren-content">
+						<div class="parents">
+							<div style="width:50px;height:20px;line-height:20px;float:left">父母</div>
+							<input class="parentsname" value="刘能中华人民共和国" title="刘能中华人民共和国" readonly="true">
+							<input class="parentsphone" value="13777777777">
+							<a href="">张三</a><a href="">李四</a>
+						</div>
+						<div class="sheyou">
+							<div style="width:50px;height:20px;line-height:20px;float:left">同寝</div>
+							<input class="sheyouname" value="刘能中华人民共和国" title="刘能中华人民共和国" readonly="true">
+							<input class="sheyouphone" value="13777777777">
+						</div>
+						<div class="tongxue">
+							<div style="width:50px;height:20px;line-height:20px;float:left">同学</div>
+							<input class="tongxuename" value="刘能中华人民共和国" title="刘能中华人民共和国" readonly="true">
+							<input class="tongxuephone" value="13777777777">
+						</div>
+					</div>
+					<div class="orderStatus-lianxiren-btn">
+						<button class="lianxirenbtn-save">保存</button>
+						<button class="lianxirenbtn-cancel">取消</button>
+					</div>
+				</div>
+				<div class="orderStatus-upload">
+					<div class="orderStatus-upload-list">
+						<button>上传图片</button>
+						<button>上传文件</button>
+						
+					</div>
+
+				</div>
+				<div class=""></div>
+			</div>
+		</div>
+		<div class="orderDetail-content-right">
+			<div class="orderDetail-content-right-top">
+				<button class="addorderlist">添加订单</button>
+			</div>
+			<div class="orderDetail-content-caozuo">
+				<div class="orderDetail-content-caozuo-title">操作记录
+                    <div class="caozuo-title-edit"></div>
+                </div>
+				<ul class="caozuo-line">
+                    <li>
+						<div class="width:80%;float:left;position:relative;margin-left:10%;">
+							<div class="caozuo-time"><span class="caozuo-time-time">2016-11-06</span> <span class="caozuo-time-name">张三</span></div>
+                            <div class="caozuo-content" readonly="true">修改了状态，添加了图片修改了状态，添加了图片修改了状态，添加了图片修改了状态，添加了图片</div>
+						</div>
+
+					</li>
+					<li>
+						<div class="width:80%;float:left;position:relative;margin-left:10%;">
+							<div class="caozuo-time"><span class="caozuo-time-time">2016-11-06</span> <span class="caozuo-time-name">张三</span></div>
+                            <div class="caozuo-content" readonly="true">修改了状态，添加了图片修改了状态，添加了图片修改了状态，添加了图片修改了状态，添加了图片</div>
+						</div>
+
+					</li>
+                    <li>
+						<div class="width:80%;float:left;position:relative;margin-left:10%;">
+							<div class="caozuo-time"><span class="caozuo-time-time">2016-11-06</span> <span class="caozuo-time-name">张三</span></div>
+                            <div class="caozuo-content" readonly="true">修改了状态，添加了图片修改了状态，添加了图片修改了状态，添加了图片修改了状态，添加了图片</div>
+						</div>
+
+					</li>
+                    <li>
+						<div class="width:80%;float:left;position:relative;margin-left:10%;">
+							<div class="caozuo-time"><span class="caozuo-time-time">2016-11-06</span> <span class="caozuo-time-name">张三</span></div>
+                            <div class="caozuo-content"  readonly="true">修改了状态，添加了图片修改了状态，添加了图片修改了状态，添加了图片修改了状态，添加了图片</div>
+						</div>
+
+					</li>
+                    <li>
+						<div class="width:80%;float:left;position:relative;margin-left:10%;">
+							<div class="caozuo-time"><span class="caozuo-time-time">2016-11-06</span> <span class="caozuo-time-name">张三</span></div>
+                            <div class="caozuo-content" readonly="true">修改了状态，添加了图片修改了状态，添加了图片修改了状态，添加了图片修改了状态，添加了图片</div>
+						</div>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	</div>
+
+</body>
+
+</html>
