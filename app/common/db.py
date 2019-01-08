@@ -45,7 +45,6 @@ class Admin(BaseModel):
 class Lender(BaseModel):
     family_addr = CharField(null=True, max_length=200)
     family_area = CharField(null=True, max_length=100)
-    id = IntegerField(index=True)
     idcard = CharField(db_column='idcard_id')
     is_del = IntegerField(default=0)
     name = CharField(max_length=20)
@@ -55,10 +54,6 @@ class Lender(BaseModel):
 
     class Meta:
         db_table = 'lender'
-        indexes = (
-            (('id', 'idcard'), True),
-        )
-        primary_key = CompositeKey('id', 'idcard')
 
 
 class Orders(BaseModel):

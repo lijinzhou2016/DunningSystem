@@ -451,7 +451,7 @@ class OrderList:
             # logger.debug(one_data)
             pattern =r'^\d{4}-\d{1,2}-\d{1,2}$' #匹配日期格式例如：2017-01-11
             p = re.compile(pattern)
-            order_insert_dict = {'is_del':0, 'source':wherefrom} # 插入order表的一条记录字典
+            order_insert_dict = {'is_del':0, 'source': str(wherefrom)} # 插入order表的一条记录字典
             lender_insert_dict = {'is_del':0} # 插入lender表中的一条记录字典
             try:
                 if one_data[0]: # 订单编号 (必要唯一字段)
@@ -490,7 +490,7 @@ class OrderList:
                         # exception_disp += ('首次还款日格式有误 '+str(one_data[0])+' '+one_data[1]+'\n')
                         # continue
                     else:
-                        order_insert_dict['payment_day'] = one_data[12]
+                        order_insert_dict['payment_day'] = str(one_data[12])
                 else:
                     pass
                     # exception_disp += ('首次还款日为空： '+str(one_data[0])+' '+one_data[1]+'\n')
@@ -520,14 +520,14 @@ class OrderList:
                         # continue
                         pass
                     else:
-                        order_insert_dict['order_date'] = one_data[16]
+                        order_insert_dict['order_date'] = str(one_data[16])
                 if one_data[17]: # 接单日期
                     if not p.match(one_data[17]):
                         # exception_disp += ('接单日格式有误 '+str(one_data[0])+' '+one_data[1]+'\n')
                         # continue
                         pass
                     else:
-                        order_insert_dict['takeorder_data'] = one_data[17]
+                        order_insert_dict['takeorder_data'] = str(one_data[17])
                 if one_data[18]: # 已还金额
                     order_insert_dict['received_amount'] = float(one_data[18])
                 else:
@@ -536,7 +536,7 @@ class OrderList:
                     # continue
                     
                 if one_data[19]: # 父母
-                    order_insert_dict['parent'] = one_data[19]
+                    order_insert_dict['parent'] = str(one_data[19])
                 if one_data[20]: # 父母电话
                     order_insert_dict['parent_call'] = str(int(one_data[20]))
                 if one_data[21]: # 同寝
